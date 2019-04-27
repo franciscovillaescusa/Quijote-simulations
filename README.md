@@ -38,7 +38,7 @@ Inside each of the above folders there is the data for the different cosmologies
 ### Halo catalogues
 The halo catalogues can be read through the [readfof.py](https://github.com/franciscovillaescusa/Pylians/blob/master/library/readfof.py) script. If you have [Pylians](https://github.com/franciscovillaescusa/Pylians) installed you already have it. An example on how to read a halo catalogue is this:
 
-```
+```python
 import readfof 
 
 # input files
