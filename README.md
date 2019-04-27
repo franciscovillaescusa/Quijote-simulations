@@ -25,4 +25,4 @@ The data is stored in the Gordon cluster of the San Diego Supercomputer Center. 
 
 The folders fiducial, h_p, Om_m..etc contain the data products for the different cosmologies.
 
-![](https://raw.githubusercontent.com/franciscovillaescusa/Quijote-simulations/master/Sims.jpg)# Quijote simulations
+![](https://raw.githubusercontent.com/franciscovillaescusa/Quijote-simulations/master/Sims.jpg)
