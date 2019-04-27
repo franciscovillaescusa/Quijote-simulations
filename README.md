@@ -15,7 +15,7 @@ But they can be used for a large variety of problems.
 - Outputs at redshifts 0, 0.5, 1, 2, 3 and 127 (initial conditions)
 - 500 Tb of data
 - 15 Million cpu hours
-- Snapshots and data products (halo and voids catalogues, power spectra, bispectra, pdfs...) publicly available
+- Snapshots and data products (halo & void catalogues, power spectra, bispectra, pdfs...) publicly available
 
 ## Data
 The data are stored in the Gordon cluster of the San Diego Supercomputer Center. It can be access through [globus](https://www.globus.org/). 
@@ -62,14 +62,14 @@ Omega_m  = head.omega_m      #value of Omega_m
 Omega_l  = head.omega_l      #value of Omega_l
 h        = head.hubble       #value of h
 redshift = head.redshift     #redshift of the snapshot
-Hubble   = 100.0*np.sqrt(Omega_m*(1.0+redshift)**3+Omega_l)#km/s/(Mpc/h)
+Hubble   = 100.0*np.sqrt(Omega_m*(1.0+redshift)**3+Omega_l)#Value of H(z) in km/s/(Mpc/h)
 
 # read positions, velocities and IDs of the particles
 pos = readgadget.read_field(snapshot, "POS ", ptype)/1e3 #positions in Mpc/h
 vel = readgadget.read_field(snapshot, "VEL ", ptype)     #peculiar velocities in km/s
 ids = readgadget.read_field(snapshot, "ID  ", ptype)-1   #IDs starting from 0
 ```
-In the simulations with massive neutrinos it is possible to read the positions, velocities and IDs of the neutrino particles. Notice that the field should contain exactly 4 characters, that can be blank: "POS ", "VEL ", "ID  ". The number in the name of the snapshot represents its redshift: 
+In the simulations with massive neutrinos it is possible to read the positions, velocities and IDs of the neutrino particles. Notice that the field should contain exactly 4 characters, that can be blank: ```"POS ", "VEL ", "ID  "```. The number in the name of the snapshot represents its redshift: 
 - 000 ------> z=3
 - 001 ------> z=2
 - 002 ------> z=1
