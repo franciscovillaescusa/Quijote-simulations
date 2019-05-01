@@ -55,13 +55,13 @@ ptype    = 1 #1(cold dark matter) or 2 (neutrinos)
 
 # read header
 header   = readgadget.header(snapshot)
-BoxSize  = head.boxsize/1e3  #Mpc/h
-Nall     = head.nall         #Total number of particles
-Masses   = head.massarr*1e10 #Masses of the particles in Msun/h
-Omega_m  = head.omega_m      #value of Omega_m
-Omega_l  = head.omega_l      #value of Omega_l
-h        = head.hubble       #value of h
-redshift = head.redshift     #redshift of the snapshot
+BoxSize  = header.boxsize/1e3  #Mpc/h
+Nall     = header.nall         #Total number of particles
+Masses   = header.massarr*1e10 #Masses of the particles in Msun/h
+Omega_m  = header.omega_m      #value of Omega_m
+Omega_l  = header.omega_l      #value of Omega_l
+h        = header.hubble       #value of h
+redshift = header.redshift     #redshift of the snapshot
 Hubble   = 100.0*np.sqrt(Omega_m*(1.0+redshift)**3+Omega_l)#Value of H(z) in km/s/(Mpc/h)
 
 # read positions, velocities and IDs of the particles
