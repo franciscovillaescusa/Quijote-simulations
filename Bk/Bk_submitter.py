@@ -30,9 +30,9 @@ for i in xrange(nodes):
 
 export PYSPEC_CODEDIR="/home/fvillaescusa/data/pdf_information/analysis/Bispectrum/pySpectrum/"
     
-srun -n 32 --mpi=pmi2 python analysis_bispectrum.py %d %d %s %d\n
+srun -n 32 --mpi=pmi2 python Bk_halos.py %d %d %s %d\n
         """%(i*step+offset, (i+1)*step+offset, folder, snapnum)
 
-        # create the script.sh file with the above instructions; execute it and remove it
+        # create the script file; execute it and remove it
         f = open('script.sh','w');  f.write(a);  f.close()
         os.system('sbatch script.sh');  os.system('rm script.sh')
