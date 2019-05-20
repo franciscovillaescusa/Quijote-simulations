@@ -51,7 +51,7 @@ import readgadget
 
 # input files
 snapshot = '/home/fvillaescusa/Quijote/Snapshots/h_p/snapdir_002/snap_002'
-ptype    = 1 #1(cold dark matter) or 2 (neutrinos)
+ptype    = [1] #[1](CDM), [2](neutrinos) or [1,2](CDM+neutrinos)
 
 # read header
 header   = readgadget.header(snapshot)
@@ -65,9 +65,9 @@ redshift = header.redshift     #redshift of the snapshot
 Hubble   = 100.0*np.sqrt(Omega_m*(1.0+redshift)**3+Omega_l)#Value of H(z) in km/s/(Mpc/h)
 
 # read positions, velocities and IDs of the particles
-pos = readgadget.read_field(snapshot, "POS ", ptype)/1e3 #positions in Mpc/h
-vel = readgadget.read_field(snapshot, "VEL ", ptype)     #peculiar velocities in km/s
-ids = readgadget.read_field(snapshot, "ID  ", ptype)-1   #IDs starting from 0
+pos = readgadget.read_block(snapshot, "POS ", ptype)/1e3 #positions in Mpc/h
+vel = readgadget.read_block(snapshot, "VEL ", ptype)     #peculiar velocities in km/s
+ids = readgadget.read_block(snapshot, "ID  ", ptype)-1   #IDs starting from 0
 ```
 In the simulations with massive neutrinos it is possible to read the positions, velocities and IDs of the neutrino particles. Notice that the field should contain exactly 4 characters, that can be blank: ```"POS ", "VEL ", "ID  "```. The number in the name of the snapshot represents its redshift: 
 - 000 ------> z=3
