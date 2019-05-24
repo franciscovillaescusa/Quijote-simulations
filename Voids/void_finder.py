@@ -55,7 +55,6 @@ root = '/simons/scratch/fvillaescusa/pdf_information/%s'%args.cosmo
 # density field parameters
 grid    = 768
 MAS     = 'PCS'
-ptypes  = [1] #[-1]
 do_RSD  = False
 axis    = 0
 snapnum = 4
@@ -92,8 +91,24 @@ for i in xrange(args.first, args.last):
 
         # find output file name
         fout = '%s/void_catalogue_m_z=%s.hdf5'%(output_folder, z_dict[snapnum])
-        if os.path.exists(fout):  continue
+        if not(os.path.exists(fout)): 
 
-        # identify voids
-        find_voids(snapshot, ptypes, grid, MAS, do_RSD, axis, threshold, Radii,
-                   threads1, threads2, fout)
+            # for massive neutrinos identify voids in the CDM+baryons field
+            if args.cosmo in ['Mnu_p', 'Mnu_pp', 'Mnu_ppp']:
+
+                # identify voids in total matter
+                find_voids(snapshot, [-1], grid, MAS, do_RSD, axis, 
+                           threshold, Radii, threads1, threads2, fout)
+
+                # identify voids in CDM+baryons
+                fout = '%s/void_catalogue_c_z=%s.hdf5'%(output_folder, z_dict[snapnum])
+                if not(os.path.exists(fout)): 
+                    find_voids(snapshot, [1], grid, MAS, do_RSD, axis, 
+                               threshold, Radii, threads1, threads2, fout)
+
+            else:
+
+                # identify voids
+                find_voids(snapshot, [1], grid, MAS, do_RSD, axis, 
+                           threshold, Radii, threads1, threads2, fout)
+
