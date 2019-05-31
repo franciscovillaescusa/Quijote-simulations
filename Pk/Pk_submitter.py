@@ -3,27 +3,32 @@ import numpy as np
 import sys,os
 
 ################################## INPUT #############################################
-realizations = 15000
-step         = 250 #number of realizations each cpu will do
-offset       = 0   #the count will start from offset
-snapnum      = 4   #4(z=0), 3(z=0.5), 2(z=1), 1(z=2), 0(z=3)
+realizations_fid = 15000
+realizations_der = 500
+step             = 250 #number of realizations each cpu will do
+offset           = 0   #the count will start from offset
+snapnum          = 4   #4(z=0), 3(z=0.5), 2(z=1), 1(z=2), 0(z=3)
 ######################################################################################
 
 # number of nodes needed
-nodes = int(realizations/step)
+nodes_fid = int(realizations_fid/step)
+nodes_der = int(realizations_der/step)
 
-# do a loop over each node
-for i in xrange(nodes):
+# do a loop over the different cosmologies
+for folder in ['Om_p/', 'Ob_p/', 'Ob2_p/', 'h_p/', 'ns_p/', 's8_p/',          
+               'Om_m/', 'Ob_m/', 'Ob2_m/', 'h_m/', 'ns_m/', 's8_m/',           
+               'Mnu_p/', 'Mnu_pp/', 'Mnu_ppp/', 'fiducial/']:
 
-    for folder in ['fiducial/']:
-#['Om_p/', 'Ob_p/', 'Ob2_p/', 'h_p/', 'ns_p/', 's8_p/',          
- #'Om_m/', 'Ob_m/', 'Ob2_m/', 'h_m/', 'ns_m/', 's8_m/',           
- #'Mnu_p/', 'Mnu_pp/', 'Mnu_ppp/', 'fiducial/']: 
+    if folder=='fiducial/':  nodes = nodes_fid
+    else:                    nodes = nodes_der
+
+    # do a loop over the different realizations
+    for i in xrange(nodes):    
 
         a = """#!/bin/bash
 #SBATCH -J Pk
 #SBATCH --exclusive        
-#SBATCH -t 7-00:00
+#SBATCH -t 1-00:00
 #SBATCH --nodes=1
 #####SBATCH --ntasks-per-node=16
 #SBATCH --ntasks-per-node=48
