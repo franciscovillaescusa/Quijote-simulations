@@ -80,7 +80,7 @@ def find_Bk(snapshot, snapnum, Ngrid, Nmax, Ncut, step, do_RSD, axis, ptype, fbk
 
     # move positions to redshift-space
     if do_RSD:
-        vel = readgadget.read_block(snapdir, "VEL ", ptype) #km/s
+        vel = readgadget.read_block(snapshot, "VEL ", ptype) #km/s
         RSL.pos_redshift_space(pos, vel, BoxSize, Hubble, redshift, axis)
 
     # calculate bispectrum
