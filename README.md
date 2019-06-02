@@ -1,18 +1,22 @@
 # Quijote simulations
-The Quijote simulations are a set of 25000 N-body simulations. They are designed for two main tasks
+The Quijote simulations are a set of 32500 N-body simulations. They are designed for two main tasks
 - Quantify the information content on cosmological observables
 - Provide enough statistics to train machine learning algorithms
 
 But they can be used for a large variety of problems.
 
 ### Features
-- 15000 simulations for a fiducial Planck cosmology
-- 500 simulations/cosmology for 15 different cosmologies
+- 15500 simulations for a fiducial Planck cosmology
+- 1000 simulations/cosmology for 15 different cosmologies
 - 2000 simulations in a latin hypercube expanding 5 cosmological parameters
 - 512^3 cold dark matter particles (+512^3 neutrino particles) per simulation
-- 3.6 trillions of particles at a single redshift
+- 4.6 trillions of particles at a single redshift
 - Boxes of 1 Gpc/h, with spatial resolution of 50 kpc/h
 - Outputs at redshifts 0, 0.5, 1, 2, 3 and 127 (initial conditions)
+- 162500 halo catalogues
+- 162500 void catalogues
+- ~ 1 million power spectra
+- ~ 1 million bispectra
 - 500 Tb of data
 - 15 Million cpu hours
 - Snapshots and data products (halo & void catalogues, power spectra, bispectra, pdfs...) publicly available
