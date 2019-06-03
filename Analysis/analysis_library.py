@@ -179,31 +179,32 @@ def derivatives(realizations, BoxSize, snapnum, root_data, root_results,
                 kmax_m=0,                                           #Pkm parameters
                 kmax_c=0,                                           #Pkc parameters
                 Radii=0,                                            #VSF parameters    
-                HMF_bins=0, Nmin=0, Nmax=0):                        #HMF parameters
+                num_HMF_bins=0, Nmin=0, Nmax=0):                    #HMF parameters
 
 
     cosmologies = ['Om_p/',  'Ob_p/',  'Ob2_p/', 'h_p/', 'ns_p/', 's8_p/', 
                    'Om_m/',  'Ob_m/',  'Ob2_m/', 'h_m/', 'ns_m/', 's8_m/', 
-                   'Mnu_p/', 'Mnu_pp/', 'Mnu_ppp/', 'fiducial_NCV/']
+                   'Mnu_p/', 'Mnu_pp/', 'Mnu_ppp/', 'fiducial/']
 
     parameters = ['Om',  'Ob',   'Ob2',  'h',   'ns',  's8',   'Mnu']
     diffs      = [0.01,  0.001,  0.002,  0.02,  0.02,  0.015,  0.10]
 
     # find the corresponding redshift
-    z_dict = {4:0, 3:0.5, 2:1, 1:2, 0:3};  z = z_dict[snapnum] 
+    z = {4:0, 3:0.5, 2:1, 1:2, 0:3}[snapnum] 
 
     # perform checks and compute binning
-    Pkm_bins, mean_km      = binning_Pk(root_data+'Pk/fiducial/', z, kmax_m)  #Pkm
-    Pkc_bins, mean_kc      = binning_Pk(root_data+'Pk/fiducial/', z, kmax_c)  #Pkc
-    bins_HMF, dN, Nmean    = binning_HMF(Nmin, Nmax, HMF_bins)                #HMF
-    VSF_bins, dR, Rmean    = binning_VSF(Radii)                               #VSF
+    num_Pkm_bins, mean_km    = binning_Pk(root_data+'Pk/fiducial/', z, kmax_m)  #Pkm
+    num_Pkc_bins, mean_kc    = binning_Pk(root_data+'Pk/fiducial/', z, kmax_c)  #Pkc
+    bins_HMF, dN, mean_N     = binning_HMF(Nmin, Nmax, HMF_bins)                #HMF
+    num_VSF_bins, dR, mean_R = binning_VSF(Radii)                               #VSF
 
     # find the suffixes
     suffix_Pkm = 'Pk_m_%d_%.2f_z=%s.txt'%(realizations, kmax_m, z)
     suffix_Pkc = 'Pk_c_%d_%.2f_z=%s.txt'%(realizations, kmax_c, z)
-    suffix_HMF = 'HMF_%d_%.1e_%.1e_%d_z=%s.txt'%(realizations, Nmin, Nmax, HMF_bins, z)
+    suffix_HMF = 'HMF_%d_%.1e_%.1e_%d_z=%s.txt'%(realizations, Nmin,Nmax,num_HMF_bins, z)
     suffix_VSF = 'VSF_%d_%s_z=%s.txt'%(realizations, Radii, z)
 
+    # create the folder that will contain the derivatives
     folder = '%s/derivatives/'%root_results
     if myrank==0 and not(os.path.exists(folder)):  os.system('mkdir %s'%folder)
 
@@ -219,37 +220,36 @@ def derivatives(realizations, BoxSize, snapnum, root_data, root_results,
 
             comm.Barrier() #synchronize threads
 
-            if   probe=='Pkm': bins, mean, suffix = Pkm_bins,  mean_km,  suffix_Pkm
-            elif probe=='Pkc': bins, mean, suffix = Pkc_bins,  mean_kc,  suffix_Pkc
-            elif probe=='HMF': bins, mean, suffix = HMF_bins,  mean_HMF, suffix_HMF
-            elif probe=='VSF': bins, mean, suffix = VSF_bins2, mean_VSF, suffix_VSF
+            if   probe=='Pkm': bins, mean, suffix = num_Pkm_bins, mean_km,  suffix_Pkm
+            elif probe=='Pkc': bins, mean, suffix = num_Pkc_bins, mean_kc,  suffix_Pkc
+            elif probe=='HMF': bins, mean, suffix = num_HMF_bins, mean_N,   suffix_HMF
+            elif probe=='VSF': bins, mean, suffix = num_VSF_bins, mean_R,   suffix_VSF
 
             # find output file name
             fout = '%s/mean_%s'%(folder,suffix)
             if os.path.exists(fout):  continue
 
             # define the array hosting the data
-            data_p = np.zeros((2*realizations,bins), dtype=np.float64) 
-            data   = np.zeros((2*realizations,bins), dtype=np.float64) 
+            data_p = np.zeros((realizations,bins), dtype=np.float64) 
+            data   = np.zeros((realizations,bins), dtype=np.float64) 
 
             # do a loop over the different realizations
             count, count_p = np.array([0]), np.array([0])
             numbers = np.where(np.arange(realizations)%nprocs==myrank)[0]
             for i in numbers:
-                for pair in [0,1]:
+                folder_Pk  = '%s/Pk/matter/%s/%d'%(root_data,cosmo,i)
+                folder_HMF = '%s/Halos/%s/%d'%(root_data,cosmo,i)
+                folder_VSF = '%s/Voids/%s/%d'%(root_data,cosmo,i)
 
-                    folder1 = '%s/%s/NCV_%d_%d/'%(root_data,cosmo,pair,i)
-                    if probe=='Pkm':  
-                        data_p[2*i+pair] = read_Pkm_data(folder1, z, kmax_m)
-                    elif probe=='Pkc':
-                        data_p[2*i+pair] = read_Pkc_data(folder1, z, kmax_c)
-                    elif probe=='HMF':
-                        data_p[2*i+pair] = \
-                            read_HMF_data(folder1, snapnum, bins_HMF, dN, BoxSize)
-                    elif probe=='VSF':
-                        data_p[2*i+pair] = \
-                            read_VSF_data(folder1, z, BoxSize, grid, bins_VSF, dR)
-                    count_p[0] += 1
+                if probe=='Pkm':  
+                    data_p[i] = read_Pkm_data(folder_Pk, z, kmax_m)
+                elif probe=='Pkc':
+                    data_p[i] = read_Pkc_data(folder_Pk, z, kmax_c)
+                elif probe=='HMF':
+                    data_p[i] = read_HMF_data(folder_HMF, snapnum, bins_HMF, dN, BoxSize)
+                elif probe=='VSF':
+                    data_p[i] = read_VSF_data(folder_VSF, z)
+                count_p[0] += 1
 
             # join all data into a single matrix (only for master)
             comm.Reduce(data_p,  data,  root=0)
@@ -263,13 +263,15 @@ def derivatives(realizations, BoxSize, snapnum, root_data, root_results,
 
 
     ##### derivatives #####
-    if myrank>0:  return 0
-    folder = '%s/derivatives/'%root_results
-    if not(os.path.exists(folder)):  os.system('mkdir %s'%folder)
+    if myrank>0:  return 0  #only master does this
 
     # do a loop over the different probes
     for probe in ['Pkm', 'Pkc', 'HMF', 'VSF']:
-        
+
+        # create output folder if it does not exists
+        folder = '%s/derivatives/%s'%(root_results,probe)
+        if not(os.path.exists(folder)):  os.system('mkdir %s'%folder)
+
         if   probe=='Pkm': suffix = suffix_Pkm
         elif probe=='Pkc': suffix = suffix_Pkc
         elif probe=='HMF': suffix = suffix_HMF
@@ -282,10 +284,10 @@ def derivatives(realizations, BoxSize, snapnum, root_data, root_results,
             if os.path.exists(fout):  continue
 
             if parameter=='Mnu':
-                f0 = '%s/fiducial_NCV/mean_%s'%(root_results,suffix)
-                f1 = '%s/Mnu_p/mean_%s'%(root_results,suffix)
-                f2 = '%s/Mnu_pp/mean_%s'%(root_results,suffix)
-                f4 = '%s/Mnu_ppp/mean_%s'%(root_results,suffix)
+                f0 = '%s/derivatives/fiducial/mean_%s'%(root_results,suffix)
+                f1 = '%s/derivatives/Mnu_p/mean_%s'%(root_results,suffix)
+                f2 = '%s/derivatives/Mnu_pp/mean_%s'%(root_results,suffix)
+                f4 = '%s/derivatives/Mnu_ppp/mean_%s'%(root_results,suffix)
                 X, Y0, dY0 = np.loadtxt(f0, unpack=True)
                 X, Y1, dY1 = np.loadtxt(f1, unpack=True)
                 X, Y2, dY2 = np.loadtxt(f2, unpack=True)
@@ -305,8 +307,8 @@ def derivatives(realizations, BoxSize, snapnum, root_data, root_results,
                            np.transpose([X, deriv4]))
 
             else:
-                f1 = '%s/%s_m/mean_%s'%(root_results, parameter, suffix)
-                f2 = '%s/%s_p/mean_%s'%(root_results, parameter, suffix)
+                f1 = '%s/derivatives/%s_m/mean_%s'%(root_results, parameter, suffix)
+                f2 = '%s/derivatives/%s_p/mean_%s'%(root_results, parameter, suffix)
                 X, Ym, dYm = np.loadtxt(f1, unpack=True)
                 X, Yp, dYp = np.loadtxt(f2, unpack=True)
                 deriv = (Yp - Ym)/(2.0*diff)
