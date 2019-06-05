@@ -176,6 +176,7 @@ def covariance(realizations, BoxSize, snapnum, root_data, root_results,
 #######################################################################################
 # This functions computes the derivatives with respect to the different parameters
 def derivatives(realizations, BoxSize, snapnum, root_data, root_results,
+                probes, 
                 kmax_m=0,                                           #Pkm parameters
                 kmax_c=0,                                           #Pkc parameters
                 Radii=0,                                            #VSF parameters    
@@ -220,10 +221,10 @@ def derivatives(realizations, BoxSize, snapnum, root_data, root_results,
 
             comm.Barrier() #synchronize threads
 
-            if   probe=='Pkm': bins, mean, suffix = num_Pkm_bins, mean_km,  suffix_Pkm
-            elif probe=='Pkc': bins, mean, suffix = num_Pkc_bins, mean_kc,  suffix_Pkc
-            elif probe=='HMF': bins, mean, suffix = num_HMF_bins, mean_N,   suffix_HMF
-            elif probe=='VSF': bins, mean, suffix = num_VSF_bins, mean_R,   suffix_VSF
+            if   probe=='Pkm':  bins, mean, suffix = num_Pkm_bins, mean_km, suffix_Pkm
+            elif probe=='Pkc':  bins, mean, suffix = num_Pkc_bins, mean_kc, suffix_Pkc
+            elif probe=='HMF':  bins, mean, suffix = num_HMF_bins, mean_N,  suffix_HMF
+            elif probe=='VSF':  bins, mean, suffix = num_VSF_bins, mean_R,  suffix_VSF
 
             # find output file name
             fout = '%s/mean_%s'%(folder,suffix)
@@ -284,10 +285,10 @@ def derivatives(realizations, BoxSize, snapnum, root_data, root_results,
             if os.path.exists(fout):  continue
 
             if parameter=='Mnu':
-                f0 = '%s/derivatives/fiducial/mean_%s'%(root_results,suffix)
-                f1 = '%s/derivatives/Mnu_p/mean_%s'%(root_results,suffix)
-                f2 = '%s/derivatives/Mnu_pp/mean_%s'%(root_results,suffix)
-                f4 = '%s/derivatives/Mnu_ppp/mean_%s'%(root_results,suffix)
+                f0 = '%s/derivatives/fiducial/mean_%s'%(root_results, suffix)
+                f1 = '%s/derivatives/Mnu_p/mean_%s'%(root_results,    suffix)
+                f2 = '%s/derivatives/Mnu_pp/mean_%s'%(root_results,   suffix)
+                f4 = '%s/derivatives/Mnu_ppp/mean_%s'%(root_results,  suffix)
                 X, Y0, dY0 = np.loadtxt(f0, unpack=True)
                 X, Y1, dY1 = np.loadtxt(f1, unpack=True)
                 X, Y2, dY2 = np.loadtxt(f2, unpack=True)
