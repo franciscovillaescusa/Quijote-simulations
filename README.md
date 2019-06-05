@@ -118,3 +118,19 @@ The number in the name of the halo catalogue represents its redshift:
 ### Bispectra
 
 ### PDFs
+
+## Team
+- Francisco Villaescusa-Navarro (CCA)
+- ChangHoon Hahn (Berkeley)
+- Emanuele Castorina (Berkeley)
+- Arka Banerjee (Stanford)
+- Elena Massara (CCA)
+- Elena Giusarma (CCA)
+- Chi-Ting Chiang (BNL)
+- Andrej Obuljen (Waterloo)
+- David Spergel (CCA/Princeton)
+- Ben Wandelt (IAP Paris)
+- Shirley Ho (CCA/Princeton)
+- Licia Verde (Barcelona)
+- Matteo Viel (SISSA)
+- Roman Scoccimarro (NYU)
