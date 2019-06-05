@@ -217,7 +217,7 @@ def derivatives(realizations, BoxSize, snapnum, root_data, root_results,
         if myrank==0 and not(os.path.exists(folder)):  os.system('mkdir %s'%folder)
 
         # do a loop over the different probes
-        for probe in ['Pkm', 'Pkc', 'HMF', 'VSF']: 
+        for probe in probes:
 
             comm.Barrier() #synchronize threads
 
@@ -267,7 +267,7 @@ def derivatives(realizations, BoxSize, snapnum, root_data, root_results,
     if myrank>0:  return 0  #only master does this
 
     # do a loop over the different probes
-    for probe in ['Pkm', 'Pkc', 'HMF', 'VSF']:
+    for probe in probes:
 
         # create output folder if it does not exists
         folder = '%s/derivatives/%s'%(root_results,probe)
