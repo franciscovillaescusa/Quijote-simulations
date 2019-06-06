@@ -22,8 +22,9 @@ for folder in ['Om_p/', 'Ob_p/', 'Ob2_p/', 'h_p/', 'ns_p/', 's8_p/',
                'Mnu_p/', 'Mnu_pp/', 'Mnu_ppp/', 'fiducial/',
                'latin_hypercube/']:
 
-    if folder=='fiducial/':  nodes = nodes_fid
-    else:                    nodes = nodes_der
+    if   folder=='fiducial/':        nodes = nodes_fid
+    elif folder=='latin_hypercube':  nodes = nodes_lh
+    else:                            nodes = nodes_der
 
     # do a loop over the different realizations
     for i in xrange(nodes):    
