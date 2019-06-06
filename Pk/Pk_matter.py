@@ -1,6 +1,6 @@
-# This script computes the halo bispectrum in real- and redshift-space. It takes as input
+# This script computes the matter Pk in real- and redshift-space. It takes as input
 # the first and last number of the wanted realizations, the cosmology and the snapnum
-# In redshift-space it computes the bispectrum along the 3 different axes. 
+# In redshift-space it computes the power spectrum along the 3 different axes. 
 import argparse
 from mpi4py import MPI
 import numpy as np
