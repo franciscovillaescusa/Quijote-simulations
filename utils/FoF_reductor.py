@@ -16,13 +16,14 @@ snapnums = '0 1 2 3 4'
 
 folders = ['Mnu_ppp']
 #['Om_p', 'Ob_p', 'h_p', 'ns_p', 's8_p', 'Mnu_p', 'Mnu_pp', 'Mnu_ppp',
-#'Om_m', 'Ob_m', 'h_m', 'ns_m', 's8_m', 'fiducial_NCV']
+#'Om_m', 'Ob_m', 'h_m', 'ns_m', 's8_m', 'fiducial', 'latin_hypercube']
 ###################################################################################ls
 
 # do a loop over the different cosmologies
 for folder in folders:
-    if folder=='fiducial':  realizations, pairs = 15000, False
-    else:                   realizations, pairs = 500,   False
+    if   folder=='fiducial':         realizations, pairs = 15000, False
+    elif folder=='latin_hypercube':  realizations, pairs = 2000, True
+    else:                            realizations, pairs = 500,   False
 
     # find the numbers that each cpu will work with                    
     numbers = np.where(np.arange(realizations)%nprocs==myrank)[0]
