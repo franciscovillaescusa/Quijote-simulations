@@ -7,7 +7,7 @@ But they can be used for a large variety of problems.
 
 ### Features
 - 15500 simulations for a fiducial Planck cosmology
-- 1000 simulations/cosmology for 14 different cosmologies
+- 1000 (500) simulations/cosmology for 13 (2) different cosmologies
 - 4000 simulations in a latin hypercube expanding 5 cosmological parameters
 - 512^3 cold dark matter particles (+512^3 neutrino particles) per simulation
 - 5 trillions of particles at a single redshift
