@@ -13,10 +13,10 @@ But they can be used for a large variety of problems.
 - 5 trillions of particles at a single redshift
 - Boxes of 1 Gpc/h, with spatial resolution of 50 kpc/h
 - Outputs at redshifts 0, 0.5, 1, 2, 3 and 127 (initial conditions)
-- 162500 halo catalogues
-- 162500 void catalogues
-- ~ 1 million power spectra
-- ~ 1 million bispectra
+- 172500 halo catalogues
+- 172500 void catalogues
+- more than 1 million power spectra
+- more than 1 million bispectra
 - 500 Tb of data
 - 18 Million cpu hours
 - Simulations run with the TreePM code Gadget-III
