@@ -17,7 +17,7 @@ But they can be used for a large variety of problems.
 - 172500 void catalogues
 - more than 1 million power spectra
 - more than 1 million bispectra
-- 500 Tb of data
+- 750 Tb of data
 - 18 Million cpu hours
 - Simulations run with the TreePM code Gadget-III
 - Snapshots and data products (halo & void catalogues, power spectra, bispectra, pdfs...) publicly available
