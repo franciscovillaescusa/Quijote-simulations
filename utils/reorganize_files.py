@@ -28,6 +28,10 @@ files = ['balance.txt', 'cpu.txt', 'energy.txt', 'ewald_spc_table_64.dat',
 numbers = np.where(np.arange(standard_realizations)%nprocs==myrank)[0]
 for i in numbers:
 
+    ################ PERMISSIONS ###############
+    os.system('chmod -R ugo-w %s/%d/snapdir_*'%(root,i))
+    ############################################
+
     ################### ICs ####################
     # create ICs folder if it does not exists
     folder1 = '%s/%d/ICs'%(root,i)
@@ -70,6 +74,10 @@ for i in numbers:
     # do a loop over the two pairs
     for pair in [0,1]:
 
+        ################ PERMISSIONS ###############
+        os.system('chmod -R ugo-w %s/NCV_%d_%d/snapdir_*'%(root,pair,i))
+        ############################################
+        
         ################### ICs ####################
         # create ICs folder if it does not exists
         folder1 = '%s/NCV_%d_%d/ICs'%(root,pair,i)
