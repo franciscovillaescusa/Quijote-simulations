@@ -1,4 +1,4 @@
-![Quijote simulations](https://raw.githubusercontent.com/franciscovillaescusa/Quijote-simulations/master/logo.gif)
+![Quijote simulations](https://raw.githubusercontent.com/franciscovillaescusa/Quijote-simulations/master/logo.gif){ width=10% }
 
 # Quijote simulations
 The Quijote simulations are a set of 34500 N-body simulations. They are designed for two main tasks
