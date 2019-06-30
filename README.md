@@ -1,4 +1,5 @@
 <img src="https://raw.githubusercontent.com/franciscovillaescusa/Quijote-simulations/master/images/DL.png" alt="DL" width="200"/>
+<img src="https://raw.githubusercontent.com/franciscovillaescusa/Quijote-simulations/master/images/logo.gif" alt="DL" width="200"/>
 ![Quijote simulations](https://raw.githubusercontent.com/franciscovillaescusa/Quijote-simulations/master/images/logo.gif)
 <img src="https://raw.githubusercontent.com/franciscovillaescusa/Quijote-simulations/master/images/LSS.png" alt="LSS" width="200"/>
 
