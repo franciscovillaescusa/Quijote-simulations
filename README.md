@@ -42,7 +42,7 @@ There are different folders:
 
 Inside each of the above folders there is the data for the different cosmologies, e.g. h_p, fiducial, Om_m. A brief description of the different cosmologies is provided in the below table. Further details can be found in the Quijote paper.
 
-![](https://raw.githubusercontent.com/franciscovillaescusa/Quijote-simulations/master/Sims.jpg)
+![](https://raw.githubusercontent.com/franciscovillaescusa/Quijote-simulations/master/images/Sims.jpg)
 
 ### Snapshots
 The snapshots are stored in either Gadget-II format or HDF5. They can be read using the [readgadget.py](https://github.com/franciscovillaescusa/Pylians/blob/master/library/readgadget.py) and [readsnap.py](https://github.com/franciscovillaescusa/Pylians/blob/master/library/readsnap.py) scripts. If you have [Pylians](https://github.com/franciscovillaescusa/Pylians) installed you already have them.
