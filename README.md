@@ -1,6 +1,4 @@
-<center>
-<img src="https://raw.githubusercontent.com/franciscovillaescusa/Quijote-simulations/master/images/DL.png" alt="DL" width="250"/> <img src="https://raw.githubusercontent.com/franciscovillaescusa/Quijote-simulations/master/images/logo.gif" alt="DL" width="250"/> <img src="https://raw.githubusercontent.com/franciscovillaescusa/Quijote-simulations/master/images/LSS.png" alt="LSS" width="250"/>
-</center>
+<img src="https://raw.githubusercontent.com/franciscovillaescusa/Quijote-simulations/master/images/DL.png" alt="DL" width="300"/> <img src="https://raw.githubusercontent.com/franciscovillaescusa/Quijote-simulations/master/images/logo.gif" alt="DL" width="300"/> <img src="https://raw.githubusercontent.com/franciscovillaescusa/Quijote-simulations/master/images/LSS.png" alt="LSS" width="300"/>
 
 # Quijote simulations
 The Quijote simulations are a set of 34500 N-body simulations. They are designed for two main tasks
