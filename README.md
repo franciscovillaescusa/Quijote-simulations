@@ -26,7 +26,7 @@ But they can be used for a large variety of problems.
 - Snapshots and data products (halo & void catalogues, power spectra, bispectra, pdfs...) publicly available
 
 ## Data
-The data are stored in the Gordon cluster of the San Diego Supercomputer Center. It can be access through [globus](https://www.globus.org/). 
+The data is stored in the Gordon cluster of the San Diego Supercomputer Center. It can be access through [globus](https://www.globus.org/). 
 
 - Log in into [globus](https://www.globus.org/) (create an account if you dont have one)
 - In collection type Quijote_simulations
