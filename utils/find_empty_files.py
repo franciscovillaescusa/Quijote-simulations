@@ -10,18 +10,20 @@ nprocs = comm.Get_size()
 myrank = comm.Get_rank()
 
 ####################################### INPUT ###########################################
-root = '/simons/scratch/fvillaescusa/pdf_information/Pk/matter'
+root = '/simons/scratch/fvillaescusa/pdf_information/Bk/matter'
 cosmologies = ['Om_p', 'Ob_p', 'Ob2_p', 'h_p', 'ns_p', 's8_p',
                'Om_m', 'Ob_m', 'Ob2_m', 'h_m', 'ns_m', 's8_m',
-               'Mnu_p', 'Mnu_pp', 'Mnu_ppp', 'fiducial']
+               'Mnu_p', 'Mnu_pp', 'Mnu_ppp', 'fiducial',
+               'latin_hypercube']
 #########################################################################################
 
 # do a loop over the different cosmologies
 for cosmo in cosmologies:
     
     # find the number of standard and paired fixed realizations
-    if cosmo=='fiducial':  real_std, real_NCV = 15000, 250
-    else:                  real_std, real_NCV = 500,   250
+    if   cosmo=='fiducial':         real_std, real_NCV = 15000, 250
+    elif cosmo=='latin_hypercube':  real_std, real_NCV = 2000, 2000
+    else:                           real_std, real_NCV = 500,   250
 
     # do a loop over the standard realizations
     count, count_p = np.array([0]), np.array([0])
@@ -30,7 +32,9 @@ for cosmo in cosmologies:
         folder = '%s/%s/%d'%(root,cosmo,i)
         files = glob.glob(folder+'/*')
         for f in files:
-            if os.stat(f).st_size==0:  raise Exception('%s seems empty'%f)
+            if os.stat(f).st_size==0:
+                #os.system('rm %s'%f)
+                raise Exception('%s seems empty'%f)
             count_p[0] += 1
 
     # do a loop over paired fixed realizations
@@ -40,7 +44,9 @@ for cosmo in cosmologies:
             folder = '%s/%s/NCV_%d_%d'%(root,cosmo,pair,i)
             files = glob.glob(folder+'/*')
             for f in files:
-                if os.stat(f).st_size==0:  raise Exception('%s seems empty'%f)
+                if os.stat(f).st_size==0:  
+                    #os.system('rm %s'%f)
+                    raise Exception('%s seems empty'%f)
                 count_p[0] += 1
 
     comm.Reduce(count_p, count, root=0)

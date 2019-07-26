@@ -38,8 +38,8 @@ numbers = np.where(np.arange(2000)%nprocs==myrank)[0]
 # do a loop over all realizations
 for i in numbers:
     
-    snapshot_fname = '/simons/scratch/fvillaescusa/pdf_information/latin_hypercube/HR_%d/snapdir_004/snap_004'%i
-    fout = 'Image%d.png'%i
+    snapshot_fname = '/simons/scratch/fvillaescusa/pdf_information/latin_hypercube/HR_%d/snapdir_002/snap_002'%i
+    fout = 'Image%d_z=1.png'%i
 
     if not(os.path.exists(snapshot_fname+'.0.hdf5')):  continue
 
