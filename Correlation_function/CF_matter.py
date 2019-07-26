@@ -32,41 +32,39 @@ def compute_CF(snapshot, snapnum, grid, MAS, threads, NCV, pair,
     if NCV:  #paired-fixed simulations
 
         # real-space
-        fcf = '%s/%s/NCV_%d_%d/CF_%s_512_z=%s.txt'%(folder_out,cosmo,pair,i,suffix,z)
+        fcf = '%s/%s/NCV_%d_%d/CF_%s_%d_z=%s.txt'%(folder_out,cosmo,pair,i,suffix,grid,z)
         if not(os.path.exists(fcf)):
             do_RSD, axis, save_multipoles = False, 0, False
             find_CF(snapshot, snapnum, grid, MAS, do_RSD, axis, threads, ptype,
                     fcf, save_multipoles)
 
         # redshift-space
-        """
         for axis in [0,1,2]:
-            cfk = '%s/%s/NCV_%d_%d/CF_%s_RS%d_z=%s.txt'\
-                  %(folder_out,cosmo,pair,i,suffix,axis,z)
+            fcf = '%s/%s/NCV_%d_%d/CF_%s_RS%d_%d_z=%s.txt'\
+                  %(folder_out,cosmo,pair,i,suffix,axis,grid,z)
             if not(os.path.exists(fcf)):
                 do_RSD, save_multipoles = True, True
                 find_CF(snapshot, snapnum, grid, MAS, do_RSD, axis, threads, ptype,
                         fcf, save_multipoles)
-        """
 
     else:  #standard simulations
 
         # real-space
-        fcf = '%s/%s/%d/CF_%s_512_z=%s.txt'%(folder_out,cosmo,i,suffix,z)
+        fcf = '%s/%s/%d/CF_%s_%d_z=%s.txt'%(folder_out,cosmo,i,suffix,grid,z)
         if not(os.path.exists(fcf)):
             do_RSD, axis, save_multipoles = False, 0, False
             find_CF(snapshot, snapnum, grid, MAS, do_RSD, axis, threads, ptype,
                     fcf, save_multipoles)
 
         # redshift-space
-        """
         for axis in [0,1,2]:
-            fcf = '%s/%s/%d/CF_%s_RS%d_z=%s.txt'%(folder_out,cosmo,i,suffix,axis,z)
+            fcf = '%s/%s/%d/CF_%s_RS%d_%d_z=%s.txt'\
+                  %(folder_out,cosmo,i,suffix,axis,grid,z)
             if not(os.path.exists(fcf)):
                 do_RSD, save_multipoles = True, True
                 find_CF(snapshot, snapnum, grid, MAS, do_RSD, axis, threads, ptype,
                         fcf, save_multipoles)
-        """
+        
 
 
 # This routine computes and saves the correlation function
@@ -125,7 +123,7 @@ root = '/simons/scratch/fvillaescusa/pdf_information'
 folder_out = '/simons/scratch/fvillaescusa/pdf_information/CF/matter/'
 
 # CF parameters
-grid    = 512
+grid    = 1024
 MAS     = 'CIC'
 threads = 1
 #####################################################################################
