@@ -22,7 +22,7 @@ def compute_df(snapshot, ptypes, grid, fout):
 ####################################### INPUT ##########################################
 root         = '/simons/scratch/fvillaescusa/pdf_information'
 root_out     = '/simons/scratch/fvillaescusa/pdf_information/density_field'
-grid         = 32
+grid         = 128
 ptypes       = [1]
 snapnum      = 4
 cosmologies  = ['latin_hypercube']
@@ -54,7 +54,7 @@ for cosmo in cosmologies:
             os.system('mkdir %s'%folder_out)
 
         # find name of output file
-        fout = '%s/df_m_z=%s.npy'%(folder_out,z)
+        fout = '%s/df_m_%d_z=%s.npy'%(folder_out,grid,z)
         if os.path.exists(fout):  continue
     
         # compute the density field and save it to file
@@ -76,7 +76,7 @@ for cosmo in cosmologies:
                 os.system('mkdir %s'%folder_out)
 
             # find name of output file
-            fout = '%s/df_m_z=%s.npy'%(folder_out,z)
+            fout = '%s/df_m_%d_z=%s.npy'%(folder_out,grid,z)
             if os.path.exists(fout):  continue
     
             # compute the density field and save it to file
