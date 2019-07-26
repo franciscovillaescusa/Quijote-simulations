@@ -4,9 +4,9 @@ import sys,os
 
 
 ################################## INPUT #############################################
-realizations = 15000
+realizations = 500
 
-step = 100 #number of realizations each cpu will do
+step = 15 #number of realizations each cpu will do
 
 offset = 0 #the count will start from offset
 ######################################################################################
@@ -17,10 +17,9 @@ nodes = int(realizations/step)
 # do a loop over each node
 for i in xrange(nodes):
 
-    for folder in ['fiducial/']:
-#['Om_p', 'Ob2_p', 'h_p', 'ns_p', 's8_p',
-#'Om_m', 'Ob2_m', 'h_m', 'ns_m', 's8_m',
-#'Mnu_p', 'Mnu_pp', 'Mnu_ppp']:
+    for folder in ['Om_p', 'Ob2_p', 'h_p', 'ns_p', 's8_p',
+                   'Om_m', 'Ob2_m', 'h_m', 'ns_m', 's8_m',
+                   'Mnu_p', 'Mnu_pp', 'Mnu_ppp', 'fiducial']:
 
 
         a = """#!/bin/bash

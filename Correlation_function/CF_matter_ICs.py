@@ -32,11 +32,11 @@ def compute_CF(snapshot, snapnum, grid, MAS, threads, NCV, pair,
     if NCV:  #paired-fixed simulations
 
         # real-space
-        fcf = '%s/%s/NCV_%d_%d/CF_%s_512_z=%s.txt'%(folder_out,cosmo,pair,i,suffix,z)
-        if not(os.path.exists(fcf)):
-            do_RSD, axis, save_multipoles = False, 0, False
-            find_CF(snapshot, snapnum, grid, MAS, do_RSD, axis, threads, ptype,
-                    fcf, save_multipoles)
+        fcf = '%s/%s/NCV_%d_%d/CF_%s_z=%s.txt'%(folder_out,cosmo,pair,i,suffix,z)
+        #if not(os.path.exists(fcf)):
+        do_RSD, axis, save_multipoles = False, 0, False
+        find_CF(snapshot, snapnum, grid, MAS, do_RSD, axis, threads, ptype,
+                fcf, save_multipoles)
 
         # redshift-space
         """
@@ -52,10 +52,10 @@ def compute_CF(snapshot, snapnum, grid, MAS, threads, NCV, pair,
     else:  #standard simulations
 
         # real-space
-        fcf = '%s/%s/%d/CF_%s_512_z=%s.txt'%(folder_out,cosmo,i,suffix,z)
-        if not(os.path.exists(fcf)):
-            do_RSD, axis, save_multipoles = False, 0, False
-            find_CF(snapshot, snapnum, grid, MAS, do_RSD, axis, threads, ptype,
+        fcf = '%s/%s/%d/CF_%s_z=%s.txt'%(folder_out,cosmo,i,suffix,z)
+        #if not(os.path.exists(fcf)):
+        do_RSD, axis, save_multipoles = False, 0, False
+        find_CF(snapshot, snapnum, grid, MAS, do_RSD, axis, threads, ptype,
                     fcf, save_multipoles)
 
         # redshift-space
@@ -73,7 +73,7 @@ def compute_CF(snapshot, snapnum, grid, MAS, threads, NCV, pair,
 def find_CF(snapshot, snapnum, grid, MAS, do_RSD, axis, threads, ptype,
             fcf, save_multipoles):
 
-    if os.path.exists(fcf):  return 0
+    #if os.path.exists(fcf):  return 0
     
     # read header
     head     = readgadget.header(snapshot)
@@ -127,11 +127,11 @@ folder_out = '/simons/scratch/fvillaescusa/pdf_information/CF/matter/'
 # CF parameters
 grid    = 512
 MAS     = 'CIC'
-threads = 1
+threads = 2
 #####################################################################################
 
 # find the redshift
-z = {4:0, 3:0.5, 2:1, 1:2, 0:3}[snapnum]
+z = 127
 
 # create output folder if it does not exist
 if myrank==0 and not(os.path.exists(folder_out+cosmo)):  
@@ -147,9 +147,8 @@ numbers = np.arange(args.first, args.last)[numbers]
 for i in numbers:
 
     # find the snapshot
-    snapshot = '%s/%s/%d/snapdir_%03d/snap_%03d'%(root,cosmo,i,snapnum,snapnum)
-    if not(os.path.exists(snapshot+'.0')) and not(os.path.exists(snapshot+'.0.hdf5')):
-        continue
+    snapshot = '%s/%s/%d/ICs/ics'%(root,cosmo,i)
+    if not(os.path.exists(snapshot+'.0')):  continue
 
     # create output folder if it does not exists
     if not(os.path.exists('%s/%s/%d'%(folder_out,cosmo,i))):
@@ -181,10 +180,8 @@ for i in numbers:
 for i in numbers:
 
     for pair in [0,1]:
-        snapshot = '%s/%s/NCV_%d_%d/snapdir_%03d/snap_%03d'\
-                   %(root,cosmo,pair,i,snapnum,snapnum)
-        if not(os.path.exists(snapshot+'.0')) and not(os.path.exists(snapshot+'.0.hdf5')):
-            continue
+        snapshot = '%s/%s/NCV_%d_%d/ICs/ics'%(root,cosmo,pair,i)
+        if not(os.path.exists(snapshot+'.0')):  continue
 
         # create output folder if it does not exists
         if not(os.path.exists('%s/%s/NCV_%d_%d'%(folder_out,cosmo,pair,i))):
