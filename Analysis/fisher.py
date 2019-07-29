@@ -16,24 +16,26 @@ myrank = comm.Get_rank()
 
 ##################################### INPUT ###########################################
 # folders with the data and output files
-root_data    = '/home/fvillaescusa/data/pdf_information/'
-root_results = '/home/fvillaescusa/data/pdf_information/results/'
+root_data    = '/simons/scratch/fvillaescusa/pdf_information/'
+root_results = '/simons/scratch/fvillaescusa/pdf_information/results/'
 
 # general parameters
 parameters       = ['Om', 'Ob2', 'h', 'ns', 's8', 'Mnu']
 BoxSize          = 1000.0  #Mpc/h
 snapnum          = 4       #z=0
-realizations_Cov = 15000   #number of realizations for the covariance
+realizations_Cov = 1000   #number of realizations for the covariance
 realizations_der = 250     #number of realizations for the derivatives
 Volume           = 1.0     #(Gpc/h)^3
 
 # parameters of the Pk_m
-kmax_m  = 0.2 #h/Mpc
-do_Pkm  = False
+kmax_m     = 1.0 #h/Mpc
+folder_Pkm = '/simons/scratch/fvillaescusa/pdf_information/Pk/matter/'
+do_Pkm     = True
 
 # parameters of the Pk_cb
-kmax_c = 0.2 #h/Mpc
-do_Pkc = True
+kmax_c     = 0.2 #h/Mpc
+folder_Pkc = '/simons/scratch/fvillaescusa/pdf_information/Pk/matter/'
+do_Pkc     = False
 
 # parameters of the VSF
 Radii       = np.array([41, 39, 37, 35, 33, 31, 29, 27, 25, 23, 21, 19, 17, 
@@ -43,13 +45,15 @@ VSF_bins    = 29
 Rmin        = 4.0   #Mpc/h
 Rmax        = 33.0  #Mpc/h
 delete_bins = [1,2,3,5,7,9]
-do_VSF      = True
+folder_VSF  = '/simons/scratch/fvillaescusa/pdf_information/Voids/'
+do_VSF      = False
 
 # parameters of the HMF
-Nmin     = 100.0    #minimum number of CDM particles in a halo
-Nmax     = 10000.0  #maximum number of CDM particles in a halo
-HMF_bins = 15       #number of bins in the HMF
-do_HMF   = True
+Nmin       = 100.0    #minimum number of CDM particles in a halo
+Nmax       = 10000.0  #maximum number of CDM particles in a halo
+HMF_bins   = 15       #number of bins in the HMF
+folder_HMF = '/simons/scratch/fvillaescusa/pdf_information/Halos/'
+do_HMF     = False
 #######################################################################################
 
 # find the corresponding redshift
@@ -61,8 +65,11 @@ z = {4:0, 3:0.5, 2:1, 1:2, 0:3}[snapnum]
 # X is an array with the value of the statistics in each bin
 # Cov is the covariance matrix with size bins x bins
 bins, X, Cov = AL.covariance(realizations_Cov, BoxSize, snapnum, root_data, root_results, 
-                             kmax_m, kmax_c, grid, Rmin, Rmax, VSF_bins, delete_bins,
-                             HMF_bins, Nmin, Nmax)
+                             kmax_m, folder_Pkm,
+                             kmax_c, folder_Pkc,
+                             Radii,  folder_VSF,
+                             HMF_bins, Nmin, Nmax, folder_HMF)
+sys.exit()
 ###################################################################################
 
 ########################## COMPUTE ALL DERIVATIVES ################################

@@ -14,7 +14,7 @@ root = '/home/fvillaescusa/data/pdf_information/'
 ################################## INPUT ##########################################
 snapnums = '0 1 2 3 4'
 
-folders = ['Mnu_ppp']
+folders = ['fiducial_ZA']
 #['Om_p', 'Ob_p', 'h_p', 'ns_p', 's8_p', 'Mnu_p', 'Mnu_pp', 'Mnu_ppp',
 #'Om_m', 'Ob_m', 'h_m', 'ns_m', 's8_m', 'fiducial', 'latin_hypercube']
 ###################################################################################ls
@@ -22,7 +22,8 @@ folders = ['Mnu_ppp']
 # do a loop over the different cosmologies
 for folder in folders:
     if   folder=='fiducial':         realizations, pairs = 15000, False
-    elif folder=='latin_hypercube':  realizations, pairs = 2000, True
+    elif folder=='latin_hypercube':  realizations, pairs = 2000,  True
+    elif folder=='fiducial_ZA':      realizations, pairs = 100,   False
     else:                            realizations, pairs = 500,   False
 
     # find the numbers that each cpu will work with                    

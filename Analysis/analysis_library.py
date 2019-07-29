@@ -78,10 +78,10 @@ def read_covariance(f_Cov):
 
 # This routine computes the covariance matrix of all probes
 def covariance(realizations, BoxSize, snapnum, root_data, root_results,
-               kmax_m=0,                                           #Pkm parameters
-               kmax_c=0,                                           #Pkc parameters
-               Radii=0,                                            #VSF parameters    
-               HMF_bins=0, Nmin=0, Nmax=0):                        #HMF parameters
+               kmax_m, folder_Pkm,                           #Pkm parameters
+               kmax_c, folder_Pkc,                           #Pkc parameters
+               Radii,  folder_VSF,                           #VSF parameters    
+               HMF_bins, Nmin, Nmax, folder_HMF):            #HMF parameters
 
     # find redshift and define the working folders
     z = {4:0, 3:0.5, 2:1, 1:2, 0:3}[snapnum]
@@ -91,17 +91,18 @@ def covariance(realizations, BoxSize, snapnum, root_data, root_results,
     comm.Barrier()
 
     # perform checks and compute binning
-    Pkm_bins, mean_km      = binning_Pk(root_data+'Pk/fiducial/', z, kmax_m)  #Pkm
-    Pkc_bins, mean_kc      = binning_Pk(root_data+'Pk/fiducial/', z, kmax_c)  #Pkc
-    bins_HMF, dN, Nmean    = binning_HMF(Nmin, Nmax, HMF_bins)                #HMF
-    VSF_bins, dR, Rmean    = binning_VSF(Radii)                               #VSF
+    Pkm_bins, mean_km   = binning_Pk(folder_Pkm,  z, kmax_m)  #Pkm
+    Pkc_bins, mean_kc   = binning_Pk(folder_Pkc,  z, kmax_c)  #Pkc
+    bins_HMF, dN, Nmean = binning_HMF(Nmin, Nmax, HMF_bins)   #HMF
+    VSF_bins, dR, Rmean = binning_VSF(Radii)                  #VSF
 
     # find the vector with the X-values (only needed to save the covariances)
     mean = np.hstack([mean_km, mean_kc, Nmean, Rmean])
 
     # find the suffix name
-    suffix = '%d_Pkm_%.2f_Pkc_%.2f_HMF_%.1e_%.1e_%d_VSF_%s_z=%s.txt'\
-        %(realizations, kmax_m, kmax_c, Nmin, Nmax, HMF_bins, Radii, z)
+    suffix = '%d_Pkm_%.2f_Pkc_%.2f_HMF_%.1e_%.1e_%d_VSF_%.1f_%.1f_%d_z=%s.txt'\
+        %(realizations, kmax_m, kmax_c, Nmin, Nmax, HMF_bins, Radii[0], Radii[-1],
+          len(Radii), z)
 
     # compute the total number of bins
     bins = Pkm_bins + Pkc_bins + HMF_bins + VSF_bins
@@ -109,7 +110,7 @@ def covariance(realizations, BoxSize, snapnum, root_data, root_results,
         print '\n%d bins: %d(Pkm) + %d(Pkcb) + %d(HMF) + %d(VSF)\n'\
             %(bins, Pkm_bins, Pkc_bins, HMF_bins, VSF_bins)
 
-    # find the name of the output files; if they exists, just read them
+    # find the name of the output files; if they exist, just read them
     fout  = '%s/Cov_%s'%(folder,suffix)
     fout1 = '%s/Cov_norm_%s'%(folder,suffix)
     if os.path.exists(fout):  return read_covariance(fout)
@@ -124,15 +125,17 @@ def covariance(realizations, BoxSize, snapnum, root_data, root_results,
     # each cpu reads its corresponding data
     numbers = np.where(np.arange(realizations)%nprocs==myrank)[0]
     for i in numbers:
-        if i%1000==0:  print i
-        folder_Pk  = '%s/Pk/fiducial/%d'%(root_data,i)
-        folder_HMF = '%s/Halos/fiducial/%d'%(root_data,i)
-        folder_VSF = '%s/Voids/fiducial/%d'%(root_data,i)
+        #if i%1000==0:  print i
+        print i
+        Pkm_folder = '%s/fiducial/%d'%(folder_Pkm,i)
+        Pkc_folder = '%s/fiducial/%d'%(folder_Pkc,i)
+        HMF_folder = '%s/fiducial/%d'%(folder_HMF,i)
+        VSF_folder = '%s/fiducial/%d'%(folder_VSF,i)
         dumb = np.array([], dtype=np.float64)
-        dumb = np.hstack([dumb, read_Pkm_data(folder_Pk,z,kmax_m)])
-        dumb = np.hstack([dumb, read_Pkc_data(folder_Pk,z,kmax_c)])
-        dumb = np.hstack([dumb, read_HMF_data(folder_HMF,snapnum,bins_HMF,dN,BoxSize)])
-        dumb = np.hstack([dumb, read_VSF_data(folder_VSF,z)])
+        dumb = np.hstack([dumb, read_Pkm_data(Pkm_folder,z,kmax_m)])
+        dumb = np.hstack([dumb, read_Pkc_data(Pkc_folder,z,kmax_c)])
+        dumb = np.hstack([dumb, read_HMF_data(HMF_folder,snapnum,bins_HMF,dN,BoxSize)])
+        dumb = np.hstack([dumb, read_VSF_data(VSF_folder,z)])
         data_p[i] = dumb
 
     # join the data of the different cpus into a single matrix (only for master)
@@ -159,8 +162,8 @@ def covariance(realizations, BoxSize, snapnum, root_data, root_results,
 
     # compute the normalized covariance matrix
     f = open(fout, 'w');  g = open(fout1, 'w')
-    f.write('# %d %d %d %d\n'%(Pkm_bins, Pkc_bins, HMF_bins, VSF_bins2)) #header (#-bins)
-    g.write('# %d %d %d %d\n'%(Pkm_bins, Pkc_bins, HMF_bins, VSF_bins2)) #header (#-bins)
+    f.write('# %d %d %d %d\n'%(Pkm_bins, Pkc_bins, HMF_bins, VSF_bins)) #header (#-bins)
+    g.write('# %d %d %d %d\n'%(Pkm_bins, Pkc_bins, HMF_bins, VSF_bins)) #header (#-bins)
     for i in xrange(bins):
         for j in xrange(bins):
             Cor[i,j] = Cov[i,j]/np.sqrt(Cov[i,i]*Cov[j,j])
@@ -325,7 +328,7 @@ def derivatives(realizations, BoxSize, snapnum, root_data, root_results,
 # This routine determines the number of bins until kmax
 def binning_Pk(folder,z,kmax):
     if kmax==0:  raise Exception('kmax have to be larger than 0')
-    fin = '%s/0/Pk_m_z=%s.txt'%(folder,z)         #take the first realization
+    fin = '%s/fiducial/0/Pk_m_z=%s.txt'%(folder,z)         #take the first realization
     k, Pk = np.loadtxt(fin, unpack=True)          #read its power spectrum
     indexes = np.where(k<=kmax)[0]
     return len(indexes), k[indexes]
@@ -353,7 +356,7 @@ def read_Pkc_data(folder,z,kmax):
 def binning_VSF(Radii):
     dR    = Radii[1:] - Radii[:-1]       #size of the bin
     Rmean = 0.5*(Radii[1:] + Radii[:-1]) #value of R in the intervals
-    return len(Radii), dR, Rmean
+    return len(Radii)-1, dR, Rmean
 
 # This routine computes the VSF for a given realization
 def read_VSF_data(folder, z):
