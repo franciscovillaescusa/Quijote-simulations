@@ -152,6 +152,7 @@ R, xi0, xi2, xi4 = np.loadtxt('/home/fvillaescusa/Quijote/CF/matter/fiducial/0/C
 - Elena Massara (CCA)
 - Elena Giusarma (CCA)
 - Chi-Ting Chiang (BNL)
+- Ana Maria Delgado (CUNY)
 - Andrej Obuljen (Waterloo)
 - David Spergel (CCA/Princeton)
 - Ben Wandelt (IAP Paris)
