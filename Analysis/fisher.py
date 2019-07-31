@@ -23,12 +23,12 @@ root_results = '/simons/scratch/fvillaescusa/pdf_information/results/'
 parameters       = ['Om', 'Ob2', 'h', 'ns', 's8', 'Mnu']
 BoxSize          = 1000.0  #Mpc/h
 snapnum          = 4       #z=0
-realizations_Cov = 1000   #number of realizations for the covariance
-realizations_der = 250     #number of realizations for the derivatives
+realizations_Cov = 15000   #number of realizations for the covariance
+realizations_der = 500     #number of realizations for the derivatives
 Volume           = 1.0     #(Gpc/h)^3
 
 # parameters of the Pk_m
-kmax_m     = 1.0 #h/Mpc
+kmax_m     = 0.05 #h/Mpc
 folder_Pkm = '/simons/scratch/fvillaescusa/pdf_information/Pk/matter/'
 do_Pkm     = True
 
@@ -69,15 +69,17 @@ bins, X, Cov = AL.covariance(realizations_Cov, BoxSize, snapnum, root_data, root
                              kmax_c, folder_Pkc,
                              Radii,  folder_VSF,
                              HMF_bins, Nmin, Nmax, folder_HMF)
-sys.exit()
 ###################################################################################
 
 ########################## COMPUTE ALL DERIVATIVES ################################
 # compute the mean values of the different statistics for all cosmologies and 
 # compute the derivatives of the statistics with respect to the parameters
 AL.derivatives(realizations_der, BoxSize, snapnum, root_data, root_results, 
-               kmax_m, kmax_c, grid, Rmin, Rmax, VSF_bins, delete_bins, 
-               HMF_bins, Nmin, Nmax)
+               ['Pkm','Pkc','HMF','VSF'],
+               kmax_m, folder_Pkm,
+               kmax_c, folder_Pkc,
+               Radii, folder_VSF,
+               HMF_bins, Nmin, Nmax, folder_HMF)
 ###################################################################################
 
 if myrank>0:  sys.exit() #here finishes the parallelism 
@@ -98,18 +100,18 @@ all_bins   = Cov.shape[0]    #number of bins in the (sub)-covariance matrix
 params_num = len(parameters) #number of cosmological parameters
 
 # find the different suffixes
-suffix_Pkm = 'Pkm_%d_%.2f_z=%s.txt'%(realizations_der, kmax_m, z)
-suffix_Pkc = 'Pkc_%d_%.2f_z=%s.txt'%(realizations_der, kmax_c, z)
+suffix_Pkm = 'Pk_m_%d_%.2f_z=%s.txt'%(realizations_der, kmax_m, z)
+suffix_Pkc = 'Pk_c_%d_%.2f_z=%s.txt'%(realizations_der, kmax_c, z)
 suffix_HMF = 'HMF_%d_%.1e_%.1e_%d_z=%s.txt'%(realizations_der, Nmin, Nmax, HMF_bins, z)
-suffix_VSF = 'VSF_%d_%.1e_%.1e_%d_%s_z=%s.txt'\
-             %(realizations_der, Rmin, Rmax, VSF_bins, delete_bins, z)
+suffix_VSF = 'VSF_%d_%.1f_%.1f_%d_z=%s.txt'\
+             %(realizations_der, Radii[0], Radii[-1], len(Radii), z)
 
 # read the HMF of the fiducial cosmology
-f = '%s/fiducial_NCV/mean_HMF_%d_%.1e_%.1e_%d_z=%s.txt'\
-    %(root_results, realizations_der, Nmin, Nmax, HMF_bins, z)
-N_fiducial, HMF_fiducial, dHMF_fiducial = np.loadtxt(f, unpack=True)
-if not(np.allclose(N_fiducial, N, rtol=1e-8, atol=1e-10)):  
-    raise Exception('N-values differ in the fiducial HMF!!!')
+#f = '%s/fiducial_NCV/mean_HMF_%d_%.1e_%.1e_%d_z=%s.txt'\
+#    %(root_results, realizations_der, Nmin, Nmax, HMF_bins, z)
+#N_fiducial, HMF_fiducial, dHMF_fiducial = np.loadtxt(f, unpack=True)
+#if not(np.allclose(N_fiducial, N, rtol=1e-8, atol=1e-10)):  
+#    raise Exception('N-values differ in the fiducial HMF!!!')
 ###################################################################################
 
 ############################## READ DERIVATIVES ###################################
@@ -123,14 +125,20 @@ for i,parameter in enumerate(parameters):
     derivat = np.array([], dtype=np.float64)
         
     if do_Pkm:  #read the P_m(k) derivatives
-        f = '%s/derivatives/derivative_%s_%s'%(root_results, parameter, suffix_Pkm)
+        f = '%s/derivatives/Pkm/derivative_%s_%s'%(root_results, parameter, suffix_Pkm)
+        if parameter=='Mnu':
+            f = '%s/derivatives/Pkm/derivative_Mnu_0.4-0.2-0.1-0.0_%s'\
+                %(root_results, suffix_Pkm)
+            #f = '%s/derivatives/Pkm/derivative_Mnu_0.1-0.0_%s'%(root_results, suffix_Pkm)
+            #f = '%s/derivatives/Pkm/derivative_Mnu_0.2-0.1-0.0_%s'\
+            #    %(root_results, suffix_Pkm)
         k_der, der_Pk = np.loadtxt(f, unpack=True)
         if not(np.allclose(k_der, km, rtol=1e-8, atol=1e-10)):  
             raise Exception('k-values differ in the Pk derivatives!!!')
         derivat = np.hstack([derivat, der_Pk])
 
     if do_Pkc:  #read the P_cb(k) derivatives
-        f = '%s/derivatives/derivative_%s_%s'%(root_results, parameter, suffix_Pkc)
+        f = '%s/derivatives/Pkc/derivative_%s_%s'%(root_results, parameter, suffix_Pkc)
         k_der, der_Pk = np.loadtxt(f, unpack=True)
         if not(np.allclose(k_der, kc, rtol=1e-8, atol=1e-10)):  
             raise Exception('k-values differ in the Pk derivatives!!!')
@@ -150,7 +158,7 @@ for i,parameter in enumerate(parameters):
         derivat = np.hstack([derivat, der_HMF])
 
     if do_VSF:  #read the VSF derivatives
-        f = '%s/derivatives/derivative_%s_%s'%(root_results, parameter, suffix_VSF)
+        f = '%s/derivatives/VSF/derivative_%s_%s'%(root_results, parameter, suffix_VSF)
         R_der, der_VSF = np.loadtxt(f, unpack=True)
         if not(np.allclose(R_der, R, rtol=1e-8, atol=1e-10)):  
             raise Exception('k-values differ in the Pk derivatives!!!')
