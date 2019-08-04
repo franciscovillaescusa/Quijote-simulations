@@ -16,7 +16,7 @@ for cosmo in cosmologies:
     # find the number of standard and paired fixed simulations
     paired_fixed_realizations = 0 #250
     if   cosmo=='fiducial':      standard_realizations = 15000
-    elif cosmo=='fiducial_ZA':   standard_realizations = 100
+    elif cosmo=='fiducial_ZA':   standard_realizations = 500
     else:                        standard_realizations = 500
      
     # find the name of the output halo folder containing all results
