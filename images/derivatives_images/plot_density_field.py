@@ -15,11 +15,11 @@ nprocs = comm.Get_size()
 myrank = comm.Get_rank()
 
 ################################# INPUT #######################################
-x_min = 0.0;  x_max = 500.0
-y_min = 0.0;  y_max = 500.0
-z_min = 0.0;  z_max = 10.0
+x_min = 0.0;  x_max = 250.0
+y_min = 0.0;  y_max = 250.0
+z_min = 0.0;  z_max = 15.0
 
-dims   = 512
+dims   = 250
 ptypes = [1]   # 0-Gas, 1-CDM, 2-NU, 4-Stars; can deal with several species
 plane  = 'XY'  #'XY','YZ' or 'XZ'
 MAS    = 'PCS' #'NGP', 'CIC', 'TSC', 'PCS' 
@@ -61,7 +61,7 @@ for cosmo in ['Om','Ob2','h','ns','s8','Mnu']:
             overdensity = PL.density_field_2D(snapshot_fname, x_min, x_max, y_min, y_max, 
                                               z_min, z_max, dims, ptypes, plane, MAS, 
                                               save_density_field)
-        np.save('%s_%s_z=0.npy'%(cosmo,suffix), overdensity)
+        np.save('%s_%s_new_z=0.npy'%(cosmo,suffix), overdensity)
 
 
 snapshot_fname = '/simons/scratch/fvillaescusa/pdf_information/fiducial/0/snapdir_004/snap_004'
@@ -83,7 +83,7 @@ else:
     overdensity = PL.density_field_2D(snapshot_fname, x_min, x_max, y_min, y_max, 
                                       z_min, z_max, dims, ptypes, plane, MAS, 
                                       save_density_field)
-np.save('fiducial_z=0.npy', overdensity)
+np.save('fiducial_new_z=0.npy', overdensity)
 
 
 
