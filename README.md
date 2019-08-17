@@ -12,7 +12,7 @@ But they can be used for a large variety of problems.
 - Simulations run with the TreePM code Gadget-III
 - More than 35 Million cpu hours used to run the simulations
 - 17000 simulations for a fiducial Planck cosmology
-- More than 500 simulations/cosmology for 15 different cosmologies
+- Between 500 and 1000 simulations/cosmology for 17 different cosmologies
 - 11000 simulations in different latin-hypercubes 
 - More than 8.5 trillions of particles at a single redshift
 - Billions of halos and voids identified
