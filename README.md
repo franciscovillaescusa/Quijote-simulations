@@ -144,6 +144,22 @@ f.close()
 
 ### Power spectra
 
+The format of the power spectra are:
+- k | P(k) for power spectra in real-space
+- k | P0(k) | P2(k) | P4(k) for power spectra in redshift-space
+where P0(k), P2(k) and P4(k) are the monopole, quadrupole and hexadecapole, respectively.
+The units of k are h/Mpc, while for the power spectra are (Mpc/h)^3.
+
+In redshift-space there are three different files for each realization/redshift. These have been
+computed by placing the redshift-space distortions along the three different axes.
+
+In python, the files can be read as 
+
+```python
+k, Pk = np.loadtxt('/home/fvillaescusa/Quijote/Pk/matter/fiducial/3/Pk_m_z=0.txt', unpack=True)
+k, Pk0, Pk2, Pk4 = np.loadtxt('/home/fvillaescusa/Quijote/Pk/matter/fiducial/3/Pk_m_RS1_z=0.txt', unpack=True)
+```
+
 ### Marked power spectra
 
 ### Correlation functions
