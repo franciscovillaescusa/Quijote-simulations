@@ -38,7 +38,9 @@ There are different folders:
 - __Halos__. This folder contains the halo catalogues
 - __Voids__. This folder contains the void catalogues
 - __Pk__. This folder contains the power spectra
+- __Marked_Pk__. This folder contains the marked power spectra
 - __Bk__. This folder contains the bispectra 
+- __CF__. This folder contains the correlation functions
 - __PDF__. This folder contains the pdfs
 
 Inside each of the above folders there is the data for the different cosmologies, e.g. h_p, fiducial, Om_m. A brief description of the different cosmologies is provided in the below table. Further details can be found in the Quijote paper.
