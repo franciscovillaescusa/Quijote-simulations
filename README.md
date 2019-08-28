@@ -128,13 +128,16 @@ The void catalogues are stored as hdf5 files. They contain the following blocks:
 
 In python, the files can be read as
 ```python
-import h5py 
+import h5py
+
 f = h5py.File('/home/fvillaescusa/Quijote/Voids/fiducial/0/void_catalogue_m_z=0.hdf5', 'r')
-pos        = f['pos'][:]       #void center positions in Mpc/h
-radius     = f['radius'][:]    #void radii in Mpc/h
-VSF        = f['VSF'][:]       #VSF (#voids/dR/Volume)
-VSF_Rbins  = f['VSF_Rbins'][:] #VSF radii in Mpc/h
+pos        = f['pos'][:]        #void center positions in Mpc/h
+radius     = f['radius'][:]     #void radii in Mpc/h
+VSF        = f['VSF'][:]        #VSF (#voids/dR/Volume)
+VSF_Rbins  = f['VSF_Rbins'][:]  #VSF radii in Mpc/h
 parameters = f['parameters'][:] #parameters used to run the void finder
+
+f.close()
 ```
 
 ### Power spectra
