@@ -156,6 +156,8 @@ computed by placing the redshift-space distortions along the three different axe
 In python, the files can be read as 
 
 ```python
+import numpy as np
+
 k, Pk = np.loadtxt('/home/fvillaescusa/Quijote/Pk/matter/fiducial/3/Pk_m_z=0.txt', unpack=True)
 k, Pk0, Pk2, Pk4 = np.loadtxt('/home/fvillaescusa/Quijote/Pk/matter/fiducial/3/Pk_m_RS1_z=0.txt', unpack=True)
 ```
@@ -177,6 +179,8 @@ computed by placing the redshift-space distortions along the three different axe
 In python, the files can be read as 
 
 ```python
+import numpy as np
+
 R, xi = np.loadtxt('/home/fvillaescusa/Quijote/CF/matter/fiducial/0/CF_m_1024_z=0.txt', unpack=True)
 R, xi0, xi2, xi4 = np.loadtxt('/home/fvillaescusa/Quijote/CF/matter/fiducial/0/CF_m_RS0_1024_z=0.txt', unpack=True)
 ```
