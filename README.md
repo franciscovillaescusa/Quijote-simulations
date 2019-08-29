@@ -147,6 +147,7 @@ f.close()
 The format of the power spectra are:
 - k | P(k) for power spectra in real-space
 - k | P0(k) | P2(k) | P4(k) for power spectra in redshift-space
+
 where P0(k), P2(k) and P4(k) are the monopole, quadrupole and hexadecapole, respectively.
 The units of k are h/Mpc, while for the power spectra are (Mpc/h)^3.
 
@@ -169,6 +170,7 @@ k, Pk0, Pk2, Pk4 = np.loadtxt('/home/fvillaescusa/Quijote/Pk/matter/fiducial/3/P
 The format of the correlation functions are:
 - R | xi(R)  for correlation functions in real-space
 - R | xi0(R) | xi2(R) | xi4(R) for correlation functions in redshift-space
+
 where xi0(R), xi2(R) and xi4(R) are the monopole, quadrupole and hexadecapole, respectively.
 The units of R are Mpc/h, while the different xi are dimensionless.
 
@@ -191,6 +193,7 @@ R, xi0, xi2, xi4 = np.loadtxt('/home/fvillaescusa/Quijote/CF/matter/fiducial/0/C
 
 The format of the PDF files are:
 - delta | pdf
+
 where delta is the density contrast (rho/< rho > - 1).
 	
 In python, the files can be read as
