@@ -191,7 +191,7 @@ R, xi0, xi2, xi4 = np.loadtxt('/home/fvillaescusa/Quijote/CF/matter/fiducial/0/C
 
 The format of the PDF files are:
 - delta | pdf
-where delta is the density contrast (rho/<rho> - 1).
+where delta is the density contrast (rho/< rho > - 1).
 	
 In python, the files can be read as
 
