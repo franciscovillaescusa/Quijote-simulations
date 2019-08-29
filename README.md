@@ -189,6 +189,18 @@ R, xi0, xi2, xi4 = np.loadtxt('/home/fvillaescusa/Quijote/CF/matter/fiducial/0/C
 
 ### PDFs
 
+The format of the PDF files are:
+- delta | pdf
+where delta is the density contrast (rho/<rho> - 1).
+	
+In python, the files can be read as
+
+```python
+import numpy as np
+
+delta, pdf = np.loadtxt('/home/fvillaescusa/Quijote/PDF/matter/latin_hypercube/0/PDF_m_5.0_z=0.txt', unpack=True)
+```
+
 ## Team
 - Francisco Villaescusa-Navarro (CCA)
 - ChangHoon Hahn (Berkeley)
