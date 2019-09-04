@@ -165,6 +165,20 @@ k, Pk0, Pk2, Pk4 = np.loadtxt('/home/fvillaescusa/Quijote/Pk/matter/fiducial/3/P
 
 ### Marked power spectra
 
+The format of the marked power spectra files is:
+- k | M(k)  
+
+where M(k) is the marked power spectrum. 
+The unit of k is h/Mpc, while the one of M(k) is (Mpc/h)^3.
+
+In python, the files can be read as 
+
+```python
+import numpy as np
+
+k, Mk = np.loadtxt(FILENAME, unpack=True)
+```
+
 ### Correlation functions
 
 The format of the correlation functions are:
