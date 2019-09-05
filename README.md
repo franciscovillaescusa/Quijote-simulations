@@ -42,6 +42,8 @@ There are different folders:
 - __Bk__. This folder contains the bispectra 
 - __CF__. This folder contains the correlation functions
 - __PDF__. This folder contains the pdfs
+- __density_field__. This folder contains the 3D density fields
+- __density_field_2D__. This folder contains the 2D density fields
 
 Inside each of the above folders there is the data for the different cosmologies, e.g. h_p, fiducial, Om_m. A brief description of the different cosmologies is provided in the below table. Further details can be found in the Quijote paper.
 
