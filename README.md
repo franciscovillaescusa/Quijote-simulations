@@ -11,13 +11,13 @@ But they can be used for a large variety of problems.
 ### Features
 - Simulations run with the TreePM code Gadget-III
 - More than 35 Million CPU hours 
-- Boxes of 1 Gpc/h. Combined total volume of 43000 (Gpc/h)^3
+- Boxes of 1 Gpc/h. Combined total volume of 43100 (Gpc/h)^3
 - 17100 simulations for a fiducial Planck cosmology
 - Between 500 and 1000 simulations/cosmology for 17 different cosmologies
 - 11000 simulations in different latin-hypercubes 
 - More than 8.5 trillions of particles at a single redshift
 - Billions of halos and voids identified
-- Snapshots at redshifts 0, 0.5, 1, 2, 3 and 127 (initial conditions)
+- Full snapshots at redshifts 0, 0.5, 1, 2, 3 and 127 (initial conditions)
 - More than 200000 halo catalogues
 - More than 200000 void catalogues
 - More than 1 million power spectra
