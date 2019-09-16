@@ -287,10 +287,10 @@ delta, pdf = np.loadtxt('/home/fvillaescusa/Quijote/PDF/matter/latin_hypercube/0
 - Roman Scoccimarro (NYU)
 - Licia Verde (Barcelona)
 - Matteo Viel (SISSA)
-- Shirley Ho (CCA/Princeton)
-- Stephane Mallat (ENS, College de France, Paris)
-- Ben Wandelt (IAP Paris)
-- David Spergel (CCA/Princeton)
+- Shirley Ho (Flatiron/Princeton)
+- Stephane Mallat (ENS/College de France)
+- Ben Wandelt (IAP, Paris)
+- David Spergel (Flatiron/Princeton)
 
 
 
