@@ -1,3 +1,4 @@
+
 # This script reads the original FoF files and compress them into a single file.
 # This helps reducing the size of the files and make its reading much faster
 from mpi4py import MPI
@@ -5,16 +6,17 @@ import numpy as np
 import sys,os
 import readfof
 
-###### MPI DEFINITIONS ######                                      
+###### MPI DEFINITIONS ######                        
 comm   = MPI.COMM_WORLD
 nprocs = comm.Get_size()
 myrank = comm.Get_rank()
 
-root = '/home/fvillaescusa/data/pdf_information/'
+root = '/simons/scratch/fvillaescusa/pdf_information/'
+#root = '/simons/scratch/fvillaescusa/pdf_information/Halos/'
 ################################## INPUT ##########################################
 snapnums = '0 1 2 3 4'
 
-folders = ['fiducial_ZA']
+folders = ['fiducial_HR']
 #['Om_p', 'Ob_p', 'h_p', 'ns_p', 's8_p', 'Mnu_p', 'Mnu_pp', 'Mnu_ppp',
 #'Om_m', 'Ob_m', 'h_m', 'ns_m', 's8_m', 'fiducial', 'latin_hypercube']
 ###################################################################################ls
@@ -22,8 +24,10 @@ folders = ['fiducial_ZA']
 # do a loop over the different cosmologies
 for folder in folders:
     if   folder=='fiducial':         realizations, pairs = 15000, False
-    elif folder=='latin_hypercube':  realizations, pairs = 2000,  True
-    elif folder=='fiducial_ZA':      realizations, pairs = 100,   False
+    elif folder=='latin_hypercube':  realizations, pairs = 2000,  False
+    elif folder=='fiducial_ZA':      realizations, pairs = 500,   True
+    elif folder=='fiducial_LR':      realizations, pairs = 1000,  False
+    elif folder=='fiducial_HR':      realizations, pairs = 100,   False
     else:                            realizations, pairs = 500,   False
 
     # find the numbers that each cpu will work with                    

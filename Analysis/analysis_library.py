@@ -190,7 +190,8 @@ def derivatives(realizations, BoxSize, snapnum, root_data, root_results, probes,
     #               'Mnu_p/', 'Mnu_pp/', 'Mnu_ppp/', 'fiducial/']
     cosmologies = ['Om_p/',  'Ob2_p/', 'h_p/', 'ns_p/', 's8_p/', 
                    'Om_m/',  'Ob2_m/', 'h_m/', 'ns_m/', 's8_m/', 
-                   'Mnu_p/', 'Mnu_pp/', 'Mnu_ppp/', 'fiducial/']
+                   'Mnu_p/', 'Mnu_pp/', 'Mnu_ppp/', 
+                   'fiducial/', 'fiducial_ZA/']
 
     #parameters = ['Om',  'Ob',   'Ob2',  'h',   'ns',  's8',   'Mnu']
     #diffs      = [0.01,  0.001,  0.002,  0.02,  0.02,  0.015,  0.10]
@@ -294,7 +295,7 @@ def derivatives(realizations, BoxSize, snapnum, root_data, root_results, probes,
             if os.path.exists(fout):  continue
 
             if parameter=='Mnu':
-                f0 = '%s/derivatives/fiducial/mean_%s'%(root_results, suffix)
+                f0 = '%s/derivatives/fiducial_ZA/mean_%s'%(root_results, suffix)
                 f1 = '%s/derivatives/Mnu_p/mean_%s'%(root_results,    suffix)
                 f2 = '%s/derivatives/Mnu_pp/mean_%s'%(root_results,   suffix)
                 f4 = '%s/derivatives/Mnu_ppp/mean_%s'%(root_results,  suffix)

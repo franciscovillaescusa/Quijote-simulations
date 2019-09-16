@@ -4,20 +4,24 @@ import sys,os
 
 root = '/simons/scratch/fvillaescusa/pdf_information/'
 ##################################### INPUT ############################################
-cosmologies = ['fiducial_ZA']
+cosmologies = ['fiducial_HR']
 #['Om_p', 'Ob_p', 'Ob2_p', 'h_p', 'ns_p', 's8_p',
 #'Om_m', 'Ob_m', 'Ob2_m', 'h_m', 'ns_m', 's8_m',
-#'Mnu_p', 'Mnu_pp', 'Mnu_ppp', 'fiducial']
+#'Mnu_p', 'Mnu_pp', 'Mnu_ppp', 'fiducial', 'fiducial_LR','fiducial_HR',
+#'latin_hypercube']
 ########################################################################################
 
 # do a loop over all different cosmologies
 for cosmo in cosmologies:
 
     # find the number of standard and paired fixed simulations
-    paired_fixed_realizations = 0 #250
-    if   cosmo=='fiducial':      standard_realizations = 15000
-    elif cosmo=='fiducial_ZA':   standard_realizations = 500
-    else:                        standard_realizations = 500
+    paired_fixed_realizations = 0
+    if   cosmo=='fiducial':         standard_realizations = 15000
+    elif cosmo=='fiducial_ZA':      standard_realizations = 500
+    elif cosmo=='fiducial_LR':      standard_realizations = 1000
+    elif cosmo=='fiducial_HR':      standard_realizations = 100
+    elif cosmo=='latin_hypercube':  standard_realizations = 2000
+    else:                           standard_realizations = 500
      
     # find the name of the output halo folder containing all results
     folder = '%s/Halos/%s'%(root,cosmo)

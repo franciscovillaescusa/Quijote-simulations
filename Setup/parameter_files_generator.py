@@ -17,7 +17,7 @@ fiducial_RS   = 3456 #RayleighSampling value in the fiducial file
 #########################################################################
 
 # do a loop over the different cosmologies
-for cosmology in cosmologies:
+for cosmology in ['fiducial_HR']: #cosmologies:
 
     # get the name of the folder with the different realizations
     cosmo = '%s/%s'%(root,cosmology)
@@ -46,7 +46,7 @@ for cosmology in cosmologies:
 
         # open input and output files
         output_file = '%s/%s'%(ICs_folder, fiducial_file)
-        if os.path.exists(output_file):  continue
+        #if os.path.exists(output_file):  continue
         fin  = open('%s/%s'%(cosmo,fiducial_file), 'r')
         fout = open(output_file, 'w')
 
