@@ -269,7 +269,7 @@ delta, pdf = np.loadtxt('/home/fvillaescusa/Quijote/PDF/matter/latin_hypercube/0
 - Elena Massara (Flatiron/Waterloo)
 - Arka Banerjee (Stanford)
 - Ana Maria Delgado (CUNY/Flatiron)
-- Doogesh Kodi Ramanah (Paris)
+- Doogesh K. Ramanah (Sorbonne, Paris)
 - Tom Charnock (Sorbonne, Paris)
 - Elena Giusarma (Flatiron/MTech)
 - Yin Li (Berkeley/IPMU)
