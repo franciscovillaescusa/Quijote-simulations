@@ -264,18 +264,34 @@ delta, pdf = np.loadtxt('/home/fvillaescusa/Quijote/PDF/matter/latin_hypercube/0
 ```
 
 ## Team
-- Francisco Villaescusa-Navarro (CCA)
+- Francisco Villaescusa-Navarro (Flatiron/Princeton)
 - ChangHoon Hahn (Berkeley)
-- Emanuele Castorina (Berkeley)
+- Elena Massara (Flatiron/Waterloo)
 - Arka Banerjee (Stanford)
-- Elena Massara (CCA)
-- Elena Giusarma (CCA)
+- Ana Maria Delgado (CUNY/Flatiron)
+- Doogesh K. Ramanah (Sorbonne, Paris)
+- Tom Charnock (Sorbonne, Paris)
+- Elena Giusarma (Flatiron/MTech)
+- Yin Li (Berkeley/IPMU)
+- Erwan Allys (ENS, Paris)
+- Antoine Brochard (ENS, Paris)
 - Chi-Ting Chiang (BNL)
-- Ana Maria Delgado (CUNY)
+- Siyu He (Flatiron)
+- Alice Pisani (Princeton)
 - Andrej Obuljen (Waterloo)
-- David Spergel (CCA/Princeton)
-- Ben Wandelt (IAP Paris)
-- Shirley Ho (CCA/Princeton)
+- Yu Feng (Berkeley)
+- Emanuele Castorina (Berkeley)
+- Gabriella Contardo (Flatiron)
+- Christina D. Kreisch (Princeton)
+- Andrina Nicola (Princeton)
+- Roman Scoccimarro (NYU)
 - Licia Verde (Barcelona)
 - Matteo Viel (SISSA)
-- Roman Scoccimarro (NYU)
+- Shirley Ho (Flatiron/Princeton)
+- Stephane Mallat (ENS/College de France)
+- Ben Wandelt (IAP, Paris)
+- David Spergel (Flatiron/Princeton)
+
+
+
+
