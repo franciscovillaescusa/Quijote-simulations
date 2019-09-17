@@ -27,8 +27,8 @@ first, last, cosmo, snapnum = args.first, args.last, args.cosmo, args.snapnum
 
 
 # This routine computes the PDF in real- and redshift-space
-def compute_PDF(snapshot, snapnum, grid, MAS, threads, NCV, pair, 
-                folder_out, cosmo, i, suffix, z, ptype, smoothing):
+def compute_PDF(snapshot, grid, MAS, threads, NCV, pair, 
+                folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter):
 
     if NCV:  #paired-fixed simulations
 
@@ -37,8 +37,8 @@ def compute_PDF(snapshot, snapnum, grid, MAS, threads, NCV, pair,
                %(folder_out,cosmo,pair,i,suffix,smoothing,z)
         if not(os.path.exists(fpdf)):
             do_RSD, axis = False, 0
-            find_pdf(snapshot, snapnum, grid, MAS, do_RSD, axis, threads, ptype,
-                     fpdf, smoothing)
+            find_pdf(snapshot, grid, MAS, do_RSD, axis, threads, ptype,
+                     fpdf, smoothing, Filter)
 
         # redshift-space
         for axis in [0,1,2]:
@@ -46,8 +46,8 @@ def compute_PDF(snapshot, snapnum, grid, MAS, threads, NCV, pair,
                    %(folder_out,cosmo,pair,i,suffix,axis,smoothing,z)
             if not(os.path.exists(fpdf)):
                 do_RSD = True
-                find_pdk(snapshot, snapnum, grid, MAS, do_RSD, axis, threads, ptype,
-                         fpdf, smoothing)
+                find_pdk(snapshot, grid, MAS, do_RSD, axis, threads, ptype,
+                         fpdf, smoothing, Filter)
 
     else:  #standard simulations
 
@@ -55,8 +55,8 @@ def compute_PDF(snapshot, snapnum, grid, MAS, threads, NCV, pair,
         fpdf = '%s/%s/%d/PDF_%s_%.1f_z=%s.txt'%(folder_out,cosmo,i,suffix,smoothing,z)
         if not(os.path.exists(fpdf)):
             do_RSD, axis = False, 0
-            find_pdf(snapshot, snapnum, grid, MAS, do_RSD, axis, threads, ptype, fpdf,
-                     smoothing)
+            find_pdf(snapshot, grid, MAS, do_RSD, axis, threads, ptype, fpdf,
+                     smoothing, Filter)
 
         # redshift-space
         """
@@ -65,13 +65,13 @@ def compute_PDF(snapshot, snapnum, grid, MAS, threads, NCV, pair,
                                                          smoothing,z)
             if not(os.path.exists(fpdf)):
                 do_RSD = True
-                find_pdf(snapshot, snapnum, grid, MAS, do_RSD, axis, threads, ptype, 
-                         fpdf, smoothing)
+                find_pdf(snapshot, grid, MAS, do_RSD, axis, threads, ptype, 
+                         fpdf, smoothing, Filter)
         """
 
 
-# This routine computes and saves the power spectrum
-def find_pdf(snapshot, snapnum, grid, MAS, do_RSD, axis, threads, ptype, fpdf, smoothing):
+# This routine computes and saves the pdf
+def find_pdf(snapshot, grid, MAS, do_RSD, axis, threads, ptype, fpdf, smoothing, Filter):
 
     if os.path.exists(fpdf):  return 0
     
@@ -94,7 +94,7 @@ def find_pdf(snapshot, snapnum, grid, MAS, do_RSD, axis, threads, ptype, fpdf, s
         vel = readgadget.read_block(snapshot, "VEL ", ptype) #km/s
         RSL.pos_redshift_space(pos, vel, BoxSize, Hubble, redshift, axis)
 
-    # calculate density field
+    # calculate the overdensity field
     delta = np.zeros((grid,grid,grid), dtype=np.float32)
     if len(ptype)>1:  #for multiple particles read masses
         mass = np.zeros(pos.shape[0], dtype=np.float32)
@@ -107,8 +107,8 @@ def find_pdf(snapshot, snapnum, grid, MAS, do_RSD, axis, threads, ptype, fpdf, s
         MASL.MA(pos, delta, BoxSize, MAS)
     delta /= np.mean(delta, dtype=np.float64);  #delta -= 1.0 
 
-    # smooth the density field
-    W_k = SL.FT_filter(BoxSize, smoothing, grid, 'Gaussian', threads)
+    # smooth the overdensity field
+    W_k = SL.FT_filter(BoxSize, smoothing, grid, Filter, threads)
     delta_smoothed = SL.field_smoothing(delta, W_k, threads)
 
     bins = np.logspace(-2,2,100)
@@ -130,6 +130,7 @@ grid      = 512
 MAS       = 'CIC'
 threads   = 2
 smoothing = 10.0
+Filter    = 'Top-Hat' #'Gaussian'
 
 # folder that containts the results
 folder_out = '/simons/scratch/fvillaescusa/pdf_information/PDF/matter/'
@@ -164,51 +165,51 @@ for i in numbers:
 
         # compute CDM+Baryons PDF
         #NCV, suffix, ptype, pair = False, 'cb', [1], 0
-        #compute_PDF(snapshot, snapnum, grid, MAS, threads, NCV, pair,
-        #           folder_out, cosmo, i, suffix, z, ptype, smoothing)
+        #compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
+        #           folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
 
         # compute matter PDF
         NCV, suffix, ptype, pair = False, 'm', [1,2], 0
-        compute_PDF(snapshot, snapnum, grid, MAS, threads, NCV, pair,
-                    folder_out, cosmo, i, suffix, z, ptype, smoothing)
+        compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
+                    folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
 
     else:
         # compute matter PDF
         NCV, suffix, ptype, pair = False, 'm', [1], 0
-        compute_PDF(snapshot, snapnum, grid, MAS, threads, NCV, pair,
-                    folder_out, cosmo, i, suffix, z, ptype, smoothing)
+        compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
+                    folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
 
     
-"""
+
 ###### paired fixed realizations ######
 for i in numbers:
 
     for pair in [0,1]:
-        snapshot = '%s/%s/NCV_%d_%d/snapdir_%03d/snap_%03d'\
+        snapshot = '%s/Snapshots/%s/NCV_%d_%d/snapdir_%03d/snap_%03d'\
                    %(root,cosmo,pair,i,snapnum,snapnum)
         if not(os.path.exists(snapshot+'.0')) and not(os.path.exists(snapshot+'.0.hdf5')):
             continue
 
         # create output folder if it does not exists
         if not(os.path.exists('%s/%s/NCV_%d_%d'%(folder_out,cosmo,pair,i))):
-            os.system('mkdir %s/%s/NCV_%d_%d'%(folder_out,cosmo,pair,i))
+            os.system('mkdir   %s/%s/NCV_%d_%d'%(folder_out,cosmo,pair,i))
 
         # neutrinos are special
         if cosmo in ['Mnu_p', 'Mnu_pp', 'Mnu_ppp', 'Mnu_p/', 'Mnu_pp/', 'Mnu_ppp/']:
 
             # compute CDM+Baryons PDF
             #NCV, suffix, ptype = True, 'cb', [1]
-            #compute_PDF(snapshot, snapnum, grid, MAS, threads, NCV, pair,
-            #           folder_out, cosmo, i, suffix, z, ptype, smoothing)
+            #compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
+            #           folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
 
             # compute matter PDF
             NCV, suffix, ptype  = True, 'm', [1,2]
-            compute_PDF(snapshot, snapnum, grid, MAS, threads, NCV, pair,
-                        folder_out, cosmo, i, suffix, z, ptype, smoothing)
+            compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
+                        folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
 
         else:
             # compute matter PDF
             NCV, suffix, ptype = True, 'm', [1]
-            compute_PDF(snapshot, snapnum, grid, MAS, threads, NCV, pair,
-                        folder_out, cosmo, i, suffix, z, ptype, smoothing)
-"""
+            compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
+                        folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
+
