@@ -33,7 +33,7 @@ The data is stored in the Gordon cluster of the San Diego Supercomputer Center. 
 - Log in into [globus](https://www.globus.org/) (create an account if you dont have one).
 - In collection type Quijote_simulations
 
-Note that the 
+Note that to download the data to your local machine (e.g. laptop) you will need to install the globus connect personal.
 
 There are different folders: 
 - __Snapshots__. This folder contains the snapshots of the simulations
