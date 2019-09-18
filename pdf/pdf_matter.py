@@ -41,13 +41,15 @@ def compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
                      fpdf, smoothing, Filter)
 
         # redshift-space
+        """
         for axis in [0,1,2]:
             fpdf = '%s/%s/NCV_%d_%d/PDF_%s_RS%d_%.1f_z=%s.txt'\
                    %(folder_out,cosmo,pair,i,suffix,axis,smoothing,z)
             if not(os.path.exists(fpdf)):
                 do_RSD = True
-                find_pdk(snapshot, grid, MAS, do_RSD, axis, threads, ptype,
+                find_pdf(snapshot, grid, MAS, do_RSD, axis, threads, ptype,
                          fpdf, smoothing, Filter)
+        """
 
     else:  #standard simulations
 
@@ -129,7 +131,7 @@ root = '/simons/scratch/fvillaescusa/pdf_information'
 grid      = 512
 MAS       = 'CIC'
 threads   = 2
-smoothing = 10.0
+smoothing = 5.0
 Filter    = 'Top-Hat' #'Gaussian'
 
 # folder that containts the results
