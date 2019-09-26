@@ -10,7 +10,7 @@ cosmos = ['Om_p/', 'Ob_p/', 'Ob2_p/', 'h_p/', 'ns_p/', 's8_p/',
           'Mnu_p/', 'Mnu_pp/', 'Mnu_ppp/',
           'fiducial_ZA/', 'fiducial/']
 zs     = [0, 0.5, 1, 2, 3]
-scales = [15, 10, 5]
+scales = [5, 10, 5]
 #########################################################################################
 
 # do a loop over the different cosmologies
@@ -19,8 +19,12 @@ for cosmo in cosmos:
     # do a loop over the different redshifts
     for z in zs:
 
+        files = glob.glob('%s/%s/*/variance_PDF_m_z=%s.txt'%(root,cosmo,z))
+        print 'Found %d var files for %s at z=%d'%(len(files),cosmo,z)
+
         # do a loop over the different scales
         for scale in scales:
         
             files = glob.glob('%s/%s/*/PDF_m_%.1f_z=%s.txt'%(root,cosmo,scale,z))
             print 'Found %d files for %s with %d at z=%d'%(len(files),cosmo,scale,z)
+
