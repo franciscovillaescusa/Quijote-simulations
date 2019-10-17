@@ -292,6 +292,7 @@ delta, pdf = np.loadtxt('/home/fvillaescusa/Quijote/PDF/matter/latin_hypercube/0
 - Ben Wandelt (IAP, Paris)
 - David Spergel (Flatiron/Princeton)
 
-
+## Contact
+For support, please send us an email at fvillaescusa@princeton.edu.
 
 
