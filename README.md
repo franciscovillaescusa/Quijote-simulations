@@ -11,7 +11,7 @@ But they can be used for a large variety of problems.
 ### Features
 - Simulations run with the TreePM code Gadget-III
 - More than 35 Million CPU hours 
-- Boxes of 1 Gpc/h. Combined total volume of 43100 (Gpc/h)^3
+- Boxes of 1 Gpc/h. Combined total volume of 43100 (Gpc/h)^3 at a single redshift.
 - 17100 simulations for a fiducial Planck cosmology
 - Between 500 and 1000 simulations/cosmology for 17 different cosmologies
 - 11000 simulations in different latin-hypercubes 
@@ -292,6 +292,7 @@ delta, pdf = np.loadtxt('/home/fvillaescusa/Quijote/PDF/matter/latin_hypercube/0
 - Ben Wandelt (IAP, Paris)
 - David Spergel (Flatiron/Princeton)
 
-
+## Contact
+For support, please send us an email at fvillaescusa@princeton.edu.
 
 
