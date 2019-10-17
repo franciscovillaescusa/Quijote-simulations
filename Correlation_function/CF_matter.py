@@ -145,7 +145,7 @@ numbers = np.arange(args.first, args.last)[numbers]
 for i in numbers:
 
     # find the snapshot
-    snapshot = '%s/%s/%d/snapdir_%03d/snap_%03d'%(root,cosmo,i,snapnum,snapnum)
+    snapshot = '%s/Snapshots/%s/%d/snapdir_%03d/snap_%03d'%(root,cosmo,i,snapnum,snapnum)
     if not(os.path.exists(snapshot+'.0')) and not(os.path.exists(snapshot+'.0.hdf5')):
         continue
 
@@ -179,7 +179,7 @@ for i in numbers:
 for i in numbers:
 
     for pair in [0,1]:
-        snapshot = '%s/%s/NCV_%d_%d/snapdir_%03d/snap_%03d'\
+        snapshot = '%s/Snapshots/%s/NCV_%d_%d/snapdir_%03d/snap_%03d'\
                    %(root,cosmo,pair,i,snapnum,snapnum)
         if not(os.path.exists(snapshot+'.0')) and not(os.path.exists(snapshot+'.0.hdf5')):
             continue

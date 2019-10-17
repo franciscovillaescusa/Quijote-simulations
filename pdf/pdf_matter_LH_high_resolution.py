@@ -54,7 +54,7 @@ def compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
     else:  #standard simulations
 
         # real-space
-        fpdf = '%s/%s/%d/PDF_%s_%.1f_z=%s.txt'%(folder_out,cosmo,i,suffix,smoothing,z)
+        fpdf = '%s/%s/HR_%d/PDF_%s_%.1f_z=%s.txt'%(folder_out,cosmo,i,suffix,smoothing,z)
         if not(os.path.exists(fpdf)):
             do_RSD, axis = False, 0
             find_pdf(snapshot, grid, MAS, do_RSD, axis, threads, ptype, fpdf,
@@ -154,64 +154,20 @@ numbers = np.arange(args.first, args.last)[numbers]
 for i in numbers:
 
     # find the snapshot
-    snapshot = '%s/Snapshots/%s/%d/snapdir_%03d/snap_%03d'%(root,cosmo,i,snapnum,snapnum)
+    snapshot = '%s/Snapshots/%s/HR_%d/snapdir_%03d/snap_%03d'%(root,cosmo,i,snapnum,snapnum)
     if not(os.path.exists(snapshot+'.0')) and not(os.path.exists(snapshot+'.0.hdf5')):
         continue
 
     # create output folder if it does not exists
-    if not(os.path.exists('%s/%s/%d'%(folder_out,cosmo,i))):
-        os.system('mkdir %s/%s/%d'%(folder_out,cosmo,i))
+    if not(os.path.exists('%s/%s/HR_%d'%(folder_out,cosmo,i))):
+        os.system('mkdir %s/%s/HR_%d'%(folder_out,cosmo,i))
 
-    # neutrinos are special
-    if cosmo in ['Mnu_p', 'Mnu_pp', 'Mnu_ppp', 'Mnu_p/', 'Mnu_pp/', 'Mnu_ppp/']:
-
-        # compute CDM+Baryons PDF
-        #NCV, suffix, ptype, pair = False, 'cb', [1], 0
-        #compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
-        #           folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
-
-        # compute matter PDF
-        NCV, suffix, ptype, pair = False, 'm', [1,2], 0
-        compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
-                    folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
-
-    else:
-        # compute matter PDF
-        NCV, suffix, ptype, pair = False, 'm', [1], 0
-        compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
-                    folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
+    # compute matter PDF
+    NCV, suffix, ptype, pair = False, 'm', [1], 0
+    compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
+                folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
 
     
 
-###### paired fixed realizations ######
-for i in numbers:
 
-    for pair in [0,1]:
-        snapshot = '%s/Snapshots/%s/NCV_%d_%d/snapdir_%03d/snap_%03d'\
-                   %(root,cosmo,pair,i,snapnum,snapnum)
-        if not(os.path.exists(snapshot+'.0')) and not(os.path.exists(snapshot+'.0.hdf5')):
-            continue
-
-        # create output folder if it does not exists
-        if not(os.path.exists('%s/%s/NCV_%d_%d'%(folder_out,cosmo,pair,i))):
-            os.system('mkdir   %s/%s/NCV_%d_%d'%(folder_out,cosmo,pair,i))
-
-        # neutrinos are special
-        if cosmo in ['Mnu_p', 'Mnu_pp', 'Mnu_ppp', 'Mnu_p/', 'Mnu_pp/', 'Mnu_ppp/']:
-
-            # compute CDM+Baryons PDF
-            #NCV, suffix, ptype = True, 'cb', [1]
-            #compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
-            #           folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
-
-            # compute matter PDF
-            NCV, suffix, ptype  = True, 'm', [1,2]
-            compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
-                        folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
-
-        else:
-            # compute matter PDF
-            NCV, suffix, ptype = True, 'm', [1]
-            compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
-                        folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
 
