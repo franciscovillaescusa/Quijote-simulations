@@ -18,13 +18,14 @@ myrank = comm.Get_rank()
 
 # read the first and last realization to identify voids
 parser = argparse.ArgumentParser(description="This script computes the bispectrum")
-parser.add_argument("first",   help="first realization number", type=int)
-parser.add_argument("last",    help="last  realization number", type=int)
-parser.add_argument("cosmo",   help="folder with the realizations")
-parser.add_argument("snapnum", help="snapshot number",          type=int)
+parser.add_argument("first",     help="first realization number", type=int)
+parser.add_argument("last",      help="last  realization number", type=int)
+parser.add_argument("cosmo",     help="folder with the realizations")
+parser.add_argument("snapnum",   help="snapshot number",          type=int)
+parser.add_argument("smoothing", help="smoothing length",         type=float)
 args = parser.parse_args()
 first, last, cosmo, snapnum = args.first, args.last, args.cosmo, args.snapnum
-
+smoothing = args.smoothing
 
 # This routine computes the PDF in real- and redshift-space
 def compute_PDF(snapshot, grid, MAS, threads, NCV, pair, 
@@ -131,7 +132,6 @@ root = '/simons/scratch/fvillaescusa/pdf_information'
 grid      = 512
 MAS       = 'CIC'
 threads   = 2
-smoothing = 15.0
 Filter    = 'Top-Hat' #'Gaussian'
 
 # folder that containts the results
@@ -166,12 +166,17 @@ for i in numbers:
     if cosmo in ['Mnu_p', 'Mnu_pp', 'Mnu_ppp', 'Mnu_p/', 'Mnu_pp/', 'Mnu_ppp/']:
 
         # compute CDM+Baryons PDF
-        #NCV, suffix, ptype, pair = False, 'cb', [1], 0
-        #compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
-        #           folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
+        NCV, suffix, ptype, pair = False, 'cb', [1], 0
+        compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
+                   folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
 
         # compute matter PDF
         NCV, suffix, ptype, pair = False, 'm', [1,2], 0
+        compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
+                    folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
+
+        # compute nu PDF
+        NCV, suffix, ptype, pair = False, 'nu', [2], 0
         compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
                     folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
 
@@ -200,14 +205,19 @@ for i in numbers:
         if cosmo in ['Mnu_p', 'Mnu_pp', 'Mnu_ppp', 'Mnu_p/', 'Mnu_pp/', 'Mnu_ppp/']:
 
             # compute CDM+Baryons PDF
-            #NCV, suffix, ptype = True, 'cb', [1]
-            #compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
-            #           folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
+            NCV, suffix, ptype = True, 'cb', [1]
+            compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
+                       folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
 
             # compute matter PDF
             NCV, suffix, ptype  = True, 'm', [1,2]
             compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
                         folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
+
+            # compute NU PDF
+            NCV, suffix, ptype = True, 'nu', [2]
+            compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
+                       folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
 
         else:
             # compute matter PDF
