@@ -3,45 +3,50 @@ import numpy as np
 import sys,os
 
 ################################## INPUT #############################################
-step    = 100   #number of realizations each cpu will do
+step    = 500   #number of realizations each cpu will do
 offset  = 0    #the count will start from offset
-snapnum = 0   #4(z=0), 3(z=0.5), 2(z=1), 1(z=2), 0(z=3)
 ######################################################################################
 
 # do a loop over the different cosmologies
-for folder in ['fiducial_HR/']:
-
+for folder in ['Mnu_p/', 'Mnu_pp/', 'Mnu_ppp/']:
 #['Om_p/', 'Ob_p/', 'Ob2_p/', 'h_p/', 'ns_p/', 's8_p/',          
 #'Om_m/', 'Ob_m/', 'Ob2_m/', 'h_m/', 'ns_m/', 's8_m/',           
 #'Mnu_p/', 'Mnu_pp/', 'Mnu_ppp/',
-#'fiducial_ZA/', 'fiducial/']:
-    #'fiducial/','latin_hypercube/']:
+#'fiducial_ZA/', 'fiducial/', 'fiducial_LR/',
+#'latin_hypercube/']:
 
-    if   folder=='fiducial/':         nodes = int(15000/step)
-    elif folder=='latin_hypercube/':  nodes = int(2000/step)
-    elif folder=='fiducial_HR/':      nodes = int(100/step)
-    else:                             nodes = int(500/step)
+    # do a loop over the different smoothing scales
+    for smoothing in [5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0]:
 
-    # do a loop over the different realizations
-    for i in xrange(nodes):    
+        # do a loop over the different redshifts
+        for snapnum in [0,1,2,3,4]:
 
-        a = """#!/bin/bash
+            if   folder=='fiducial/':         nodes = int(15000/step)
+            elif folder=='latin_hypercube/':  nodes = int(2000/step)
+            elif folder=='fiducial_HR/':      nodes = int(100/step)
+            elif folder=='fiducial_LR/':      nodes = int(1000/step)
+            else:                             nodes = int(500/step)
+
+            # do a loop over the different realizations
+            for i in xrange(nodes):    
+
+                a = """#!/bin/bash
 #SBATCH -J pdf
 #SBATCH --exclusive        
 ######SBATCH -t 1-00:00
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=16
-####SBATCH --ntasks-per-node=48
-#SBATCH --partition=preempt
+#####SBATCH --ntasks-per-node=16
+#SBATCH --ntasks-per-node=48
+#SBATCH --partition=general
 #SBATCH --export=ALL
         
-srun -n 2 --mpi=pmi2 python pdf_matter.py %d %d %s %d\n
-        """%(i*step+offset, (i+1)*step+offset, folder, snapnum)
-#srun -n 2 --mpi=pmi2 python pdf_matter_LH_high_resolution.py %d %d %s %d\n
-#srun -n 35 --mpi=pmi2 python variance_pdf.py %d %d %s %d\n
-#srun -n 35 --mpi=pmi2 python pdf_matter.py %d %d %s %d\n
-#srun -n 35 --mpi=pmi2 python Pk_halos.py %d %d %s %d\n
+srun -n 35 --mpi=pmi2 python pdf_matter.py %d %d %s %d %s\n
+                """%(i*step+offset, (i+1)*step+offset, folder, snapnum, smoothing)
+                #srun -n 2 --mpi=pmi2 python pdf_matter_LH_high_resolution.py %d %d %s %d\n
+                #srun -n 35 --mpi=pmi2 python variance_pdf.py %d %d %s %d\n
+                #srun -n 35 --mpi=pmi2 python pdf_matter.py %d %d %s %d\n
+                #srun -n 35 --mpi=pmi2 python Pk_halos.py %d %d %s %d\n
 
-        # create the script.sh file, execute it and remove it
-        f = open('script.sh','w');  f.write(a);  f.close()
-        os.system('sbatch script.sh');  os.system('rm script.sh')
+                # create the script.sh file, execute it and remove it
+                f = open('script.sh','w');  f.write(a);  f.close()
+                os.system('sbatch script.sh');  os.system('rm script.sh')
