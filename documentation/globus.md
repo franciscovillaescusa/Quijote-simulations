@@ -27,16 +27,14 @@ ID                                   | Owner                     | Display Name
 c42757fe-d570-11e9-98e2-0a63aa6b37da | fvillaescusa@globusid.org | Quijote_simulations
 ```
 
-You should do the same to know the endpoint of the machine where you are transfering the data to. You can then explore the filesystem of the Quijote simulations as:
+You should do the same to know the endpoint of the machine where you are transfering the data to. You can then explore the filesystem of the Quijote simulations (or your machine) as:
 
 ```bash
 ep1=c42757fe-d570-11e9-98e2-0a63aa6b37da
 globus ls $ep1:/Snapshots/latin_hypercube_HR/45/ICs/
 ```
 
-The above command will list the content of the /Snapshots/latin_hypercube_HR/45/ICs/ directory.
-
-A single file can be transfered as:
+The above command will list the content of the /Snapshots/latin_hypercube_HR/45/ICs/ directory. A single file can be transfered as:
 
 ```bash
 ep1=c42757fe-d570-11e9-98e2-0a63aa6b37da
