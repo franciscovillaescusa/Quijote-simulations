@@ -52,4 +52,27 @@ ep2=ddb59af0-6d04-11e5-ba46-22000b92c6ec
 globus transfer $ep1:/Snapshots/latin_hypercube_HR/45/ICs $ep2:/Quijote_simulations/45/ICs  --recursive --label "single folder transfer"
 ```
 
+Many folders can be moved with a single command as
+
+```bash
+ep1=c42757fe-d570-11e9-98e2-0a63aa6b37da
+ep2=ddb59af0-6d04-11e5-ba46-22000b92c6ec
+globus transfer $ep1:/Snapshots/fiducial/ $ep2:/Quijote_simulations/fiducial/ --batch --label "CLI 10 folders" < folders.txt
+```
+
+where folders.txt is a text file containing
+
+```bash
+--recursive 0 0
+--recursive 1 1
+--recursive 2 2
+--recursive 3 3
+--recursive 4 4
+--recursive 5 5
+--recursive 6 6
+--recursive 7 7
+--recursive 8 8
+--recursive 9 9
+```
+
 For more options and details see [Command Line Interface (CLI)](https://docs.globus.org/cli/).
