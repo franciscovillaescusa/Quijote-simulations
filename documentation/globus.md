@@ -5,4 +5,4 @@ The data of the Quijote simulations can be accessed by typing Quijote_simulation
 
 For instance, if you want to transfer all halo catalogues to your local machine, select the Halos folder and click on the 
 
-<img src="https://raw.githubusercontent.com/franciscovillaescusa/Quijote-simulations/master/documentation/Globus.png" alt="Globus" width="275"/>
+<img src="https://raw.githubusercontent.com/franciscovillaescusa/Quijote-simulations/master/documentation/Globus.png" alt="Globus" width="600"/>
