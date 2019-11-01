@@ -11,7 +11,13 @@ In some cases, the above option may not be desirable. For instance, imagine that
 
 /Snapshots/latin_hypercube_HR/45/ICs/Pk_mm_z=0.000.txt
 
-Thus, to download all those files, without involving downloading the full snapshots, will require that you access each simulation folder, then the ICs folder and then transfer the file individually. For 2000 files this is unpractical. For these situations, we recommend the usage of [Command Line Interface (CLI)](https://docs.globus.org/cli/). The first step is to install the CLI package, if you don't have it. Then, the following command allow you to determine the associated endpoint of the Quijote simulations:
+Thus, to download all those files, without involving downloading the full snapshots, will require that you access each simulation folder, then the ICs folder and then transfer the file individually. For 2000 files this is unpractical. For these situations, we recommend the usage of [Command Line Interface (CLI)](https://docs.globus.org/cli/). The first step is to install the CLI package, if you don't have it. Next, login into globus by typing in a terminal
+
+```bash
+globus login
+```
+
+Then, the following command allow you to determine the associated endpoint of the Quijote simulations:
 
 ```bash
 globus endpoint search "Quijote_simulations"
