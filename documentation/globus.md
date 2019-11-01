@@ -17,9 +17,11 @@ Thus, to download all those files, without involving downloading the full snapsh
 globus endpoint search "Quijote_simulations"
 ```
 
+```
 ID                                   | Owner                     | Display Name       
 ------------------------------------ | ------------------------- | -------------------
 c42757fe-d570-11e9-98e2-0a63aa6b37da | fvillaescusa@globusid.org | Quijote_simulations
+```
 
 You should do the same to know the endpoint of the machine where you are transfering the data to. You can then explore the filesystem of the Quijote simulations as:
 
