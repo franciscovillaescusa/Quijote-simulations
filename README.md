@@ -151,7 +151,8 @@ f.close()
 
 The different folders contain both the CAMB parameter files and the matter power spectrum at z=0. In some cases transfer functions and power spectra for neutrinos, CDM, baryons, and CDM+baryons are also present. The format of the power spectrum files is
 - k | P(k) 
-where the units of k and P(k) are comoving h/Mpc and (Mpc/h)^3, respectively.
+
+where the units of k and P(k) are comoving h/Mpc and (Mpc/h)^3, respectively. For the fiducial, Om_p, Om_m, Ob_p, Ob_m, Ob2_p, Ob2_m, h_p, h_m, ns_p, ns_m, s8_p, s8_m the name of the matter power spectrum files at z=0 is 'CAMB_matterpow_0.dat'. For Mnu_p, Mnu_pp and Mnu_ppp the files are called instead 'XeV_Pm_rescaled_z0.0000.txt', where X = 0.1(Mnu_p), 0.2(Mnu_pp) and 0.4(Mnu_ppp). For the latin_hypercube simulations, the files are named 'Pk_mm_z=0.000.txt' 
 
 Notice that the matter power spectra at z=0 are not normalized (this is because the normalization is performed in the code that generates the initial conditions). The normalization factor is stored in the file Normfac.txt. One example on how to obtain the correct normalized matter power spectrum for a given cosmology is this:
 
