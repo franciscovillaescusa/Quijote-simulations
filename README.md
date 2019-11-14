@@ -39,6 +39,7 @@ There are different folders:
 - __Snapshots__. This folder contains the snapshots of the simulations
 - __Halos__. This folder contains the halo catalogues
 - __Voids__. This folder contains the void catalogues
+- __Linear_Pk__. This folder contains the linear power spectra of each cosmological model
 - __Pk__. This folder contains the power spectra
 - __Marked_Pk__. This folder contains the marked power spectra
 - __Bk__. This folder contains the bispectra 
@@ -144,6 +145,25 @@ VSF_Rbins  = f['VSF_Rbins'][:]  #VSF radii in Mpc/h
 parameters = f['parameters'][:] #parameters used to run the void finder
 
 f.close()
+```
+
+### Linear power spectra
+
+The different folders contain both the CAMB parameter files and the matter power spectrum at z=0. In some cases transfer functions and power spectra for neutrinos, CDM, baryons, and CDM+baryons are also present. The format of the power spectrum files is
+- k | P(k) 
+where the units of k and P(k) are comoving h/Mpc and (Mpc/h)^3, respectively.
+
+Notice that the matter power spectra at z=0 are not normalized (this is because the normalization is performed in the code that generates the initial conditions). The normalization factor is stored in the file Normfac.txt. One example on how to obtain the correct normalized matter power spectrum for a given cosmology is this:
+
+```python
+import numpy as np
+f_Pk   = '/home/fvillaescusa/Quijote/Linear_Pk/ns_p/CAMB_TABLES/CAMB_matterpow_0.dat'
+f_norm = '/home/fvillaescusa/Quijote/Linear_Pk/ns_p/Normfac.txt'
+
+k, Pk   = np.loadtxt(f_Pk, unpack=True)
+Normfac = np.loadtxt(f_norm)
+
+Pk_norm = Pk*np.sqrt(Normfac)
 ```
 
 ### Power spectra
