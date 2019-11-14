@@ -157,6 +157,7 @@ Notice that the matter power spectra at z=0 are not normalized (this is because 
 
 ```python
 import numpy as np
+
 f_Pk   = '/home/fvillaescusa/Quijote/Linear_Pk/ns_p/CAMB_TABLES/CAMB_matterpow_0.dat'
 f_norm = '/home/fvillaescusa/Quijote/Linear_Pk/ns_p/Normfac.txt'
 
