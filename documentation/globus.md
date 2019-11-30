@@ -5,6 +5,8 @@ The data of the Quijote simulations can be accessed by typing Quijote_simulation
 
 <img src="https://raw.githubusercontent.com/franciscovillaescusa/Quijote-simulations/master/documentation/Globus.png" alt="Globus" width="900"/>
 
+In some cases, there are so many files in a given directory, that globus may not be able to list them all and return an error. If this is the case, it is advisable to use the path line. For instance, if by clicking in Snapshots you get a time out error, you may want to just type in the path line: /Snapshots/ or /~/Snapshots/. This may show you the different content of the data and allow you to navigate it. You can also go to a given directory directly from there. E.g. to access the first realization of the fiducial cosmology, type in path: /Snapshots/fiducial/0/ or /~/Snapshots/fiducial/0/.
+
 In some cases, the above option may not be desirable. For instance, imagine that you want to download all linear matter power spectra of the high-resolution latin-hypercube simulations. Those files are located in, e.g. for realization 45,
 
 /Snapshots/latin_hypercube_HR/45/ICs/Pk_mm_z=0.000.txt
