@@ -29,7 +29,7 @@ But they can be used for a large variety of problems.
 
 ## Data
 
-<span style="color:blue">Warning: The San Diego Supercomputer Center endpoint (where the data is) is currently down text</span>
+<span style="color:red">some Warning: The San Diego Supercomputer Center endpoint (where the data is) is currently down text</span>
 
 The data is stored in the Gordon cluster of the San Diego Supercomputer Center. It can be access through [globus](https://www.globus.org/). 
 
