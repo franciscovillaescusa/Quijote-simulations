@@ -28,6 +28,9 @@ But they can be used for a large variety of problems.
 - More than 1 Petabyte of data publicly available
 
 ## Data
+
+<span style="color:blue">Warning: The San Diego Supercomputer Center endpoint (where the data is) is currently down text</span>
+
 The data is stored in the Gordon cluster of the San Diego Supercomputer Center. It can be access through [globus](https://www.globus.org/). 
 
 - Log in into [globus](https://www.globus.org/) (create an account if you dont have one).
