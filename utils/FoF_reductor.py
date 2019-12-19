@@ -1,4 +1,3 @@
-
 # This script reads the original FoF files and compress them into a single file.
 # This helps reducing the size of the files and make its reading much faster
 from mpi4py import MPI
@@ -11,14 +10,15 @@ comm   = MPI.COMM_WORLD
 nprocs = comm.Get_size()
 myrank = comm.Get_rank()
 
-root = '/simons/scratch/fvillaescusa/pdf_information/'
+root = '/simons/scratch/fvillaescusa/pdf_information/Snapshots/'
 #root = '/simons/scratch/fvillaescusa/pdf_information/Halos/'
 ################################## INPUT ##########################################
 snapnums = '0 1 2 3 4'
 
-folders = ['fiducial_HR']
+folders = ['DC_m', 'DC_p']
 #['Om_p', 'Ob_p', 'h_p', 'ns_p', 's8_p', 'Mnu_p', 'Mnu_pp', 'Mnu_ppp',
-#'Om_m', 'Ob_m', 'h_m', 'ns_m', 's8_m', 'fiducial', 'latin_hypercube']
+#'Om_m', 'Ob_m', 'h_m', 'ns_m', 's8_m', 'fiducial', 'latin_hypercube',
+#'fiducial_HR']
 ###################################################################################ls
 
 # do a loop over the different cosmologies

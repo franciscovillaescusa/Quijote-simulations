@@ -4,7 +4,7 @@ import sys,os
 
 root = '/simons/scratch/fvillaescusa/pdf_information/'
 ##################################### INPUT ############################################
-cosmologies = ['fiducial_HR']
+cosmologies = ['DC_p', 'DC_m']
 #['Om_p', 'Ob_p', 'Ob2_p', 'h_p', 'ns_p', 's8_p',
 #'Om_m', 'Ob_m', 'Ob2_m', 'h_m', 'ns_m', 's8_m',
 #'Mnu_p', 'Mnu_pp', 'Mnu_ppp', 'fiducial', 'fiducial_LR','fiducial_HR',
@@ -28,7 +28,7 @@ for cosmo in cosmologies:
     if not(os.path.exists(folder)):  os.system('mkdir %s'%folder)
 
     ###### standard realizations ######
-    for i in xrange(standard_realizations):
+    for i in range(standard_realizations):
 
         # create output folder if it does not exists
         folder_out = '%s/%d/'%(folder,i)
@@ -37,13 +37,13 @@ for cosmo in cosmologies:
         # do a loop over the different redshifts
         for snapnum in [0,1,2,3,4]:
 
-            folder_in = '%s/%s/%d/groups_%03d'%(root,cosmo,i,snapnum)
+            folder_in = '%s/Snapshots/%s/%d/groups_%03d'%(root,cosmo,i,snapnum)
             if not(os.path.exists(folder_in)):  continue
             os.system('mv %s %s'%(folder_in, folder_out))
 
 
     ###### paired fixed realizations ######
-    for i in xrange(paired_fixed_realizations):
+    for i in range(paired_fixed_realizations):
 
         for pair in [0,1]:
             
@@ -54,7 +54,7 @@ for cosmo in cosmologies:
             # do a loop over the different redshifts
             for snapnum in [0,1,2,3,4]:
 
-                folder_in = '%s/%s/NCV_%d_%d/groups_%03d'%(root,cosmo,pair,i,snapnum)
+                folder_in = '%s/Snapshots/%s/NCV_%d_%d/groups_%03d'%(root,cosmo,pair,i,snapnum)
                 if not(os.path.exists(folder_in)):  continue
                 os.system('mv %s %s'%(folder_in, folder_out))
 
