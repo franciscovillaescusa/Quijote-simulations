@@ -8,7 +8,7 @@ root2 = '/simons/scratch/fvillaescusa/pdf_information/Linear_Pk'
 cosmologies = ['Om_p', 'Ob_p', 'Ob2_p', 'h_p', 'ns_p', 's8_p',
                'Om_m', 'Ob_m', 'Ob2_m', 'h_m', 'ns_m', 's8_m',
                'Mnu_p', 'Mnu_pp', 'Mnu_ppp',
-               'fiducial']
+               'fiducial', 'DC_p', 'DC_m']
 ########################################################################################
 
 # do a loop over all cosmologies
@@ -21,7 +21,7 @@ for cosmo in cosmologies:
         f_logIC = '%s/%s/0/extra_files/logIC'%(root1,cosmo)
 
     # read file
-    if cosmo in ['Mnu_p', 'Mnu_pp', 'Mnu_ppp']:
+    if cosmo in ['Mnu_p', 'Mnu_pp', 'Mnu_ppp', 'DC_p', 'DC_m']:
         Normfac = 1.0
     else:
         count = 0
@@ -30,7 +30,7 @@ for cosmo in cosmologies:
             count += 1
             if count==4:  
                 Normfac = line.split()[4][9:-1]
-                print '%s ----> %s'%(cosmo,Normfac)
+                print('%s ----> %s'%(cosmo,Normfac))
             else:  continue
         f.close()
     
@@ -40,7 +40,7 @@ for cosmo in cosmologies:
 
 
 # do the latin hypercube here
-for i in xrange(2000):
+for i in range(2000):
 
     # get the name of the file
     f_logIC = '%s/latin_hypercube/%d/extra_files/logIC'%(root1,i)
@@ -52,7 +52,7 @@ for i in xrange(2000):
         count += 1
         if count==4:  
             Normfac = line.split()[4][9:-1]
-            print 'LH %d ----> %s'%(i,Normfac)
+            print('LH %d ----> %s'%(i,Normfac))
         else:  continue
     f.close()
     
