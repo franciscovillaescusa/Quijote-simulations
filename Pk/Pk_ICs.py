@@ -164,6 +164,7 @@ for i in numbers:
         if not(os.path.exists(snapshot+'.0')) and not(os.path.exists(snapshot+'.0.hdf5')):
             continue
 
+        print i,pair
         # create output folder if it does not exists
         if not(os.path.exists('%s/%s/NCV_%d_%d'%(folder_out,cosmo,pair,i))):
             os.system('mkdir %s/%s/NCV_%d_%d'%(folder_out,cosmo,pair,i))

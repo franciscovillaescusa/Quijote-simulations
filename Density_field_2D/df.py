@@ -1,5 +1,4 @@
-# This script generates 3D coarse density fields of the ICs for the ML 
-# project with Chi-Ting
+# This script generates 2D density fields of the different simulations
 from mpi4py import MPI
 import numpy as np
 import sys,os
@@ -15,22 +14,25 @@ myrank = comm.Get_rank()
 root     = '/simons/scratch/fvillaescusa/pdf_information/'
 root_out = '/simons/scratch/fvillaescusa/pdf_information/density_field_2D/'
 
-cosmologies  = ['latin_hypercube']
-#['Om_p', 'Ob2_p', 'h_p', 'ns_p', 's8_p', 
-# 'Om_m', 'Ob2_m', 'h_m', 'ns_m', 's8_m',
-# 'fiducial']
+cosmologies = ['Om_p', 'Ob2_p', 'h_p', 'ns_p', 's8_p', 
+               'Om_m', 'Ob2_m', 'h_m', 'ns_m', 's8_m',
+               'fiducial', 'latin_hypercube']
 
-grid         = 256
-ptypes       = [1]
-MAS          = 'CIC'
-realizations = 2000
+grid   = 256
+ptypes = [1]
+MAS    = 'CIC'
 ########################################################################################
 
-# find the numbers that each cpu will work with                  
-numbers = np.where(np.arange(realizations)%nprocs==myrank)[0]
 
 # do a loop over the different cosmologies
 for cosmo in cosmologies:
+
+    if   cosmo=='fiducial':         realizations = 15000
+    elif cosmo=='latin_hypercube':  realizations = 2000
+    else:                           realizations = 500
+
+    # find the numbers that each cpu will work with                  
+    numbers = np.where(np.arange(realizations)%nprocs==myrank)[0]
 
     # create output folder if it does not exists
     folder_out = '%s/%s/'%(root_out,cosmo)
@@ -48,7 +50,7 @@ for cosmo in cosmologies:
         if os.path.exists(fout):  continue
     
         # compute the density field and save it to file
-        snapshot = '%s/%s/%d/snapdir_004/snap_004'%(root,cosmo,i)
+        snapshot = '%s/Snapshots/%s/%d/snapdir_004/snap_004'%(root,cosmo,i)
         if not(os.path.exists(snapshot+'.0')) and not(os.path.exists(snapshot+'.0.hdf5')):
             continue
         df = MASL.density_field_gadget(snapshot, ptypes, grid, MAS=MAS,

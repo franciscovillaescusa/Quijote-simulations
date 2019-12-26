@@ -8,7 +8,7 @@ root   = '/simons/scratch/fvillaescusa/pdf_information/PDF/matter/'
 cosmos = ['Om_p/', 'Ob_p/', 'Ob2_p/', 'h_p/', 'ns_p/', 's8_p/',          
           'Om_m/', 'Ob_m/', 'Ob2_m/', 'h_m/', 'ns_m/', 's8_m/',           
           'Mnu_p/', 'Mnu_pp/', 'Mnu_ppp/',
-          'fiducial_ZA/', 'fiducial/',
+          'fiducial_ZA/', 'fiducial/', 'fiducial_LR/', 'fiducial_HR/',
           'latin_hypercube/']
 zs     = [0, 0.5, 1, 2, 3]
 scales = [5, 10, 15, 20, 25, 30, 35]
@@ -17,8 +17,9 @@ scales = [5, 10, 15, 20, 25, 30, 35]
 # do a loop over the different cosmologies
 for cosmo in cosmos:
 
-    files = glob.glob('%s/%s/*/PDF_m_*'%(root,cosmo))
-    print 'Found %d files for %s'%(len(files),cosmo)
+    files1 = glob.glob('%s/%s/*/PDF_*'%(root,cosmo))
+    files2 = glob.glob('%s/%s/*/moments_*'%(root,cosmo))
+    print 'Found %d %d files for %s'%(len(files1),len(files2),cosmo)
     continue
 
     # do a loop over the different redshifts
