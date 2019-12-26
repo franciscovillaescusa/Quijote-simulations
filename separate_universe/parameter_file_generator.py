@@ -103,7 +103,7 @@ CpuTimeBetRestartFile  10800.0   % seconds
 TimeLimitCPU           10000000  % seconds
 
 ICFormat     1
-SnapFormat   2
+SnapFormat   3
 
 NumFilesPerSnapshot       8
 NumFilesWrittenInParallel 8
