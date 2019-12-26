@@ -5,10 +5,10 @@ import sys,os
 
 
 ############################### INPUT ###################################
-root = '/simons/scratch/fvillaescusa/pdf_information/'
+root = '/simons/scratch/fvillaescusa/pdf_information/Snapshots/'
 cosmologies = ['Om_p', 'Ob2_p', 'h_p', 's8_p', 'ns_p', 
                'Om_m', 'Ob2_m', 'h_m', 's8_m', 'ns_m',
-               'Mnu_p', 'Mnu_pp', 'Mnu_ppp', 
+               'Mnu_p', 'Mnu_pp', 'Mnu_ppp', 'w_p', 'w_m', 
                'fiducial_LR', 'fiducial_HR', 'fiducial_ZA']
 
 fiducial_seed = 7890 #Seed value in the fiducial file
@@ -17,7 +17,7 @@ fiducial_RS   = 3456 #RayleighSampling value in the fiducial file
 #########################################################################
 
 # do a loop over the different cosmologies
-for cosmology in ['fiducial_HR']: #cosmologies:
+for cosmology in cosmologies:
 
     # get the name of the folder with the different realizations
     cosmo = '%s/%s'%(root,cosmology)
@@ -32,6 +32,8 @@ for cosmology in ['fiducial_HR']: #cosmologies:
     if   cosmology=='Mnu_p':   fiducial_file = 'N-GenIC_0.10.param'
     elif cosmology=='Mnu_pp':  fiducial_file = 'N-GenIC_0.20.param'
     elif cosmology=='Mnu_ppp': fiducial_file = 'N-GenIC_0.40.param'
+    elif cosmology=='w_p':     fiducial_file = 'N-GenIC.param'
+    elif cosmology=='w_m':     fiducial_file = 'N-GenIC.param'
     else:                      fiducial_file = '2LPT.param'
         
     # do a loop over all standard realizations
