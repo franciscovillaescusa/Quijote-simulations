@@ -34,7 +34,7 @@ def compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
     if NCV:  #paired-fixed simulations
 
         # real-space
-        fpdf = '%s/%s/NCV_%d_%d/PDF_%s_%.1f_z=%s.txt'\
+        fpdf = '%s/%s/NCV_%d_%d/PDF_%s_1024_%.1f_z=%s.txt'\
                %(folder_out,cosmo,pair,i,suffix,smoothing,z)
         if not(os.path.exists(fpdf)):
             do_RSD, axis = False, 0
@@ -55,7 +55,7 @@ def compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
     else:  #standard simulations
 
         # real-space
-        fpdf = '%s/%s/%d/PDF_%s_%.1f_z=%s.txt'%(folder_out,cosmo,i,suffix,smoothing,z)
+        fpdf = '%s/%s/%d/PDF_%s_1024_%.1f_z=%s.txt'%(folder_out,cosmo,i,suffix,smoothing,z)
         if not(os.path.exists(fpdf)):
             do_RSD, axis = False, 0
             find_pdf(snapshot, grid, MAS, do_RSD, axis, threads, ptype, fpdf,
@@ -115,6 +115,7 @@ def find_pdf(snapshot, grid, MAS, do_RSD, axis, threads, ptype, fpdf, smoothing,
     delta_smoothed = SL.field_smoothing(delta, W_k, threads)
 
     bins = np.logspace(-2,2,100)
+    #bins = np.logspace(-1,1,100)
     pdf, mean = np.histogram(delta_smoothed, bins=bins)
     mean = 0.5*(mean[1:] + mean[:-1])
     pdf = pdf*1.0/grid**3
@@ -129,7 +130,7 @@ def find_pdf(snapshot, grid, MAS, do_RSD, axis, threads, ptype, fpdf, smoothing,
 root = '/simons/scratch/fvillaescusa/pdf_information'
 
 # PDF parameters
-grid      = 512
+grid      = 1024
 MAS       = 'CIC'
 threads   = 2
 Filter    = 'Top-Hat' #'Gaussian'

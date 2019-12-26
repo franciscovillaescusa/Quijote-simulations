@@ -209,8 +209,8 @@ for i in numbers:
 
             # compute CDM+Baryons PDF
             #NCV, suffix, ptype = True, 'cb', [1]
-            #compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
-            #           folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
+            compute_PDF(snapshot, grid, MAS, threads, NCV, pair,
+                       folder_out, cosmo, i, suffix, z, ptype, smoothing, Filter)
 
             # compute matter PDF
             NCV, suffix, ptype  = True, 'm', [1,2]
