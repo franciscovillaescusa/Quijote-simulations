@@ -15,10 +15,10 @@ root = '/simons/scratch/fvillaescusa/pdf_information/Snapshots/'
 ################################## INPUT ##########################################
 snapnums = '0 1 2 3 4'
 
-folders = ['DC_m', 'DC_p']
+folders = ['w_m', 'w_p']
 #['Om_p', 'Ob_p', 'h_p', 'ns_p', 's8_p', 'Mnu_p', 'Mnu_pp', 'Mnu_ppp',
 #'Om_m', 'Ob_m', 'h_m', 'ns_m', 's8_m', 'fiducial', 'latin_hypercube',
-#'fiducial_HR']
+#'fiducial_HR', 'DC_p', 'DC_m', 'w_p', 'w_m']
 ###################################################################################ls
 
 # do a loop over the different cosmologies

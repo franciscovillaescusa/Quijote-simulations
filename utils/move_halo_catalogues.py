@@ -4,11 +4,11 @@ import sys,os
 
 root = '/simons/scratch/fvillaescusa/pdf_information/'
 ##################################### INPUT ############################################
-cosmologies = ['DC_p', 'DC_m']
+cosmologies = ['w_p', 'w_m']
 #['Om_p', 'Ob_p', 'Ob2_p', 'h_p', 'ns_p', 's8_p',
 #'Om_m', 'Ob_m', 'Ob2_m', 'h_m', 'ns_m', 's8_m',
 #'Mnu_p', 'Mnu_pp', 'Mnu_ppp', 'fiducial', 'fiducial_LR','fiducial_HR',
-#'latin_hypercube']
+#'latin_hypercube', 'DC_p', 'DC_m', 'w_p', 'w_m']
 ########################################################################################
 
 # do a loop over all different cosmologies
