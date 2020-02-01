@@ -8,11 +8,13 @@ offset  = 0    #the count will start from offset
 ######################################################################################
 
 # do a loop over the different cosmologies
-for folder in ['Mnu_p/', 'Mnu_pp/', 'Mnu_ppp/']:
+for folder in ['w_p/', 'w_m/']:
 #['Om_p/', 'Ob_p/', 'Ob2_p/', 'h_p/', 'ns_p/', 's8_p/',          
 #'Om_m/', 'Ob_m/', 'Ob2_m/', 'h_m/', 'ns_m/', 's8_m/',           
 #'Mnu_p/', 'Mnu_pp/', 'Mnu_ppp/',
-#'fiducial_ZA/', 'fiducial/', 'fiducial_LR/',
+#'w_p/', 'w_m/',
+#'fiducial_ZA/', 'fiducial/', 
+#'fiducial_LR/', 'fiducial_HR/',
 #'latin_hypercube/']:
 
     # do a loop over the different smoothing scales
@@ -28,19 +30,21 @@ for folder in ['Mnu_p/', 'Mnu_pp/', 'Mnu_ppp/']:
             else:                             nodes = int(500/step)
 
             # do a loop over the different realizations
-            for i in xrange(nodes):    
+            for i in range(nodes):    
 
                 a = """#!/bin/bash
 #SBATCH -J pdf
 #SBATCH --exclusive        
-######SBATCH -t 1-00:00
+#SBATCH -t 1-00:00
 #SBATCH --nodes=1
 #####SBATCH --ntasks-per-node=16
 #SBATCH --ntasks-per-node=48
 #SBATCH --partition=general
 #SBATCH --export=ALL
+
+source ~/Pylians3
         
-srun -n 35 --mpi=pmi2 python pdf_matter.py %d %d %s %d %s\n
+srun -n 20 --mpi=pmi2 python3 pdf_matter.py %d %d %s %d %s\n
                 """%(i*step+offset, (i+1)*step+offset, folder, snapnum, smoothing)
                 #srun -n 2 --mpi=pmi2 python pdf_matter_LH_high_resolution.py %d %d %s %d\n
                 #srun -n 35 --mpi=pmi2 python variance_pdf.py %d %d %s %d\n
