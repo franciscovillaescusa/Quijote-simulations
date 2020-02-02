@@ -54,7 +54,7 @@ Inside each of the above folders there is the data for the different cosmologies
 ![](https://raw.githubusercontent.com/franciscovillaescusa/Quijote-simulations/master/images/Sims.jpg)
 
 ### Snapshots
-The snapshots are stored in either Gadget-II format or HDF5. They can be read using the [readgadget.py](https://github.com/franciscovillaescusa/Pylians/blob/master/library/readgadget.py) and [readsnap.py](https://github.com/franciscovillaescusa/Pylians/blob/master/library/readsnap.py) scripts. If you have [Pylians](https://github.com/franciscovillaescusa/Pylians) installed you already have them.
+The snapshots are stored in either Gadget-II format or HDF5. They can be read using the [readgadget.py](https://github.com/franciscovillaescusa/Pylians3/blob/master/library/readgadget.py) and [readsnap.py](https://github.com/franciscovillaescusa/Pylians3/blob/master/library/readsnap.py) scripts. If you have [Pylians](https://github.com/franciscovillaescusa/Pylians3) installed you already have them.
 
 The snapshots only contain 4 blocks:
 - Header: This block contains general information about the snapshot such as redshift, number of particles, box size, particle masses...etc.
@@ -95,7 +95,7 @@ In the simulations with massive neutrinos it is possible to read the positions, 
 - 004 ------> z=0
 
 ### Halo catalogues
-The halo catalogues can be read through the [readfof.py](https://github.com/franciscovillaescusa/Pylians/blob/master/library/readfof.py) script. If you have [Pylians](https://github.com/franciscovillaescusa/Pylians) installed you already have it. An example on how to read a halo catalogue is this:
+The halo catalogues can be read through the [readfof.py](https://github.com/franciscovillaescusa/Pylians3/blob/master/library/readfof.py) script. If you have [Pylians](https://github.com/franciscovillaescusa/Pylians3) installed you already have it. An example on how to read a halo catalogue is this:
 
 ```python
 import readfof 
