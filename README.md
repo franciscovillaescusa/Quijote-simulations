@@ -192,18 +192,45 @@ k, Pk0, Pk2, Pk4 = np.loadtxt('/home/fvillaescusa/Quijote/Pk/matter/fiducial/3/P
 
 ### Marked power spectra
 
-The format of the marked power spectra files is:
-- k | M(k)  
+The files whose name starts with 
+- Mk_ contain marked power spectra M(k) evaluated at wavenumber k
+- Xk_ contain the corss spectra between marked and standard density field X(k) evaluated at wavenumber k
 
-where M(k) is the marked power spectrum. 
-The unit of k is h/Mpc, while the one of M(k) is (Mpc/h)^3.
+The unit of k is h/Mpc, while the one of M(k) and X(k) is (Mpc/h)^3.
+
+Files with measurements performed in the fiducial cosmology have name
+Mk_fiducial0-4999_....hdf5
+Xk_fiducial0-4999_....hdf5
+where the first numbers (in the above case 0-4999) indicate the realizations saved in the file, and the dots specify the marked model considered. 
+
+The remaining files contain measurements performed in the other cosmologies and from 500 realization per cosmology. Their name is
+Mk_fTH_....hdf5
+Xk_fTH_....hdf5
+Also in this case the dots specify the marked model considered. 
 
 In python, the files can be read as 
 
 ```python
 import numpy as np
 
-k, Mk = np.loadtxt(FILENAME, unpack=True)
+f = h5py.File(FILENAME, 'r')
+k = f['k'][:]
+# Fiducial cosmology 
+Mk = f['i'][:]  
+# Massive neutrino cosmologies
+Mk = f['cosmo/i_suffix'][:]  
+# Other cosmologies
+Mk = f['cosmo/i'][:]  
+
+```
+where i is the number of the realization, cosmo is the wanted cosmology and suffix can be 
+- 'm' for the total matter field
+- 'cb' for the cold dar matter plus baryons 
+
+In order to see the name of each cosmology type
+
+```
+print(list(f.keys()))
 ```
 
 ### Correlation functions
