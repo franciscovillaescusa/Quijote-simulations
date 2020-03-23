@@ -16,9 +16,7 @@ root_out = '/simons/scratch/fvillaescusa/pdf_information/density_field_2D/'
 
 cosmologies = ['Om_p', 'Ob2_p', 'h_p', 'ns_p', 's8_p', 
                'Om_m', 'Ob2_m', 'h_m', 'ns_m', 's8_m',
-               'fiducial', 'latin_hypercube']
-
-grid   = 256
+               'fiducial', 'latin_hypercube', 'fiducial_HR']
 ptypes = [1]
 MAS    = 'CIC'
 ########################################################################################
@@ -29,7 +27,13 @@ for cosmo in cosmologies:
 
     if   cosmo=='fiducial':         realizations = 15000
     elif cosmo=='latin_hypercube':  realizations = 2000
+    elif cosmo=='fiducial_HR':      realizations = 100
     else:                           realizations = 500
+
+    if cosmo=='fiducial_HR':
+        grid, width = 512, 10
+    else:
+        grid, width = 256, 5
 
     # find the numbers that each cpu will work with                  
     numbers = np.where(np.arange(realizations)%nprocs==myrank)[0]
@@ -58,7 +62,7 @@ for cosmo in cosmologies:
         df = df/np.mean(df, dtype=np.float64) - 1.0
 
         # project the density field along the z-axis
-        df = np.mean(df[:,:,:5], axis=2)
+        df = np.mean(df[:,:,:width], axis=2)
         
         np.save(fout, df)
 
