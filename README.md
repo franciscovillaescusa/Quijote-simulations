@@ -32,7 +32,10 @@ But they can be used for a large variety of problems.
 The data is stored in the Gordon cluster of the San Diego Supercomputer Center. It can be access through [globus](https://www.globus.org/). 
 
 - Log in into [globus](https://www.globus.org/) (create an account if you dont have one).
-- In collection type Quijote_simulations
+- Due to the volume of the data, the data is currently scattered across supercomputers in San Diego, New York and Princeton.
+- To access the data in San Diego type: Quijote_simulations
+- To access the data in New York type: Quijote_simulation2
+- To access the data in Princeton type: Princeton TIGRESS QUIJOTE Snapshots
 
 Note that to download the data to your local machine (e.g. laptop) you will need to install the globus connect personal. For further details see [here](https://github.com/franciscovillaescusa/Quijote-simulations/blob/master/documentation/globus.md).
 
