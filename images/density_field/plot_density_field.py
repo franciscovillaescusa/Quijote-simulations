@@ -54,16 +54,16 @@ for i in numbers:
 
     # compute/read density field
     if os.path.exists(f_df):
-        print '\nDensity field already computed. Reading it from file...'
+        print('\nDensity field already computed. Reading it from file...')
         overdensity = np.load(f_df)
     else:
-        print '\nComputing density field...'
+        print('\nComputing density field...')
         overdensity = PL.density_field_2D(snapshot_fname, x_min, x_max, y_min, y_max, 
                                           z_min, z_max, dims, ptypes, plane, MAS, 
                                           save_density_field)
 
     ############### IMAGE ###############
-    print '\nCreating the figure...'
+    print('\nCreating the figure...')
     fig = figure()    #create the figure
     ax1 = fig.add_subplot(111) 
 
