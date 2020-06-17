@@ -4,7 +4,7 @@ import sys,os
 
 temp_2LPT = \
 """
-Nmesh            {Nm}      % This is the size of the FFT grid used to 
+Nmesh            {Nm}      % This is the size of the FFT grid used to
                            % compute the displacement field. One
                            % should have Nmesh >= Nsample.
 
@@ -15,7 +15,7 @@ Nsample          {Ns}       % sets the maximum k that the code uses,
                            % Normally, one chooses Nsample such that
                            % Ntot =  Nsample^3, where Ntot is the
                            % total number of particles
- 
+
 
 Box              {boxsize}      % Periodic box size of simulation
 
@@ -45,7 +45,7 @@ SphereMode       0         % if "1" only modes with |k| < k_Nyquist are
 			   % modes with
                            % |k_x|,|k_y|,|k_z| < k_Nyquist are used
                            % (i.e. a cube in k-space)
-          
+
 
 WhichSpectrum    2         % "1" selects Eisenstein & Hu spectrum,
 		           % "2" selects a tabulated power spectrum in
@@ -54,16 +54,16 @@ WhichSpectrum    2         % "1" selects Eisenstein & Hu spectrum,
 
 
 FileWithInputSpectrum   ../CAMB_TABLES/CAMB_matterpow_0.dat  % filename of tabulated MATTER powerspectrum from CAMB
-                                           
+
 
 InputSpectrum_UnitLength_in_cm  3.085678e24 % defines length unit of tabulated
-                                            % input spectrum in cm/h. 
+                                            % input spectrum in cm/h.
                                             % Note: This can be chosen different
 					    % from UnitLength_in_cm
 
 
-ShapeGamma       0.201     % only needed for Efstathiou power spectrum 
-PrimordialIndex  1.0       % may be used to tilt the primordial index 
+ShapeGamma       0.201     % only needed for Efstathiou power spectrum
+PrimordialIndex  1.0       % may be used to tilt the primordial index
 		 	   % (one if tabulated)
 
 Phase_flip          0         % flip phase 0-no 1-yes for paired simulations)
@@ -75,7 +75,7 @@ NumFilesWrittenInParallel 32  % limits the number of files that are
                               % written in parallel when outputting
 
 
-UnitLength_in_cm          3.085678e21  % define output length unit (in cm/h) 
+UnitLength_in_cm          3.085678e21  % define output length unit (in cm/h)
 UnitMass_in_g             1.989e43     % define output mass unit (in g/cm)
 UnitVelocity_in_cm_per_s  1e5          % define output velocity unit (in cm/sec)
 
@@ -84,11 +84,11 @@ UnitVelocity_in_cm_per_s  1e5          % define output velocity unit (in cm/sec)
 WDM_On               0      % Putting a '1' here will enable a WDM small-scale
                             % smoothing of the power spectrum
 
-WDM_Vtherm_On        0      % If set to '1', the (warm) dark matter particles 
+WDM_Vtherm_On        0      % If set to '1', the (warm) dark matter particles
 		     	    % will receive an additional random thermal velocity
                             % corresponding to their particle mass
 
-WDM_PartMass_in_kev  10.0   % This is the particle mass in keV of the WDM 
+WDM_PartMass_in_kev  10.0   % This is the particle mass in keV of the WDM
 		     	    % particle
 """
 
@@ -119,7 +119,7 @@ HubbleParam         {h0}    ; only needed for cooling
 BoxSize             {boxsize}
 
 SofteningGas           0.0
-SofteningHalo          50.0   
+SofteningHalo          50.0
 SofteningDisk          0.0
 SofteningBulge         0.0
 SofteningStars         0.0
@@ -132,7 +132,7 @@ SofteningBulgeMaxPhys  0.0
 SofteningStarsMaxPhys  0.0
 SofteningBndryMaxPhys  0.0
 
-PartAllocFactor        2.5  
+PartAllocFactor        2.5
 MaxMemSize	       3800
 BufferSize             120
 
@@ -141,13 +141,13 @@ BufferSize             120
 CoolingOn       0
 StarformationOn 0
 
- 
+
 
 
 %%%%%% Accuracy of time integration %%%%%%%
 
-TypeOfTimestepCriterion  0   	                    
-ErrTolIntAccuracy        0.025  
+TypeOfTimestepCriterion  0
+ErrTolIntAccuracy        0.025
 MaxSizeTimestep          0.025
 MinSizeTimestep          0.0
 
@@ -172,7 +172,7 @@ DesNumNgb           33
 MaxNumNgbDeviation  2
 ArtBulkViscConst    1.0
 InitGasTemp         273.0  % initial gas temp in K, only used if not in ICs
-MinGasTemp          10.0    
+MinGasTemp          10.0
 CourantFac          0.15
 
 %%%%%%%%% Star formation and winds %%%%%%%%%%
@@ -198,7 +198,7 @@ MinGasHsmlFractional    0.1  % min gas SPH in units of the grav softening
 OutputListOn            1    % snapshots a values in external file
 TimeBetSnapshot         1.   % not used if OutputListOn 1
 TimeOfFirstSnapshot     1.   % not used if OutputListOn 1
-TimeBetStatistics       0.5  % time interval to compute system potential energy 
+TimeBetStatistics       0.5  % time interval to compute system potential energy
 MaxRMSDisplacementFac   0.25 % limits the PM time step
 
 
@@ -345,7 +345,7 @@ use_spline_template =  T
 l_sample_boost = 1
 """
 
-# This function returns the value of the growths given a cosmology and a scale factor
+# This function returns the growths given a cosmology and a scale factor
 def growthEqns(y, lna, param):
     Om, OL, w = param['Om'], param['OL'], -1
     OK = 1 - Om - OL
@@ -360,39 +360,67 @@ def growthEqns(y, lna, param):
 
     return Dp, Fp
 
-# This routine computes the linear growth factor given a cosmology and some scale factors
-def linear_growth(times, param):
-    ai = 1e-3 * times[0]
+# This routine computes the growth factor given a cosmology and a scale factor,
+# normalized to the scale factor at matter dominated era
+def linear_growth(a, param):
+    ai = 1e-3 * a
     Di = ai
     Fi = Di
     yi = [Di, Fi]
-    lna = [np.log(ai)] + list(np.log(times))
+    lna = np.log([ai, a])
 
     y = odeint(growthEqns, yi, lna, args=(param,), atol=0)
-    y = y[1:]
-    D, F = y.T
+    D, F = y[-1]
 
     return D
 
+# This function returns delta_a = a_SU(t) / a(t) - 1 given scale factor & cosmology
+def daEqns(y, lna, param):
+    Om, OL, w = param['Om'], param['OL'], -1
+    OK = 1 - Om - OL
+
+    y1, y2 = y
+    a = np.exp(lna)
+    a3w = a**(-3*w)
+    Hfac = - 0.5 * (Om+2*OK*a+(1-3*w)*OL*a3w) / (Om+OK*a+OL*a3w)
+    Ofac = 0.5 * Om / (Om+OK*a+OL*a3w)
+    y1p = y2
+    y2p = Hfac * y2 + Ofac * y1 * (3+y1*(3+y1)) / (1 + y1)**2
+
+    return y1p, y2p
+
+# This routine computes a_SU(a) given DC mode, scale factors, and cosmology
+def aSU(delta_b, times, param):
+    ai = 1e-3 * times[0]  # push it to matter dominated era
+    y1i = - 1/3 * delta_b * ai / linear_growth(1, param)  # a_SU / a - 1
+    y2i = y1i  # y2 = d y1 / d lna
+    yi = [y1i, y2i]
+    lna = [np.log(ai)] + list(np.log(times))
+
+    y = odeint(daEqns, yi, lna, args=(param,), atol=0)
+    return times * (1 + y[1:, 0])
+
 # This routine computes the value of the cosmological parameters, box size and scale
 # factor given the value of the DC mode
+# Note that the DC mode should be in its linear value
 def get_SU(delta_b, param, times):
     SU_param = param.copy()
 
-    D0 = linear_growth([1.], param).squeeze()
-    phi = 5 / 6 * param['Om'] * delta_b / D0
-    SU_param['Om'] *= 1 + 2 * phi
-    SU_param['Oc'] *= 1 + 2 * phi
-    SU_param['Ob'] *= 1 + 2 * phi
-    SU_param['OL'] *= 1 + 2 * phi
-    SU_param['Ok'] = - 2 * phi
-    SU_param['h0'] *= 1 - phi
+    D0 = linear_growth(1., param)
+    dlnH2 = - 5 / 3 * param['Om'] * delta_b / D0  # delta(H^2) / H^2
+    dlnH = np.sqrt(1 + dlnH2) - 1  # delta(H) / H
+
+    SU_param['Om'] /= 1 + dlnH2
+    SU_param['Oc'] /= 1 + dlnH2
+    SU_param['Ob'] /= 1 + dlnH2
+    SU_param['OL'] /= 1 + dlnH2
+    SU_param['Ok'] = dlnH2 / (1 + dlnH2)
+    SU_param['h0'] *= 1 + dlnH
     SU_param['H0'] = SU_param['h0'] * 100
 
-    SU_param['boxsize'] *= 1 - phi
+    SU_param['boxsize'] *= 1 + dlnH
 
-    D = linear_growth(times, param)
-    SU_times = times * (1 - D / D0 * delta_b / 3)
+    SU_times = aSU(delta_b, times, param)
     SU_param['time_end'] = SU_times[-1]
 
     return SU_param, SU_times
@@ -445,8 +473,8 @@ for delta_b in delta_bs:
 
     # write file with snapshot times
     with open('%s/times.txt'%folder, 'w') as f:
-        f.write('\n'.join(str(a) for a in SU_times[:-1]))    
-        
+        f.write('\n'.join(str(a) for a in SU_times[:-1]))
+
     # write Gadget3 parameter file
     with open('%s/G3.param'%folder, 'w') as f:
         f.write(temp_G3.format(**SU_param))
@@ -460,7 +488,7 @@ for delta_b in delta_bs:
         # find the name of the folder containing the realization
         folder_real = '%s/%d'%(folder,i)
         if not(os.path.exists(folder_real)):  os.system('mkdir %s'%folder_real)
-        
+
         # find the name of the ICs folder
         folder_ICs = '%s/ICs'%(folder_real)
         if not(os.path.exists(folder_ICs)):  os.system('mkdir %s'%folder_ICs)
