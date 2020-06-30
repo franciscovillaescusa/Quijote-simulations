@@ -33,7 +33,7 @@ The data is stored in the Gordon cluster of the San Diego Supercomputer Center. 
 
 - Log in into [globus](https://www.globus.org/) (create an account if you dont have one).
 - Due to the volume of the data, the data is currently scattered across supercomputers in San Diego, New York and Princeton.
-- To access the data in San Diego type: Quijote_simulations (or with this [link](https://app.globus.org/file-manager?origin_id=c42757fe-d570-11e9-98e2-0a63aa6b37da&origin_path=%2F))
+- To access the data in San Diego type: Quijote_simulations (or with this [link](https://app.globus.org/file-manager?origin_id=feb85190-bafb-11ea-9a42-0255d23c44ef&origin_path=%2F))
 - To access the data in New York type: Quijote_simulation2 (or with this [link](https://app.globus.org/file-manager?origin_id=e0eae0aa-5bca-11ea-9683-0e56c063f437&origin_path=%2F))
 - To access the data in Princeton type: Princeton TIGRESS QUIJOTE Snapshots (or with this [link](https://app.globus.org/file-manager?origin_id=8ce7cdf0-7e85-11ea-97a5-0e56c063f437&origin_path=%2F))
 
