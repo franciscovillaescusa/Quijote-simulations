@@ -428,6 +428,8 @@ def get_SU(delta_b, param, times):
 ######################################## INPUT #########################################
 root = '/simons/scratch/fvillaescusa/pdf_information/Snapshots'
 
+fiducial_Plin = 'XXXXXXXXX'
+
 # scale factors to write snapshots
 fiducial_times = np.array([1/4, 1/3, 1/2, 2/3, 1])
 
@@ -464,12 +466,14 @@ for delta_b in delta_bs:
     # get the parameters of the Separate Universe cosmology
     SU_param, SU_times = get_SU(delta_b, fiducial_params, fiducial_times)
 
-    # write CAMB parameter file
-    folder_CAMB = '%s/CAMB_TABLES'%folder
-    if not(os.path.exists(folder_CAMB)):  os.system('mkdir %s'%folder_CAMB)
-    f_CAMB = '%s/CAMB_params.ini'%folder_CAMB
-    with open(f_CAMB, 'w') as f:
-        f.write(temp_camb.format(**SU_param))
+    # rescale fiducial linear power spectrum
+    k, P = np.loadtxt(fiducial_Plin, unpack=True)
+    k *= fiducial_params['h0'] / SU_param['h0']
+    P *= (SU_param['h0'] / fiducial_params['h0']) ** 3
+    P *= (linear_growth(1, SU_param) / linear_growth(1, fiducial_params)) ** 2
+    dirname, basename = os.path.splitext(fiducial_Plin)
+    np.savetxt(dirname + str(delta_b) + basename, np.stack([k, P], axis=1))
+
 
     # write file with snapshot times
     with open('%s/times.txt'%folder, 'w') as f:
