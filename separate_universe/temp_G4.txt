@@ -1,0 +1,101 @@
+%----------------------------------------------------%
+% Gadget-4 parameter file for Dark Matter Only
+% 
+% Leaves blanks to be filled in by python .format:
+%       G4_ics_file
+%       G4_wrk_dir
+%       G4_SU_scale_file
+%       time_end
+%       Om -- Omega_m
+%       OL -- Omega_Lambda
+%       h0 -- Hubble parameter
+%       boxsize -- kpc
+%   [ names prefixed with G4_ are for arguments that
+%     only make sense in the Gadget param file ]
+%
+% Changes required for different sim :
+%       Adapt Softening<...> lengths
+%----------------------------------------------------%
+
+%---- Relevant files
+InitCondFile        {G4_ics_file} 
+OutputDir           {G4_wrk_dir}
+OutputListFilename  {G4_wrk_dir}/times.txt
+
+%----- LFT added SU -> global scale factor interpolation table
+SUGlobalScaleFile   {G4_SU_scale_file}   ; has columns a_SU a_global
+
+%---- File formats
+ICFormat     1  ; this is working with 2LPT
+SnapFormat   3  ; 3 for hdf5
+
+%---- CPU-time limits
+CpuTimeBetRestartFile  10800.0   ; seconds
+TimeLimitCPU           10000000  ; seconds
+
+%---- Memory limits
+MaxMemSize	       2000  ; MiB per CPU
+
+%---- LFT : change these
+NumFilesPerSnapshot       1
+MaxFilesWithConcurrentIO  20
+
+%---- Time integration range
+TimeBegin           0.0078125     ; z=127
+TimeMax	            {time_end}    ; end at z=0
+
+%---- Cosmological parameters
+Omega0	            {Om}    ; total matter density
+OmegaLambda         {OL}
+OmegaBaryon         0.0     ; maybe there are no baryons
+HubbleParam         {h0}    ; only needed for cooling
+Hubble              0.1     ; in little h units, and km/s/kpc!!!
+
+BoxSize             {boxsize}  ; kpc
+
+%---- System of units
+UnitLength_in_cm         3.085678e21        ;  kpc / h
+UnitMass_in_g            1.989e43           ;  1.0e10 Msun / h
+UnitVelocity_in_cm_per_s 1e5                ;  1 km/sec
+GravityConstantInternal  0
+
+%---- Gravitational softening length
+%     set both to mean interparticle spacing / 40
+SofteningComovingClass0      1.0           ; kpc/h
+SofteningMaxPhysClass0       1.0
+
+SofteningClassOfPartType0    0
+SofteningClassOfPartType1    0
+
+%---- Accuracy of time integration
+ErrTolIntAccuracy        0.025
+MaxSizeTimestep          0.005
+MinSizeTimestep          0.0
+
+%---- Tree algorithm and force accuracy
+ErrTolTheta                  0.5
+ErrTolThetaMax               1.0
+TypeOfOpeningCriterion       1
+ErrTolForceAcc               0.005
+TopNodeFactor                3.0
+
+ActivePartFracForNewDomainDecomp      0.01
+ActivePartFracForPMinsteadOfEwald     0.05
+
+%---- Parameters of SPH
+MinEgySpec          0
+DesNumNgb           33
+MaxNumNgbDeviation  2
+ArtBulkViscConst    1.0
+InitGasTemp         273.0  ; initial gas temp in K, only used if not in ICs
+CourantFac          0.15
+
+%---- miscellanous
+ComovingIntegrationOn   1    ; comoving (1) or physical (0)
+OutputListOn            1    ; snapshots a values in external file
+TimeBetSnapshot         1.   ; not used if OutputListOn 1
+TimeOfFirstSnapshot     1.   ; not used if OutputListOn 1
+TimeBetStatistics       0.5  ; time interval to compute system potential energy
+
+%---- output files
+SnapshotFileBase  snap

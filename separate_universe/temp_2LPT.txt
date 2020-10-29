@@ -1,0 +1,100 @@
+%---------------------------------------------------%
+% 2LPT parameter file for Dark Matter Only
+%
+% Leaves blanks to be filled in by python .format:
+%       IC_Nm -- mesh sidelength (should be 2xNs)
+%       IC_Ns -- particle number ^ (1/3)
+%       IC_outputdir -- files will be <>/ics.<>
+%       IC_glass_fac -- Ns = fac x GlassFile# (64)
+%       IC_CAMB_Pk -- file with the matter power
+%       IC_seed
+%       boxsize -- kpc
+%       Om
+%       OL
+%       h0
+%---------------------------------------------------%
+
+
+Nmesh            {IC_Nm}      % This is the size of the FFT grid used to
+                              % compute the displacement field. One
+                              % should have Nmesh >= Nsample.
+
+Nsample          {IC_Ns}       % sets the maximum k that the code uses,
+                               % i.e. this effectively determines the
+                               % Nyquist frequency that the code assumes,
+                               % k_Nyquist = 2*PI/Box * Nsample/2
+                               % Normally, one chooses Nsample such that
+                               % Ntot =  Nsample^3, where Ntot is the
+                               % total number of particles
+
+
+Box              {boxsize}      % Periodic box size of simulation
+
+FileBase         ics            % Base-filename of output files
+OutputDir        {IC_outputdir} % Directory for output
+
+GlassFile        /projects/QUIJOTE/Leander/2lpt/GLASS/dummy_glass_dmonly_64.dat  % Glass-File
+GlassTileFac     {IC_glass_fac}   % Number of times the glass file is
+                                  % tiled in each dimension (must be
+                                  % an integer)
+
+
+Omega            {Om}    % Total matter density  (at z=0)
+OmegaLambda      {OL}    % Cosmological constant (at z=0)
+OmegaBaryon      0.0000    % Baryon density        (at z=0)
+OmegaDM_2ndSpecies  0.0    % Omega for a second dark matter species (at z=0)
+HubbleParam      {h0}    % Hubble paramater (may be used for power spec parameterization)
+
+Redshift         127       % Starting redshift
+Sigma8           {s8}       % power spectrum normalization at z=0
+
+SphereMode       0         % if "1" only modes with |k| < k_Nyquist are
+                           % used (i.e. a sphere in k-space), otherwise
+			   % modes with
+                           % |k_x|,|k_y|,|k_z| < k_Nyquist are used
+                           % (i.e. a cube in k-space)
+
+
+WhichSpectrum    2         % "1" selects Eisenstein & Hu spectrum,
+		           % "2" selects a tabulated power spectrum in
+                           % the file 'FileWithInputSpectrum'
+                           % otherwise, Efstathiou parametrization is used
+
+
+FileWithInputSpectrum   {IC_CAMB_Pk} % filename of tabulated MATTER powerspectrum from CAMB
+
+
+InputSpectrum_UnitLength_in_cm  3.085678e24 % defines length unit of tabulated
+                                            % input spectrum in cm/h.
+                                            % Note: This can be chosen different
+					    % from UnitLength_in_cm
+
+
+ShapeGamma       0.201     % only needed for Efstathiou power spectrum
+PrimordialIndex  1.0       % may be used to tilt the primordial index
+		 	   % (one if tabulated)
+
+Phase_flip          0         % flip phase 0-no 1-yes for paired simulations)
+RayleighSampling    1         % whether sampling modes amplitude (1) or not (0)
+Seed                {IC_seed}         %  seed for IC-generator
+
+
+NumFilesWrittenInParallel 32  % limits the number of files that are
+                              % written in parallel when outputting
+
+
+UnitLength_in_cm          3.085678e21  % define output length unit (in cm/h)
+UnitMass_in_g             1.989e43     % define output mass unit (in g/cm)
+UnitVelocity_in_cm_per_s  1e5          % define output velocity unit (in cm/sec)
+
+
+
+WDM_On               0      % Putting a '1' here will enable a WDM small-scale
+                            % smoothing of the power spectrum
+
+WDM_Vtherm_On        0      % If set to '1', the (warm) dark matter particles
+		     	    % will receive an additional random thermal velocity
+                            % corresponding to their particle mass
+
+WDM_PartMass_in_kev  10.0   % This is the particle mass in keV of the WDM
+		     	    % particle
