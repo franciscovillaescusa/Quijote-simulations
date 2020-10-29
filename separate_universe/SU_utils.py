@@ -4,7 +4,6 @@ from scipy.integrate import odeint, solve_ivp
 class SU_utils(object) :
     # This function returns the growths given a cosmology and a scale factor
     @staticmethod
-#    def growthEqns(y, lna, param):
     def growthEqns(lna, y, param):
         Om, OL, w = param['Om'], param['OL'], -1
         OK = 1 - Om - OL
@@ -29,8 +28,6 @@ class SU_utils(object) :
         yi = [Di, Fi]
         lna = np.log([ai, a])
 
-#        y = odeint(SU_utils.growthEqns, yi, lna, args=(param,), atol=0)
-#        D, F = y[-1]
         result = solve_ivp(SU_utils.growthEqns, lna, yi, args=(param,), atol=0, method='Radau')
         D, F = result.y
         D = D[-1]
