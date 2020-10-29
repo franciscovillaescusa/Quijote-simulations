@@ -1,0 +1,39 @@
+#!/bin/bash
+
+#SBATCH -N 4
+#SBATCH -n 160
+#SBATCH --mem 180G
+#SBATCH -t 03:00:00
+#SBATCH -o {sbatch_output}
+#SBATCH --job-name {sbatch_name}
+
+date
+
+IC=/projects/QUIJOTE/Leander/2lpt/2LPTic
+
+G4=/projects/QUIJOTE/Leander/gadget4/Gadget4
+
+module purge
+
+echo Running 2LPT ...
+module load fftw/gcc/openmpi-1.10.2/2.1.5
+module load openmpi/gcc/3.1.3/64
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/projects/QUIJOTE/Leander/gsl-1.16/build/lib
+srun $IC {folder_2LPT}/2LPT.param
+
+
+module purge
+
+echo Running Gadget ...
+module load fftw/gcc/openmpi-1.10.2/3.3.4
+module load openmpi/gcc/3.1.3/64
+module load hdf5/gcc/1.10.0
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/projects/QUIJOTE/Leander/gsl-1.16/build/lib
+srun $G4 {folder_G4}/G4.param
+
+
+echo Removing restart files ...
+rm -r {folder_G4}/restartfiles
+
+
+date
