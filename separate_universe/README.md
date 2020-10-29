@@ -2,7 +2,7 @@ Edit the paths to executables in
 * run\_camb.sh
 * temp\_sbatch.txt
 
-In the latter files, you may also need to edit the modules,
+In these files, you may also need to edit the modules,
 if you built the code with different versions of the libraries.
 
 Note that the sigma8 parameter in parameter\_file\_generator.py
@@ -13,7 +13,7 @@ that it gives the desired value of sigma8.
 
 The code is written for a custom version of Gadget-4, which takes the additional
 parameter SUGlobalScaleFile in its input parameter file.
-This is only import if you want to run the Gadget FoF halo finder, since we
+This is only important if you want to run the Gadget FoF halo finder, since we
 need to rescale the linking length in the separate universes as a function of time.
 
 Running
@@ -25,10 +25,9 @@ will produce the file structure
     root/
       CAMB/
         CAMB_params.ini
-        CAMB_output.txt
         ...
       seed{seeds}/
-        {delta_bs}[p,m]/
+        {abs(delta_bs)}[p,m]/
           2LPT/
             2LPT.param
             CAMB_matterpow_0_headerremoved_rescaled.dat
@@ -44,7 +43,8 @@ The python script will automatically run CAMB. It needs to be run only once
 since we rescale the matter power spectrum for the different values of the DC mode.
 The rescaled power spectra are then placed in the respective 2LPT directories.
 
-The seeds and the values of delta\_b can be set in parameter\_file\_generator.py.
+The root directory as well as the seeds and the values of delta\_b
+can be set in parameter\_file\_generator.py.
 
 A file submit.sh will also be produced in the working directory, which you can use
 to automatically submit all the in.sh scripts to slurm:

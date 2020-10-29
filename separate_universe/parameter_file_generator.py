@@ -3,19 +3,6 @@ from scipy.integrate import odeint
 import sys, os
 from SU_utils import SU_utils
 
-#--------------------------------------#
-# Generates input files for
-#     CAMB, 2LPT, Gadget-4
-#
-# Folder structure :
-#     root/
-#       CAMB/
-#       { abs(delta_b)<p/m> }/
-#         2LPT/
-#         G4/
-#         slurm/
-#--------------------------------------#
-
 # read the template files
 with open('temp_2LPT.txt', 'r') as f :
     temp_2LPT = eval('"""'+f.read()+'"""')
@@ -54,6 +41,8 @@ fiducial_params = dict(IC_Nm = 512, # mesh elements (2xNs is good)
                        time_end = fiducial_times[-1])
 
 seeds = [ii + 2 for ii in range(10)]
+# seeds = [1,]
+
 delta_bs = [0.1, 0.2, 0.5, 0.8, 1.2]
 
 ########################################################################################
@@ -100,7 +89,7 @@ for seed in seeds :
         P *= (SU_param['h0'] / fiducial_params['h0'])**3
         P *= (SU_utils.linear_growth(1, SU_param)
               / SU_utils.linear_growth(1, fiducial_params))**2
-        SU_param['IC_CAMB_Pk']   = '%s/CAMB_matterpow_0_headerremoved.dat'%folder_CAMB
+        SU_param['IC_CAMB_Pk']   = '%s/CAMB_matterpow_0_headerremoved_rescaled.dat'%folder_2LPT
         np.savetxt(SU_param['IC_CAMB_Pk'], np.stack([k,P], axis=1))
 
         # write Gadget4 times file
