@@ -13,6 +13,7 @@ The Quijote simulations is a suite of 44,100 full N-body simulations designed to
    :caption: Content
 
    features
+   team
    license
    help
 	     
