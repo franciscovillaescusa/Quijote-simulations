@@ -13,15 +13,18 @@ The Quijote simulations is a suite of 44,100 full N-body simulations designed to
    :caption: Content
 
    features
+   data
+   snapshots
+   halos
+   galaxies
+   voids
+   Pk
+   bispectra
+   xi
+   pdf
    team
    license
    help
 	     
 
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
