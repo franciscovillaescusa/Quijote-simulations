@@ -1,7 +1,124 @@
-Data Access
-===========
+****
+Data
+****
 
-The data is stored in the three different supercomputers in San Diego, New York, and Princeton. It can be access through `globus <https://www.globus.org/>`_. 
+Description
+-----------
+
+The data is organized among different folders:
+
+- **Snapshots**. This folder contains the snapshots of the simulations
+- **Halos**. This folder contains the halo catalogues
+- **Voids**. This folder contains the void catalogues
+- **Linear_Pk**. This folder contains the linear power spectra of each cosmological model
+- **Pk**. This folder contains the non-linear power spectra
+- **Marked_Pk**. This folder contains the marked power spectra
+- **Bk**. This folder contains the bispectra 
+- **CF**. This folder contains the correlation functions
+- **PDF**. This folder contains the pdfs
+- **density_field**. This folder contains the 3D density fields
+- **density_field_2D**. This folder contains the 2D density fields
+
+Inside each of the above folders there is the data for the different cosmologies, e.g. h_p, fiducial, Om_m. A brief description of the different cosmologies is provided in the below table. The standard and paired fixed snapshots or data products will be located inside the same folder. The paired fixed (or fixed) will be located inside folders starting with NCV (from No Cosmic Variance). Further details can be found in the `Quijote paper <https://arxiv.org/abs/1909.05273>`_. 
+
+
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+ 
+| Name              | :math:`\Omega_m`        | :math:`\Omega_b`  | :math:`h`  | :math:`n_s` |  :math:`\sigma_8` | :math:`M_\nu` | :math:`w` | :math:`\delta_b` | realizations | simulations | ICs      | :math:`N_c^{1/3}` | :math:`N_\nu^{1/3}` |
++===================+=========================+===================+============+=============+===================+===============+===========+==================+==============+=============+==========+===================+=====================+
+|fiducial           |         0.3175          |     0.049         | 0.6711     | 0.9624      |0.834              |0              |-1         |0                 |15,000        |standard     |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+ 
+|fiducial           |         0.3175          |     0.049         | 0.6711     | 0.9624      |0.834              |0              |-1         |0                 |500           |paired fixed |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+ 
+|fiducial_ZA        |         0.3175          |     0.049         | 0.6711     | 0.9624      |0.834              |0              |-1         |0                 |500           |standard     |Zeldovich | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+ 
+|fiducial_LR        |         0.3175          |     0.049         | 0.6711     | 0.9624      |0.834              |0              |-1         |0                 |1,000         |standard     |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+ 
+|fiducial_HR        |         0.3175          |     0.049         | 0.6711     | 0.9624      |0.834              |0              |-1         |0                 |100           |standard     |2LPT      | 1,024             |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|Om_p               |         0.3275          |     0.049         | 0.6711     | 0.9624      |0.834              |0              |-1         |0                 |500           |standard     |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|Om_p               |         0.3275          |     0.049         | 0.6711     | 0.9624      |0.834              |0              |-1         |0                 |500           |paired fixed |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|Om_m               |         0.3075          |     0.049         | 0.6711     | 0.9624      |0.834              |0              |-1         |0                 |500           |standard     |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|Om_m               |         0.3075          |     0.049         | 0.6711     | 0.9624      |0.834              |0              |-1         |0                 |500           |paired fixed |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|Ob2_p              |         0.3175          |     0.051         | 0.6711     | 0.9624      |0.834              |0              |-1         |0                 |500           |standard     |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|Ob2_p              |         0.3175          |     0.051         | 0.6711     | 0.9624      |0.834              |0              |-1         |0                 |500           |paired fixed |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|Ob2_m              |         0.3175          |     0.047         | 0.6711     | 0.9624      |0.834              |0              |-1         |0                 |500           |standard     |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|Ob2_m              |         0.3175          |     0.047         | 0.6711     | 0.9624      |0.834              |0              |-1         |0                 |500           |paired fixed |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|Ob_p               |         0.3175          |     0.050         | 0.6711     | 0.9624      |0.834              |0              |-1         |0                 |500           |paired fixed |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|Ob_m               |         0.3175          |     0.048         | 0.6711     | 0.9624      |0.834              |0              |-1         |0                 |500           |paired fixed |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|h_p                |         0.3175          |     0.049         | 0.6911     | 0.9624      |0.834              |0              |-1         |0                 |500           |standard     |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|h_p                |         0.3175          |     0.049         | 0.6911     | 0.9624      |0.834              |0              |-1         |0                 |500           |paired fixed |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|h_m                |         0.3175          |     0.049         | 0.6511     | 0.9624      |0.834              |0              |-1         |0                 |500           |standard     |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|h_m                |         0.3175          |     0.049         | 0.6511     | 0.9624      |0.834              |0              |-1         |0                 |500           |paired fixed |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|ns_p               |         0.3175          |     0.049         | 0.6711     | 0.9824      |0.834              |0              |-1         |0                 |500           |standard     |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|ns_p               |         0.3175          |     0.049         | 0.6711     | 0.9824      |0.834              |0              |-1         |0                 |500           |paired fixed |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|ns_m               |         0.3175          |     0.049         | 0.6711     | 0.9424      |0.834              |0              |-1         |0                 |500           |standard     |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|ns_m               |         0.3175          |     0.049         | 0.6711     | 0.9424      |0.834              |0              |-1         |0                 |500           |paired fixed |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|s8_p               |         0.3175          |     0.049         | 0.6711     | 0.9624      |0.849              |0              |-1         |0                 |500           |standard     |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|s8_p               |         0.3175          |     0.049         | 0.6711     | 0.9624      |0.849              |0              |-1         |0                 |500           |paired fixed |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|s8_m               |         0.3175          |     0.049         | 0.6711     | 0.9624      |0.819              |0              |-1         |0                 |500           |standard     |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|s8_m               |         0.3175          |     0.049         | 0.6711     | 0.9624      |0.819              |0              |-1         |0                 |500           |paired fixed |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|Mnu_p              |         0.3175          |     0.049         | 0.6711     | 0.9624      |0.834              |0.1            |-1         |0                 |500           |standard     |Zeldovich | 512               |512                  |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|Mnu_p              |         0.3175          |     0.049         | 0.6711     | 0.9624      |0.834              |0.1            |-1         |0                 |500           |paired fixed |Zeldovich | 512               |512                  |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|Mnu_pp             |         0.3175          |     0.049         | 0.6711     | 0.9624      |0.834              |0.2            |-1         |0                 |500           |standard     |Zeldovich | 512               |512                  |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|Mnu_pp             |         0.3175          |     0.049         | 0.6711     | 0.9624      |0.834              |0.2            |-1         |0                 |500           |paired fixed |Zeldovich | 512               |512                  |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|Mnu_ppp            |         0.3175          |     0.049         | 0.6711     | 0.9624      |0.834              |0.4            |-1         |0                 |500           |standard     |Zeldovich | 512               |512                  |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|Mnu_ppp            |         0.3175          |     0.049         | 0.6711     | 0.9624      |0.834              |0.4            |-1         |0                 |500           |paired fixed |Zeldovich | 512               |512                  |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|w_p                |         0.3175          |     0.049         | 0.6711     | 0.9624      |0.834              |0              |-1.05      |0                 |500           |standard     |Zeldovich | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|w_m                |         0.3175          |     0.049         | 0.6711     | 0.9624      |0.834              |0              |-0.95      |0                 |500           |standard     |Zeldovich | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|DC_p               |         0.3175          |     0.049         | 0.6711     | 0.9624      |0.834              |0              |-1         |0.035             |500           |standard     |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|DC_m               |         0.3175          |     0.049         | 0.6711     | 0.9624      |0.834              |0              |-1         |-0.035            |500           |standard     |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|latin_hypercube    |      [0.1 - 0.5]        |   [0.03 - 0.07]   |[0.5 -0.9]  |[0.8 - 1.2]  |[0.6 - 1.0]        |0              |-1         |0                 |2,000         |standard     |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|latin_hypercube    |      [0.1 - 0.5]        |   [0.03 - 0.07]   |[0.5 -0.9]  |[0.8 - 1.2]  |[0.6 - 1.0]        |0              |-1         |0                 |2,000         |fixed        |2LPT      | 512               |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+|latin_hypercube_HR |      [0.1 - 0.5]        |   [0.03 - 0.07]   |[0.5 -0.9]  |[0.8 - 1.2]  |[0.6 - 1.0]        |0              |-1         |0                 |2,000         |standard     |2LPT      | 1,024             |0                    |
++-------------------+-------------------------+-------------------+------------+-------------+-------------------+---------------+-----------+------------------+--------------+-------------+----------+-------------------+---------------------+
+
+
+
+Data access
+-----------
+
+The data is stored in the three different supercomputers in San Diego, New York, and Princeton. Each cluster contains the following data:
+
+- **San Diego**: The realizations 8,000 to 14,999 of the fiducial set. The standard and fixed LH latin hypercube. The halos, voids, power spectra, bispectra, correlation functions, and pdfs. 235 Tb
+- **New York**: The snapshots of high-resolution latin-hypercube (latin_hypercube_HR). 329 Tb
+- **Princeton**: All the other snapshots. 620 Tb
+
+
+The data can be accessed through `globus <https://www.globus.org/>`_:
 
 - Log in into `globus <https://www.globus.org/>`_ (create an account if you dont have one).
 - To access the data in San Diego type: Quijote_simulations (or with this `link1 <https://app.globus.org/file-manager?origin_id=feb85190-bafb-11ea-9a42-0255d23c44ef&origin_path=%2F>`_)
@@ -10,21 +127,88 @@ The data is stored in the three different supercomputers in San Diego, New York,
 
 Note that to download the data to your local machine (e.g. laptop) you will need to install the globus connect personal. For further details see `here <https://github.com/franciscovillaescusa/Quijote-simulations/blob/master/documentation/globus.md>`_.
 
-There are different folders:
 
-- **Snapshots**. This folder contains the snapshots of the simulations
-- **Halos**. This folder contains the halo catalogues
-- **Voids**. This folder contains the void catalogues
-- **Linear_Pk**. This folder contains the linear power spectra of each cosmological model
-- **Pk**. This folder contains the power spectra
-- **Marked_Pk**. This folder contains the marked power spectra
-- **Bk**. This folder contains the bispectra 
-- **CF**. This folder contains the correlation functions
-- **PDF**. This folder contains the pdfs
-- **density_field**. This folder contains the 3D density fields
-- **density_field_2D**. This folder contains the 2D density fields
+Globus
+------
 
-Inside each of the above folders there is the data for the different cosmologies, e.g. h_p, fiducial, Om_m. A brief description of the different cosmologies is provided in the below table. Further details can be found in the `Quijote paper <https://arxiv.org/abs/1909.05273>`_.
+The simplest way to transfer data is to use the globus graphical environment. Just type the above names in collection (e.g. Quijote_simulations for the data in San Diego) or click the associated link. You will need to choose where the data is being moved in the other collection (e.g. your laptop or another supercomputer). Once the collection points are set, select the data you want to transfer and destiny folder and click in Start.
+
+.. image:: Globus.png
+
+In some cases, there are so many files in a given directory, that globus may not be able to list them all and return an error. If this is the case, it is advisable to use the path line. For instance, if by clicking in Snapshots you get a time out error, you may want to just type in the path line: /Snapshots/ or /~/Snapshots/. This may show you the different content of the data and allow you to navigate it. You can also go to a given directory directly from there. E.g. to access the first realization of the fiducial cosmology, type in path: /Snapshots/fiducial/0/ or /~/Snapshots/fiducial/0/.
+
+In some cases, the above option may not be desirable. For instance, imagine that you want to download all linear matter power spectra of the high-resolution latin-hypercube simulations. Those files are located in, e.g. for realization 45,
+
+/Snapshots/latin_hypercube_HR/45/ICs/Pk_mm_z=0.000.txt
+
+Thus, to download all those files, without involving downloading the full snapshots, will require that you access each simulation folder, then the ICs folder and then transfer the file individually. For 2000 files this is unpractical. For these situations, we recommend the usage of `Command Line Interface (CLI) <https://docs.globus.org/cli/>`_. The first step is to install the CLI package, if you don't have it. Next, login into globus by typing in a terminal
+
+.. code-block:: bash
+
+   globus login
+
+Then, the following command allow you to determine the associated endpoint of the Quijote simulations:
+
+.. code-block:: bash
+		
+   globus endpoint search "Quijote_simulations"
+
+::
+   
+   ID                                   | Owner                     | Display Name       
+   ------------------------------------ | ------------------------- | -------------------
+   c42757fe-d570-11e9-98e2-0a63aa6b37da | fvillaescusa@globusid.org | Quijote_simulations
 
 
-.. image:: sims_table.png
+You should do the same to know the endpoint of the machine where you are transfering the data to. You can then explore the filesystem of the Quijote simulations (or your machine) as:
+
+.. code-block:: bash
+		
+   ep1=c42757fe-d570-11e9-98e2-0a63aa6b37da
+   globus ls $ep1:/Snapshots/latin_hypercube_HR/45/ICs/
+
+
+The above command will list the content of the /Snapshots/latin_hypercube_HR/45/ICs/ directory. A single file can be transfered as:
+
+.. code-block:: bash
+   
+   ep1=c42757fe-d570-11e9-98e2-0a63aa6b37da
+   ep2=ddb59af0-6d04-11e5-ba46-22000b92c6ec
+   globus transfer $ep1:/Snapshots/latin_hypercube_HR/45/ICs/Pk_mm_z=0.000.txt $ep2:/Quijote_simulations/linear_Pk/45/Pk_mm_z=0.000.txt --label "single file transfer"
+
+
+Where ep2 should be the endpoint of the machine where you are transfering the data. Entire folders can be moved as follows:
+
+.. code-block:: bash
+		
+   ep1=c42757fe-d570-11e9-98e2-0a63aa6b37da
+   ep2=ddb59af0-6d04-11e5-ba46-22000b92c6ec
+   globus transfer $ep1:/Snapshots/latin_hypercube_HR/45/ICs $ep2:/Quijote_simulations/45/ICs  --recursive --label "single folder transfer"
+
+Many folders can be moved with a single command as
+
+.. code-block:: bash
+
+   ep1=c42757fe-d570-11e9-98e2-0a63aa6b37da
+   ep2=ddb59af0-6d04-11e5-ba46-22000b92c6ec
+   globus transfer $ep1:/Snapshots/fiducial/ $ep2:/Quijote_simulations/fiducial/ --batch --label "CLI 10 folders" < folders.txt
+
+
+where folders.txt is a text file containing
+
+.. code-block:: bash
+		
+    --recursive 0 0
+    --recursive 1 1
+    --recursive 2 2
+    --recursive 3 3
+    --recursive 4 4
+    --recursive 5 5
+    --recursive 6 6
+    --recursive 7 7
+    --recursive 8 8
+    --recursive 9 9
+
+For more options and details see `Command Line Interface (CLI) <https://docs.globus.org/cli/>`_.
+
+

@@ -16,10 +16,15 @@ The Quijote simulations is a suite of 44,100 full N-body simulations designed to
 
 .. toctree::
    :maxdepth: 2
-   :caption: Content
+   :caption: Characteristics
 
    features
    data
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Data products
+   
    snapshots
    halos
    galaxies
@@ -28,8 +33,14 @@ The Quijote simulations is a suite of 44,100 full N-body simulations designed to
    bispectra
    xi
    pdf
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Other
+	     
    team
    publications
+   citation
    license
    help
 	     
