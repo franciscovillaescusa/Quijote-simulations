@@ -1,3 +1,115 @@
 ************
 Publications
 ************
+
+#. | **Learning the Evolution of the Universe in N-body Simulations**
+   | Chang Chen, Yin Li, Francisco Villaescusa-Navarro, Shirley Ho, Anthony Pullen
+   | `2012.05472 <https://arxiv.org/abs/2012.05472>`_
+
+#. | **Constraining** :math:`M_\nu` **with the Bispectrum II: The Total Information Content of the Galaxy Bispectrum**
+   | ChangHoon Hahn, Francisco Villaescusa-Navarro
+   | `2012.02200 <https://arxiv.org/abs/2012.02200>`_
+
+#. | **Fast and Accurate Non-Linear Predictions of Universes with Deep Learning**
+   | Renan Alves de Oliveira, Yin Li, Francisco Villaescusa-Navarro, Shirley Ho, David N. Spergel
+   | `2012.00240 <https://arxiv.org/abs/2012.00240>`_
+
+#. | **The unequal-time matter power spectrum: impact on weak lensing observables**
+   | Lucia F. de la Bella, Nicolas Tessore, Sarah Bridle
+   | `2011.06185 <https://arxiv.org/abs/2011.06185>`_
+
+#. | **Exploring KSZ velocity reconstruction with N-body simulations and the halo model**
+   | Utkarsh Giri, Kendrick M. Smith 
+   | `2010.07193 <https://arxiv.org/abs/2010.07193>`_
+
+#. | **Modeling the Marked Spectrum of Matter and Biased Tracers in Real- and Redshift-Space**
+   | Oliver H.E. Philcox, Alejandro Aviles, Elena Massara
+   | `2010.05914 <https://arxiv.org/abs/2010.05914>`_
+
+#. | **CARPool: fast, accurate computation of large-scale structure statistics by pairing costly and cheap cosmological simulations**
+   | Nicolas Chartier, Benjamin Wandelt, Yashar Akrami, Francisco Villaescusa-Navarro
+   | `2009.08970 <https://arxiv.org/abs/2009.08970>`_
+
+#. | **Matter trispectrum: theoretical modelling and comparison to N-body simulations**
+   | Davide Gualdi, Sergi Novell, Héctor Gil-Marín, Licia Verde
+   | `2009.02290 <https://arxiv.org/abs/2009.02290>`_
+
+#. | **The impact of massive neutrinos on halo assembly bias**
+   | Titouan Lazeyras, Francisco Villaescusa-Navarro, Matteo Viel
+   | `2008.12265 <https://arxiv.org/abs/2008.12265>`_
+
+#. | **Capturing the Cosmic Web for Cosmology**
+   | Krishna Naidoo
+   | `1829731 <https://inspirehep.net/literature/1829731>`_   
+
+#. | **Nearest Neighbor distributions: new statistical measures for cosmological clustering**
+   | Arka Banerjee, Tom Abel
+   | `2007.13342 <https://arxiv.org/abs/2007.13342>`_
+
+#. | **The effects of massive neutrinos on the linear point of the correlation function**
+   | G. Parimbelli, S. Anselmi, M. Viel, C. Carbone, F. Villaescusa-Navarro, P.S. Corasaniti, Y. Rasera, R. Sheth, G.D. Starkman, I. Zehavi
+   | `2007.10345 <https://arxiv.org/abs/2007.10345>`_
+
+#. | **A Lagrangian Perturbation Theory in the presence of massive neutrinos**
+   | Alejandro Aviles, Arka Banerjee
+   | `2007.06508 <https://arxiv.org/abs/2007.06508>`_
+
+#. | **Discovering Symbolic Models from Deep Learning with Inductive Biases**
+   | Miles Cranmer, Alvaro Sanchez-Gonzalez, Peter Battaglia, Rui Xu, Kyle Cranmer, David Spergel, Shirley Ho
+   | `2006.11287 <https://arxiv.org/abs/2006.11287>`_
+
+#. | **What does the marked power spectrum measure? Insights from perturbation theory**
+   | Oliver H.E. Philcox, Elena Massara, David N. Spergel
+   | `2006.10055 <https://arxiv.org/abs/2006.10055>`_
+
+#. | **New Interpretable Statistics for Large Scale Structure Analysis and Generation**
+   | E. Allys, T. Marchand, J.-F. Cardoso, F. Villaescusa-Navarro, S. Ho, S. Mallat
+   | `2006.06298 <https://arxiv.org/abs/2006.06298>`_
+
+#. | **A Faster Fourier Transform? Computing Small-Scale Power Spectra and Bispectra for Cosmological Simulations in** :math:`\mathcal{O}(N^2)` **Time**
+   | Oliver H.E. Philcox
+   | `2005.01739 <https://arxiv.org/abs/2005.01739>`_
+
+#. | **Effective halo model: Creating a physical and accurate model of the matter power spectrum and cluster counts**
+   | Oliver H.E. Philcox, David N. Spergel, Francisco Villaescusa-Navarro
+   | `2004.09515 <https://arxiv.org/abs/2004.09515>`_
+
+#. | **What Can We Learn by Combining the Skew Spectrum and the Power Spectrum?**
+   | Ji-Ping Dai, Licia Verde, Jun-Qing Xia
+   | `2002.09904 <https://arxiv.org/abs/2002.09904>`_
+
+#. | **Using the Marked Power Spectrum to Detect the Signature of Neutrinos in Large-Scale Structure**
+   | Elena Massara, Francisco Villaescusa-Navarro, Shirley Ho, Neal Dalal, David N. Spergel
+   | `2001.11024 <https://arxiv.org/abs/2001.11024>`_
+
+#. | **Super-resolution emulator of cosmological simulations using deep physical models**
+   | Doogesh Kodi Ramanah, Tom Charnock, Francisco Villaescusa-Navarro, Benjamin D. Wandelt
+   | `2001.05519 <https://arxiv.org/abs/2001.05519>`_
+
+#. | **Primordial non-Gaussianity without tails – how to measure fNL with the bulk of the density PDF**
+   | Oliver Friedrich, Cora Uhlemann, Francisco Villaescusa-Navarro, Tobias Baldauf, Marc Manera, Takahiro Nishimichi
+   | `1912.06621 <https://arxiv.org/abs/1912.06621>`_
+
+#. | **Fisher for complements: Extracting cosmology and neutrino mass from the counts-in-cells PDF**
+   | Cora Uhlemann, Oliver Friedrich, Francisco Villaescusa-Navarro, Arka Banerjee, Sandrine Codis
+   | `1911.11158 <https://arxiv.org/abs/1911.11158>`_
+
+#. | **Learning neutrino effects in Cosmology with Convolutional Neural Networks**
+   | Elena Giusarma, Mauricio Reyes Hurtado, Francisco Villaescusa-Navarro, Siyu He, Shirley Ho, ChangHoon Hahn
+   | `1910.04255 <https://arxiv.org/abs/1910.04255>`_
+
+#. | **Constraining** :math:`M_\nu` **with the bispectrum. Part I. Breaking parameter degeneracies**
+   | ChangHoon Hahn, Francisco Villaescusa-Navarro, Emanuele Castorina, Roman Scoccimarro
+   | `1909.11107  <https://arxiv.org/abs/1909.11107>`_
+
+#. | **Weighing neutrinos with the halo environment**
+   | Arka Banerjee, Emanuele Castorina, Francisco Villaescusa-Navarro, Travis Court, Matteo Viel
+   | `1907.06598 <https://arxiv.org/abs/1907.06598>`_
+
+#. | **Anisotropic halo assembly bias and redshift-space distortions**
+   | Andrej Obuljen, Neal Dalal, Will J. Percival
+   | `1906.11823 <https://arxiv.org/abs/1906.11823>`_
+
+#. | **The Quijote simulations**
+   | Francisco Villaescusa-Navarro, ChangHoon Hahn, Elena Massara, Arka Banerjee, Ana Maria Delgado, Doogesh Kodi Ramanah, Tom Charnock, Elena Giusarma, Yin Li, Erwan Allys, Antoine Brochard, Cora Uhlemann, Chi-Ting Chiang, Siyu He, Alice Pisani, Andrej Obuljen, Yu Feng, Emanuele Castorina, Gabriella Contardo, Christina D. Kreisch, Andrina Nicola, Justin Alsing, Roman Scoccimarro, Licia Verde, Matteo Viel, Shirley Ho, Stephane Mallat, Benjamin Wandelt, David N. Spergel
+   | `1909.05273 <https://arxiv.org/abs/1909.05273>`_
