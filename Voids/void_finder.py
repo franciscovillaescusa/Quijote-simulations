@@ -37,11 +37,16 @@ def find_voids(snapshot, ptypes, grid, MAS, do_RSD, axis, threshold, Radii,
     VSF_R       = V.Rbins     # bins in radius
     VSF         = V.void_vsf  # void size function
         
-    parameters = [grid, MAS, '%s'%ptypes, threshold, '%s'%Radii]
+    parameters = np.array([grid, MAS, '%s'%ptypes, threshold, '%s'%Radii])
 
     # save the results to file
     f = h5py.File(fout, 'w')
-    f.create_dataset('parameters',    data=parameters)
+    f.create_dataset('grid',          data=grid)
+    f.create_dataset('MAS',           data=MAS)
+    f.create_dataset('ptype',         data=ptypes)
+    f.create_dataset('threshold',     data=threshold)
+    f.create_dataset('Radii_input',   data=Radii)
+    #f.create_dataset('parameters',    data=parameters)
     f.create_dataset('pos',           data=void_pos)
     f.create_dataset('radius',        data=void_radius)
     f.create_dataset('VSF_Rbins',     data=VSF_R)
@@ -50,7 +55,8 @@ def find_voids(snapshot, ptypes, grid, MAS, do_RSD, axis, threshold, Radii,
 
 
 
-root = '/simons/scratch/fvillaescusa/pdf_information/%s'%args.cosmo
+#root = '/simons/scratch/fvillaescusa/pdf_information/%s'%args.cosmo
+root = '/projects/QUIJOTE/Snapshots/%s'%args.cosmo
 ################################# INPUT ######################################
 # density field parameters
 grid    = 768
@@ -63,10 +69,11 @@ snapnum = 4
 threshold = -0.5
 Radii     = np.array([41, 39, 37, 35, 33, 31, 29, 27, 25, 23, 21, 19, 17, 15, 13, 
                       11, 9, 7, 5], dtype=np.float32)*1000.0/768
-threads1  = 16
+threads1  = 20
 threads2  = 4
 
-root_out = '/simons/scratch/fvillaescusa/pdf_information/Voids/%s'%args.cosmo
+#root_out = '/simons/scratch/fvillaescusa/pdf_information/Voids/%s'%args.cosmo
+root_out = '/projects/QUIJOTE/Voids/%s'%args.cosmo
 ##############################################################################
 
 z_dict = {4:0, 3:0.5, 2:1, 1:2, 0:3}
@@ -75,7 +82,7 @@ z_dict = {4:0, 3:0.5, 2:1, 1:2, 0:3}
 if not(os.path.exists(root_out)):  os.system('mkdir %s'%root_out)
 
 # do a loop over the different realizations
-for i in xrange(args.first, args.last):
+for i in range(args.first, args.last):
 
     # loop over standard and paired fixed simulations
     for prefix in ['%d'%i, 'NCV_0_%d'%i, 'NCV_1_%d'%i]:

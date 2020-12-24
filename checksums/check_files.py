@@ -12,26 +12,31 @@ myrank = comm.Get_rank()
 ################################## INPUT #######################################
 root = '/projects/QUIJOTE/Snapshots'
 
-cosmologies = ['Om_p', 'Om_p']
+cosmologies = ['fiducial']
+start, end = 6200, 8000
 ################################################################################
 
 # do a loop over the different cosmologies
 for cosmo in cosmologies:
 
     # find the number of standard and paired fixed sims
-    if cosmo=='fiducial':  std, pf = 15000, 250
-    elif cosmo=='Ob_p':    std, pd = 0,     250
-    elif cosmo=='Ob_m':    std, pf = 0,     250
-    elif cosmo=='w_p':     std, pf = 500,   0
-    elif cosmo=='w_m':     std, pf = 500,   0
-    elif cosmo=='DC_p':    std, pf = 500,   0
-    elif cosmo=='DC_m':    std, pf = 500,   0
-    else:                  std, pf = 500,   250    
+    if   cosmo=='fiducial':     std, pf = 15000, 0#250
+    elif cosmo=='fiducial_LR':  std, pf = 1000,  0 
+    elif cosmo=='fiducial_HR':  std, pf = 100,   0 
+    elif cosmo=='Ob_p':         std, pf = 0,     250
+    elif cosmo=='Ob_m':         std, pf = 0,     250
+    elif cosmo=='w_p':          std, pf = 500,   0
+    elif cosmo=='w_m':          std, pf = 500,   0
+    elif cosmo=='DC_p':         std, pf = 500,   0
+    elif cosmo=='DC_m':         std, pf = 500,   0
+    else:                       std, pf = 500,   250    
     realizations = max(std,pf)
 
     # find the numbers that each cpu will work with
     realizations = max(std, pf)
-    numbers = np.where(np.arange(realizations)%nprocs==myrank)[0]
+    #numbers = np.where(np.arange(realizations)%nprocs==myrank)[0]
+    numbers = np.where(np.arange(start,end)%nprocs==myrank)[0]
+    numbers = np.arange(start,end)[numbers]
 
     # do a loop over all realizations
     count = 0
@@ -51,6 +56,7 @@ for cosmo in cosmologies:
             folder = '%s/%s/%s'%(root,cosmo,suffix)
             os.chdir('%s'%folder)
             os.system('sha224sum -c SHA224SUMS --quiet')
+            print(myrank,count,i,suffix,flush=True)
             count += 1
     count_partial = np.array(count, dtype=np.int64)
     count_total   = np.array(0,     dtype=np.int64)

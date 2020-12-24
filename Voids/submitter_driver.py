@@ -15,22 +15,23 @@ offset = 0 #the count will start from offset
 nodes = int(realizations/step)
 
 # do a loop over each node
-for i in xrange(nodes):
+for i in range(nodes):
 
-    for folder in ['Om_p', 'Ob2_p', 'h_p', 'ns_p', 's8_p',
-                   'Om_m', 'Ob2_m', 'h_m', 'ns_m', 's8_m',
-                   'Mnu_p', 'Mnu_pp', 'Mnu_ppp', 'fiducial']:
+    #for folder in ['Om_p', 'Ob2_p', 'h_p', 'ns_p', 's8_p',
+    #               'Om_m', 'Ob2_m', 'h_m', 'ns_m', 's8_m',
+    #               'Mnu_p', 'Mnu_pp', 'Mnu_ppp', 'fiducial']:
+    for folder in ['fiducial_ZA']:
 
 
         a = """#!/bin/bash
 #SBATCH -J void_finder
 #SBATCH --exclusive        
-#SBATCH -t 7-00:00
+#SBATCH -t 2-00:00
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=16
-#SBATCH --partition=general
+#SBATCH --ntasks-per-node=20
+#######SBATCH --partition=general
 ######SBATCH --partition=preempt
-#SBATCH --export=ALL
+########SBATCH --export=ALL
        
 
 python void_finder.py %d %d %s\n
