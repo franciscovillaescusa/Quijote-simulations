@@ -4,6 +4,22 @@
 Publications
 ************
 
+#. | **Information content in mean pairwise velocity and mean relative velocity between pairs in a triplet**
+   | Joseph Kuruvilla, Nabila Aghanim
+   | `2102.06709 <https://arxiv.org/abs/2102.06709>`_
+
+#. | **Detecting neutrino mass by combining matter clustering, halos, and voids**
+   | Adrian E. Bayer, Francisco Villaescusa-Navarro, Elena Massara, Jia Liu, David N. Spergel, Licia Verde, Benjamin Wandelt, Matteo Viel, Shirley Ho
+   | `2102.05049 <https://arxiv.org/abs/2102.05049>`_
+
+#. | **Information Content of Higher-Order Galaxy Correlation Functions**
+   | Lado Samushia, Zachary Slepian, Francisco Villaescusa-Navarro 
+   | `2102.01696 <https://arxiv.org/abs/2102.01696>`_
+
+#. | **Cosmological cross-correlations and nearest neighbor distributions**
+   | Arka Banerjee, Tom Abel
+   | `2102.01184 <https://arxiv.org/abs/2102.01184>`_
+
 #. | **Learning the Evolution of the Universe in N-body Simulations**
    | Chang Chen, Yin Li, Francisco Villaescusa-Navarro, Shirley Ho, Anthony Pullen
    | `2012.05472 <https://arxiv.org/abs/2012.05472>`_
