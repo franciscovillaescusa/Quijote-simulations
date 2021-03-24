@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Detecting the radiative decay of the cosmic neutrino background with line-intensity mapping**
+   | Jose Luis Bernal, Andrea Caputo, Francisco Villaescusa-Navarro, Marc Kamionkowski
+   | `2103.12099 <https://arxiv.org/abs/2103.12099>`_
+
 #. | **Information content in mean pairwise velocity and mean relative velocity between pairs in a triplet**
    | Joseph Kuruvilla, Nabila Aghanim
    | `2102.06709 <https://arxiv.org/abs/2102.06709>`_
