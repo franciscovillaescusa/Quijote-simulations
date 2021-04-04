@@ -108,6 +108,8 @@ Inside each of the above folders there is the data for the different cosmologies
 
 
 
+.. _data_access:
+
 Data access
 -----------
 

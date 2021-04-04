@@ -40,6 +40,7 @@ The Quijote simulations is a suite of 44,100 full N-body simulations designed to
    bispectra
    xi
    pdf
+   df
 
 .. toctree::
    :maxdepth: 2
