@@ -16,8 +16,7 @@ The data is organized among different folders:
 - **Bk**. This folder contains the bispectra 
 - **CF**. This folder contains the correlation functions
 - **PDF**. This folder contains the pdfs
-- **density_field**. This folder contains the 3D density fields
-- **density_field_2D**. This folder contains the 2D density fields
+- **3D_cubes**. This folder contains the 3D density fields
 
 Inside each of the above folders there is the data for the different cosmologies, e.g. h_p, fiducial, Om_m. A brief description of the different cosmologies is provided in the below table. The standard and paired fixed snapshots or data products will be located inside the same folder. The paired fixed (or fixed) will be located inside folders starting with NCV (from No Cosmic Variance). Further details can be found in the `Quijote paper <https://arxiv.org/abs/1909.05273>`_. 
 
