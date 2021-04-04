@@ -116,7 +116,7 @@ Data access
 The data is stored in the three different supercomputers in San Diego, New York, and Princeton. Each cluster contains the following data:
 
 - **San Diego**: The realizations 8,000 to 14,999 of the fiducial set. The standard and fixed LH latin hypercube. The halos, voids, power spectra, bispectra, correlation functions, and pdfs. 235 Tb
-- **New York**: The snapshots of high-resolution latin-hypercube (latin_hypercube_HR). 329 Tb
+- **New York**: The snapshots of high-resolution latin-hypercube (latin_hypercube_HR) and the 3D density fields. 329 Tb
 - **Princeton**: All the other snapshots. 620 Tb
 
 
