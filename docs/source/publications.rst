@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Joint analysis of anisotropic power spectrum, bispectrum and trispectrum: application to N-body simulations**
+   | Davide Gualdi, Hector Gil-Marin, Licia Verde
+   | `2104.03976 <https://arxiv.org/abs/2104.03976>`_
+
 #. | **Detecting the radiative decay of the cosmic neutrino background with line-intensity mapping**
    | Jose Luis Bernal, Andrea Caputo, Francisco Villaescusa-Navarro, Marc Kamionkowski
    | `2103.12099 <https://arxiv.org/abs/2103.12099>`_
