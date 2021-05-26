@@ -22,7 +22,7 @@ Notice that the matter power spectra at z=0 are not normalized (this is because 
     k, Pk   = np.loadtxt(f_Pk, unpack=True)
     Normfac = np.loadtxt(f_norm)
 
-    Pk_norm = Pk*np.sqrt(Normfac)
+    Pk_norm = Pk*Normfac
 
 
 Non-linear power spectra
