@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **CARPool Covariance: Fast, unbiased covariance estimation for large-scale structure observables**
+   | Nicolas Chartier, Benjamin D. Wandelt
+   | `2106.11718 <https://arxiv.org/abs/2106.11718>`_
+
 #. | **Extracting cosmological parameters from N-body simulations using machine learning techniques**
    | Andrei Lazanu
    | `2106.11061 <https://arxiv.org/abs/2106.11061>`_
