@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Clustering in Massive Neutrino Cosmologies via Eulerian Perturbation Theory**
+   | Alejandro Aviles, Arka Banerjee, Gustavo Niz, Zachary Slepian
+   | `2106.13771 <https://arxiv.org/abs/2106.13771>`_
+   
 #. | **CARPool Covariance: Fast, unbiased covariance estimation for large-scale structure observables**
    | Nicolas Chartier, Benjamin D. Wandelt
    | `2106.11718 <https://arxiv.org/abs/2106.11718>`_
