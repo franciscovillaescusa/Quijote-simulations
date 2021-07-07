@@ -4,6 +4,14 @@
 Publications
 ************
 
+#. | **The GIGANTES dataset: precision cosmology from voids in the machine learning era**
+   | Christina D. Kreisch, Alice Pisani, Francisco Villaescusa-Navarro, David N. Spergel, Benjamin D. Wandelt, Nico Hamaus, Adrian E. Bayer
+   | `2107.02304 <https://arxiv.org/abs/2107.02304>`_
+
+#. | **The PDF perspective on the tracer-matter connection: Lagrangian bias and non-Poissonian shot noise**
+   | Oliver Friedrich, Anik Halder, Aoife Boyle, Cora Uhlemann, Dylan Britt, Sandrine Codis, Daniel Gruen, ChangHoon Hahn
+   | `2107.02300 <https://arxiv.org/abs/2107.02300>`_
+   
 #. | **Clustering in Massive Neutrino Cosmologies via Eulerian Perturbation Theory**
    | Alejandro Aviles, Arka Banerjee, Gustavo Niz, Zachary Slepian
    | `2106.13771 <https://arxiv.org/abs/2106.13771>`_
