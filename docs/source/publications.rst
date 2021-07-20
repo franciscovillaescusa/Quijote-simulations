@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | ***The reach of next-to-leading-order perturbation theory for the matter bispectrum**
+   | Davit Alkhanishvili, Cristiano Porciani, Emiliano Sefusatti, Matteo Biagetti, Andrei Lazanu, Andrea Oddo, and Victoria Yankelevich
+   | `2107.08054 <https://arxiv.org/abs/2107.08054>`_
+
 #. | **The GIGANTES dataset: precision cosmology from voids in the machine learning era**
    | Christina D. Kreisch, Alice Pisani, Francisco Villaescusa-Navarro, David N. Spergel, Benjamin D. Wandelt, Nico Hamaus, Adrian E. Bayer
    | `2107.02304 <https://arxiv.org/abs/2107.02304>`_
