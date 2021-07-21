@@ -4,7 +4,7 @@
 Publications
 ************
 
-#. | ***The reach of next-to-leading-order perturbation theory for the matter bispectrum**
+#. | **The reach of next-to-leading-order perturbation theory for the matter bispectrum**
    | Davit Alkhanishvili, Cristiano Porciani, Emiliano Sefusatti, Matteo Biagetti, Andrei Lazanu, Andrea Oddo, and Victoria Yankelevich
    | `2107.08054 <https://arxiv.org/abs/2107.08054>`_
 
