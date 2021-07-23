@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Modeling Nearest Neighbor distributions of biased tracers using Hybrid Effective Field Theory**
+   | Arka Banerjee, Nickolas Kokron, Tom Abel
+   | `2107.10287 <https://arxiv.org/abs/2107.10287>`_
+
 #. | **The reach of next-to-leading-order perturbation theory for the matter bispectrum**
    | Davit Alkhanishvili, Cristiano Porciani, Emiliano Sefusatti, Matteo Biagetti, Andrei Lazanu, Andrea Oddo, and Victoria Yankelevich
    | `2107.08054 <https://arxiv.org/abs/2107.08054>`_
