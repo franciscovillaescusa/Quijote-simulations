@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Analytic Gaussian Covariance Matrices for Galaxy N-Point Correlation Functions**
+   | Jiamin Hou, Robert N. Cahn, Oliver H.E. Philcox, Zachary Slepian
+   | `2108.01714 <https://arxiv.org/abs/2108.01714>`_
+   
 #. | **Modeling Nearest Neighbor distributions of biased tracers using Hybrid Effective Field Theory**
    | Arka Banerjee, Nickolas Kokron, Tom Abel
    | `2107.10287 <https://arxiv.org/abs/2107.10287>`_
