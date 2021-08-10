@@ -4,6 +4,14 @@
 Publications
 ************
 
+#. | **Beware of Fake :math:`\nu`s: The Effect of Massive Neutrinos on the Non-Linear Evolution of Cosmic Structure**
+   | Adrian E. Bayer, Arka Banerjee, Uros Seljak
+   | `2108.04215 <https://arxiv.org/abs/2108.04215>`_
+
+#. | **The effects of peculiar velocities on the morphological properties of large scale structures**
+   | Aoxiang Jiang, Wei Liu, Wenjuan Fang, Wen Zhao
+   | `2108.03851 <https://arxiv.org/abs/2108.03851>`_
+
 #. | **Analytic Gaussian Covariance Matrices for Galaxy N-Point Correlation Functions**
    | Jiamin Hou, Robert N. Cahn, Oliver H.E. Philcox, Zachary Slepian
    | `2108.01714 <https://arxiv.org/abs/2108.01714>`_
