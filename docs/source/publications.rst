@@ -4,7 +4,7 @@
 Publications
 ************
 
-#. | **Beware of Fake :math:`\nu`s: The Effect of Massive Neutrinos on the Non-Linear Evolution of Cosmic Structure**
+#. | **Beware of Fake** :math:`\nu s` **: The Effect of Massive Neutrinos on the Non-Linear Evolution of Cosmic Structure**
    | Adrian E. Bayer, Arka Banerjee, Uros Seljak
    | `2108.04215 <https://arxiv.org/abs/2108.04215>`_
 
