@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Towards an Optimal Estimation of Cosmological Parameters with the Wavelet Scattering Transform**
+   | Georgios Valogiannis, Cora Dvorkin
+   | `2108.07821 <https://arxiv.org/abs/2108.07821>`_
+
 #. | **Beware of Fake** :math:`\nu s` **: The Effect of Massive Neutrinos on the Non-Linear Evolution of Cosmic Structure**
    | Adrian E. Bayer, Arka Banerjee, Uros Seljak
    | `2108.04215 <https://arxiv.org/abs/2108.04215>`_
