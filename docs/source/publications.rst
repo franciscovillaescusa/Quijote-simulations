@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **The matter density PDF for modified gravity and dark energy with Large Deviations Theory**
+   | Matteo Cataneo, Cora Uhlemann, Christian Arnold, Alex Gough, Baojiu Li, Catherine Heymans
+   | `2109.02636 <https:/arxiv.org/abs/2109.02636>`_
+
 #. | **Towards an Optimal Estimation of Cosmological Parameters with the Wavelet Scattering Transform**
    | Georgios Valogiannis, Cora Dvorkin
    | `2108.07821 <https://arxiv.org/abs/2108.07821>`_
