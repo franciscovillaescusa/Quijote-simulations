@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Creating Jackknife and Bootstrap estimates of the covariance matrix for the two-point correlation function**
+   | Faizan G. Mohammad, Will J. Percival
+   | `2109.07071 <https://arxiv.org/abs/2109.07071>`_
+
 #. | **The matter density PDF for modified gravity and dark energy with Large Deviations Theory**
    | Matteo Cataneo, Cora Uhlemann, Christian Arnold, Alex Gough, Baojiu Li, Catherine Heymans
    | `2109.02636 <https://arxiv.org/abs/2109.02636>`_
