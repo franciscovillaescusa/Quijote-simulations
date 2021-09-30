@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Cosmology with the kinetic Sunyaev-Zeldovich effect: Independent of the optical depth and** :math:`\sigma_8`
+   | Joseph Kuruvilla
+   | `2109.13938 <https://arxiv.org/abs/2109.13938>`_
+
 #. | **Creating Jackknife and Bootstrap estimates of the covariance matrix for the two-point correlation function**
    | Faizan G. Mohammad, Will J. Percival
    | `2109.07071 <https://arxiv.org/abs/2109.07071>`_
