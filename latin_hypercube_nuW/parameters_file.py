@@ -17,14 +17,14 @@ points     = 2000
 hierarchy    = 'degenerate'
 Nnu          = 3   #number of massive neutrinos
 Neff         = 3.046
-As           = 2.13e-9
-tau          = None
+tau          = 0.0925   # REPS takes 0.0925
 Omega_k      = 0.0
-pivot_scalar = 0.05
-pivot_tensor = 0.05
-kmax         = 10.0
-k_per_logint = 20
+pivot_scalar = 0.05       # hard coded into REPS
+pivot_tensor = 0.05       # hard coded into REPS
+kmax         = 100.0
+k_per_logint = 30
 redshifts    = [0]
+Tcmb         = 2.7255     # hard coded into REPS
 
 #              [Om,  Ob,   h,   ns,  s8,  Mnu,  w]
 Min = np.array([0.1, 0.03, 0.5, 0.8, 0.6, 0.0, -1.3])
@@ -88,54 +88,81 @@ for i in numbers:
     print('s8      = %.5f'%s8)
     print('Mnu     = %.5f'%Mnu)
     print('w       = %.5f'%w)
+    
+    ##### compute As in order to match s8 using CAMB #####
+    
+    Omega_c = Omega_m - Omega_b - Mnu/(93.14*h**2)
 
-    ##### run CAMB #####
-    Omega_c  = Omega_m - Omega_b - Mnu/(93.14*h**2)
-    pars     = camb.CAMBparams()
-
-    # set accuracy of the calculation
-    pars.set_accuracy(AccuracyBoost=4.0, lSampleBoost=4.0, lAccuracyBoost=4.0, 
-                      HighAccuracyDefault=True, DoLateRadTruncation=True)
-
-    # set value of the cosmological parameters
-    pars.set_cosmology(H0=h*100.0, ombh2=Omega_b*h**2, omch2=Omega_c*h**2, 
-                       mnu=Mnu, omk=Omega_k, neutrino_hierarchy=hierarchy, 
-                       num_massive_neutrinos=Nnu, nnu=Neff, tau=tau)
+    #get matter power spectra and sigma8 at redshift 0 and 0.8
+    pars = camb.CAMBparams()
+    pars.set_cosmology(H0=h*100, ombh2=Omega_b*h**2, omch2=Omega_c*h**2, mnu=Mnu, TCMB=Tcmb, omk=Omega_k, tau=tau,
+                       nnu=Neff, standard_neutrino_neff=Neff, num_massive_neutrinos=Nnu, neutrino_hierarchy=hierarchy)
     pars.set_dark_energy(w=w, dark_energy_model='fluid')
-                   
-    # set the value of the primordial power spectrum parameters
-    pars.InitPower.set_params(As=As, ns=ns, 
-                              pivot_scalar=pivot_scalar, pivot_tensor=pivot_tensor)
+    
+    pars.InitPower.set_params(As=2e-9 , ns=ns,
+                             pivot_scalar=pivot_scalar, pivot_tensor=pivot_tensor)
+    #Note non-linear corrections couples to smaller scales than you want
+    pars.set_matter_power(redshifts=[0.], kmax=kmax, k_per_logint=k_per_logint)
 
-    # set redshifts, k-range and k-sampling
-    pars.set_matter_power(redshifts=redshifts, kmax=kmax, k_per_logint=k_per_logint)
-
-    # compute results
+    # compute spectra to find sigma8 for rescaling
+    pars.set_accuracy(AccuracyBoost=4, lAccuracyBoost=4, lSampleBoost=4, HighAccuracyDefault=True, DoLateRadTruncation=True)#, high_accuracy_default=1)#, neutrino_q_boost=4)
+    #pars.set_matter_power(accurate_massive_neutrino_transfers=1, nonlinear=True)
     results = camb.get_results(pars)
+    s8_0 = results.get_sigma8()
 
-    # save parameter values to file
-    f = open('%s/CAMB.params'%folder,'w');  f.write('%s'%pars);  f.close()
+    # compute As
+    As = 2e-9 * (s8 / s8_0)**2
+    
+    
+    ##### create REPS parameter file ####
+    
+    r_file="""
+    # Boltzmann code
+    boltzmann_code     =  camb
+    boltzmann_folder   =  /home/fvillaescusa/software/CAMB/
+    k_per_logint_camb  =  %d
 
-    # interpolate to get Pmm, Pcc...etc
-    k, zs, Pkmm = results.get_matter_power_spectrum(minkh=2e-5, maxkh=kmax, 
-                                                    npoints=400, var1=7, var2=7, 
-                                                    have_power_spectra=True, 
-                                                    params=None)
+    # input/output options
+    ###neutrino_tabulated_functions = /home/fvillaescusa/software/reps/tabulated_functions/FF_GG_func_tab.dat
+    ###input_file         =  boundary_conditions.dat
+    which_bc           =  0
+    outputfile         =  %d
+    output_format      =  ngenic transfer function
+    print_hubble       =  T
 
-    # get sigma_8 and Hz in km/s/(kpc/h)
-    s8 = np.array(results.get_sigma8())
-    Hz = results.hubble_parameter(99.0)
-    print('H(z=99)      = %.4f km/s/(kpc/h)'%(Hz/1e3/h))
-    print('sigma_8(z=0) = %.4f'%s8[-1])
+    compute_Pk_0       =  T
 
+    # cosmological parameters
+    h                  =  %.5f
+    OB0                =  %.5f
+    OC0                =  %.5f
+    OG0                =  2.469e-05
+    w0                 =  %.5f
+    wa                 =  0.0
+    As                 =  %.5f
+    tau_reio           =  %.5f
+    ns                 =  %.5f
+    kmax               =  %.5f
 
-    # do a loop over all redshifts
-    for j,z in enumerate(zs):
-        fout = '%s/Pk_mm_z=%.3f.txt'%(folder_ICs,z)
-        np.savetxt(fout, np.transpose([k,Pkmm[j,:]]))
+    # neutrino parameters
+    Neff               =  0.00641
+    M_nu               =  %.5f
+    N_nu               =  3.0
+    wrong_nu           =  1
 
-
-
+    # redshifts
+    z_final            =  0.
+    z_initial          = 127.
+    output_number      =  2
+    z_output           =  0.0 127.0
+    """%(k_per_logint, i, h, Omega_b, Omega_c, w, As, tau, ns, kmax, Mnu)
+    
+    # save parameters to file
+    f = open('%s/REPS.param'%folder_ICs, 'w')
+    f.write(r_file)
+    f.close()
+    
+    # FIXME: CHANGE BELOW
 
     ########################## write 2LPT parameter file #######################
     # parameter file for standard simulations
