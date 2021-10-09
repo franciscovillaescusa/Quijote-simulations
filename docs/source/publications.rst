@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **The smearing scale in Laguerre reconstructions of the correlation function**
+   | Farnik Nikakhtar, Ravi K. Sheth, Idit Zehavi
+   | `2110.03591 <https://arxiv.org/abs/2110.03591>`_
+
 #. | **Cosmology with the kinetic Sunyaev-Zeldovich effect: Independent of the optical depth and** :math:`\sigma_8`
    | Joseph Kuruvilla
    | `2109.13938 <https://arxiv.org/abs/2109.13938>`_
