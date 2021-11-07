@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **NECOLA: Towards a Universal Field-level Cosmological Emulator**
+   | Neerav Kaushal, Francisco Villaescusa-Navarro, Elena Giusarma, Yin Li, Conner Hawry, Mauricio Reyes
+   | `2111.02441 <https://arxiv.org/abs/2111.02441>`_
+
 #. | **The smearing scale in Laguerre reconstructions of the correlation function**
    | Farnik Nikakhtar, Ravi K. Sheth, Idit Zehavi
    | `2110.03591 <https://arxiv.org/abs/2110.03591>`_
