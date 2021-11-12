@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **The Covariance of Squeezed Bispectrum Configurations**
+   | Matteo Biagetti, Lina Castiblanco, Jorge Noreña, Emiliano Sefusatti
+   | `2111.05887 <https://arxiv.org/abs/2111.05887>`_
+
 #. | **NECOLA: Towards a Universal Field-level Cosmological Emulator**
    | Neerav Kaushal, Francisco Villaescusa-Navarro, Elena Giusarma, Yin Li, Conner Hawry, Mauricio Reyes
    | `2111.02441 <https://arxiv.org/abs/2111.02441>`_
