@@ -14,6 +14,7 @@ An example on how to read a snapshot is this:
 
 .. code-block:: python
 		
+    import numpy as np
     import readgadget
 
     # input files
