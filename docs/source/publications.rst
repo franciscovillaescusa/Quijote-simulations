@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Cosmology and neutrino mass with the Minimum Spanning Tree**
+   | Krishna Naidoo, Elena Massara, Ofer Lahav
+   | `2111.12088 <https://arxiv.org/abs/2111.12088>`_
+
 #. | **The Covariance of Squeezed Bispectrum Configurations**
    | Matteo Biagetti, Lina Castiblanco, Jorge Noreña, Emiliano Sefusatti
    | `2111.05887 <https://arxiv.org/abs/2111.05887>`_
