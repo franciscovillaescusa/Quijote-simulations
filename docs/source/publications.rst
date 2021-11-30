@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **The Information Content of Projected Galaxy Fields**
+   | Lucas Porth, Gary M. Bernstein, Robert E. Smith, Abigail J. Lee
+   | `2111.13702 <https://arxiv.org/abs/2111.13702>`_
+
 #. | **Cosmology and neutrino mass with the Minimum Spanning Tree**
    | Krishna Naidoo, Elena Massara, Ofer Lahav
    | `2111.12088 <https://arxiv.org/abs/2111.12088>`_
