@@ -4,6 +4,14 @@
 Publications
 ************
 
+#. | **One-point statistics matter in extended cosmologies**
+   | Alex Gough, Cora Uhlemann
+   | `2112.04428 <https://arxiv.org/abs/2112.04428>`_
+
+#. | **Cosmology with cosmic web environments I. Real-space power spectra**
+   | Tony Bonnaire, Nabila Aghanim, Joseph Kuruvilla, Aurélien Decelle
+   | `2112.03926 <https://arxiv.org/abs/2112.03926>`_
+
 #. | **The Information Content of Projected Galaxy Fields**
    | Lucas Porth, Gary M. Bernstein, Robert E. Smith, Abigail J. Lee
    | `2111.13702 <https://arxiv.org/abs/2111.13702>`_
