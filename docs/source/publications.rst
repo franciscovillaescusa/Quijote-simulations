@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Detection of spatial clustering in the 1000 richest SDSS DR8 redMaPPer clusters with Nearest Neighbor distributions**
+   | Yunchong Wang, Arka Banerjee, Tom Abel
+   | `2112.04502 <https://arxiv.org/abs/2112.04502>`_
+
 #. | **One-point statistics matter in extended cosmologies**
    | Alex Gough, Cora Uhlemann
    | `2112.04428 <https://arxiv.org/abs/2112.04428>`_
