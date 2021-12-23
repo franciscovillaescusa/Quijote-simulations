@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Constraining cosmological parameters from N-body simulations with Bayesian Neural Networks**
+   | Hector J. Hortua
+   | `2112.11865 <https://arxiv.org/abs/2112.11865>`_
+
 #. | **Detection of spatial clustering in the 1000 richest SDSS DR8 redMaPPer clusters with Nearest Neighbor distributions**
    | Yunchong Wang, Arka Banerjee, Tom Abel
    | `2112.04502 <https://arxiv.org/abs/2112.04502>`_
