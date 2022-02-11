@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Extracting high-order cosmological information in galaxy surveys with power spectra**
+   | Yuting Wang, Gong-Bo Zhao, Kazuya Koyama, Will J. Percival, Ryuichi Takahashi, Chiaki Hikage, Héctor Gil-Marín, ChangHoon Hahn, Ruiyang Zhao, Weibing Zhang, Xiaoyong Mu, Yu Yu, Hong-Ming Zhu, Fei Ge
+   | `2202.05248 <https://arxiv.org/abs/2202.05248>`_
+
 #. | **Constraining cosmological parameters from N-body simulations with Bayesian Neural Networks**
    | Hector J. Hortua
    | `2112.11865 <https://arxiv.org/abs/2112.11865>`_
