@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Probing massive neutrinos with the Minkowski functionals of large-scale structure**
+   | Wei Liu, Aoxiang Jiang, Wenjuan Fang
+   | `2204.02945 <https://arxiv.org/abs/2204.02945>`_
+
 #. | **Extracting high-order cosmological information in galaxy surveys with power spectra**
    | Yuting Wang, Gong-Bo Zhao, Kazuya Koyama, Will J. Percival, Ryuichi Takahashi, Chiaki Hikage, Héctor Gil-Marín, ChangHoon Hahn, Ruiyang Zhao, Weibing Zhang, Xiaoyong Mu, Yu Yu, Hong-Ming Zhu, Fei Ge
    | `2202.05248 <https://arxiv.org/abs/2202.05248>`_
