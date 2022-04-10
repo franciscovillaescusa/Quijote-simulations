@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Bayesian Control Variates for optimal covariance estimation with pairs of simulations and surrogates**
+   | Nicolas Chartier, Benjamin D. Wandelt
+   | `2204.03070 <https://arxiv.org/abs/2204.03070>`_
+
 #. | **Extracting high-order cosmological information in galaxy surveys with power spectra**
    | Yuting Wang, Gong-Bo Zhao, Kazuya Koyama, Will J. Percival, Ryuichi Takahashi, Chiaki Hikage, Héctor Gil-Marín, ChangHoon Hahn, Ruiyang Zhao, Weibing Zhang, Xiaoyong Mu, Yu Yu, Hong-Ming Zhu, Fei Ge
    | `2202.05248 <https://arxiv.org/abs/2202.05248>`_
