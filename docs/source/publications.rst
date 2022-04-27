@@ -4,6 +4,14 @@
 Publications
 ************
 
+#. | **Wavelet Moments for Cosmological Parameter Estimation**
+   | Michael Eickenberg, Erwan Allys, Azadeh Moradinezhad Dizgah, Pablo Lemos, Elena Massara, Muntazir Abidi, ChangHoon Hahn, Sultan Hassan, Bruno Regaldo-Saint Blancard, Shirley Ho, Stephane Mallat, Joakim Andén, Francisco Villaescusa-Navarro
+   | `2204.07646 <https://arxiv.org/abs/2204.07646>`_
+
+#. | **Quantification of high dimensional non-Gaussianities and its implication to Fisher analysis in cosmology**
+   | Core Francisco Park, Erwan Allys, Francisco Villaescusa-Navarro, Douglas P. Finkbeiner
+   | `2204.05435 <https://arxiv.org/abs/2204.05435>`_
+
 #. | **Bayesian Control Variates for optimal covariance estimation with pairs of simulations and surrogates**
    | Nicolas Chartier, Benjamin D. Wandelt
    | `2204.03070 <https://arxiv.org/abs/2204.03070>`_
