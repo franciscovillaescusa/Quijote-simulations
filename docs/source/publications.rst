@@ -4,6 +4,14 @@
 Publications
 ************
 
+#. | **Distinguishing Dirac vs. Majorana Neutrinos: a Cosmological Probe**
+   | Beatriz Hernandez-Molinero, Raul Jimenez, Carlos Pena-Garay
+   | `2205.00808 <https://arxiv.org/abs/2205.00808>`_
+
+#. | **Accurate Model of the Projected Velocity Distribution of Galaxies in Dark Matter Halos**
+   | Han Aung, Daisuke Nagai, Eduardo Rozo, Brandon Wolfe, Susmita Adhikari
+   | `2204.13131 <https://arxiv.org/abs/2204.13131>`_
+
 #. | **Wavelet Moments for Cosmological Parameter Estimation**
    | Michael Eickenberg, Erwan Allys, Azadeh Moradinezhad Dizgah, Pablo Lemos, Elena Massara, Muntazir Abidi, ChangHoon Hahn, Sultan Hassan, Bruno Regaldo-Saint Blancard, Shirley Ho, Stephane Mallat, Joakim Andén, Francisco Villaescusa-Navarro
    | `2204.07646 <https://arxiv.org/abs/2204.07646>`_
@@ -19,7 +27,15 @@ Publications
 #. | **Probing massive neutrinos with the Minkowski functionals of large-scale structure**
    | Wei Liu, Aoxiang Jiang, Wenjuan Fang
    | `2204.02945 <https://arxiv.org/abs/2204.02945>`_
-    
+
+#. | **Perturbation Theory vs Simulation: Quasi-linear Scale, Binning Effect, and Visualization of Bispectrum**
+   | Joseph Tomlinson, Donghui Jeong
+   | `2204.00668 <https://arxiv.org/abs/2204.00668>`_
+
+#. | **The effect of local universe constraints on halo abundance and clustering**
+   | Maxwell L. Hutt, Harry Desmond, Julien Devriendt, Adrianne Slyz
+   | `2203.14724 <https://arxiv.org/abs/2203.14724>`_
+   
 #. | **Extracting high-order cosmological information in galaxy surveys with power spectra**
    | Yuting Wang, Gong-Bo Zhao, Kazuya Koyama, Will J. Percival, Ryuichi Takahashi, Chiaki Hikage, Héctor Gil-Marín, ChangHoon Hahn, Ruiyang Zhao, Weibing Zhang, Xiaoyong Mu, Yu Yu, Hong-Ming Zhu, Fei Ge
    | `2202.05248 <https://arxiv.org/abs/2202.05248>`_
@@ -155,6 +171,10 @@ Publications
 #. | **Fast and Accurate Non-Linear Predictions of Universes with Deep Learning**
    | Renan Alves de Oliveira, Yin Li, Francisco Villaescusa-Navarro, Shirley Ho, David N. Spergel
    | `2012.00240 <https://arxiv.org/abs/2012.00240>`_
+
+#. | **Minkowski functionals and the nonlinear perturbation theory in the large-scale structure: second-order effects**
+   | Takahiko Matsubara, Chiaki Hikage, Satoshi Kuriki
+   | `2012.00203 <https://arxiv.org/abs/2012.00203>`_
 
 #. | **The unequal-time matter power spectrum: impact on weak lensing observables**
    | Lucia F. de la Bella, Nicolas Tessore, Sarah Bridle
