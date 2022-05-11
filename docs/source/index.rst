@@ -41,6 +41,7 @@ The Quijote simulations is a suite of 44,100 full N-body simulations designed to
    xi
    pdf
    df
+   LH
 
 .. toctree::
    :maxdepth: 2
