@@ -1,3 +1,5 @@
+.. _LH:
+
 Latin-hypercubes
 ================
 
