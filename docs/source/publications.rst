@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Fast and realistic large-scale structure from machine-learning-augmented random field simulations**
+   | Davide Piras, Benjamin Joachimi, Francisco Villaescusa-Navarro
+   | `2205.07898 <https://arxiv.org/abs/2205.07898>`_
+
 #. | **Distinguishing Dirac vs. Majorana Neutrinos: a Cosmological Probe**
    | Beatriz Hernandez-Molinero, Raul Jimenez, Carlos Pena-Garay
    | `2205.00808 <https://arxiv.org/abs/2205.00808>`_
