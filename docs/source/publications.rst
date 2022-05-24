@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Improving cosmological covariance matrices with machine learning**
+   | Natali S.M. de Santi, L. Raul Abramo
+   | `2205.10881 <https://arxiv.org/abs/2205.10881>`_
+
 #. | **Fast and realistic large-scale structure from machine-learning-augmented random field simulations**
    | Davide Piras, Benjamin Joachimi, Francisco Villaescusa-Navarro
    | `2205.07898 <https://arxiv.org/abs/2205.07898>`_
