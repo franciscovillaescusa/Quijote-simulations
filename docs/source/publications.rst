@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Robust Neural Network-Enhanced Estimation of Local Primordial Non-Gaussianity**
+   | Utkarsh Giri, Moritz Münchmeyer, Kendrick M. Smith
+   | `2205.12964 <https://arxiv.org/abs/2205.12964>`_
+
 #. | **Improving cosmological covariance matrices with machine learning**
    | Natali S.M. de Santi, L. Raul Abramo
    | `2205.10881 <https://arxiv.org/abs/2205.10881>`_
