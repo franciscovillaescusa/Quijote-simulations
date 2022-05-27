@@ -8,6 +8,10 @@ Publications
    | Utkarsh Giri, Moritz Münchmeyer, Kendrick M. Smith
    | `2205.12964 <https://arxiv.org/abs/2205.12964>`_
 
+#. | **Two-loop power spectrum with full time- and scale-dependence and EFT corrections: impact of massive neutrinos and going beyond EdS**
+   | Mathias Garny, Petter Taule
+   | `2205.11533 <https://arxiv.org/abs/2205.11533>`_
+
 #. | **Improving cosmological covariance matrices with machine learning**
    | Natali S.M. de Santi, L. Raul Abramo
    | `2205.10881 <https://arxiv.org/abs/2205.10881>`_
