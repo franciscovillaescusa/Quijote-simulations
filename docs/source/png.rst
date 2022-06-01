@@ -3,20 +3,20 @@
 Primordial non-Gaussianities
 ============================
 
-Quijote contains 4,000 N-body simulations with primordial non-Gaussianities: **Quijote-PNG**. All these simulations contain :math:`512^3` dark matter particles in a periodic volume of :math:`(1~h^{-1}{\rm Gpc})^3`. These are standard N-body simulations where the only difference is the way the initial conditions have been generated. We have modified the 
+Quijote contains 4,000 N-body simulations with primordial non-Gaussianities: **Quijote-PNG**. All these simulations contain :math:`512^3` dark matter particles in a periodic volume of :math:`(1~h^{-1}{\rm Gpc})^3`. These are standard N-body simulations run with initial conditions generated in a particular way.
 
 The simulations in Quijote-PNG can be classified into four different sets: 1) local, 2) equilateral, 3) orthogonal CMB, and 4) orthogonal LSS (see :ref:`shapes`). Each set contains 1,000 simulations: 500 with :math:`f_{\rm NL}=+100` and 500 with :math:`f_{\rm NL}=-100`. Quijote-PNG is thus organized into eight different folders, depending on the non-Gaussianity shape and the value of :math:`f_{\rm NL}`:
 
-- **LC_p**: 500 simulations with local type and :math:`f_{\rm NL}=+100`
-- **LC_m**: 500 simulations with local type and :math:`f_{\rm NL}=-100`
-- **EQ_p**: 500 simulations with equilateral type and :math:`f_{\rm NL}=+100`
-- **EQ_m**: 500 simulations with equilateral type and :math:`f_{\rm NL}=-100`
-- **OR_CMB_p**: 500 simulations with orthogonal CMB type and :math:`f_{\rm NL}=+100`
-- **OR_CMB_m**: 500 simulations with orthogonal CMB type and :math:`f_{\rm NL}=-100`
-- **OR_LSS_p**: 500 simulations with orthogonal LSS type and :math:`f_{\rm NL}=+100`
-- **OR_LSS_m**: 500 simulations with orthogonal LSS type and :math:`f_{\rm NL}=-100`
+- **LC_p**: contains data from 500 simulations with local type and :math:`f_{\rm NL}=+100`
+- **LC_m**: contains data from 500 simulations with local type and :math:`f_{\rm NL}=-100`
+- **EQ_p**: contains data from 500 simulations with equilateral type and :math:`f_{\rm NL}=+100`
+- **EQ_m**: contains data from 500 simulations with equilateral type and :math:`f_{\rm NL}=-100`
+- **OR_CMB_p**: contains data from 500 simulations with orthogonal CMB type and :math:`f_{\rm NL}=+100`
+- **OR_CMB_m**: contains data from 500 simulations with orthogonal CMB type and :math:`f_{\rm NL}=-100`
+- **OR_LSS_p**: contains data from 500 simulations with orthogonal LSS type and :math:`f_{\rm NL}=+100`
+- **OR_LSS_m**: contains data from 500 simulations with orthogonal LSS type and :math:`f_{\rm NL}=-100`
   
-Each folder contains 500 folders, each of them hosting the result of a different simulation.
+Each of the above folders contains 500 sub-folders, each of them hosting the result of a different simulation. For instance, the folder ``EQ_p/72/`` contains the results of the 72th simulation run with :math:`f_{\rm NL}=+100` for the equilateral shape. Depending on the location, these folder will contain the snapshots, halo catalogues, or other data products.
 
 
 .. _shapes:
