@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Accurate predictions from small boxes: variance suppression via the Zel'dovich approximation**
+   | Nickolas Kokron, Shi-Fan Chen, Martin White, Joseph DeRose, Mark Maus
+   | `2205.15327 <https://arxiv.org/abs/2205.15327>`_
+
 #. | **Robust Neural Network-Enhanced Estimation of Local Primordial Non-Gaussianity**
    | Utkarsh Giri, Moritz Münchmeyer, Kendrick M. Smith
    | `2205.12964 <https://arxiv.org/abs/2205.12964>`_
