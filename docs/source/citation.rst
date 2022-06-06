@@ -26,6 +26,50 @@ If you have used data from the Quijote simulations you may consider citing the `
    }
 
 
+If you use data from Molino, consider citing the `Molino paper <https://arxiv.org/abs/2012.02200>`_
+
+::
+
+   @ARTICLE{Molino,
+       author = {{Hahn}, ChangHoon and {Villaescusa-Navarro}, Francisco},
+       title = "{Constraining M$_{{\ensuremath{\nu}}}$ with the bispectrum. Part II. The information content of the galaxy bispectrum monopole}",
+       journal = {\jcap},
+       keywords = {cosmological parameters from LSS, cosmological simulations, neutrino masses from cosmology, redshift surveys, Astrophysics - Cosmology and Nongalactic Astrophysics},
+       year = 2021,
+       month = apr,
+       volume = {2021},
+       number = {4},
+       eid = {029},
+       pages = {029},
+       doi = {10.1088/1475-7516/2021/04/029},
+       archivePrefix = {arXiv},
+       eprint = {2012.02200},
+       primaryClass = {astro-ph.CO},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2021JCAP...04..029H},
+       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+   }
+
+   
+If you use data from Gigantes, consider citing the `Gigantes paper <https://arxiv.org/abs/2107.02304>`_
+
+::
+
+   @ARTICLE{Gigantes,
+       author = {{Kreisch}, Christina D. and {Pisani}, Alice and {Villaescusa-Navarro}, Francisco and {Spergel}, David N. and {Wandelt}, Benjamin D. and {Hamaus}, Nico and {Bayer}, Adrian E.},
+       title = "{The GIGANTES dataset: precision cosmology from voids in the machine learning era}",
+       journal = {arXiv e-prints},
+       keywords = {Astrophysics - Cosmology and Nongalactic Astrophysics, Astrophysics - Instrumentation and Methods for Astrophysics},
+       year = 2021,
+       month = jul,
+       eid = {arXiv:2107.02304},
+       pages = {arXiv:2107.02304},
+       archivePrefix = {arXiv},
+       eprint = {2107.02304},
+       primaryClass = {astro-ph.CO},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2021arXiv210702304K},
+       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+   }
+   
 
 If you use data from Quijote-PNG, consider citing the `Quijote-PNG paper <https://arxiv.org/abs/2206.01619>`_.
 
