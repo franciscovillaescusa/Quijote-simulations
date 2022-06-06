@@ -4,6 +4,18 @@
 Publications
 ************
 
+#. | **Cosmological Information in the Marked Power Spectrum of the Galaxy Field**
+   | Elena Massara, Francisco Villaescusa-Navarro, ChangHoon Hahn, Muntazir M. Abidi, Michael Eickenberg, Shirley Ho, Pablo Lemos, Azadeh Moradinezhad Dizgah, Bruno Regaldo-Saint Blancard
+   | `2206.01709 <https://arxiv.org/abs/2206.01709>`_
+
+#. | **Quijote-PNG: Quasi-maximum likelihood estimation of Primordial Non-Gaussianity in the non-linear dark matter density field**
+   | Gabriel Jung, Dionysios Karagiannis, Michele Liguori, Marco Baldi, William R Coulton, Drew Jamieson, Licia Verde, Francisco Villaescusa-Navarro, Benjamin D. Wandelt
+   | `2206.01624 <https://arxiv.org/abs/2206.01624>`_
+
+#. | **Quijote-PNG: Simulations of primordial non-Gaussianity and the information content of the matter field power spectrum and bispectrum**
+   | William R Coulton, Francisco Villaescusa-Navarro, Drew Jamieson, Marco Baldi, Gabriel Jung, Dionysios Karagiannis, Michele Liguori, Licia Verde, Benjamin D. Wandelt
+   | `2206.01619 <https://arxiv.org/abs/2206.01619>`_
+
 #. | **Accurate predictions from small boxes: variance suppression via the Zel'dovich approximation**
    | Nickolas Kokron, Shi-Fan Chen, Martin White, Joseph DeRose, Mark Maus
    | `2205.15327 <https://arxiv.org/abs/2205.15327>`_
