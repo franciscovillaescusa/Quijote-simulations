@@ -24,3 +24,28 @@ If you have used data from the Quijote simulations you may consider citing the `
 	    adsurl = {https://ui.adsabs.harvard.edu/abs/2020ApJS..250....2V},
 	    adsnote = {Provided by the SAO/NASA Astrophysics Data System}
    }
+
+
+
+If you use data from Quijote-PNG, consider citing the `Quijote-PNG paper <https://arxiv.org/abs/2206.01619>`_.
+
+::
+
+   @ARTICLE{Quijote-PNG,
+       author = {{Coulton}, William R and {Villaescusa-Navarro}, Francisco and {Jamieson}, Drew and {Baldi}, Marco and {Jung}, Gabriel and {Karagiannis}, Dionysios and {Liguori}, Michele and {Verde}, Licia and {Wandelt}, Benjamin D.},
+       title = "{Quijote-PNG: Simulations of primordial non-Gaussianity and the information content of the matter field power spectrum and bispectrum}",
+       journal = {arXiv e-prints},
+       keywords = {Astrophysics - Cosmology and Nongalactic Astrophysics},
+       year = 2022,
+       month = jun,
+       eid = {arXiv:2206.01619},
+       pages = {arXiv:2206.01619},
+       archivePrefix = {arXiv},
+       eprint = {2206.01619},
+       primaryClass = {astro-ph.CO},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2022arXiv220601619C},
+       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+   }
+
+
+   
