@@ -80,3 +80,19 @@ Snapshots
 ~~~~~~~~~
 
 We keep snapshots at redshifts 0, 0.5, 1, 2, and 3. The snapshots are saved as HDF5 files, and they can be read in the standard way (see :ref:`snapshots` for details on this).
+
+
+Team
+~~~~
+
+Quijote-PNG was developed in 2022 by the following team:
+
+- William Coulton (CCA, USA)
+- Gabriel Jung (Padova, Italy)
+- Francisco Villaescusa-Navarro (CCA/Princeton, USA)
+- Dionysios Karagiannis (Cape Town, South Africa)
+- Drew Jamieson (MPA, Germany)
+- Michele Liguori (Padova, Italy)
+- Marco Baldi (Bologna, Italy)
+- Licia Verde (Barcelona, Spain)
+- Benjamin Wandelt (IAP, France)
