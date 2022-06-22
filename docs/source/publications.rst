@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Primordial non-Gaussianity and non-Gaussian Covariance**
+   | Thomas Floss, Matteo Biagetti, P. Daniel Meerburg
+   | `2206.10458 <https://arxiv.org/abs/2206.10458>`_
+
 #. | **Cosmological Information in the Marked Power Spectrum of the Galaxy Field**
    | Elena Massara, Francisco Villaescusa-Navarro, ChangHoon Hahn, Muntazir M. Abidi, Michael Eickenberg, Shirley Ho, Pablo Lemos, Azadeh Moradinezhad Dizgah, Bruno Regaldo-Saint Blancard
    | `2206.01709 <https://arxiv.org/abs/2206.01709>`_
