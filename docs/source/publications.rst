@@ -8,6 +8,14 @@ Publications
    | Thomas Floss, Matteo Biagetti, P. Daniel Meerburg
    | `2206.10458 <https://arxiv.org/abs/2206.10458>`_
 
+#. | **Field Level Neural Network Emulator for Cosmological N-body Simulations**
+   | Drew Jamieson, Yin Li, Renan Alves de Oliveira, Francisco Villaescusa-Navarro, Shirley Ho, David N. Spergel
+   | `2206.04594 <https://arxiv.org/abs/2206.04594>`_
+
+#. | **Simple lessons from complex learning: what a neural network model learns about cosmic structure formation**
+   | Drew Jamieson, Yin Li, Siyu He, Francisco Villaescusa-Navarro, Shirley Ho, Renan Alves de Oliveira, David N. Spergel
+   | `2206.04573 <https://arxiv.org/abs/2206.04573>`_
+
 #. | **Cosmological Information in the Marked Power Spectrum of the Galaxy Field**
    | Elena Massara, Francisco Villaescusa-Navarro, ChangHoon Hahn, Muntazir M. Abidi, Michael Eickenberg, Shirley Ho, Pablo Lemos, Azadeh Moradinezhad Dizgah, Bruno Regaldo-Saint Blancard
    | `2206.01709 <https://arxiv.org/abs/2206.01709>`_
