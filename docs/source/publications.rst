@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Velocity profiles of matter and biased tracers around voids**
+   | Elena Massara, Will J. Percival, Neal Dalal, Seshadri Nadathur, Slađana Radinović, Hans A. Winther, Alex Woodfinden
+   | `2206.14120 <https://arxiv.org/abs/2206.14120>`_
+
 #. | **Primordial non-Gaussianity and non-Gaussian Covariance**
    | Thomas Floss, Matteo Biagetti, P. Daniel Meerburg
    | `2206.10458 <https://arxiv.org/abs/2206.10458>`_
