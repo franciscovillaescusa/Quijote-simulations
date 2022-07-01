@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Quijote PNG: The information content of the halo power spectrum and bispectrum**
+   | William R Coulton, Francisco Villaescusa-Navarro, Drew Jamieson, Marco Baldi, Gabriel Jung, Dionysios Karagiannis, Michele Liguori, Licia Verde, Benjamin D. Wandelt
+   | `2206.15450 <https://arxiv.org/abs/2206.15450>`_
+
 #. | **Velocity profiles of matter and biased tracers around voids**
    | Elena Massara, Will J. Percival, Neal Dalal, Seshadri Nadathur, Slađana Radinović, Hans A. Winther, Alex Woodfinden
    | `2206.14120 <https://arxiv.org/abs/2206.14120>`_
