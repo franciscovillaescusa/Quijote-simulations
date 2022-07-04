@@ -8,6 +8,18 @@ Publications
    | Oliver H. E. Philcox, Salvatore Torquato
    | `2207.00519 <https://arxiv.org/abs/2207.00519>`_
 
+#. | **Quijote PNG: The information content of the halo power spectrum and bispectrum**
+   | William R Coulton, Francisco Villaescusa-Navarro, Drew Jamieson, Marco Baldi, Gabriel Jung, Dionysios Karagiannis, Michele Liguori, Licia Verde, Benjamin D. Wandelt
+   | `2206.15450 <https://arxiv.org/abs/2206.15450>`_
+
+#. | **Velocity profiles of matter and biased tracers around voids**
+   | Elena Massara, Will J. Percival, Neal Dalal, Seshadri Nadathur, Slađana Radinović, Hans A. Winther, Alex Woodfinden
+   | `2206.14120 <https://arxiv.org/abs/2206.14120>`_
+
+#. | **Primordial non-Gaussianity and non-Gaussian Covariance**
+   | Thomas Floss, Matteo Biagetti, P. Daniel Meerburg
+   | `2206.10458 <https://arxiv.org/abs/2206.10458>`_
+
 #. | **Field Level Neural Network Emulator for Cosmological N-body Simulations**
    | Drew Jamieson, Yin Li, Renan Alves de Oliveira, Francisco Villaescusa-Navarro, Shirley Ho, David N. Spergel
    | `2206.04594 <https://arxiv.org/abs/2206.04594>`_
