@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **The Disordered Heterogeneous Universe: Galaxy Distribution and Clustering Across Length Scales**
+   | Oliver H. E. Philcox, Salvatore Torquato
+   | `2207.00519 <https://arxiv.org/abs/2207.00519>`_
+
 #. | **Field Level Neural Network Emulator for Cosmological N-body Simulations**
    | Drew Jamieson, Yin Li, Renan Alves de Oliveira, Francisco Villaescusa-Navarro, Shirley Ho, David N. Spergel
    | `2206.04594 <https://arxiv.org/abs/2206.04594>`_
