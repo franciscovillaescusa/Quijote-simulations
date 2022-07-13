@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **The Cosmic Graph: Optimal Information Extraction from Large-Scale Structure using Catalogues**
+   | T. Lucas Makinen, Tom Charnock, Pablo Lemos, Natalia Porqueres, Alan Heavens, Benjamin D. Wandelt
+   | `2207.05202 <https://arxiv.org/abs/2207.05202>`_
+
 #. | **The Disordered Heterogeneous Universe: Galaxy Distribution and Clustering Across Length Scales**
    | Oliver H. E. Philcox, Salvatore Torquato
    | `2207.00519 <https://arxiv.org/abs/2207.00519>`_
