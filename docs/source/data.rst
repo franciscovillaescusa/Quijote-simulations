@@ -10,10 +10,10 @@ Data
    
 
 
-Description
------------
+Organization
+------------
 
-The data is organized among different folders:
+The data is organized in different folders:
 
 - **Snapshots**. This folder contains the snapshots of the simulations
 - **Halos**. This folder contains the halo catalogues
@@ -174,8 +174,8 @@ The data can be accessed through `globus <https://www.globus.org/>`_:
 Note that to download the data to your local machine (e.g. laptop) you will need to install the globus connect personal. For further details see `here <https://github.com/franciscovillaescusa/Quijote-simulations/blob/master/documentation/globus.md>`_.
 
 
-Globus
-------
+Download
+--------
 
 The simplest way to transfer data is to use the globus graphical environment. Just type the above names in collection (e.g. Quijote_simulations for the data in San Diego) or click the associated link. You will need to choose where the data is being moved in the other collection (e.g. your laptop or another supercomputer). Once the collection points are set, select the data you want to transfer and destiny folder and click in Start.
 
