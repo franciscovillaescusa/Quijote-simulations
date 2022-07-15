@@ -2,10 +2,12 @@
 Data
 ****
 
-.. warning::
+.. important::
 
-   The nwLH latin-hypercube, containing 2,000 simulations varying :math:`\Omega_{\rm m}`, :math:`\Omega_{\rm b}`, :math:`h`, :math:`n_s`, :math:`\sigma_8`, :math:`M_\nu`, :math:`w` is now publicly available! Check :ref:`LH` for more details.
+   - The nwLH latin-hypercube, containing 2,000 simulations varying :math:`\Omega_{\rm m}`, :math:`\Omega_{\rm b}`, :math:`h`, :math:`n_s`, :math:`\sigma_8`, :math:`M_\nu`, :math:`w` is now publicly available! Check :ref:`LH` for more details.
+   - The snapshots of Quijote-PNG are now publicly available. Check :ref:`png` for more details.
 
+   
 
 
 Description
@@ -139,9 +141,27 @@ Data access
 
 The data is stored in the three different supercomputers in San Diego, New York, and Princeton. Each cluster contains the following data:
 
-- **San Diego**: The realizations 8,000 to 14,999 of the fiducial set. The standard and fixed LH latin hypercube. The halos, voids, power spectra, bispectra, correlation functions, and pdfs. 235 Tb
-- **New York**: The snapshots of high-resolution latin-hypercube (latin_hypercube_HR), the nwLH latin-hypercube, the primordial non-Gaussianities, and the 3D density fields. 536 Tb
-- **Princeton**: All the other snapshots. 620 Tb
+- **San Diego**: 235 Terabytes
+  
+  - The snapshots of the realizations 8,000 to 14,999 of the fiducial set.
+  - The snapshots of the standard and fixed LH latin hypercube.
+  - All halo catalogues.
+  - All spherical overdensity void catalogues.
+  - All power spectra.
+  - All bispectra.
+  - All correlation functions.
+  - All pdfs.
+
+- **New York**: 536 Terabytes
+
+  - The snapshots of high-resolution latin-hypercube (latin_hypercube_HR).
+  - The snapshots of the nwLH latin-hypercube.
+  - The snapshots of the primordial non-Gaussianities simulations (Quijote-PNG),
+  - The 3D density fields.
+    
+- **Princeton**: 620 Terabytes
+
+  - The snapshots of all other simulations. 
 
 
 The data can be accessed through `globus <https://www.globus.org/>`_:
