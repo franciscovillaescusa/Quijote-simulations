@@ -3,7 +3,7 @@
 Primordial non-Gaussianities
 ============================
 
-Quijote contains 4,000 N-body simulations with primordial non-Gaussianities: **Quijote-PNG**. All these simulations contain :math:`512^3` dark matter particles in a periodic volume of :math:`(1~h^{-1}{\rm Gpc})^3`. These are standard N-body simulations run with initial conditions generated in a particular way.
+Quijote contains 4,000 N-body simulations with primordial non-Gaussianities: **Quijote-PNG**. All these simulations contain :math:`512^3` dark matter particles in a periodic volume of :math:`(1~h^{-1}{\rm Gpc})^3` and share the same cosmology as the fiducial model: :math:`\Omega_{\rm m}=0.3175`, :math:`\Omega_{\rm b}=0.049`, :math:`h=0.6711`, :math:`n_s=0.9624`, :math:`\sigma_8=0.834`, :math:`w=-1`, :math:`M_\nu=0.0` eV. These are standard N-body simulations run with initial conditions generated in a particular way. 
 
 The simulations in Quijote-PNG can be classified into four different sets: 1) local, 2) equilateral, 3) orthogonal CMB, and 4) orthogonal LSS (see :ref:`shapes`). Each set contains 1,000 simulations: 500 with :math:`f_{\rm NL}=+100` and 500 with :math:`f_{\rm NL}=-100`. Quijote-PNG is thus organized into eight different folders, depending on the non-Gaussianity shape and the value of :math:`f_{\rm NL}`:
 
@@ -75,6 +75,8 @@ The initial conditions of a given simulation can be found in a folder called ``I
 
 The value of initial random seed for the simulation :math:`i` is :math:`10\times i+5` (this can be found in the ``2LPT.params`` file) independently of the shape and :math:`f_{\rm NL}` value. For instance, the value of the initial random seed for ``OR_CMB_p/100`` and ``OR_CMB_m/100`` is 1005. This choice enables the calculation of partial derivatives, needed for Fisher matrix calculations.
 
+For the details about the linear matter power spectrum used for these simulations see :ref:`linear_Pk`.
+
 
 Snapshots
 ~~~~~~~~~
@@ -85,7 +87,7 @@ We keep snapshots at redshifts 0, 0.5, 1, 2, and 3. The snapshots are saved as H
 Team
 ~~~~
 
-Quijote-PNG was developed in 2022 by the following team:
+Quijote-PNG was developed in 2022 by:
 
 - William Coulton (CCA, USA)
 - Gabriel Jung (Padova, Italy)
