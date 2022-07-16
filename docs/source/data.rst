@@ -181,13 +181,11 @@ The simplest way to transfer data is to use the `globus <https://www.globus.org>
 
 .. image:: Globus.png
 
-In some cases, there are so many files in a given directory, that globus may not be able to list them all and return an error. If this is the case, it is advisable to use the path line. For instance, if by clicking in Snapshots you get a time out error, you may want to just type in the path line: /Snapshots/ or /~/Snapshots/. This may show you the different content of the data and allow you to navigate it. You can also go to a given directory directly from there. E.g. to access the first realization of the fiducial cosmology, type in path: /Snapshots/fiducial/0/ or /~/Snapshots/fiducial/0/.
+In some cases, there are so many files in a given directory, that globus may not be able to list them all and will return an error. If this is the case, it is advisable to use the path line. For instance, if by clicking in Snapshots you get a time out error, you may want to just type in the path line: ``/Snapshots/`` or ``/~/Snapshots/``. This may show you the different content of the data and allow you to navigate it. You can also go to a given directory directly from there. E.g. to access the first realization of the fiducial cosmology, type in path: ``/Snapshots/fiducial/0/`` or ``/~/Snapshots/fiducial/0/``.
 
-In some cases, the above option may not be desirable. For instance, imagine that you want to download all linear matter power spectra of the high-resolution latin-hypercube simulations. Those files are located in, e.g. for realization 45,
+In some cases, the above option may not be desirable. For instance, imagine that you want to download all linear matter power spectra of the high-resolution latin-hypercube simulations. One of such files (realization 45) is located in ``/Snapshots/latin_hypercube_HR/45/ICs/Pk_mm_z=0.000.txt``, while the file for the realization 89 is located in ``/Snapshots/latin_hypercube_HR/89/ICs/Pk_mm_z=0.000.txt``.
 
-/Snapshots/latin_hypercube_HR/45/ICs/Pk_mm_z=0.000.txt
-
-Thus, to download all those files, without involving downloading the full snapshots, will require that you access each simulation folder, then the ICs folder and then transfer the file individually. For 2000 files this is unpractical. For these situations, we recommend the usage of `Command Line Interface (CLI) <https://docs.globus.org/cli/>`_. The first step is to install the CLI package, if you don't have it. Next, login into globus by typing in a terminal
+Thus, to download all those files without involving downloading the full HR latin-hypercube folder, will require that you access each simulation folder, then the ICs folder and then transfer the file individually. For 2,000 files this is unpractical. For these situations, we recommend using the globus `Command Line Interface (CLI) <https://docs.globus.org/cli/>`_. The first step is to install the CLI package, if you don't have it. Next, login into globus by typing in a terminal
 
 .. code-block:: bash
 
