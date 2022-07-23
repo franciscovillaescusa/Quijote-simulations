@@ -196,6 +196,10 @@ Publications
    | Miles Cranmer, Peter Melchior, Brian Nord
    | `2106.09761 <https://arxiv.org/abs/2106.09761>`_
 
+#. | **Normalizing flows for random fields in cosmology**
+   | Adam Rouhiainen, Utkarsh Giri, Moritz Münchmeyer
+   | `2105.12024 <https://arxiv.org/abs/2105.12024>`_
+
 #. | **Joint analysis of anisotropic power spectrum, bispectrum and trispectrum: application to N-body simulations**
    | Davide Gualdi, Hector Gil-Marin, Licia Verde
    | `2104.03976 <https://arxiv.org/abs/2104.03976>`_

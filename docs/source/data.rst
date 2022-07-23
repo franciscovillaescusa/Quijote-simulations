@@ -2,7 +2,7 @@
 Data
 ****
 
-.. important::
+.. attention::
 
    - The nwLH latin-hypercube, containing 2,000 simulations varying :math:`\Omega_{\rm m}`, :math:`\Omega_{\rm b}`, :math:`h`, :math:`n_s`, :math:`\sigma_8`, :math:`M_\nu`, :math:`w` is now publicly available! Check :ref:`LH` for more details.
    - The snapshots of Quijote-PNG are now publicly available. Check :ref:`png` for more details.
@@ -13,7 +13,7 @@ Data
 Organization
 ------------
 
-The data is organized in different folders:
+The Quijote data is organized in different folders:
 
 - **Snapshots**. This folder contains the snapshots of the simulations
 - **Halos**. This folder contains the halo catalogues
@@ -26,7 +26,7 @@ The data is organized in different folders:
 - **PDF**. This folder contains the pdfs
 - **3D_cubes**. This folder contains the 3D density fields
 
-Inside each of the above folders there is the data for the different cosmologies, e.g. h_p, fiducial, Om_m. A brief description of the different cosmologies is provided in the below table. The standard and paired fixed snapshots or data products will be located inside the same folder. The paired fixed (or fixed) will be located inside folders starting with NCV (from No Cosmic Variance). Further details can be found in the `Quijote paper <https://arxiv.org/abs/1909.05273>`_. 
+Each of the above folders contain several subfolders, that represent the different cosmologies, e.g. ``h_p``, ``fiducial``, and ``Om_m``. A brief description of the different cosmologies is provided in the below table. The standard and paired fixed snapshots or data products will be located inside the same folder. The paired fixed (or fixed) will be located inside folders starting with NCV (from No Cosmic Variance). Further details can be found in the `Quijote paper <https://arxiv.org/abs/1909.05273>`_. 
 
 
 +-------------------+-------------------------+-------------------+--------------+-------------+-------------------+---------------+---------------+------------------+------------------------------+------------------------------+-------------------------------+-------------------------------+--------------+----------------+------------+-------------------+---------------------+
@@ -164,9 +164,9 @@ The data is stored in the three different supercomputers in San Diego, New York,
   - The snapshots of all other simulations. 
 
 
-The data can be accessed through `globus <https://www.globus.org/>`_:
+The data can be accessed through `globus <https://www.globus.org/>`__:
 
-- Log in into `globus <https://www.globus.org/>`_ (create an account if you dont have one).
+- Log in into `globus <https://www.globus.org/>`__ (create an account if you dont have one).
 - To access the data in San Diego type: Quijote_simulations (or with this `link1 <https://app.globus.org/file-manager?origin_id=f4863854-3819-11eb-b171-0ee0d5d9299f&origin_path=%2F>`_)
 - To access the data in New York type: Quijote_simulation2 (or with this `link2 <https://app.globus.org/file-manager?origin_id=e0eae0aa-5bca-11ea-9683-0e56c063f437&origin_path=%2F>`_)
 - To access the data in Princeton type: Princeton TIGRESS QUIJOTE Snapshots (or with this `link3 <https://app.globus.org/file-manager?origin_id=8ce7cdf0-7e85-11ea-97a5-0e56c063f437&origin_path=%2F>`_)
@@ -212,7 +212,7 @@ You should do the same to know the endpoint of the machine where you are transfe
    globus ls $ep1:/Snapshots/latin_hypercube_HR/45/ICs/
 
 
-The above command will list the content of the /Snapshots/latin_hypercube_HR/45/ICs/ directory. A single file can be transfered as:
+The above command will list the content in the ``/Snapshots/latin_hypercube_HR/45/ICs/`` directory. A single file can be transfered as:
 
 .. code-block:: bash
    
