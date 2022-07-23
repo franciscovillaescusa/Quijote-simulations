@@ -204,6 +204,10 @@ Publications
    | Davide Gualdi, Hector Gil-Marin, Licia Verde
    | `2104.03976 <https://arxiv.org/abs/2104.03976>`_
 
+#. | **Clustering and halo abundances in early dark energy cosmological models**
+   | Anatoly Klypin,  Vivian Poulin,  Francisco Prada,  Joel Primack,  Marc Kamionkowski, Vladimir Avila-Reese,  Aldo Rodriguez-Puebla,  Peter Behroozi,  Doug Hellinger, Tristan L Smith
+   | `MNRAS article <https://academic.oup.com/mnras/article/504/1/769/6206841>`_
+
 #. | **Detecting the radiative decay of the cosmic neutrino background with line-intensity mapping**
    | Jose Luis Bernal, Andrea Caputo, Francisco Villaescusa-Navarro, Marc Kamionkowski
    | `2103.12099 <https://arxiv.org/abs/2103.12099>`_
