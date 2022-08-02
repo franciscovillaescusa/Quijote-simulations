@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Estimating Cosmological Constraints from Galaxy Cluster Abundance using Simulation-Based Inference**
+   | Moonzarin Reza, Yuanyuan Zhang, Brian Nord, Jason Poh, Aleksandra Ciprijanovic, Louis Strigari
+   | `2208.00134 <https://arxiv.org/abs/2208.00134>`_
+
 #. | **The Cosmic Graph: Optimal Information Extraction from Large-Scale Structure using Catalogues**
    | T. Lucas Makinen, Tom Charnock, Pablo Lemos, Natalia Porqueres, Alan Heavens, Benjamin D. Wandelt
    | `2207.05202 <https://arxiv.org/abs/2207.05202>`_
