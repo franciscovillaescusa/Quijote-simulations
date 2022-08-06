@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Fast computation of non-linear power spectrum in cosmologies with massive neutrinos**
+   | Hernán E. Noriega, Alejandro Aviles, Sebastien Fromenteau, Mariana Vargas-Magaña
+   | `2208.02791 <https://arxiv.org/abs/2208.02791>`_
+
 #. | **Estimating Cosmological Constraints from Galaxy Cluster Abundance using Simulation-Based Inference**
    | Moonzarin Reza, Yuanyuan Zhang, Brian Nord, Jason Poh, Aleksandra Ciprijanovic, Louis Strigari
    | `2208.00134 <https://arxiv.org/abs/2208.00134>`_
