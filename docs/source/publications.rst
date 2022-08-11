@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Correcting for small-displacement interlopers in BAO analyses**
+   | Setareh Foroozan, Elena Massara, Will J. Percival
+   | `2208.05001 <https://arxiv.org/abs/2208.05001>`_
+
 #. | **Fast computation of non-linear power spectrum in cosmologies with massive neutrinos**
    | Hernán E. Noriega, Alejandro Aviles, Sebastien Fromenteau, Mariana Vargas-Magaña
    | `2208.02791 <https://arxiv.org/abs/2208.02791>`_
