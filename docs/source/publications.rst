@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Bayesian evidence comparison for distance scale estimates**
+   | Aseem Paranjape, Ravi K. Sheth
+   | `2209.00668 <https://arxiv.org/abs/2209.00668>`_
+
 #. | **Correcting for small-displacement interlopers in BAO analyses**
    | Setareh Foroozan, Elena Massara, Will J. Percival
    | `2208.05001 <https://arxiv.org/abs/2208.05001>`_
