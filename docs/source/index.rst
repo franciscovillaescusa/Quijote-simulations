@@ -14,6 +14,8 @@ The Quijote simulations is a suite of 45,500 full N-body simulations designed to
 - Quantify the information content on cosmological observables
 - Provide enough statistics to train machine learning algorithms
 
+Historically, Quijote was developed from the `HADES simulations <https://franciscovillaescusa.github.io/hades.html>`_. Nowadays, it contains the full HADES data. 
+
 
 .. toctree::
    :maxdepth: 2
@@ -36,6 +38,7 @@ The Quijote simulations is a suite of 45,500 full N-body simulations designed to
    data
    LH
    png
+   Hades
 
 .. toctree::
    :maxdepth: 2
