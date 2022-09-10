@@ -8,6 +8,10 @@ Publications
    | Aseem Paranjape, Ravi K. Sheth
    | `2209.00668 <https://arxiv.org/abs/2209.00668>`_
 
+#. | **Minkowski Tensors in Redshift Space -- Beyond the Plane Parallel Approximation**
+   | Stephen Appleby, Joby P. Kochappan, Pravabati Chingangbam, Changbom Park
+   | `2208.10164 <https://arxiv.org/abs/2208.10164>`_
+
 #. | **Correcting for small-displacement interlopers in BAO analyses**
    | Setareh Foroozan, Elena Massara, Will J. Percival
    | `2208.05001 <https://arxiv.org/abs/2208.05001>`_
