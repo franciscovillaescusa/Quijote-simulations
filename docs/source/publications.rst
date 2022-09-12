@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Constraining νΛCDM with density-split clustering**
+   | Enrique Paillas, Carolina Cuesta-Lazaro, Pauline Zarrouk, Yan-Chuan Cai, Will J. Percival, Seshadri Nadathur, Mathilde Pinon, Arnaud de Mattia, Florian Beutler
+   | `2209.04310 <https://arxiv.org/abs/2209.04310>`_
+
 #. | **Bayesian evidence comparison for distance scale estimates**
    | Aseem Paranjape, Ravi K. Sheth
    | `2209.00668 <https://arxiv.org/abs/2209.00668>`_
