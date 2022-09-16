@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Squeezing** :math:`f_{\rm NL}` **out of the matter bispectrum with consistency relations**
+   | Samuel Goldstein, Angelo Esposito, Oliver H. E. Philcox, Lam Hui, J. Colin Hill, Roman Scoccimarro, Maximilian H. Abitbol
+   | `2209.06228 <https://arxiv.org/abs/2209.06228>`_
+
 #. | **Constraining νΛCDM with density-split clustering**
    | Enrique Paillas, Carolina Cuesta-Lazaro, Pauline Zarrouk, Yan-Chuan Cai, Will J. Percival, Seshadri Nadathur, Mathilde Pinon, Arnaud de Mattia, Florian Beutler
    | `2209.04310 <https://arxiv.org/abs/2209.04310>`_
