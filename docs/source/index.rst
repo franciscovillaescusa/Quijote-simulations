@@ -32,10 +32,11 @@ Historically, Quijote was developed from the `HADES simulations <https://francis
 
 .. toctree::
    :maxdepth: 2
-   :caption: Characteristics
+   :caption: Data
 
    features
-   data
+   organization
+   access
    LH
    png
    Hades

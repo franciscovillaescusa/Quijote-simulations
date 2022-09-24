@@ -1,12 +1,8 @@
-****
-Data
-****
-
-
+************
 Organization
-------------
+************
 
-The Quijote data is organized in different folders:
+The Quijote data is organized into different folders:
 
 - **Snapshots**. This folder contains the snapshots of the simulations
 - **Halos**. This folder contains the halo catalogues
@@ -19,7 +15,13 @@ The Quijote data is organized in different folders:
 - **PDF**. This folder contains the pdfs
 - **3D_cubes**. This folder contains the 3D density fields
 
-Each of the above folders contain several subfolders, that represent the different cosmologies, e.g. ``h_p``, ``fiducial``, and ``Om_m``. A brief description of the different cosmologies is provided in the below table. The standard and paired fixed snapshots or data products will be located inside the same folder. The paired fixed (or fixed) will be located inside folders starting with NCV (from No Cosmic Variance). Further details can be found in the `Quijote paper <https://arxiv.org/abs/1909.05273>`_. 
+Each of the above folders contain several subfolders, that represent the different cosmological models, e.g. ``h_p``, ``fiducial``, and ``Om_m``.
+
+
+Cosmological models
+-------------------
+
+A brief description of the different cosmologies is provided in the below table. The standard and paired fixed snapshots or data products will be located inside the same folder. The paired fixed (or fixed) will be located inside folders starting with NCV (from No Cosmic Variance). Further details can be found in the `Quijote paper <https://arxiv.org/abs/1909.05273>`_. 
 
 
 +-------------------+-------------------------+-------------------+--------------+-------------+-------------------+---------------+---------------+------------------+------------------------------+------------------------------+-------------------------------+-------------------------------+--------------+----------------+------------+-------------------+---------------------+
@@ -125,127 +127,3 @@ Each of the above folders contain several subfolders, that represent the differe
 +-------------------+-------------------------+-------------------+--------------+-------------+-------------------+---------------+---------------+------------------+------------------------------+------------------------------+-------------------------------+-------------------------------+--------------+----------------+------------+-------------------+---------------------+
 
 See :ref:`LH` and :ref:`png` for more information about the latin-hypercubes and the simulations with primordial non-Gaussianities. 
-
-
-.. _data_access:
-
-Data access
------------
-
-The data is stored in the three different supercomputers in San Diego, New York, and Princeton. Each cluster contains the following data:
-
-- **San Diego**: 235 Terabytes
-  
-  - The snapshots of the realizations 8,000 to 14,999 of the fiducial set.
-  - The snapshots of the standard and fixed LH latin hypercube.
-  - All halo catalogues.
-  - All spherical overdensity void catalogues.
-  - All power spectra.
-  - All bispectra.
-  - All correlation functions.
-  - All pdfs.
-
-- **New York**: 536 Terabytes
-
-  - The snapshots of high-resolution latin-hypercube (latin_hypercube_HR).
-  - The snapshots of the nwLH latin-hypercube.
-  - The snapshots of the primordial non-Gaussianities simulations (Quijote-PNG),
-  - The 3D density fields.
-    
-- **Princeton**: 620 Terabytes
-
-  - The snapshots of all other simulations. 
-
-
-The data can be accessed through `globus <https://www.globus.org/>`__:
-
-- Log in into `globus <https://www.globus.org/>`__ (create an account if you dont have one).
-- To access the data in San Diego type: Quijote_simulations (or with this `link1 <https://app.globus.org/file-manager?origin_id=f4863854-3819-11eb-b171-0ee0d5d9299f&origin_path=%2F>`_)
-- To access the data in New York type: Quijote_simulation2 (or with this `link2 <https://app.globus.org/file-manager?origin_id=e0eae0aa-5bca-11ea-9683-0e56c063f437&origin_path=%2F>`_)
-- To access the data in Princeton type: Princeton TIGRESS QUIJOTE Snapshots (or with this `link3 <https://app.globus.org/file-manager?origin_id=8ce7cdf0-7e85-11ea-97a5-0e56c063f437&origin_path=%2F>`_)
-
-Note that to download the data to your local machine (e.g. laptop) you will need to install the globus connect personal. For further details see `here <https://github.com/franciscovillaescusa/Quijote-simulations/blob/master/documentation/globus.md>`_.
-
-
-Download
---------
-
-The simplest way to transfer data is to use the `globus <https://www.globus.org>`_ graphical environment. Just type the above names in collection (e.g. Quijote_simulations for the data in San Diego) or click the associated link. You will need to choose where the data is being moved in the other collection (e.g. your laptop or another supercomputer). Once the collection points are set, select the data you want to transfer and destiny folder and click in Start.
-
-.. image:: Globus.png
-
-In some cases, there are so many files in a given directory, that globus may not be able to list them all and will return an error. If this is the case, it is advisable to use the path line. For instance, if by clicking in Snapshots you get a time out error, you may want to just type in the path line: ``/Snapshots/`` or ``/~/Snapshots/``. This may show you the different content of the data and allow you to navigate it. You can also go to a given directory directly from there. E.g. to access the first realization of the fiducial cosmology, type in path: ``/Snapshots/fiducial/0/`` or ``/~/Snapshots/fiducial/0/``.
-
-In some cases, the above option may not be desirable. For instance, imagine that you want to download all linear matter power spectra of the high-resolution latin-hypercube simulations. One of such files (realization 45) is located in ``/Snapshots/latin_hypercube_HR/45/ICs/Pk_mm_z=0.000.txt``, while the file for the realization 89 is located in ``/Snapshots/latin_hypercube_HR/89/ICs/Pk_mm_z=0.000.txt``.
-
-Thus, to download all those files without involving downloading the full HR latin-hypercube folder, will require that you access each simulation folder, then the ICs folder and then transfer the file individually. For 2,000 files this is unpractical. For these situations, we recommend using the globus `Command Line Interface (CLI) <https://docs.globus.org/cli/>`_. The first step is to install the CLI package, if you don't have it. Next, login into globus by typing in a terminal
-
-.. code-block:: bash
-
-   globus login
-
-Then, the following command allow you to determine the associated endpoint of the Quijote simulations:
-
-.. code-block:: bash
-		
-   globus endpoint search "Quijote_simulations"
-
-::
-   
-   ID                                   | Owner                     | Display Name       
-   ------------------------------------ | ------------------------- | -------------------
-   c42757fe-d570-11e9-98e2-0a63aa6b37da | fvillaescusa@globusid.org | Quijote_simulations
-
-
-You should do the same to know the endpoint of the machine where you are transfering the data to. You can then explore the filesystem of the Quijote simulations (or your machine) as:
-
-.. code-block:: bash
-		
-   ep1=c42757fe-d570-11e9-98e2-0a63aa6b37da
-   globus ls $ep1:/Snapshots/latin_hypercube_HR/45/ICs/
-
-
-The above command will list the content in the ``/Snapshots/latin_hypercube_HR/45/ICs/`` directory. A single file can be transfered as:
-
-.. code-block:: bash
-   
-   ep1=c42757fe-d570-11e9-98e2-0a63aa6b37da
-   ep2=ddb59af0-6d04-11e5-ba46-22000b92c6ec
-   globus transfer $ep1:/Snapshots/latin_hypercube_HR/45/ICs/Pk_mm_z=0.000.txt $ep2:/Quijote_simulations/linear_Pk/45/Pk_mm_z=0.000.txt --label "single file transfer"
-
-
-Where ep2 should be the endpoint of the machine where you are transfering the data. Entire folders can be moved as follows:
-
-.. code-block:: bash
-		
-   ep1=c42757fe-d570-11e9-98e2-0a63aa6b37da
-   ep2=ddb59af0-6d04-11e5-ba46-22000b92c6ec
-   globus transfer $ep1:/Snapshots/latin_hypercube_HR/45/ICs $ep2:/Quijote_simulations/45/ICs  --recursive --label "single folder transfer"
-
-Many folders can be moved with a single command as
-
-.. code-block:: bash
-
-   ep1=c42757fe-d570-11e9-98e2-0a63aa6b37da
-   ep2=ddb59af0-6d04-11e5-ba46-22000b92c6ec
-   globus transfer $ep1:/Snapshots/fiducial/ $ep2:/Quijote_simulations/fiducial/ --batch --label "CLI 10 folders" < folders.txt
-
-
-where folders.txt is a text file containing
-
-.. code-block:: bash
-		
-    --recursive 0 0
-    --recursive 1 1
-    --recursive 2 2
-    --recursive 3 3
-    --recursive 4 4
-    --recursive 5 5
-    --recursive 6 6
-    --recursive 7 7
-    --recursive 8 8
-    --recursive 9 9
-
-For more options and details see `Command Line Interface (CLI) <https://docs.globus.org/cli/>`_.
-
-
