@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Tracer-Field Cross-Correlations with k-Nearest Neighbor Distributions**
+   | Arka Banerjee, Tom Abel
+   | `2210.05140 <https://arxiv.org/abs/2210.05140>`_
+
 #. | **Squeezing** :math:`f_{\rm NL}` **out of the matter bispectrum with consistency relations**
    | Samuel Goldstein, Angelo Esposito, Oliver H. E. Philcox, Lam Hui, J. Colin Hill, Roman Scoccimarro, Maximilian H. Abitbol
    | `2209.06228 <https://arxiv.org/abs/2209.06228>`_
