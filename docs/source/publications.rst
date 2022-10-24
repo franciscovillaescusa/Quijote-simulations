@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **New applications of Graph Neural Networks in Cosmology**
+   | Farida Farsian, Federico Marulli, Lauro Moscardini, Carlo Giocoli
+   | `2210.11487 <https://arxiv.org/abs/2210.11487>`_
+
 #. | **Tracer-Field Cross-Correlations with k-Nearest Neighbor Distributions**
    | Arka Banerjee, Tom Abel
    | `2210.05140 <https://arxiv.org/abs/2210.05140>`_
