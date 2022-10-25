@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Cosmological Information in Skew Spectra of Biased Tracers in Redshift Space**
+   | Jiamin Hou, Azadeh Moradinezhad Dizgah, ChangHoon Hahn, Elena Massara
+   | `2210.12743 <https://arxiv.org/abs/2210.12743>`_
+
 #. | **New applications of Graph Neural Networks in Cosmology**
    | Farida Farsian, Federico Marulli, Lauro Moscardini, Carlo Giocoli
    | `2210.11487 <https://arxiv.org/abs/2210.11487>`_
