@@ -18,7 +18,7 @@ The table below describes the data each cluster contains and provides the links 
 +=============+=================================================================+==================================================================================================================+
 | New York    | - The snapshots of high-resolution latin-hypercube              | `globus <https://app.globus.org/file-manager?origin_id=e0eae0aa-5bca-11ea-9683-0e56c063f437&origin_path=%2F>`__  |
 |             | - The snapshots of the nwLH latin-hypercube                     +------------------------------------------------------------------------------------------------------------------+
-|             | - The primordial non-Gaussianities simulation snapshots         | .. image:: https://mybinder.org/badge_logo.svg                                                                   |
+|             | - The PNG simulation snapshots and halo catalogues              | .. image:: https://mybinder.org/badge_logo.svg                                                                   |
 |             | - The 3D density fields                                         |    :target: https://binder.flatironinstitute.org/~fvillaescusa/Quijote                                           |
 |             | - The HADES data (if available)                                 |                                                                                                                  |
 |             | - 536 Terabytes                                                 |                                                                                                                  |

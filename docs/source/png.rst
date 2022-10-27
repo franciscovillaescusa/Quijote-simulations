@@ -83,6 +83,11 @@ Snapshots
 
 We keep snapshots at redshifts 0, 0.5, 1, 2, and 3. The snapshots are saved as HDF5 files, and they can be read in the standard way (see :ref:`snapshots` for details on this).
 
+Halo catalogues
+~~~~~~~~~~~~~~~
+
+We store Friends-of-Friends (FoF) halo catalogues for each snapshot of each simulation in Quijote-PNG. We refer the user to :ref:`halo_catalogues` for details on how to read these files. 
+
 
 Team
 ~~~~

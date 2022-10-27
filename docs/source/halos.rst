@@ -1,3 +1,5 @@
+.. _halo_catalogues:
+
 Halo catalogues
 ===============
 
