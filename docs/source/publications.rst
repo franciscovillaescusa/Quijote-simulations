@@ -4,6 +4,14 @@
 Publications
 ************
 
+#. | **SIMBIG: A Forward Modeling Approach To Analyzing Galaxy Clustering**
+   | ChangHoon Hahn, Michael Eickenberg, Shirley Ho, Jiamin Hou, Pablo Lemos, Elena Massara, Chirag Modi, Azadeh Moradinezhad Dizgah, Bruno Régaldo-Saint Blancard, Muntazir M. Abidi
+   | `2211.00723 <https://arxiv.org/abs/2211.00723>`_
+   
+#. | **SIMBIG: Mock Challenge for a Forward Modeling Approach to Galaxy Clustering**
+   | ChangHoon Hahn, Michael Eickenberg, Shirley Ho, Jiamin Hou, Pablo Lemos, Elena Massara, Chirag Modi, Azadeh Moradinezhad Dizgah, Bruno Régaldo-Saint Blancard, Muntazir M. Abidi
+   | `2211.00660 <https://arxiv.org/abs/2211.00660>`_
+
 #. | **Cosmological Information in Skew Spectra of Biased Tracers in Redshift Space**
    | Jiamin Hou, Azadeh Moradinezhad Dizgah, ChangHoon Hahn, Elena Massara
    | `2210.12743 <https://arxiv.org/abs/2210.12743>`_
