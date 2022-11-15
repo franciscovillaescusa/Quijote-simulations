@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Quijote-PNG: Quasi-maximum likelihood estimation of Primordial Non-Gaussianity in the non-linear halo density field**
+   | Gabriel Jung, Dionysios Karagiannis, Michele Liguori, Marco Baldi, William R Coulton, Drew Jamieson, Licia Verde, Francisco Villaescusa-Navarro, Benjamin D. Wandelt
+   | `2211.07565 <https://arxiv.org/abs/2211.07565>`_
+
 #. | **SIMBIG: A Forward Modeling Approach To Analyzing Galaxy Clustering**
    | ChangHoon Hahn, Michael Eickenberg, Shirley Ho, Jiamin Hou, Pablo Lemos, Elena Massara, Chirag Modi, Azadeh Moradinezhad Dizgah, Bruno Régaldo-Saint Blancard, Muntazir M. Abidi
    | `2211.00723 <https://arxiv.org/abs/2211.00723>`_
