@@ -86,7 +86,12 @@ We keep snapshots at redshifts 0, 0.5, 1, 2, and 3. The snapshots are saved as H
 Halo catalogues
 ~~~~~~~~~~~~~~~
 
-We store Friends-of-Friends (FoF) halo catalogues for each snapshot of each simulation in Quijote-PNG. We refer the user to :ref:`halo_catalogues` for details on how to read these files. 
+We store Friends-of-Friends (FoF) halo catalogues for each snapshot of each simulation in Quijote-PNG. We refer the user to :ref:`halo_catalogues` for details on how to read these files.
+
+Density fields
+~~~~~~~~~~~~~~
+
+To facilitate the post-processing of the data we also provide 3D grids containing the overdensity, :math:`\delta(x)=\rho(x)/\bar{\rho}-1`, for each redshift of all PNG simulations. We refer the user to :ref:`density_fields` for details on how to read these files.
 
 
 Team

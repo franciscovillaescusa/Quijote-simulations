@@ -1,6 +1,8 @@
-**************
+.. _density_fields:
+
+
 Density fields
-**************
+==============
 
 3D fields
 ---------
