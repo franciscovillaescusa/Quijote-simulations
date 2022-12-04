@@ -1,6 +1,8 @@
 News
 ====
 
+**December 2022:** We have created 3D matter overdensity grids for all PNG simulations and made them publicly available. Data can be accessed through Globus and binder.
+
 **October 2022:** All the halo catalogues of the primordial non-Gaussianities simulations are now publicly available. Check :ref:`png` for more details.
 
 **September 2022:** All Quijote data located in the San Diego and New York clusters (almost 800 Terabytes) can now be accessed via Binder, a system that allows reading and manipulating the data without having to download it. Check :ref:`data_access` for further details.
