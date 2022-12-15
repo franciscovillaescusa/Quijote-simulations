@@ -4,6 +4,14 @@
 Publications
 ************
 
+#. | **Machine learning cosmology from void properties**
+   | Bonny Y. Wang, Alice Pisani, Francisco Villaescusa-Navarro, Benjamin D. Wandelt
+   | `2212.06860 <https://arxiv.org/abs/2212.06860>`_
+
+#. | **Cosmology with cosmic web environments II. Redshift-space auto and cross power spectra**
+   | Tony Bonnaire, Joseph Kuruvilla, Nabila Aghanim, Aurélien Decelle
+   | `2212.06338 <https://arxiv.org/abs/2212.06838>`_
+
 #. | **Quijote-PNG: Quasi-maximum likelihood estimation of Primordial Non-Gaussianity in the non-linear halo density field**
    | Gabriel Jung, Dionysios Karagiannis, Michele Liguori, Marco Baldi, William R Coulton, Drew Jamieson, Licia Verde, Francisco Villaescusa-Navarro, Benjamin D. Wandelt
    | `2211.07565 <https://arxiv.org/abs/2211.07565>`_
