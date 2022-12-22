@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Window function convolution with deep neural network models**
+   | Davit Alkhanishvili, Cristiano Porciani, Emiliano Sefusatti
+   | `2212.09742 <https://arxiv.org/abs/2212.09742>`_
+
 #. | **Machine learning cosmology from void properties**
    | Bonny Y. Wang, Alice Pisani, Francisco Villaescusa-Navarro, Benjamin D. Wandelt
    | `2212.06860 <https://arxiv.org/abs/2212.06860>`_
