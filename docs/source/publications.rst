@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Constraining cosmological parameters from N-body simulations with Variational Bayesian Neural Networks**
+   | Héctor J. Hortúa, Luz Ángela García, Leonardo Castañeda C
+   | `2301.03991 <https://arxiv.org/abs/2301.03991>`_
+
 #. | **Window function convolution with deep neural network models**
    | Davit Alkhanishvili, Cristiano Porciani, Emiliano Sefusatti
    | `2212.09742 <https://arxiv.org/abs/2212.09742>`_
