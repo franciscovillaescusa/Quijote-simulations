@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Signature of Massive Neutrinos from the Clustering of Critical Points. I. Density-threshold-based Analysis in Configuration Space**
+   | Jeongin Moon, Graziano Rossi, Hogyun Yu
+   | `ApJS 264 26 (2023) <https://iopscience.iop.org/article/10.3847/1538-4365/aca32a>`_
+
 #. | **Constraining cosmological parameters from N-body simulations with Variational Bayesian Neural Networks**
    | Héctor J. Hortúa, Luz Ángela García, Leonardo Castañeda C
    | `2301.03991 <https://arxiv.org/abs/2301.03991>`_
