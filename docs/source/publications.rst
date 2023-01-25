@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Perturbation-theory informed integrators for cosmological simulations**
+   | Florian List, Oliver Hahn
+   | `2301.09655 <https://arxiv.org/abs/2301.09655>`_
+
 #. | **Signature of Massive Neutrinos from the Clustering of Critical Points. I. Density-threshold-based Analysis in Configuration Space**
    | Jeongin Moon, Graziano Rossi, Hogyun Yu
    | `ApJS 264 26 (2023) <https://iopscience.iop.org/article/10.3847/1538-4365/aca32a>`_
