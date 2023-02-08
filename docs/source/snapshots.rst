@@ -46,3 +46,17 @@ In the simulations with massive neutrinos it is possible to read the positions, 
 - 002 ------> z=1
 - 003 ------> z=0.5
 - 004 ------> z=0
+
+
+.. warning::
+
+   In February 2023 we compressed the Qujote snapshots due to storage limitations. While the format is exactly the same, you may enconter problems reading them if you don't use Pylians. In order to read them you will need both hdf5 and hdf5plugin.
+
+   For instance, if you are reading the snapshots using h5py directly, you will need to install hdf5plugin, ``python -m pip install hdf5plugin``, and then import both h5py and hdf5plugin
+
+   .. code-block:: python
+   
+      import h5py
+      import hdf5plugin
+
+   `Reach out <mailto:villaescusa.francisco@gmail.com>`_ if you experience problems.
