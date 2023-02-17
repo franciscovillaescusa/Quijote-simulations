@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Probing massive neutrinos with the Minkowski functionals of the galaxy distribution**
+   | Wei Liu, Aoxiang Jiang, Wenjuan Fang
+   | `2302.08162 <https://arxiv.org/abs/2302.08162>`_
+
 #. | **Perturbation-theory informed integrators for cosmological simulations**
    | Florian List, Oliver Hahn
    | `2301.09655 <https://arxiv.org/abs/2301.09655>`_
