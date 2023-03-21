@@ -60,3 +60,18 @@ In the simulations with massive neutrinos it is possible to read the positions, 
       import hdf5plugin
 
    `Reach out <mailto:villaescusa.francisco@gmail.com>`_ if you experience problems.
+
+
+Compression
+===========
+The particle positions, velocities, and PID, are stored in HDF5 files, using HDF5 compression filters to reduce the disk usage.  Specifically, the files use the Blosc compression filter, as implemented in the `hdf5plugin <https://github.com/silx-kit/hdf5plugin/>`_ Python package.  Blosc compression applies a transpose to the data then passes it to zstandard, all of which is lossless and transparent to the user.  As a preconditioning step to increase the Blosc compression ratio, we manually null out some bits of the positions and velocities to increase the compression ratio.  This step is lossy.  The typical total compression ratio is 2.5x.
+
+The positions are stored as absolute coordinates in float32 precision.  The lossy preconditioning we apply is to set several of the low bits in the float32 significand to zero.  The number of bits nulled out is B=6 for the 1024^3 simulations, B=7 for 512^3, and B=8 for 256^3.  This introduces a fractional error of 2^(-24+B), which is 3.8e-6 for the 1024^3 simulations.  Since these are 1 Gpc/h simulations, this is 3.8 kpc/h precision worst-case.  The softening length in all cases is 1/40th of the interparticle spacing, or 24.4 kpc/h for 1024^3.  Therefore, the lossiness is 6.4x smaller than the softening length and should have a minimal impact on science analyses.
+
+Likewise, we null out 11 low bits of the velocities, for a fractional precision of 0.01%.  The velocity rarely goes above 6000 km/s in LCDM simulations, so this is a worst case of 0.6 km/s precision.
+
+No lossy compression is applied to the IC files, or to the PIDs.
+
+Each HDF5 file also has a new group called `/CompressionInfo` whose attributes contain a JSON string describing the exact compression options used.
+
+The scripts used to do the compression are here: https://github.com/lgarrison/quijote-compression
