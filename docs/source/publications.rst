@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Predicting the Initial Conditions of the Universe using Deep Learning**
+   | Vaibhav Jindal, Drew Jamieson, Albert Liang, Aarti Singh, Shirley Ho
+   | `2303.13056 <https://arxiv.org/abs/2303.13056>`_
+
 #. | **Probing massive neutrinos with the Minkowski functionals of the galaxy distribution**
    | Wei Liu, Aoxiang Jiang, Wenjuan Fang
    | `2302.08162 <https://arxiv.org/abs/2302.08162>`_
