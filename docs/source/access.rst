@@ -4,7 +4,7 @@
 Data access
 ***********
 
-Quijote contains over 1 petabyte of data. Given this large size, the data is currently distributed across three different clusters in New York (Rusty cluster), San Diego (GordonS cluster), and Princeton (Tiger cluster). The data can be accessed in two different ways:
+Quijote contains over 700 terabytes of data. Given this large size, the data is currently distributed across two different clusters in New York (Rusty cluster) and San Diego (GordonS cluster). The data can be accessed in two different ways:
 
 - **Globus**. A system designed to easily transfer large amounts of data in a very efficient manner.
 - **Binder**. A system that allows reading and manipulating the data online, without the need to download the data. 
@@ -20,28 +20,22 @@ The table below describes the data each cluster contains and provides the links 
 +-------------+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
 | Cluster     |  Content                                                        |  Access                                                                                                          |
 +=============+=================================================================+==================================================================================================================+
-| New York    | - The snapshots of high-resolution latin-hypercube              | `globus <https://app.globus.org/file-manager?origin_id=e0eae0aa-5bca-11ea-9683-0e56c063f437&origin_path=%2F>`__  |
-|             | - The snapshots of the nwLH latin-hypercube                     +------------------------------------------------------------------------------------------------------------------+
-|             | - The PNG simulation snapshots and halo catalogues              | .. image:: https://mybinder.org/badge_logo.svg                                                                   |
-|             | - The 3D density fields                                         |    :target: https://binder.flatironinstitute.org/~fvillaescusa/Quijote                                           |
-|             | - The HADES data (if available)                                 |                                                                                                                  |
-|             | - 536 Terabytes                                                 |                                                                                                                  |
-+-------------+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
 | San Diego   | - The snapshots 8,000 - 14,999 of the fiducial cosmology        | `globus <https://app.globus.org/file-manager?origin_id=f4863854-3819-11eb-b171-0ee0d5d9299f&origin_path=%2F>`__  |
 |             | - The snapshots of the standard & fixed LH latin hypercube      +------------------------------------------------------------------------------------------------------------------+
 |             | - All halo catalogues                                           | .. image:: https://mybinder.org/badge_logo.svg                                                                   |
-|             | - All spherical overdensity void catalogues                     |    :target: https://sdsc-binder.flatironinstitute.org/v2/user/fvillaescusa/Quijote                               |
+|             | - All spherical overdensity void catalogues                     |   :target: https://sdsc-binder.flatironinstitute.org/v2/user/fvillaescusa/Quijote                                |
 |             | - All power spectra                                             |                                                                                                                  | 
 |             | - All bispectra                                                 |                                                                                                                  | 
 |             | - All correlation functions                                     |                                                                                                                  | 
 |             | - All pdfs                                                      |                                                                                                                  |
 |             | - 235 Terabytes                                                 |                                                                                                                  |
 +-------------+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
-| Princeton   | - The snapshots of all other simulations                        | `globus <https://app.globus.org/file-manager?origin_id=8ce7cdf0-7e85-11ea-97a5-0e56c063f437&origin_path=%2F>`__  |
-|             | - 620 Terabytes                                                 +------------------------------------------------------------------------------------------------------------------+
-|             |                                                                 | Non available                                                                                                    |
+| New York    | - The snapshots of all other simulations                        | `globus <https://app.globus.org/file-manager?origin_id=e0eae0aa-5bca-11ea-9683-0e56c063f437&origin_path=%2F>`__  |
+|             | - The 3D density fields                                         +------------------------------------------------------------------------------------------------------------------+
+|             | - The HADES data (if available)                                 | .. image:: https://mybinder.org/badge_logo.svg                                                                   |
+|             | - The 3D density fields                                         |   :target: https://binder.flatironinstitute.org/~fvillaescusa/Quijote                                            |
+|             | - 466 Terabytes                                                 |                                                                                                                  |
 +-------------+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
-
 
 
 Globus

@@ -19,4 +19,6 @@ Features
 - More than 1 million correlation functions
 - More than 1 million marked power spectra
 - More than 1 million probability distribution functions
-- More than 1 Petabyte of data publicly available
+- More than 700 Terabytes of data publicly available
+- All data can be downloaded via globus
+- All data can be accessed and manipulated without downloading it via binder
