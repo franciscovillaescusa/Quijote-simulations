@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **GEO-FPT: a model of the galaxy bispectrum at mildly non-linear scales**
+   | Sergi Novell-Masot, Davide Gualdi, Héctor Gil-Marín, Licia Verde
+   | `2303.15510 <https://arxiv.org/abs/2303.15510>`_
+
 #. | **Predicting the Initial Conditions of the Universe using Deep Learning**
    | Vaibhav Jindal, Drew Jamieson, Albert Liang, Aarti Singh, Shirley Ho
    | `2303.13056 <https://arxiv.org/abs/2303.13056>`_
