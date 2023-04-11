@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Posterior Sampling of the Initial Conditions of the Universe from Non-linear Large Scale Structures using Score-Based Generative Models**
+   | Ronan Legin, Matthew Ho, Pablo Lemos, Laurence Perreault-Levasseur, Shirley Ho, Yashar Hezaveh, Benjamin Wandelt
+   | `2304.03788 <https://arxiv.org/abs/2304.03788>`_
+
 #. | **GEO-FPT: a model of the galaxy bispectrum at mildly non-linear scales**
    | Sergi Novell-Masot, Davide Gualdi, Héctor Gil-Marín, Licia Verde
    | `2303.15510 <https://arxiv.org/abs/2303.15510>`_
