@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **On the impact of f(Q) gravity on the Large Scale Structure**
+   | Oleksii Sokoliuk, Simran Arora, Subhrat Praharaj, Alexander Baransky, P.K. Sahoo
+   | `2303.17341 <https://arxiv.org/abs/2303.17341>`_
+
 #. | **Posterior Sampling of the Initial Conditions of the Universe from Non-linear Large Scale Structures using Score-Based Generative Models**
    | Ronan Legin, Matthew Ho, Pablo Lemos, Laurence Perreault-Levasseur, Shirley Ho, Yashar Hezaveh, Benjamin Wandelt
    | `2304.03788 <https://arxiv.org/abs/2304.03788>`_
