@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Constraining fNL using the Large-Scale Modulation of Small-Scale Statistics**
+   | Utkarsh Giri, Moritz Münchmeyer, Kendrick M. Smith
+   | `2305.03070 <https://arxiv.org/abs/2305.03070>`_
+
 #. | **Posterior Sampling of the Initial Conditions of the Universe from Non-linear Large Scale Structures using Score-Based Generative Models**
    | Ronan Legin, Matthew Ho, Pablo Lemos, Laurence Perreault-Levasseur, Shirley Ho, Yashar Hezaveh, Benjamin Wandelt
    | `2304.03788 <https://arxiv.org/abs/2304.03788>`_
