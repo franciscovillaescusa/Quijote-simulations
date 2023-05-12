@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Improving constraints on primordial non-Gaussianity using neural network based reconstruction**
+   | Thomas Flöss, P. Daniel Meerburg
+   | `2305.07018 <https://arxiv.org/abs/2305.07018>`_
+
 #. | **Constraining fNL using the Large-Scale Modulation of Small-Scale Statistics**
    | Utkarsh Giri, Moritz Münchmeyer, Kendrick M. Smith
    | `2305.03070 <https://arxiv.org/abs/2305.03070>`_
