@@ -61,6 +61,17 @@ In the simulations with massive neutrinos it is possible to read the positions, 
 
    `Reach out <mailto:villaescusa.francisco@gmail.com>`_ if you experience problems.
 
+Initial conditions
+------------------
+
+On top of the snapshots at redshifts 0, 0.5, 1, 2, and 3, we also provide the initial conditions for each simulation. Those can be stored as hdf5 files or as Gadget format I files. In both cases, you can read the positions, velocities, and IDs of the particles using the above example just using as snapshot the name of the initial conditions, for instance:
+
+.. code-block:: python
+		
+   snapshot = '/home/fvillaescusa/Quijote/Snapshots/w_p/ICs/ics'
+
+We note that the particle IDs are unique across snapshots. For instance, particles with an ID equal to 43623 at redshifts 0, 0.5, and 127 represent the very same particle at different times. This can be used to track particles back/forward in time; for instance, can be used to identify the Lagrangian region of a halo or a void.
+
 
 Compression
 -----------
