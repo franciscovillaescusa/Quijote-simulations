@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **How to estimate Fisher matrices from simulations**
+   | William R. Coulton, Benjamin D. Wandelt
+   | `2305.08994 <https://arxiv.org/abs/2305.08994>`_
+
 #. | **Improving constraints on primordial non-Gaussianity using neural network based reconstruction**
    | Thomas Flöss, P. Daniel Meerburg
    | `2305.07018 <https://arxiv.org/abs/2305.07018>`_
