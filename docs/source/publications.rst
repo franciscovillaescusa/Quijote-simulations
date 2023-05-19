@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Quijote-PNG: The Information Content of the Halo Mass Function**
+   | Gabriel Jung, Andrea Ravenni, Marco Baldi, William R. Coulton, Drew Jamieson, Dionysios Karagiannis, Michele Liguori, Helen Shao, Licia Verde, Francisco Villaescusa-Navarro, Benjamin D. Wandelt
+   | `2305.10597 <https://arxiv.org/abs/2305.10597>`_
+
 #. | **How to estimate Fisher matrices from simulations**
    | William R. Coulton, Benjamin D. Wandelt
    | `2305.08994 <https://arxiv.org/abs/2305.08994>`_
