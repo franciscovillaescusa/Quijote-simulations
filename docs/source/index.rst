@@ -16,19 +16,15 @@ The Quijote simulations is a suite of 45,500 full N-body simulations designed to
 
 Historically, Quijote was developed from the `HADES simulations <https://franciscovillaescusa.github.io/hades.html>`_. Nowadays, it contains the full HADES data. 
 
-
-.. toctree::
-   :maxdepth: 2
-   :caption: News
-	     
-   news
   
 .. toctree::
    :maxdepth: 2
-   :caption: Science
+   :caption: Quijote
 
+   news
    goals
    publications
+   citation
 
 .. toctree::
    :maxdepth: 2
