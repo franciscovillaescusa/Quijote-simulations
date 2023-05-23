@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Non-Linearity-Free prediction of the growth-rate fσ8 using Convolutional Neural Networks**
+   | Koya Murakami, Indira Ocampo, Savvas Nesseris, Atsushi J. Nishizawa, Sachiko Kuroyanagi
+   | `2305.12812 <https://arxiv.org/abs/2305.12812>`_
+
 #. | **Quijote-PNG: The Information Content of the Halo Mass Function**
    | Gabriel Jung, Andrea Ravenni, Marco Baldi, William R. Coulton, Drew Jamieson, Dionysios Karagiannis, Michele Liguori, Helen Shao, Licia Verde, Francisco Villaescusa-Navarro, Benjamin D. Wandelt
    | `2305.10597 <https://arxiv.org/abs/2305.10597>`_
