@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Clustering of binary black hole mergers: a detailed analysis of the EAGLE+MOBSE simulation**
+   | Matteo Peron, Sarah Libanore, Andrea Ravenni, Michele Liguori, Maria Celeste Artale
+   | `2305.18003 <https://arxiv.org/abs/2305.18003>`_
+
 #. | **Non-Linearity-Free prediction of the growth-rate fσ8 using Convolutional Neural Networks**
    | Koya Murakami, Indira Ocampo, Savvas Nesseris, Atsushi J. Nishizawa, Sachiko Kuroyanagi
    | `2305.12812 <https://arxiv.org/abs/2305.12812>`_
