@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **On approximations of the redshift-space bispectrum and power spectrum multipoles covariance matrix**
+   | Sergi Novell-Masot, Héctor Gil-Marín, Licia Verde
+   | `2306.03137 <https://arxiv.org/abs/2306.03137>`_
+
 #. | **Clustering of binary black hole mergers: a detailed analysis of the EAGLE+MOBSE simulation**
    | Matteo Peron, Sarah Libanore, Andrea Ravenni, Michele Liguori, Maria Celeste Artale
    | `2305.18003 <https://arxiv.org/abs/2305.18003>`_
