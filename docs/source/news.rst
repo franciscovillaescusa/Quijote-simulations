@@ -1,6 +1,8 @@
 News
 ====
 
+**June 2023:** We release Quijote-ODD, a collection of 1,000 N-body simulations with parity-violation initial conditions. We also make publicly available the FoF and Rockstar halo catalogs generated from these simulations. Check :ref:`odd` for more details.
+
 **March 2023:** All data located in the Princeton cluster has been moved to the New York cluster. This means that all Quijote data is now accessible through binder. The Quijote snapshots have also being compressed by Lehman Garrison.
 
 **February 2023:** We are moving all data located in Princeton to the cluster in New York. You may find some files temporarily missing. We are also compressing all Quijote snapshots due to storage limitations. You can still read the data with Pylians3, but if you are using hdf5 you need to use the hdf5plugin module to deal with the compression. See :ref:`snapshots` for more details.
@@ -13,6 +15,5 @@ News
 	  
 **July 2022:** The snapshots of Quijote-PNG are now publicly available. Check :ref:`png` for more details.
   
-
 **June 2022:** The nwLH latin-hypercube, containing 2,000 simulations varying :math:`\Omega_{\rm m}`, :math:`\Omega_{\rm b}`, :math:`h`, :math:`n_s`, :math:`\sigma_8`, :math:`M_\nu`, :math:`w` is now publicly available! Check :ref:`LH` for more details.
 

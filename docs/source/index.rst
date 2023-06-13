@@ -23,6 +23,7 @@ Historically, Quijote was developed from the `HADES simulations <https://francis
 
    news
    goals
+   access
    publications
    team
    citation
@@ -33,9 +34,9 @@ Historically, Quijote was developed from the `HADES simulations <https://francis
 
    features
    organization
-   access
    LH
    png
+   odd
    Hades
 
 .. toctree::
