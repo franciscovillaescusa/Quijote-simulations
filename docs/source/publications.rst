@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Effective cosmic density field reconstruction with convolutional neural network**
+   | Xinyi Chen, Fangzhou Zhu, Sasha Gaines, Nikhil Padmanabhan
+   | `2306.10538 <https://arxiv.org/abs/2306.10538>`_
+
 #. | **On approximations of the redshift-space bispectrum and power spectrum multipoles covariance matrix**
    | Sergi Novell-Masot, Héctor Gil-Marín, Licia Verde
    | `2306.03137 <https://arxiv.org/abs/2306.03137>`_
