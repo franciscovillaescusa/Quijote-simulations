@@ -5,6 +5,13 @@ Parity-violation
 
 Quijote contains N-body simulations whose intial conditions were generated with parity-violation properties: Quijote-ODD. All these simulations contain :math:`512^3` dark matter particles in a periodic volume of :math:`(1~h^{-1}{\rm Gpc})^3` and share the same cosmology as the fiducial model: :math:`\Omega_{\rm m}=0.3175`, :math:`\Omega_{\rm b}=0.049`, :math:`h=0.6711`, :math:`n_s=0.9624`, :math:`\sigma_8=0.834`, :math:`w=-1`, :math:`M_\nu=0.0` eV. As the Quijote-PNG simulations (see :ref:`png`), these are standard N-body simulations run with initial conditions generated in a particular way.
 
+The video below show an example of two N-body simulations with Gaussian initial conditions (top-left) and parity-violating initial conditions (bottom-left). The parity-violating simulation has been flipped along the x-axis to mimick the effect of a mirror in the center. The panels on the right show the differences between both.
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/4bnKGFYoLpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+   
 Currently, the simulations in Quijote-ODD can be classified into two sets depending on the sign of :math:`p_{\rm NL}`:
 
 - **ODD_p**: 500 simulations with :math:`p_{\rm NL}=+10^6`.

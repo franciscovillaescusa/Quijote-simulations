@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Signatures of a Parity-Violating Universe**
+   | William R. Coulton, Oliver H. E. Philcox, Francisco Villaescusa-Navarro
+   | `2306.11782 <https://arxiv.org/abs/2306.11782>`_
+
 #. | **Effective cosmic density field reconstruction with convolutional neural network**
    | Xinyi Chen, Fangzhou Zhu, Sasha Gaines, Nikhil Padmanabhan
    | `2306.10538 <https://arxiv.org/abs/2306.10538>`_
