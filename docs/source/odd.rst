@@ -55,7 +55,7 @@ To facilitate the post-processing of the data we also provide 3D grids containin
 Team
 ~~~~
 
-Quijote-PNG was developed in 2023 by:
+Quijote-ODD was developed in 2023 by:
 
 - William Coulton (CCA, USA)
 - Oliver Philcox (Columbia/Simons, USA)
