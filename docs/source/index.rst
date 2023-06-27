@@ -56,7 +56,8 @@ Historically, Quijote was developed from the `HADES simulations <https://francis
 .. toctree::
    :maxdepth: 2
    :caption: Other
-	     
+
+   tutorials
    logo
    license
    help
