@@ -8,7 +8,8 @@ We provide multiple tutorials showing how to read and manipulate Quijote data. I
 
 
 .. nbgallery::
-   
+
+   Examples/Reading_snapshots
    Examples/Density_fields
    Examples/Density_fields2
 
