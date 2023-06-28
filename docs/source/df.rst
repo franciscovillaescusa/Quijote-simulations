@@ -23,6 +23,12 @@ The files can be read simply as
 
    df = np.load('/home/fvillaescusa/Quijote/3D_cubes/Om_p/df_m_128_PCS_z=0.npy')
 
+.. warning::
+
+   Density fields with a large number of voxels occupy a significant amount of disk space, so they may not be available in our public data. However, constructing these fields are straightforward and it can be done directly in binder, so there is no need to download and process the data. We have examples of how to create these density fields directly on binder in :ref:`tutorials`.
+   
+   
+
 2D fields
 ---------
 
