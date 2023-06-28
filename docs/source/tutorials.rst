@@ -7,5 +7,5 @@ We provide multiple tutorials showing how to read and manipulate Quijote data. I
 
 .. nbgallery::
    
-   Tutorials/Density_fields
+   Examples/Density_fields
 
