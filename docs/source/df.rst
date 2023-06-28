@@ -25,7 +25,7 @@ The files can be read simply as
 
 .. warning::
 
-   Density fields with a large number of voxels occupy a significant amount of disk space, so they may not be available in our public data. However, constructing these fields are straightforward and it can be done directly in binder, so there is no need to download and process the data. We have examples of how to create these density fields directly on binder in :ref:`tutorials`.
+   Density fields with a large number of voxels occupy a significant amount of disk space, so they may not be available. However, constructing these fields is straightforward and it can be done directly on binder; thus, there is no need to download and process the data. We have examples of how to create these density fields directly on binder in :ref:`tutorials`.
    
    
 
