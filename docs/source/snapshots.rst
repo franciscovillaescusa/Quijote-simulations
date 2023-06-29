@@ -3,7 +3,7 @@
 Snapshots
 =========
 
-The snapshots are stored in either Gadget-II format or HDF5. They can be read using the `readgadget.py <https://github.com/franciscovillaescusa/Pylians3/blob/master/library/readgadget.py>`_ and `readsnap.py <https://github.com/franciscovillaescusa/Pylians3/blob/master/library/readsnap.py>`_ scripts. If you have `Pylians <https://github.com/franciscovillaescusa/Pylians3>`_ installed you already have them.
+The snapshots are stored in either Gadget-II format or HDF5. They can be read using the `readgadget.py <https://github.com/franciscovillaescusa/Pylians3/blob/master/library/readgadget.py>`_ and `readsnap.py <https://github.com/franciscovillaescusa/Pylians3/blob/master/library/readsnap.py>`_ scripts. If you have `Pylians <https://github.com/franciscovillaescusa/Pylians3>`_ installed you already have them. The user can find an example on how to read and manipulate Quijote snapshots in :ref:`tutorials`.
 
 The snapshots only contain 4 blocks:
 
@@ -70,7 +70,11 @@ On top of the snapshots at redshifts 0, 0.5, 1, 2, and 3, we also provide the in
 		
    snapshot = '/home/fvillaescusa/Quijote/Snapshots/w_p/ICs/ics'
 
-We note that the particle IDs are unique across snapshots. For instance, particles with an ID equal to 43623 at redshifts 0, 0.5, and 127 represent the very same particle at different times. This can be used to track particles back/forward in time; for instance, can be used to identify the Lagrangian region of a halo or a void.
+If you want to use the linear matter power spectrum used to create the initial conditions, take a look at :ref:`linear_Pk`.
+   
+.. note::
+   
+   We note that the particle IDs are unique across snapshots. For instance, particles with an ID equal to 43623 at redshifts 0, 0.5, and 127 represent the very same particle at different times. This can be used to track particles back/forward in time; for instance, can be used to identify the Lagrangian region of a halo or a void.
 
 
 Compression
