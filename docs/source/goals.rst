@@ -1,6 +1,6 @@
-****************
-Scientific goals
-****************
+*******
+Science
+*******
 
 The Quijote simulations is a suite of more than 45,000 full N-body simulations that have been designed to accomplish two main goals:
 

@@ -3,7 +3,7 @@
 Halo catalogues
 ===============
 
-The halo catalogues can be read through the `readfof.py <https://github.com/franciscovillaescusa/Pylians3/blob/master/library/readfof.py>`_ script. If you have `Pylians <https://github.com/franciscovillaescusa/Pylians3>`_ installed you already have it. An example on how to read a halo catalogue is this:
+The FoF halo catalogs can be read through the `readfof.py <https://github.com/franciscovillaescusa/Pylians3/blob/master/library/readfof.py>`_ script. If you have `Pylians <https://github.com/franciscovillaescusa/Pylians3>`_ installed you already have it. An example on how to read a halo catalog is this (we provide further details on how to read and manipulate these catalogs in :ref:`tutorials`):
 
 .. code-block:: python
 		

@@ -1,6 +1,8 @@
 News
 ====
 
+**June 2023:** We have created a series of tutorial to facilitate the usage of Quijote data. Check out :ref:`tutorials` for details. 
+
 **June 2023:** We release Quijote-ODD, a collection of 1,000 N-body simulations with parity-violation initial conditions. We also make publicly available the FoF and Rockstar halo catalogs generated from these simulations. Check :ref:`odd` for more details.
 
 **March 2023:** All data located in the Princeton cluster has been moved to the New York cluster. This means that all Quijote data is now accessible through binder. The Quijote snapshots have also being compressed by Lehman Garrison.
