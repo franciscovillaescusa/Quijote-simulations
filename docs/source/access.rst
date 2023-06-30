@@ -34,7 +34,7 @@ The table below describes the data each cluster contains and provides the links 
 |             | - The 3D density fields                                         |                                                                                                                  |
 |             | - The HADES data (if available)                                 | .. image:: https://mybinder.org/badge_logo.svg                                                                   |
 |             | - The 3D density fields                                         |   :target: https://binder.flatironinstitute.org/~fvillaescusa/Quijote                                            |
-|             | - 466 Terabytes                                                 |                                                                                                                  |
+|             | - 488 Terabytes                                                 |                                                                                                                  |
 +-------------+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
 
 
