@@ -22,16 +22,16 @@ The table below describes the data each cluster contains and provides the links 
 +=============+=================================================================+==================================================================================================================+
 | San Diego   | - The snapshots 8,000 - 14,999 of the fiducial cosmology        | `globus <https://app.globus.org/file-manager?origin_id=f4863854-3819-11eb-b171-0ee0d5d9299f&origin_path=%2F>`__  |
 |             | - The snapshots of the standard & fixed LH latin hypercube      +------------------------------------------------------------------------------------------------------------------+
-|             | - All halo catalogues                                           | .. image:: https://mybinder.org/badge_logo.svg                                                                   |
-|             | - All spherical overdensity void catalogues                     |   :target: https://sdsc-binder.flatironinstitute.org/v2/user/fvillaescusa/Quijote                                |
-|             | - All power spectra                                             |                                                                                                                  | 
+|             | - All spherical overdensity void catalogues                     | .. image:: https://mybinder.org/badge_logo.svg                                                                   |
+|             | - All power spectra                                             |   :target: https://sdsc-binder.flatironinstitute.org/v2/user/fvillaescusa/Quijote                                |
 |             | - All bispectra                                                 |                                                                                                                  | 
 |             | - All correlation functions                                     |                                                                                                                  | 
-|             | - All pdfs                                                      |                                                                                                                  |
+|             | - All pdfs                                                      |                                                                                                                  | 
 |             | - 235 Terabytes                                                 |                                                                                                                  |
 +-------------+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
 | New York    | - The snapshots of all other simulations                        | `globus <https://app.globus.org/file-manager?origin_id=e0eae0aa-5bca-11ea-9683-0e56c063f437&origin_path=%2F>`__  |
-|             | - The 3D density fields                                         +------------------------------------------------------------------------------------------------------------------+
+|             | - All halo catalogs                                             +------------------------------------------------------------------------------------------------------------------+
+|             | - The 3D density fields                                         |                                                                                                                  |
 |             | - The HADES data (if available)                                 | .. image:: https://mybinder.org/badge_logo.svg                                                                   |
 |             | - The 3D density fields                                         |   :target: https://binder.flatironinstitute.org/~fvillaescusa/Quijote                                            |
 |             | - 466 Terabytes                                                 |                                                                                                                  |

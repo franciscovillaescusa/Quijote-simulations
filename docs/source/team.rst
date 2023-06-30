@@ -30,6 +30,7 @@ Team
 - Dionysios Karagiannis (Cape Town, South Africa)
 - Michele Liguori (Padova, Italy)
 - Marco Baldi (Bologna)
+- Oliver Philcox (Columbia/Simons)
 - Roman Scoccimarro (NYU)
 - Licia Verde (Barcelona)
 - Matteo Viel (SISSA)
@@ -37,3 +38,4 @@ Team
 - Stephane Mallat (ENS/College de France)
 - Ben Wandelt (IAP, Paris)
 - David Spergel (Flatiron/Princeton)
+

@@ -26,7 +26,7 @@ If you have used data from the Quijote simulations you may consider citing the `
    }
 
 
-If you use data from Molino, consider citing the `Molino paper <https://arxiv.org/abs/2012.02200>`_
+If you use data from `Molino <https://changhoonhahn.github.io/molino>`_, consider citing the `Molino paper <https://arxiv.org/abs/2012.02200>`_
 
 ::
 
@@ -71,7 +71,7 @@ If you use data from Gigantes, consider citing the `Gigantes paper <https://arxi
    }
    
 
-If you use data from Quijote-PNG, consider citing the `Quijote-PNG paper <https://arxiv.org/abs/2206.01619>`_.
+If you use data from Quijote-PNG (see :ref:`png`), consider citing the Quijote-PNG papers: `2206.01619 <https://arxiv.org/abs/2206.01619>`_ and `2206.01624 <https://arxiv.org/abs/2206.01624>`_.
 
 ::
 
@@ -91,5 +91,44 @@ If you use data from Quijote-PNG, consider citing the `Quijote-PNG paper <https:
        adsnote = {Provided by the SAO/NASA Astrophysics Data System}
    }
 
-
+   @ARTICLE{2022ApJ...940...71J,
+      author = {{Jung}, Gabriel and {Karagiannis}, Dionysios and {Liguori}, Michele and {Baldi}, Marco and {Coulton}, William R. and {Jamieson}, Drew and {Verde}, Licia and {Villaescusa-Navarro}, Francisco and {Wandelt}, Benjamin D.},
+      title = "{Quijote-PNG: Quasi-maximum Likelihood Estimation of Primordial Non-Gaussianity in the Nonlinear Dark Matter Density Field}",
+      journal = {\apj},
+      keywords = {Non-Gaussianity, Cosmological parameters from large-scale structure, Fisher's Information, 1116, 340, 1922, Astrophysics - Cosmology and Nongalactic Astrophysics},
+      year = 2022,
+      month = nov,
+      volume = {940},
+      number = {1},
+      eid = {71},
+      pages = {71},
+      doi = {10.3847/1538-4357/ac9837},
+      archivePrefix = {arXiv},
+      eprint = {2206.01624},
+      primaryClass = {astro-ph.CO},
+      adsurl = {https://ui.adsabs.harvard.edu/abs/2022ApJ...940...71J},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+   }
    
+If you use data from Quijote-ODD (see :ref:`odd`), consider citing the `Quijote-ODD paper <https://arxiv.org/abs/2306.11782>`_:
+
+::
+
+   @ARTICLE{Quijote-ODD,
+       author = {{Coulton}, William R. and {Philcox}, Oliver H.~E. and {Villaescusa-Navarro}, Francisco},
+       title = "{Signatures of a Parity-Violating Universe}",
+       journal = {arXiv e-prints},
+       keywords = {Astrophysics - Cosmology and Nongalactic Astrophysics, Astrophysics - Astrophysics of Galaxies, General Relativity and Quantum Cosmology, High Energy Physics - Phenomenology, High Energy Physics - Theory},
+       year = 2023,
+       month = jun,
+       eid = {arXiv:2306.11782},
+       pages = {arXiv:2306.11782},
+       doi = {10.48550/arXiv.2306.11782},
+       archivePrefix = {arXiv},
+       eprint = {2306.11782},
+       primaryClass = {astro-ph.CO},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2023arXiv230611782C},
+       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+   }
+
+
