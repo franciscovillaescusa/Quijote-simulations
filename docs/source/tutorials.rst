@@ -12,5 +12,5 @@ We provide multiple tutorials showing how to read and manipulate Quijote data. I
    Examples/Reading_snapshots
    Examples/Reading_FoF
    Examples/Density_fields
-   Examples/Density_fields2
+   Examples/Power_spectrum
 
