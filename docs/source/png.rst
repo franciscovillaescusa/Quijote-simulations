@@ -3,7 +3,14 @@
 Primordial non-Gaussianities
 ============================
 
-Quijote contains 4,000 N-body simulations with primordial non-Gaussianities: **Quijote-PNG**. All these simulations contain :math:`512^3` dark matter particles in a periodic volume of :math:`(1~h^{-1}{\rm Gpc})^3` and share the same cosmology as the fiducial model: :math:`\Omega_{\rm m}=0.3175`, :math:`\Omega_{\rm b}=0.049`, :math:`h=0.6711`, :math:`n_s=0.9624`, :math:`\sigma_8=0.834`, :math:`w=-1`, :math:`M_\nu=0.0` eV. These are standard N-body simulations run with initial conditions generated in a particular way. 
+Quijote contains 4,000 N-body simulations with primordial non-Gaussianities: **Quijote-PNG**. All these simulations contain :math:`512^3` dark matter particles in a periodic volume of :math:`(1~h^{-1}{\rm Gpc})^3` and share the same cosmology as the fiducial model: :math:`\Omega_{\rm m}=0.3175`, :math:`\Omega_{\rm b}=0.049`, :math:`h=0.6711`, :math:`n_s=0.9624`, :math:`\sigma_8=0.834`, :math:`w=-1`, :math:`M_\nu=0.0` eV. These are standard N-body simulations run with initial conditions generated in a particular way.
+
+The video below shows an example of two N-body simulations with Gaussian initial conditions (left) and local primordial non-Gaussianities initial conditions (right). As can be seen, differences are very small even for a value as large as :math:`f_{\rm NL}=200` as the one we use.
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/M1o50W8GXLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	 
 
 The simulations in Quijote-PNG can be classified into four different sets: 1) local, 2) equilateral, 3) orthogonal CMB, and 4) orthogonal LSS (see :ref:`shapes`). Each set contains 1,000 simulations: 500 with :math:`f_{\rm NL}=+100` and 500 with :math:`f_{\rm NL}=-100`. Quijote-PNG is thus organized into eight different folders, depending on the non-Gaussianity shape and the value of :math:`f_{\rm NL}`:
 
