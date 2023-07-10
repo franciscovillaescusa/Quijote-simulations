@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Optimal Transport Reconstruction of Biased Tracers in Redshift Space**
+   | Farnik Nikakhtar, Nikhil Padmanabhan, Bruno Lévy, Ravi K. Sheth, Roya Mohayaee
+   | `2307.03671 <https://arxiv.org/abs/2307.03671>`_
+
 #. | **Signatures of a Parity-Violating Universe**
    | William R. Coulton, Oliver H. E. Philcox, Francisco Villaescusa-Navarro
    | `2306.11782 <https://arxiv.org/abs/2306.11782>`_
