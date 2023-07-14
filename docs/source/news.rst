@@ -1,6 +1,8 @@
 News
 ====
 
+**July 2023:** We have run Rockstar on the Quijote snapshots and all the halo catalogs are publicly available. The rockstar catalogs are located in the New York cluster. Check :ref:`data_access` for details.
+
 **June 2023:** We have created a series of tutorial to facilitate the usage of Quijote data. Check out :ref:`tutorials` for details. 
 
 **June 2023:** We release Quijote-ODD, a collection of 1,000 N-body simulations with parity-violation initial conditions. We also make publicly available the FoF and Rockstar halo catalogs generated from these simulations. Check :ref:`odd` for more details.
@@ -11,7 +13,7 @@ News
 
 **December 2022:** We have created 3D matter overdensity grids for all PNG simulations and made them publicly available. Data can be accessed through Globus and binder.
 
-**October 2022:** All the halo catalogues of the primordial non-Gaussianities simulations are now publicly available. Check :ref:`png` for more details.
+**October 2022:** All the halo catalogs of the primordial non-Gaussianities simulations are now publicly available. Check :ref:`png` for more details.
 
 **September 2022:** All Quijote data located in the San Diego and New York clusters (almost 800 Terabytes) can now be accessed via Binder, a system that allows reading and manipulating the data without having to download it. Check :ref:`data_access` for further details.
 	  

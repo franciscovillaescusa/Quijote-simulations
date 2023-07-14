@@ -30,7 +30,7 @@ The table below describes the data each cluster contains and provides the links 
 |             | - 235 Terabytes                                                 |                                                                                                                  |
 +-------------+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
 | New York    | - The snapshots of all other simulations                        | `globus <https://app.globus.org/file-manager?origin_id=e0eae0aa-5bca-11ea-9683-0e56c063f437&origin_path=%2F>`__  |
-|             | - All halo catalogs                                             +------------------------------------------------------------------------------------------------------------------+
+|             | - All halo catalogs (FoF + Rockstar)                            +------------------------------------------------------------------------------------------------------------------+
 |             | - The 3D density fields                                         |                                                                                                                  |
 |             | - The HADES data (if available)                                 | .. image:: https://mybinder.org/badge_logo.svg                                                                   |
 |             | - The 3D density fields                                         |   :target: https://binder.flatironinstitute.org/~fvillaescusa/Quijote                                            |
