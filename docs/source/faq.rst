@@ -30,7 +30,7 @@ and therefore, one should set in a terminal:
 
    export HDF5_PLUGIN_PATH=$(python -c "import hdf5plugin; print(hdf5plugin.PLUGIN_PATH)")
 
-After doing this, the code can be run as normal. If you experience problems with this please reach out to us at villaescusa.francisco@gmail.com or lgarrison@flatironinstitute.org.
+After doing this, the code can be run as normal. For further details check `this <http://www.silx.org/doc/hdf5plugin/latest/usage.html#use-hdf5-filters-in-other-applications>`_. If you experience problems with this please reach out to us at villaescusa.francisco@gmail.com or lgarrison@flatironinstitute.org.
 
 The documentation says that there are 15,000 realizations for the fiducial cosmology, but I can only find 8,000. Where is the rest?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
