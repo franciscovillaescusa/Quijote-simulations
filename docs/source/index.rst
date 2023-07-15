@@ -69,6 +69,7 @@ Historically, Quijote was developed from the `HADES simulations <https://francis
 
    logo
    license
+   faq
    help
 	     
 

@@ -90,3 +90,5 @@ No lossy compression is applied to the IC files, or to the PIDs.
 Each HDF5 file also has a new group called ``/CompressionInfo`` whose attributes contain a JSON string describing the exact compression options used.
 
 The scripts used to do the compression are here: https://github.com/lgarrison/quijote-compression
+
+Check :ref:`faq` if you are having problems reading the snapshots.
