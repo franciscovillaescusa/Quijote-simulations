@@ -5,7 +5,7 @@ Organization
 The Quijote data is organized into different folders:
 
 - **Snapshots**. This folder contains the snapshots of the simulations
-- **Halos**. This folder contains the halo catalogues
+- **Halos**. This folder contains the halo catalogues (both FoF and Rockstar)
 - **Voids**. This folder contains the void catalogues
 - **Linear_Pk**. This folder contains the linear power spectra of each cosmological model
 - **Pk**. This folder contains the non-linear power spectra
@@ -20,6 +20,17 @@ Each of the above folders contain several subfolders, that represent the differe
 
 Cosmological models
 -------------------
+
+The Quijote simulations can be classified into three broad classes:
+
+- **Fiducial simulations.** Those are simulations with a fiducial cosmology consistent with Planck. They only vary the initial random seed.
+- **Individual parameter variations.** Those are simulations where the value of a single parameter is varied with respect to the fiducial simulations. The initial random seed of those simulations are taken to match those of the fiducial model. Those are designed for Fisher matrix calculations.
+- **Multiple parameter variations.** Those are simulations that vary simultaneously the value of several parameters and the initial random seed. Those simulations are designed for machine learning applications.
+
+The scheme bell shows the different classes of simulations in Quijote:
+
+.. image:: scheme.png
+   :width: 99 %
 
 A brief description of the different cosmologies is provided in the below table. The standard and paired fixed snapshots or data products will be located inside the same folder. The paired fixed (or fixed) will be located inside folders starting with NCV (from No Cosmic Variance). Further details can be found in the `Quijote paper <https://arxiv.org/abs/1909.05273>`__ and `Quijote-PNG paper <2206.01619>`__. 
 
