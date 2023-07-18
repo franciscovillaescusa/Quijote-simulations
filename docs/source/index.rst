@@ -47,6 +47,7 @@ Historically, Quijote was developed from the `HADES simulations <https://francis
    LH
    png
    odd
+   mg
    Hades
 
 .. toctree::
