@@ -4,6 +4,14 @@
 Publications
 ************
 
+#. | **Hybrid-bias and displacement emulators for field-level modelling of galaxy clustering in real and redshift space**
+   | Marcos Pellejero Ibanez, Raul E. Angulo, Drew Jamieson, Yin Li
+   | `2307.09134 <https://arxiv.org/abs/2307.09134>`_
+
+#. | **Neutrino mass constraint from an Implicit Likelihood Analysis of BOSS voids**
+   | Leander Thiele, Elena Massara, Alice Pisani, ChangHoon Hahn, David N. Spergel, Shirley Ho, Benjamin Wandelt
+   | `2307.07555 <https://arxiv.org/abs/2307.07555>`_
+   
 #. | **Optimal Transport Reconstruction of Biased Tracers in Redshift Space**
    | Farnik Nikakhtar, Nikhil Padmanabhan, Bruno Lévy, Ravi K. Sheth, Roya Mohayaee
    | `2307.03671 <https://arxiv.org/abs/2307.03671>`_
