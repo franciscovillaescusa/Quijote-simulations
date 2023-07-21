@@ -4,7 +4,7 @@ Gigantes Voids
 
 Gigantes is a collection of void catalogs created by running VIDE on top of Quijote data. It is a massive dataset aimed at investigated the properties and information content of the underdense regions of the cosmic web. We refer the reader to the `Gigantes website <https://gigantes.readthedocs.io>`_ for details on the data.
 
-The video below shows examples of the Gigantes voids together with the positions of the galaxies used to identified them. See `2212.06860 <https://arxiv.org/abs/2212.06860>`_ for details. Credit Bonny Wang.
+The video below shows examples of the Gigantes voids together with the positions of the galaxies used to identified them. Credit: `Wang et al. 2022 <https://arxiv.org/abs/2212.06860>`_.
 
 .. raw:: html
 
