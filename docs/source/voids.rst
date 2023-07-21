@@ -1,7 +1,7 @@
 Void catalogues
 ===============
 
-The void catalogues are stored as hdf5 files. They contain the following blocks:
+Beside Gigantes, Quijote also contain catalogs of voids identified using a spherical-overdensity algorithm (check `this website <https://pylians3.readthedocs.io/en/master/voids.html>`_ for details). The catalogs are stored as hdf5 files and they contain the following blocks:
 
 - pos:    the positions of the void centers in Mpc/h
 - radius: the sizes of the voids in in Mpc/h

@@ -62,6 +62,7 @@ Historically, Quijote was developed from the `HADES simulations <https://francis
    snapshots
    halos
    galaxies
+   gigantes
    voids
    Pk
    bispectra
