@@ -16,6 +16,18 @@ Publications
    | Farnik Nikakhtar, Nikhil Padmanabhan, Bruno Lévy, Ravi K. Sheth, Roya Mohayaee
    | `2307.03671 <https://arxiv.org/abs/2307.03671>`_
 
+#. | **Scattering Spectra Models for Physics**
+   | Sihao Cheng, Rudy Morel, Erwan Allys, Brice Menard, Stephane Mallat
+   | `2306.17210 <https://arxiv.org/abs/2306.17210>`_
+   
+#. | **Statistical Component Separation for Targeted Signal Recovery in Noisy Mixtures**
+   | Bruno Regaldo-Saint Blancard, Michael Eickenberg
+   | `2306.15012 <https://arxiv.org/abs/2306.15012>`_
+
+#. | **Whispers from the Big Bang: cosmological constraints from galaxy power spectra**
+   | Aaron Glanville
+   | `PhD thesis <https://espace.library.uq.edu.au/view/UQ:f88e80a>`_
+   
 #. | **Signatures of a Parity-Violating Universe**
    | William R. Coulton, Oliver H. E. Philcox, Francisco Villaescusa-Navarro
    | `2306.11782 <https://arxiv.org/abs/2306.11782>`_
@@ -71,6 +83,10 @@ Publications
 #. | **Probing massive neutrinos with the Minkowski functionals of the galaxy distribution**
    | Wei Liu, Aoxiang Jiang, Wenjuan Fang
    | `2302.08162 <https://arxiv.org/abs/2302.08162>`_
+
+#. | **Cosmological Properties of the Cosmic Web**
+   | Majd Shalak, Jean-Michel Alimi
+   | `Phys. Sci. Forum 2023 <https://www.mdpi.com/2673-9984/7/1/53>`_
 
 #. | **Perturbation-theory informed integrators for cosmological simulations**
    | Florian List, Oliver Hahn
