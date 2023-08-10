@@ -4,6 +4,18 @@
 Publications
 ************
 
+#. | **Beyond the 3rd moment: A practical study of using lensing convergence CDFs for cosmology with DES Y3**
+   | D. Anbajagane, C. Chang, A. Banerjee, T. Abel, M. Gatti, V. Ajani, A. Alarcon et al.
+   | `2308.03863 <https://arxiv.org/abs/2308.03863>`_
+
+#. | **Precision cosmology using voids**
+   | Alex Woodfinden
+   | `PhD thesis <https://uwspace.uwaterloo.ca/handle/10012/19651>`_
+
+#. | **Probing the anisotropy and non-Gaussianity in redshift space through the derivative of excursion set moments**
+   | M. H. Jalali Kanafi, S. M. S. Movahed
+   | `2308.03086 <https://arxiv.org/abs/2308.03086>`_
+
 #. | **Hybrid-bias and displacement emulators for field-level modelling of galaxy clustering in real and redshift space**
    | Marcos Pellejero Ibanez, Raul E. Angulo, Drew Jamieson, Yin Li
    | `2307.09134 <https://arxiv.org/abs/2307.09134>`_
