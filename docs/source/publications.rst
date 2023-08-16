@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **The two-loop power spectrum in redshift space**
+   | Petter Taule, Mathias Garny
+   | `2308.07379 <https://arxiv.org/abs/2308.07379>`_
+
 #. | **Beyond the 3rd moment: A practical study of using lensing convergence CDFs for cosmology with DES Y3**
    | D. Anbajagane, C. Chang, A. Banerjee, T. Abel, M. Gatti, V. Ajani, A. Alarcon et al.
    | `2308.03863 <https://arxiv.org/abs/2308.03863>`_
