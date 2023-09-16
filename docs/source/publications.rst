@@ -18,7 +18,7 @@ Publications
 
 #. | **Precision cosmology using voids**
    | Alex Woodfinden
-   | `PhD thesis <https://uwspace.uwaterloo.ca/handle/10012/19651>`_
+   | `PhD thesis <https://uwspace.uwaterloo.ca/handle/10012/19651>`__
 
 #. | **Probing the anisotropy and non-Gaussianity in redshift space through the derivative of excursion set moments**
    | M. H. Jalali Kanafi, S. M. S. Movahed
@@ -46,7 +46,7 @@ Publications
 
 #. | **Whispers from the Big Bang: cosmological constraints from galaxy power spectra**
    | Aaron Glanville
-   | `PhD thesis <https://espace.library.uq.edu.au/view/UQ:f88e80a>`_
+   | `PhD thesis <https://espace.library.uq.edu.au/view/UQ:f88e80a>`__
    
 #. | **Signatures of a Parity-Violating Universe**
    | William R. Coulton, Oliver H. E. Philcox, Francisco Villaescusa-Navarro
