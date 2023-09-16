@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Predicting Interloper Fraction with Graph Neural Networks**
+   | Elena Massara, Francisco Villaescusa-Navarro, Will J. Percival
+   | `2309.05850 <https://arxiv.org/abs/2309.05850>`_
+
 #. | **The two-loop power spectrum in redshift space**
    | Petter Taule, Mathias Garny
    | `2308.07379 <https://arxiv.org/abs/2308.07379>`_
