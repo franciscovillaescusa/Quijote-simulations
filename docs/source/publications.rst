@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Hybrid SBI or How I Learned to Stop Worrying and Learn the Likelihood**
+   | Chirag Modi, Oliver H.E. Philcox
+   | `2309.10270 <https://arxiv.org/abs/2309.10270>`_
+
 #. | **Predicting Interloper Fraction with Graph Neural Networks**
    | Elena Massara, Francisco Villaescusa-Navarro, Will J. Percival
    | `2309.05850 <https://arxiv.org/abs/2309.05850>`_
