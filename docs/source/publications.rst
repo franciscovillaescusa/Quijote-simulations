@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **The effects of non-linearity on the growth rate constraint from velocity correlation functions**
+   | Motonari Tonegawa, Stephen Appleby, Changbom Park, Sungwook E. Hong, Juhan Kim
+   | `2309.14457 <https://arxiv.org/abs/2309.14457>`_
+
 #. | **Hybrid SBI or How I Learned to Stop Worrying and Learn the Likelihood**
    | Chirag Modi, Oliver H.E. Philcox
    | `2309.10270 <https://arxiv.org/abs/2309.10270>`_
