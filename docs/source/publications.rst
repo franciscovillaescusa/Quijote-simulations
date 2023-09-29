@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Small-scale signatures of primordial non-Gaussianity in k-Nearest Neighbour cumulative distribution functions**
+   | William R. Coulton, Tom Abel, Arka Banerjee
+   | `2309.15151 <https://arxiv.org/abs/2309.15151>`_
+
 #. | **Towards an Optimal Cosmological Detection of Neutrino Mass with Bayesian Inference**
    | Adrian Bayer
    | `PhD thesis <https://escholarship.org/uc/item/0gf06762>`_
