@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Towards an Optimal Cosmological Detection of Neutrino Mass with Bayesian Inference**
+   | Adrian Bayer
+   | `PhD thesis <https://escholarship.org/uc/item/0gf06762>`_
+
 #. | **The effects of non-linearity on the growth rate constraint from velocity correlation functions**
    | Motonari Tonegawa, Stephen Appleby, Changbom Park, Sungwook E. Hong, Juhan Kim
    | `2309.14457 <https://arxiv.org/abs/2309.14457>`_
