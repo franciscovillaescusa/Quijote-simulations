@@ -8,6 +8,10 @@ Publications
    | William R. Coulton, Tom Abel, Arka Banerjee
    | `2309.15151 <https://arxiv.org/abs/2309.15151>`_
 
+#. | **Sensitivity Analysis of Simulation-Based Inference for Galaxy Clustering**
+   | Chirag Modi, Shivam Pandey, Matthew Ho, ChangHoon Hahn, Bruno R'egaldo-Saint Blancard, Benjamin Wandelt
+   | `2309.15071 <https://arxiv.org/abs/2309.15071>`_
+
 #. | **Towards an Optimal Cosmological Detection of Neutrino Mass with Bayesian Inference**
    | Adrian Bayer
    | `PhD thesis <https://escholarship.org/uc/item/0gf06762>`_
