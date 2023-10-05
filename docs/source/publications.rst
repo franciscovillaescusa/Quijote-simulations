@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Primordial non-Gaussianities with weak lensing: Information on non-linear scales in the Ulagam full-sky simulations**
+   | Dhayaa Anbajagane, Chihway Chang, Hayden Lee, Marco Gatti
+   | `2310.02349 <https://arxiv.org/abs/2310.02349>`_
+
 #. | **Small-scale signatures of primordial non-Gaussianity in k-Nearest Neighbour cumulative distribution functions**
    | William R. Coulton, Tom Abel, Arka Banerjee
    | `2309.15151 <https://arxiv.org/abs/2309.15151>`_

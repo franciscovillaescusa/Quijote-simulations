@@ -1,6 +1,8 @@
 News
 ====
 
+**September 2023:** Data from the Ulagam simulations is made publicly available. Check `the Ulagam website <https://ulagam-simulations.readthedocs.io>`_ for details.
+
 **July 2023:** We release Gigantes: the largest collection of detailed void catalog created to-date. Check the `Gigantes website <https://gigantes.readthedocs.io>`_ for details.
  
 **July 2023:** We have run Rockstar on the Quijote snapshots and all the halo catalogs are publicly available. The rockstar catalogs are located in the New York cluster. Check :ref:`data_access` for details.
