@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **A theoretical view on the T-web statistical description of the cosmic web**
+   | Emma Ayçoberry, Alexandre Barthelemy, Sandrine Codis
+   | `2310.03548 <https://arxiv.org/abs/2310.03548>`_
+
 #. | **Primordial non-Gaussianities with weak lensing: Information on non-linear scales in the Ulagam full-sky simulations**
    | Dhayaa Anbajagane, Chihway Chang, Hayden Lee, Marco Gatti
    | `2310.02349 <https://arxiv.org/abs/2310.02349>`_
