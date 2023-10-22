@@ -1,5 +1,5 @@
-Void catalogues
-===============
+Void catalogs
+=============
 
 Beside Gigantes, Quijote also contain catalogs of voids identified using a spherical-overdensity algorithm (check `this website <https://pylians3.readthedocs.io/en/master/voids.html>`_ for details). The catalogs are stored as hdf5 files and they contain the following blocks:
 

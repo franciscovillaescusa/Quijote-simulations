@@ -1,6 +1,8 @@
 News
 ====
 
+**October 2023:** Quijote now contains FoF halo catalogs that include the IDs of the particles belonging to the different halos. Check :ref:`halo_catalogues` for details.
+
 **September 2023:** Data from the Ulagam simulations is made publicly available. Check `the Ulagam website <https://ulagam-simulations.readthedocs.io>`_ for details.
 
 **July 2023:** We release Gigantes: the largest collection of detailed void catalog created to-date. Check the `Gigantes website <https://gigantes.readthedocs.io>`_ for details.

@@ -1,9 +1,9 @@
 .. _halo_catalogues:
 
-Halo catalogues
-===============
+Halo catalogs
+=============
 
-Quijote contains FoF and Rockstar halo catalogs.
+Quijote contains FoF and Rockstar halo catalogs. The ``Halo`` folder contains three folders:
 
 FoF
 ~~~
@@ -15,7 +15,7 @@ The FoF halo catalogs can be read through the `readfof.py <https://github.com/fr
     import readfof 
 
     # input files
-    snapdir = '/home/fvillaescusa/Quijote/Halos/s8_p/145/' #folder hosting the catalogue
+    snapdir = '/home/fvillaescusa/Quijote/Halos/FoF/s8_p/145/' #folder hosting the catalogue
     snapnum = 4                                            #redshift 0
 
     # determine the redshift of the catalogue
@@ -43,6 +43,46 @@ The number in the name of the halo catalogue represents its redshift:
 .. Note::
 
    The above correspondence applies to the majority of the simulations but not to all of them. For instance, for Quijote-ODD, 000 represents redshift 1 while 001 corresponds to redshift 0. Thus, we always recommend reading the redshift of the correspond snapshot.
+
+FoF_id
+~~~~~~
+
+This folder contains FoF halo catalogs. There are two differences with respect to the above ``FoF`` folder. First, these halo catalogs contain the IDs of the particles belonging to the halos and second, it has been run over the compressed snapshots. Thus, there may be some small (likely negligible) differences among with respect to the halo catalogs in the FoF folder. For this reason we keep both halo catalogs. These halo catalogs can be read in exactly the same way as above, but now you can also access the IDs of the particles in a given halo as
+
+.. code-block:: python
+		
+    import readfof 
+
+    # input files
+    snapdir = '/home/fvillaescusa/Quijote/Halos/FoF_id/s8_p/145/' #folder hosting the catalogue
+    snapnum = 4                                                   #redshift 0
+
+    # determine the redshift of the catalogue
+    z_dict = {4:0.0, 3:0.5, 2:1.0, 1:2.0, 0:3.0}
+    redshift = z_dict[snapnum]
+
+    # read the halo catalogue
+    FoF = readfof.FoF_catalog(snapdir, snapnum, long_ids=False,
+		              swap=False, SFR=False, read_IDs=True)
+										
+    # get the properties of the halos
+    pos_h = FoF.GroupPos/1e3            #Halo positions in Mpc/h
+    mass  = FoF.GroupMass*1e10          #Halo masses in Msun/h
+    vel_h = FoF.GroupVel*(1.0+redshift) #Halo peculiar velocities in km/s
+    Npart = FoF.GroupLen                #Number of CDM particles in the halo
+
+    # get the IDs of the halos
+    IDs_h = FoF.GroupIDs
+
+    # To get the IDs of the particles belong to the first halo one would do
+    IDs_0  = IDs_h[0:Npart[0]]
+    pos_0  = pos_h[0]
+    mass_0 = mass_h[0]
+
+    # Similarly, to get the IDs of the particles in the second halo one would do
+    IDs_1  = IDs_h[Npart[0]:Npart[0]+Npart[1]]
+    pos_1  = pos_h[1]
+    mass_1 = mass_h[1]
 
 
 Rockstar
