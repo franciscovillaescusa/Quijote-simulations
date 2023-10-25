@@ -17,7 +17,7 @@ We are expanding Quijote to incorporate simulations with modified gravity using 
    -3\times10^{-4} & \leq f_{R0} \leq & 0
 
 
-Each of those 2048 simulations have a different initial random seed. The initial conditions have been generated using the Zel'dovich approximation at :math:`z=127` and the simulations have been run with the appropiate Hubble function :math:`H(z)`. We have saved 5 snapshots, at redshifts 0, 0.5, 1, 2, and 3. For each simulation we saved FoF and Rockstar halo catalogs. 
+Each of those 2048 simulations have a different initial random seed and follows the evolution of :math:`512^3` dark matter plus :math:`512^3` neutrinos in a periodic cosmological volume of :math:`(1000~{\rm Mpc}/h)^3`. The initial conditions have been generated using the Zel'dovich approximation at :math:`z=127` and the simulations have been run with the appropiate Hubble function :math:`H(z)`. We have saved 5 snapshots, at redshifts 0, 0.5, 1, 2, and 3. For each simulation we saved FoF and Rockstar halo catalogs. 
    
 
 The movie below shows an example of these simulations and its comparison with :math:`\Lambda {\rm CDM}`:

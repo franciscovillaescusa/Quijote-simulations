@@ -4,6 +4,22 @@
 Publications
 ************
 
+#. | **SimBIG: Field-level Simulation-Based Inference of Galaxy Clustering**
+   | Pablo Lemos, Liam Parker, ChangHoon Hahn, Shirley Ho, Michael Eickenberg, Jiamin Hou, Elena Massara, Chirag Modi, Azadeh Moradinezhad Dizgah, Bruno Regaldo-Saint Blancard, David Spergel
+   | `2310.15256 <https://arxiv.org/abs/2310.15256>`_
+
+#. | **SIMBIG: Galaxy Clustering Analysis with the Wavelet Scattering Transform**
+   | Bruno Régaldo-Saint Blancard, ChangHoon Hahn, Shirley Ho, Jiamin Hou, Pablo Lemos, Elena Massara, Chirag Modi, Azadeh Moradinezhad Dizgah, Liam Parker, Yuling Yao, Michael Eickenberg
+   | `2310.15250 <https://arxiv.org/abs/2310.15250>`_
+
+#. | **SIMBIG: The First Cosmological Constraints from Non-Gaussian and Non-Linear Galaxy Clustering**
+   | ChangHoon Hahn, Pablo Lemos, Liam Parker, Bruno Régaldo-Saint Blancard, Michael Eickenberg, Shirley Ho, Jiamin Hou, Elena Massara, Chirag Modi, Azadeh Moradinezhad Dizgah, David Spergel
+   | `2310.15246 <https://arxiv.org/abs/2310.15246>`_
+
+#. | **SIMBIG: The First Cosmological Constraints from the Non-Linear Galaxy Bispectrum**
+   | ChangHoon Hahn, Michael Eickenberg, Shirley Ho, Jiamin Hou, Pablo Lemos, Elena Massara, Chirag Modi, Azadeh Moradinezhad Dizgah, Liam Parker, Bruno Régaldo-Saint Blancard
+   | `2310.15243 <https://arxiv.org/abs/2310.15243>`_
+
 #. | **A theoretical view on the T-web statistical description of the cosmic web**
    | Emma Ayçoberry, Alexandre Barthelemy, Sandrine Codis
    | `2310.03548 <https://arxiv.org/abs/2310.03548>`_
