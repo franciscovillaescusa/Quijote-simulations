@@ -80,6 +80,10 @@ Publications
    | Farnik Nikakhtar, Nikhil Padmanabhan, Bruno Lévy, Ravi K. Sheth, Roya Mohayaee
    | `2307.03671 <https://arxiv.org/abs/2307.03671>`_
 
+#. | **Numerical Studies in Rarefied Gas Dynamics, Cosmological Summary Statistics, and Scalar Field Dark Matter**
+   | Alvaro Zamora
+   | `PhD thesis <https://searchworks.stanford.edu/view/14783507>`_
+
 #. | **Scattering Spectra Models for Physics**
    | Sihao Cheng, Rudy Morel, Erwan Allys, Brice Menard, Stephane Mallat
    | `2306.17210 <https://arxiv.org/abs/2306.17210>`_
