@@ -38,7 +38,7 @@ Publications
 
 #. | **Towards an Optimal Cosmological Detection of Neutrino Mass with Bayesian Inference**
    | Adrian Bayer
-   | `PhD thesis <https://escholarship.org/uc/item/0gf06762>`_
+   | `PhD thesis <https://escholarship.org/uc/item/0gf06762>`__
 
 #. | **The effects of non-linearity on the growth rate constraint from velocity correlation functions**
    | Motonari Tonegawa, Stephen Appleby, Changbom Park, Sungwook E. Hong, Juhan Kim
@@ -82,7 +82,7 @@ Publications
 
 #. | **Numerical Studies in Rarefied Gas Dynamics, Cosmological Summary Statistics, and Scalar Field Dark Matter**
    | Alvaro Zamora
-   | `PhD thesis <https://searchworks.stanford.edu/view/14783507>`_
+   | `PhD thesis <https://searchworks.stanford.edu/view/14783507>`__
 
 #. | **Scattering Spectra Models for Physics**
    | Sihao Cheng, Rudy Morel, Erwan Allys, Brice Menard, Stephane Mallat

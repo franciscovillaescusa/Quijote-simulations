@@ -1,6 +1,8 @@
 News
 ====
 
+**November 2023:** The Sancho suite, a collection of 240,000 galaxy catalogs (together with their corresponding power spectra and bispectra) created from a 10-parameter HOD model is now publicly available. Check :ref:`Sancho` for details.
+
 **October 2023:** Quijote now contains FoF halo catalogs that include the IDs of the particles belonging to the different halos. Check :ref:`halo_catalogues` for details.
 
 **September 2023:** Data from the Ulagam simulations is made publicly available. Check `the Ulagam website <https://ulagam-simulations.readthedocs.io>`_ for details.
