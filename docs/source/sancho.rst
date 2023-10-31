@@ -7,8 +7,7 @@ Sancho Suite
 .. image:: Sancho2.png
     :width: 500
 
-The Sancho Suite of galaxy mock catalogs consist of :math:`240,000` galaxy catalogs in redshift space scanning across 16 cosmologies, 
-6 non-Gaussian initial conditions and 10 Halo Occupation Distribution (HOD) model parameters. The average number density of each 
+The Sancho Suite of galaxy mock catalogs consist of :math:`240,000` galaxy catalogs in redshift-space scanning across 11 cosmologies, 3 massive neutrino cosmologies, 6 non-Gaussian initial conditions and 11 Halo Occupation Distribution (HOD) model parameters. The average number density of each 
 box is :math:`n_g \sim 3 \times 10^{-4} \,(h/\textrm{Gpc})` at :math:`z=0.5` and they are generated from the halo catalogs of 
 `Quijote simulations <https://arxiv.org/abs/1909.05273>`_, each run with :math:`512^3` particles on a :math:`1\, (\textrm{Gpc}/h)^3` box. The fiducial HOD model is tailored such that the catalogs mock the CMASS galaxies observed by BOSS.
 

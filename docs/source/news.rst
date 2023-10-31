@@ -1,7 +1,7 @@
 News
 ====
 
-**November 2023:** The Sancho suite, a collection of 240,000 galaxy catalogs (together with their corresponding power spectra and bispectra) created from a 10-parameter HOD model is now publicly available. Check :ref:`Sancho` for details.
+**November 2023:** The Sancho suite, a collection of 240,000 galaxy mock catalogs in redshift-space spanning across 11 cosmologies, 3 massive neutrino cosmologies, 6 primordial non-Gaussianity amplitudes, and 11 Halo Occupation Distribution (HOD) models (together with their corresponding power spectra and bispectra) is now publicly available. Check :ref:`Sancho` for details.
 
 **October 2023:** Quijote now contains FoF halo catalogs that include the IDs of the particles belonging to the different halos. Check :ref:`halo_catalogues` for details.
 
