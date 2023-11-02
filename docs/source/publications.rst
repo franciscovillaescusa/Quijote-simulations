@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Evaluating the reconstruction of individual haloes in constrained cosmological simulations**
+   | Richard Stiskalek, Harry Desmond, Julien Devriendt, Adrianne Slyz
+   | `2310.20672 <https://arxiv.org/abs/2310.20672>`_
+
 #. | **SimBIG: Field-level Simulation-Based Inference of Galaxy Clustering**
    | Pablo Lemos, Liam Parker, ChangHoon Hahn, Shirley Ho, Michael Eickenberg, Jiamin Hou, Elena Massara, Chirag Modi, Azadeh Moradinezhad Dizgah, Bruno Regaldo-Saint Blancard, David Spergel
    | `2310.15256 <https://arxiv.org/abs/2310.15256>`_
