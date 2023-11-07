@@ -149,10 +149,10 @@ Bins have width of :math:`\Delta k = 2 k_f`, where :math:`k_f=0.006 h/Mpc` is th
 
 The structure of the Power spectrum files is:
 
-    :math:`k\,\,` | :math:`\,\,k_{\textrm{avg}}\,\,` | :math:`\,\,P0(k)\,\,` | :math:`\,\,P2(k)\,\,` | :math:`\,\,P4(k)\,\,` | :math:`\,\,N_{\textrm{modes}}\,\,`
+    :math:`k\,\,` | :math:`\,\,k_{\textrm{avg}}\,\,` | :math:`\,\,P_0(k)\,\,` | :math:`\,\,P_2(k)\,\,` | :math:`\,\,P_4(k)\,\,` | :math:`\,\,N_{\textrm{modes}}\,\,`
 
 where :math:`k_{\textrm{avg}}` is the value of :math:`k` inside a bin averaged over the bin, in units of :math:`h/Mpc`.
-P0, P2 and P4 are the monopole, quadrupole and hexadecapole, respectively. The units of  the power spectra are :math:`(\textrm{Mpc}/h)^3`.
+:math:`P_0`, :math:`P_2` and :math:`P_4` are the monopole, quadrupole and hexadecapole, respectively. The units of  the power spectra are :math:`(\textrm{Mpc}/h)^3`.
 On the third line of each file, you can find two numbers, corresponding to the number of galaxies for this catalog, and the related Poisson shot-noise.
 
 In python, the files can be read as 
@@ -180,7 +180,7 @@ Using the same binning, we also measure the bispectrum for each galaxy catalog, 
 
 The structure of the Bispectrum files are: 
 
-    :math:`\,\,k_1/k_f\,\,` | :math:`\,\,k_2/k_f\,\,` | :math:`\,\,k_3/k_f\,\,` | :math:`\,\,P(k_1)\,\,` | :math:`\,\,P(k_2)\,\,` | :math:`\,\,P(k_3)\,\,` | :math:`\,\,B(k_1,k_2,k_3)+{\textrm{SN}}\,\,` | :math:`\,\,{\textrm{SN}}\,\,` | :math:`\,\,N_{\textrm{tr}}\,\,`
+    :math:`\,\,k_1/k_f\,\,` | :math:`\,\,k_2/k_f\,\,` | :math:`\,\,k_3/k_f\,\,` | :math:`\,\,P(k_1)\,\,` | :math:`\,\,P(k_2)\,\,` | :math:`\,\,P(k_3)\,\,` | :math:`\,\,B(k_1,k_2,k_3)\,\,` | :math:`\,\,B(k_1,k_2,k_3)+{\textrm{SN}}\,\,` | :math:`\,\,N_{\textrm{tr}}\,\,`
 
 where :math:`{\textrm{SN}} = 1/n^2 + (P(k_1) + P(k_2) + P(k_3)) / n` is the bispectrum Poisson shot-noise and :math:`N_{\textrm{tr}}` is the number of triangles in a give triangle bin.
 
@@ -190,7 +190,7 @@ In python, the files can be read as
 		
     import numpy as np
 
-    k1, k2, k3, Pk1, Pk2, Pk3, Btotal, BSN, N_tri= np.loadtxt(filename, unpack=True)
+    k1, k2, k3, Pk1, Pk2, Pk3, B0, B0+BSN, N_tri= np.loadtxt(filename, unpack=True)
 
 Team
 ----
