@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **On the range of validity of perturbative models for galaxy clustering and its uncertainty**
+   | Giosuè Gambardella, Matteo Biagetti, Chiara Moretti, Emiliano Sefusatti
+   | `2311.04608 <https://arxiv.org/abs/2311.04608>`_
+
 #. | **Evaluating the reconstruction of individual haloes in constrained cosmological simulations**
    | Richard Stiskalek, Harry Desmond, Julien Devriendt, Adrianne Slyz
    | `2310.20672 <https://arxiv.org/abs/2310.20672>`_
