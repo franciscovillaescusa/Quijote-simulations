@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Elucidating the impact of massive neutrinos on halo assembly bias**
+   | Yunjia Song, Ying Zu
+   | `2311.07650 <https://arxiv.org/abs/2311.07650>`_
+
 #. | **On the range of validity of perturbative models for galaxy clustering and its uncertainty**
    | Giosuè Gambardella, Matteo Biagetti, Chiara Moretti, Emiliano Sefusatti
    | `2311.04608 <https://arxiv.org/abs/2311.04608>`_
