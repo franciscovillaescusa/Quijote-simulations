@@ -8,6 +8,10 @@ Publications
    | Emanuele Fondi, Licia Verde, Francisco Villaescusa-Navarro, Marco Baldi, William R. Coulton, Gabriel Jung, Dionysios Karagiannis, Michele Liguori, Andrea Ravenni, Benjamin D. Wandelt
    | `2311.10088 <https://arxiv.org/abs/2311.10088>`_
 
+#. | **Analysis of an iterative reconstruction method in comparison of the standard reconstruction method**
+   | Xinyi Chen, Nikhil Padmanabhan
+   | `2311.09531 <https://arxiv.org/abs/2311.09531>`_
+
 #. | **Elucidating the impact of massive neutrinos on halo assembly bias**
    | Yunjia Song, Ying Zu
    | `2311.07650 <https://arxiv.org/abs/2311.07650>`_
