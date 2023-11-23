@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Imprint of massive neutrinos on Persistent Homology of large-scale structure**
+   | M. H. Jalali Kanafi, S. Ansarifard, S. M. S. Movahed
+   | `2311.13520 <https://arxiv.org/abs/2311.13520>`_
+
 #. | **Taming assembly bias for primordial non-Gaussianity**
    | Emanuele Fondi, Licia Verde, Francisco Villaescusa-Navarro, Marco Baldi, William R. Coulton, Gabriel Jung, Dionysios Karagiannis, Michele Liguori, Andrea Ravenni, Benjamin D. Wandelt
    | `2311.10088 <https://arxiv.org/abs/2311.10088>`_
