@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Self-calibrating BAO measurements in the presence of Small Displacement Interlopers**
+   | Alan B. H. Nguyen, Elena Massara, Will J. Percival
+   | `2311.14210 <https://arxiv.org/abs/2311.14210>`_
+
 #. | **Imprint of massive neutrinos on Persistent Homology of large-scale structure**
    | M. H. Jalali Kanafi, S. Ansarifard, S. M. S. Movahed
    | `2311.13520 <https://arxiv.org/abs/2311.13520>`_
