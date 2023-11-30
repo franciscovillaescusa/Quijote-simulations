@@ -4,6 +4,14 @@
 Publications
 ************
 
+#. | **A point cloud approach to generative modeling for galaxy surveys at the field level**
+   | Carolina Cuesta-Lazaro, Siddharth Mishra-Sharma
+   | `2311.17141 <https://arxiv.org/abs/2311.17141>`_
+
+#. | **Constraining Neutrino Cosmologies with Nonlinear Reconstruction**
+   | Shi-Hui Zang, Hong-Ming Zhu
+   | `2311.16439 <https://arxiv.org/abs/2311.16439>`_
+
 #. | **Self-calibrating BAO measurements in the presence of Small Displacement Interlopers**
    | Alan B. H. Nguyen, Elena Massara, Will J. Percival
    | `2311.14210 <https://arxiv.org/abs/2311.14210>`_
