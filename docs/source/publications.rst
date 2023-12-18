@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Bayesian Inference of Initial Conditions from Non-Linear Cosmic Structures using Field-Level Emulators**
+   | Ludvig Doeser, Drew Jamieson, Stephen Stopyra, Guilhem Lavaux, Florent Leclercq, Jens Jasche
+   | `2312.09271 <https://arxiv.org/abs/2312.09271>`_
+
 #. | **A point cloud approach to generative modeling for galaxy surveys at the field level**
    | Carolina Cuesta-Lazaro, Siddharth Mishra-Sharma
    | `2311.17141 <https://arxiv.org/abs/2311.17141>`_
