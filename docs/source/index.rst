@@ -9,7 +9,7 @@ Quijote simulations
 .. image:: Quijote.jpg
    :width: 49 %
 
-The Quijote simulations is a suite of more than 78,000 full N-body simulations designed to:
+The Quijote simulations is a suite of more than 82,000 full N-body simulations designed to:
 
 - Quantify the information content on cosmological observables
 - Provide enough statistics to train machine learning algorithms

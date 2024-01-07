@@ -4,7 +4,7 @@
 Modified Gravity
 ================
 
-Quijote contains N-body simulations with modified gravity: Quijote-MG. The movie below shows one of these simulations together wits :math:`\Lambda {\rm CDM}` counterpart:
+Quijote contains N-body simulations with modified gravity: **Quijote-MG**. The movie below shows one of these simulations together wits :math:`\Lambda {\rm CDM}` counterpart:
 
 .. raw:: html
 
@@ -16,9 +16,55 @@ If you are interested in using these simulations, please contact us at marco.bal
 General description
 -------------------
 
-Quijote-MG contains 2,048 N-body simulations run with `MG-Gadget <https://arxiv.org/abs/1305.2418>`_ and using the `Hu & Sawicki f(R) model <https://arxiv.org/abs/0705.1158>`_ as the modified gravity model. Each simulation follows the evolution of :math:`512^3` dark matter plus :math:`512^3` neutrinos in a periodic cosmological volume of :math:`(1000~{\rm Mpc}/h)^3`. The initial conditions have been generated using the Zel'dovich approximation at :math:`z=127` and the simulations have been run with the appropiate Hubble function :math:`H(z)`. 
+Quijote-MG contains 4,048 N-body simulations run with `MG-Gadget <https://arxiv.org/abs/1305.2418>`_ and using the `Hu & Sawicki f(R) model <https://arxiv.org/abs/0705.1158>`_ as the modified gravity model. Each simulation follows the evolution of :math:`512^3` dark matter plus :math:`512^3` neutrinos in a periodic cosmological volume of :math:`(1000~{\rm Mpc}/h)^3`. The initial conditions have been generated using the Zel'dovich approximation at :math:`z=127` and the simulations have been run with the appropiate Hubble function :math:`H(z)`. We have saved 5 snapshots, at redshifts 0, 0.5, 1, 2, and 3. For each simulation we have saved FoF catalogs, Rockstar catalogs, and different power spectra (see below).
 
-Each simulation has a different value of the initial random seed and of the parameters :math:`\Omega_{\rm m}`, :math:`\Omega_{\rm b}`, :math:`h`, :math:`n_s`, :math:`\sigma_8`, :math:`M_\nu`, :math:`f_{R0}`. The value of those parameters in the simulations are organized in a Sobol sequence with boundaries:
+The simulations can be classified into two different groups:
+
+- Simulations designed for Fisher matrix calculations
+- Simulations designed for machine learning calculations
+
+Simulations for Fisher matrix
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For the first category we have 2,000 simulations. In this category there are four different types:
+
+- 500 simulations run with :math:`f_{R_0}=-5\times10^{-7}`
+- 500 simulations run with :math:`f_{R_0}=-5\times10^{-6}`
+- 500 simulations run with :math:`f_{R_0}=-5\times10^{-5}`
+- 500 simulations run with :math:`f_{R_0}=-5\times10^{-4}`
+
+.. Note::
+
+   We refer the reader to :ref:`types` for details on the value of the cosmological parameters, the initial conditions...etc.
+  
+
+These simulations are designed for Fisher matrix calculations, and therefore, they have matching IDs between themselves and among other Quijote simulations. We note that to compute generic partial derivatives:
+
+.. math::
+
+   \frac{\partial \vec{S}}{\partial f_R}
+
+where :math:`\vec{S}` is a generic summary statistics and :math:`f_R` is the modified gravity parameter, we can use methods like this:
+
+.. math::
+
+   \frac{\partial \vec{S}}{\partial f_R} &\simeq& \frac{\vec{S}(f_R+\delta f_R) - \vec{S}(f_R)}{\delta f_R}\\
+   \frac{\partial \vec{S}}{\partial f_R} &\simeq& \frac{-3\vec{S}(f_R) + 4\vec{S}(f_R+\delta f_R) - \vec{S}(f_R+2\delta f_R)}{2\delta f_R}\\
+   \frac{\partial \vec{S}}{\partial f_R} &\simeq& \frac{-21\vec{S}(f_R) + 32\vec{S}(f_R+\delta f_R) - 12\vec{S}(f_R+2\delta f_R) + \vec{S}(4\delta f_R)}{12\delta f_R}\\
+   \frac{\partial \vec{S}}{\partial f_R} &\simeq& \frac{-315\vec{S}(f_R) + 512\vec{S}(f_R+\delta f_R) - 224\vec{S}(f_R+2\delta f_R) + 28\vec{S}(4\delta f_R) - \vec{S}(8\delta f_R)}{168\delta f_R}
+
+
+where the fiducial value of :math:`f_R` is set to zero.
+
+.. Important::
+
+   Note that the chosen values of :math:`f_{R_0}` are not distributed equally in both linear and log considering that the fiducial value is :math:`f_{R_0}=0`. Thus, when performing Fisher matrix calculations, we recommend perform the following change of variables: :math:`Y=(f_{R_0})^{\log_{10}(2)}`. In that way, the values of :math:`f_{R_0}` equal to 0, :math:`-5\times10^{-7}`, :math:`-5\times10^{-6}`, :math:`-5\times10^{-5}`, :math:`-5\times10^{-4}`, map to :math:`Y` equal to 0, -0.0127, -0.0254, -0.0507, -0.101, and the above formulae can easily be used to evaluate :math:`\partial \vec{S}/\partial Y`.
+
+
+Simulations for machine learning
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In this category we have 2,048 simulations. Each simulation has a different value of the initial random seed and of the parameters :math:`\Omega_{\rm m}`, :math:`\Omega_{\rm b}`, :math:`h`, :math:`n_s`, :math:`\sigma_8`, :math:`M_\nu`, :math:`f_{R0}`. The value of those parameters in the simulations are organized in a Sobol sequence with boundaries:
 
 .. math::
 
@@ -33,8 +79,7 @@ Each simulation has a different value of the initial random seed and of the para
 .. Note::
 
    The actual value of these parameters for the different simulations can be found `here <https://github.com/franciscovillaescusa/Quijote-simulations/blob/master/modified_gravity/Cosmological_parameters.txt>`__. 
-   
-We have saved 5 snapshots, at redshifts 0, 0.5, 1, 2, and 3. For each simulation we have saved FoF catalogs, Rockstar catalogs, and different power spectra (see below).
+  
 
 Organization
 ------------
@@ -101,3 +146,8 @@ For every snapshot of each Quijote-MG simulation we have computed the following 
 - CDM-neutrino cross-Pk in redshift-space: ``Pk_CDMNU_RS_axis=Y_z=X.XXX.dat``
 
 Where ``X.XXX`` is the redshift and ``Y`` (0, 1, or 2) is the axis along which the redshift-space distortions have been placed.
+
+Bispectra
+---------
+
+For every snapshot of each Quijote-MG simulation we have computed the full matter bispectrum. We use a grid with :math:`384^3` voxels and we measure the bispectrum in more than 7,000 different triangle configurations. The name of the files is ``Bk_m_z=X.X.txt``, where ``X.X`` represents the redshift.
