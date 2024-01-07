@@ -1,6 +1,8 @@
 News
 ====
 
+**January 2024:** Data from the Big Sobol Sequence (BSQ), a collection of 32,768 N-body simulations varying 5 cosmological parameters (:math:`\Omega_{\rm m}`, :math:`\Omega_{\rm b}`, :math:`h`, :math:`n_s`, :math:`\sigma_8`) is made publicly available. See :ref:`BSQ` for details.
+
 **November 2023:** The Sancho suite, a collection of 240,000 galaxy mock catalogs in redshift-space spanning across 11 cosmologies, 3 massive neutrino cosmologies, 6 primordial non-Gaussianity amplitudes, and 11 Halo Occupation Distribution (HOD) models (together with their corresponding power spectra and bispectra) is now publicly available. Check :ref:`Sancho` for details.
 
 **October 2023:** Quijote now contains FoF halo catalogs that include the IDs of the particles belonging to the different halos. Check :ref:`halo_catalogues` for details.

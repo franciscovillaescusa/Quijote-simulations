@@ -3,22 +3,23 @@ Features
 ********
 
 - Simulations run with the TreePM code Gadget-III
-- More than 40 Million CPU hours used
-- Boxes of 1 Gpc/h. Combined total volume of more than 45,000 (Gpc/h)^3 at a single redshift
+- More than 60 Million CPU hours used
+- Boxes of 1 Gpc/h. Combined total volume of more than 78,000 (Gpc/h)^3 at a single redshift
 - 17,100 simulations for a fiducial Planck cosmology
 - Between 500 and 1,000 simulations/cosmology for 27 different cosmologies
 - 1,000 Separate Universe simulations
 - 8,000 simulations in different latin-hypercubes
-- More than 10 trillions of particles at a single redshift from all simulations
+- 32,768 simulations in a Sobol Sequence
+- More than 12 trillions of particles at a single redshift from all simulations
 - Billions of halos and voids identified
 - Full snapshots at redshifts 0, 0.5, 1, 2, 3 and 127 (initial conditions)
-- More than 200,000 halo catalogues
-- More than 200,000 void catalogues
+- More than 300,000 halo catalogues
+- More than 300,000 void catalogues
 - More than 1 million power spectra
 - More than 1 million bispectra
 - More than 1 million correlation functions
 - More than 1 million marked power spectra
 - More than 1 million probability distribution functions
-- More than 700 Terabytes of data publicly available
+- More than 850 Terabytes of data publicly available
 - All data can be downloaded via globus
 - All data can be accessed and manipulated without downloading it via binder

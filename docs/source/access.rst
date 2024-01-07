@@ -4,7 +4,7 @@
 Data access
 ***********
 
-Quijote contains over 700 terabytes of data. Given this large size, the data is currently distributed across two different clusters in New York (Rusty cluster) and San Diego (GordonS cluster). The data can be accessed in two different ways:
+Quijote contains over 850 terabytes of data. Given this large size, the data is currently distributed across two different clusters in New York (Rusty cluster) and San Diego (GordonS cluster). The data can be accessed in two different ways:
 
 - **Globus**. A system designed to easily transfer large amounts of data in a very efficient manner.
 - **Binder**. A system that allows reading and manipulating the data online, without the need to download the data. 
@@ -34,7 +34,7 @@ The table below describes the data each cluster contains and provides the links 
 |             | - The 3D density fields                                         |                                                                                                                  |
 |             | - The HADES data (if available)                                 | .. image:: https://mybinder.org/badge_logo.svg                                                                   |
 |             | - The 3D density fields                                         |   :target: https://binder.flatironinstitute.org/~fvillaescusa/Quijote                                            |
-|             | - 488 Terabytes                                                 |                                                                                                                  |
+|             | - 700 Terabytes                                                 |                                                                                                                  |
 +-------------+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
 
 
