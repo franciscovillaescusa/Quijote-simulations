@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **SIMBIG: Cosmological Constraints from the Redshift-Space Galaxy Skew Spectra**
+   | Jiamin Hou, Azadeh Moradinezhad Dizgah, ChangHoon Hahn, Michael Eickenberg, Shirley Ho, Pablo Lemos, Elena Massara, Chirag Modi, Liam Parker, Bruno Régaldo-Saint Blancard
+   | `2401.15074 <https://arxiv.org/abs/2401.15074>`_
+
 #. | **Bayesian Inference of Initial Conditions from Non-Linear Cosmic Structures using Field-Level Emulators**
    | Ludvig Doeser, Drew Jamieson, Stephen Stopyra, Guilhem Lavaux, Florent Leclercq, Jens Jasche
    | `2312.09271 <https://arxiv.org/abs/2312.09271>`_
