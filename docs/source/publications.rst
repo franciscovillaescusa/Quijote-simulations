@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Cosmology at the Field Level with Probabilistic Machine Learning**
+   | Adam Rouhiainen
+   | `PhD thesis <https://arxiv.org/abs/2402.07694>`_
+
 #. | **LtU-ILI: An All-in-One Framework for Implicit Inference in Astrophysics and Cosmology**
    | Matthew Ho, Deaglan J. Bartlett, Nicolas Chartier, Carolina Cuesta-Lazaro, Simon Ding, Axel Lapel, Pablo Lemos, Christopher C. Lovell, T. Lucas Makinen, Chirag Modi, Viraj Pandya, Shivam Pandey, Lucia A. Perez, Benjamin Wandelt, Greg L. Bryan
    | `2402.05137 <https://arxiv.org/abs/2402.05137>`_
