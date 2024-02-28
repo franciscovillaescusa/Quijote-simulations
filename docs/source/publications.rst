@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **syren-halofit: A fast, interpretable, high-precision formula for the ΛCDM nonlinear matter power spectrum**
+   | Deaglan J. Bartlett, Benjamin D. Wandelt, Matteo Zennaro, Pedro G. Ferreira, Harry Desmond
+   | `2402.17492 <https://arxiv.org/abs/2402.17492>`_
+
 #. | **SIMBIG: Cosmological Constraints from the Redshift-Space Galaxy Skew Spectra**
    | Jiamin Hou, Azadeh Moradinezhad Dizgah, ChangHoon Hahn, Michael Eickenberg, Shirley Ho, Pablo Lemos, Elena Massara, Chirag Modi, Liam Parker, Bruno Régaldo-Saint Blancard
    | `2401.15074 <https://arxiv.org/abs/2401.15074>`_
