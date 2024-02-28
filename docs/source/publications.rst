@@ -4,6 +4,9 @@
 Publications
 ************
 
+#. | **syren-halofit: A fast, interpretable, high-precision formula for the ΛCDM nonlinear matter power spectrum**
+   | Deaglan J. Bartlett, Benjamin D. Wandelt, Matteo Zennaro, Pedro G. Ferreira, Harry Desmond
+   | `2402.17492 <https://arxiv.org/abs/2402.17492>`_
 
 #. | **Cosmology at the Field Level with Probabilistic Machine Learning**
    | Adam Rouhiainen
