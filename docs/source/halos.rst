@@ -115,4 +115,7 @@ In general, we recommend using the ``out_X_pid.list`` files that can be read eas
    Vmax = data[:,3]
    PID  = data[:,41] 
    
-   
+.. important::
+
+   In some cases, like in the BSQ simulations, there are some additional folders, like ``hlists`` and ``trees``. These folders contains the halo/subhalo catalogs and merger trees generated after running consistent trees. We note that consistent trees needs multiple snapshots to run, so only some Quijote simulations have these folders. In the case these folders exists, we recommend the user to use them. E.g. it is better to read the ``hlist/hlist_1.00000.list`` file than the ``out_4_pid.list`` as the former contains more information.
+

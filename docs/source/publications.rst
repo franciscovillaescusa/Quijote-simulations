@@ -4,9 +4,14 @@
 Publications
 ************
 
-#. | **syren-halofit: A fast, interpretable, high-precision formula for the ΛCDM nonlinear matter power spectrum**
-   | Deaglan J. Bartlett, Benjamin D. Wandelt, Matteo Zennaro, Pedro G. Ferreira, Harry Desmond
-   | `2402.17492 <https://arxiv.org/abs/2402.17492>`_
+
+#. | **Cosmology at the Field Level with Probabilistic Machine Learning**
+   | Adam Rouhiainen
+   | `PhD thesis <https://arxiv.org/abs/2402.07694>`_
+
+#. | **LtU-ILI: An All-in-One Framework for Implicit Inference in Astrophysics and Cosmology**
+   | Matthew Ho, Deaglan J. Bartlett, Nicolas Chartier, Carolina Cuesta-Lazaro, Simon Ding, Axel Lapel, Pablo Lemos, Christopher C. Lovell, T. Lucas Makinen, Chirag Modi, Viraj Pandya, Shivam Pandey, Lucia A. Perez, Benjamin Wandelt, Greg L. Bryan
+   | `2402.05137 <https://arxiv.org/abs/2402.05137>`_
 
 #. | **SIMBIG: Cosmological Constraints from the Redshift-Space Galaxy Skew Spectra**
    | Jiamin Hou, Azadeh Moradinezhad Dizgah, ChangHoon Hahn, Michael Eickenberg, Shirley Ho, Pablo Lemos, Elena Massara, Chirag Modi, Liam Parker, Bruno Régaldo-Saint Blancard
