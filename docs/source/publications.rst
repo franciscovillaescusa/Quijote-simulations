@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Quijote-PNG: Optimizing the summary statistics to measure Primordial non-Gaussianity**
+   | Gabriel Jung, Andrea Ravenni, Michele Liguori, Marco Baldi, William R. Coulton, Francisco Villaescusa-Navarro, Benjamin D. Wandelt
+   | `2403.00490 <https://arxiv.org/abs/2403.00490>`_
+
 #. | **syren-halofit: A fast, interpretable, high-precision formula for the ΛCDM nonlinear matter power spectrum**
    | Deaglan J. Bartlett, Benjamin D. Wandelt, Matteo Zennaro, Pedro G. Ferreira, Harry Desmond
    | `2402.17492 <https://arxiv.org/abs/2402.17492>`_
