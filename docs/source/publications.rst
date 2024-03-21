@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Displacement Field Analysis via Optimal Transport: Multi-Tracer Approach to Cosmological Reconstruction**
+   | Farnik Nikakhtar, Ravi K. Sheth, Nikhil Padmanabhan, Bruno Lévy, Roya Mohayaee
+   | `2403.11951 <https://arxiv.org/abs/2403.11951>`_
+
 #. | **Quijote-PNG: Optimizing the summary statistics to measure Primordial non-Gaussianity**
    | Gabriel Jung, Andrea Ravenni, Michele Liguori, Marco Baldi, William R. Coulton, Francisco Villaescusa-Navarro, Benjamin D. Wandelt
    | `2403.00490 <https://arxiv.org/abs/2403.00490>`_
