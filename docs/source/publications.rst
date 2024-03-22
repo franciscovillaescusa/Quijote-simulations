@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Cosmology with Persistent Homology: a Fisher Forecast**
+   | Jacky H. T. Yip, Matteo Biagetti, Alex Cole, Karthik Viswanathan, Gary Shiu
+   | `2403.13985 <https://arxiv.org/abs/2403.13985>`_
+
 #. | **Displacement Field Analysis via Optimal Transport: Multi-Tracer Approach to Cosmological Reconstruction**
    | Farnik Nikakhtar, Ravi K. Sheth, Nikhil Padmanabhan, Bruno Lévy, Roya Mohayaee
    | `2403.11951 <https://arxiv.org/abs/2403.11951>`_
