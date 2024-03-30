@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Constraining Primordial Non-Gaussianity from Large Scale Structure with the Wavelet Scattering Transform**
+   | Matteo Peron, Gabriel Jung, Michele Liguori, Massimo Pietroni
+   | `2403.17657 <https://arxiv.org/abs/2403.17657>`_
+
 #. | **Cosmology with Persistent Homology: a Fisher Forecast**
    | Jacky H. T. Yip, Matteo Biagetti, Alex Cole, Karthik Viswanathan, Gary Shiu
    | `2403.13985 <https://arxiv.org/abs/2403.13985>`_
