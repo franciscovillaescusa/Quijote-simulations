@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Neural network reconstruction of density and velocity fields from the 2MASS Redshift Survey**
+   | Robert Lilow, Punyakoti Ganeshaiah Veena, Adi Nusser
+   | `2404.02278 <https://arxiv.org/abs/2404.02278>`_
+
 #. | **Constraining Primordial Non-Gaussianity from Large Scale Structure with the Wavelet Scattering Transform**
    | Matteo Peron, Gabriel Jung, Michele Liguori, Massimo Pietroni
    | `2403.17657 <https://arxiv.org/abs/2403.17657>`_
