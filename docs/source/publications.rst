@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **SimBIG: Cosmological Constraints using Simulation-Based Inference of Galaxy Clustering with Marked Power Spectra**
+   | Elena Massara, ChangHoon Hahn, Michael Eickenberg, Shirley Ho, Jiamin Hou, Pablo Lemos, Chirag Modi, Azadeh Moradinezhad Dizgah, Liam Parker, Bruno Régaldo-Saint Blancard
+   | `2404.04228 <https://arxiv.org/abs/2404.04228>`_
+
 #. | **Neural network reconstruction of density and velocity fields from the 2MASS Redshift Survey**
    | Robert Lilow, Punyakoti Ganeshaiah Veena, Adi Nusser
    | `2404.02278 <https://arxiv.org/abs/2404.02278>`_
