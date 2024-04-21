@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Deep Learning for Cosmological Parameter Inference from Dark Matter Halo Density Field**
+   | Zhiwei Min, Xu Xiao, Jiacheng Ding, Liang Xiao, Jie Jiang, Donglin Wu, Qiufan Lin, Yin Li, Yang Wang, Shuai Liu, Zhixin Chen, Xiangru Li, Jinqu Zhang, Le Zhang, Xiao-Dong Li
+   | `2404.09483 <https://arxiv.org/abs/2404.09483>`_
+
 #. | **SimBIG: Cosmological Constraints using Simulation-Based Inference of Galaxy Clustering with Marked Power Spectra**
    | Elena Massara, ChangHoon Hahn, Michael Eickenberg, Shirley Ho, Jiamin Hou, Pablo Lemos, Chirag Modi, Azadeh Moradinezhad Dizgah, Liam Parker, Bruno Régaldo-Saint Blancard
    | `2404.04228 <https://arxiv.org/abs/2404.04228>`_
