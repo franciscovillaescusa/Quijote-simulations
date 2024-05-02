@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Bye bye, local bias: the statistics of the halo field are not determined by the local mass density**
+   | Deaglan J. Bartlett, Matthew Ho, Benjamin D. Wandelt
+   | `2405.00635 <https://arxiv.org/abs/2405.00635>`_
+
 #. | **Deep Learning for Cosmological Parameter Inference from Dark Matter Halo Density Field**
    | Zhiwei Min, Xu Xiao, Jiacheng Ding, Liang Xiao, Jie Jiang, Donglin Wu, Qiufan Lin, Yin Li, Yang Wang, Shuai Liu, Zhixin Chen, Xiangru Li, Jinqu Zhang, Le Zhang, Xiao-Dong Li
    | `2404.09483 <https://arxiv.org/abs/2404.09483>`_
