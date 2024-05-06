@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **A Parameter-Masked Mock Data Challenge for Beyond-Two-Point Galaxy Clustering Statistics**
+   | Beyond-2pt Collaboration: Elisabeth Krause, Yosuke Kobayashi, Andrés N. Salcedo, Mikhail M. Ivanov, Tom Abel, Kazuyuki Akitsu, Raul E. Angulo, Giovanni Cabass, Sofia Contarini, Carolina Cuesta-Lazaro, ChangHoon Hahn, Nico Hamaus, Donghui Jeong, Chirag Modi, Nhat-Minh Nguyen, Takahiro Nishimichi, Enrique Paillas, Marcos Pellejero Ibañez, Oliver H. E. Philcox, Alice Pisani, Fabian Schmidt, Satoshi Tanaka, Giovanni Verza, Sihan Yuan, Matteo Zennaro
+   | `2405.02252 <https://arxiv.org/abs/2405.02252>`_
+
 #. | **Bye bye, local bias: the statistics of the halo field are not determined by the local mass density**
    | Deaglan J. Bartlett, Matthew Ho, Benjamin D. Wandelt
    | `2405.00635 <https://arxiv.org/abs/2405.00635>`_
