@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **The Significance of Void Shape: Neutrino Mass from Voronoi Void-Halos?**
+   | Adrian E. Bayer, Jia Liu, Christina D. Kreisch, Alice Pisani
+   | `2405.12302 <https://arxiv.org/abs/2405.12302>`_
+
 #. | **FREmu: Power Spectrum Emulator for f(R) Gravity**
    | Jiachen Bai, Junqing Xia
    | `2405.05840 <https://arxiv.org/abs/2405.05840>`_
