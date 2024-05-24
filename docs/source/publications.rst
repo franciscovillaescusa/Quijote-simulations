@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Cosmology from point clouds**
+   | Atrideb Chatterjee, Francisco Villaescusa-Navarro
+   | `2405.13119 <https://arxiv.org/abs/2405.13119>`_
+
 #. | **The Significance of Void Shape: Neutrino Mass from Voronoi Void-Halos?**
    | Adrian E. Bayer, Jia Liu, Christina D. Kreisch, Alice Pisani
    | `2405.12302 <https://arxiv.org/abs/2405.12302>`_
