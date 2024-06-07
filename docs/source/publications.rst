@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Dynamics-based halo model for large scale structure**
+   | Edgar M. Salazar, Eduardo Rozo, Rafael García, Nickolas Kokron, Susmita Adhikari, Benedikt Diemer, Calvin Osinga
+   | `2406.04054 <https://arxiv.org/abs/2406.04054>`_
+
 #. | **Cosmology from point clouds**
    | Atrideb Chatterjee, Francisco Villaescusa-Navarro
    | `2405.13119 <https://arxiv.org/abs/2405.13119>`_
