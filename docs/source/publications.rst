@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Fisher's Mirage: Noise Tightening of Cosmological Constraints in Simulation-Based Inference**
+   | Christopher Wilson, Rachel bean
+   | `2406.06067 <https://arxiv.org/abs/2406.06067>`_
+
 #. | **Dynamics-based halo model for large scale structure**
    | Edgar M. Salazar, Eduardo Rozo, Rafael García, Nickolas Kokron, Susmita Adhikari, Benedikt Diemer, Calvin Osinga
    | `2406.04054 <https://arxiv.org/abs/2406.04054>`_
