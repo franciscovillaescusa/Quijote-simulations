@@ -1,6 +1,8 @@
 News
 ====
 
+**July 2024:** The data from the collider simulations is publicly available. See :ref:`collider` for details.
+
 **January 2024:** Data from the Big Sobol Sequence (BSQ), a collection of 32,768 N-body simulations varying 5 cosmological parameters (:math:`\Omega_{\rm m}`, :math:`\Omega_{\rm b}`, :math:`h`, :math:`n_s`, :math:`\sigma_8`) is made publicly available. See :ref:`BSQ` for details.
 
 **January 2024:** Interested in modified gravity? Check :ref:`mg` for Quijote-MG, a set of 4,048 N-body simulations with modified gravity.
