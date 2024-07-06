@@ -4,6 +4,18 @@
 Publications
 ************
 
+#. | **Baryon Acoustic Oscillations analyses with Density-Split Statistics**
+   | Tengpeng Xu, Yan-Chuan Cai, Yun Chen, Mark Neyrinck, Liang Gao, Qiao Wang
+   | `2407.02210 <https://arxiv.org/abs/2407.02210>`_
+
+#. | **Alcock-Paczynski effect on void-finding: Implications for void-galaxy cross-correlation modelling**
+   | Sladana Radinovic, Hans A. Winther, Seshadri Nadathur, Will J. Percival, Enrique Paillas, Tristan Sohrab Fraser, Elena Massara, Alex Woodfinden
+   | `2407.02699 <https://arxiv.org/abs/2407.02699>`_
+
+#. | **The Impact of Non-Gaussian Primordial Tails on Cosmological Observables**
+   | William R. Coulton, Oliver H. E. Philcox, Francisco Villaescusa-Navarro
+   | `2406.15546 <https://arxiv.org/abs/2406.15546>`_
+   
 #. | **Fisher's Mirage: Noise Tightening of Cosmological Constraints in Simulation-Based Inference**
    | Christopher Wilson, Rachel bean
    | `2406.06067 <https://arxiv.org/abs/2406.06067>`_
