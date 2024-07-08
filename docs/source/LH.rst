@@ -3,7 +3,7 @@
 Latin-hypercubes
 ================
 
-Quijote provides several latin-hypercubes that can be classified into two main categories depending on whether they include massive neutrinos:
+Quijote provides several latin-hypercubes that can be classified into several main categories depending on what parameters are varied:
 
 LH
 ---
@@ -50,3 +50,23 @@ The value of the cosmological parameters of each simulation of the latin-hypercu
    
 
 The snapshots, halo catalogues...etc of this latin-hypercube are located in a folder called ``latin_hypercube_nwLH``. The folder names are ``X``, where ``X`` goes from 0 to 1999.
+
+fNL_LH
+------
+
+The simulations in this category are designed to explore the impact of primordial non-Gaussianities on the Universe's large-scale structure. This category contains two different latin-hypercubes, each of them with 1,000 N-body simulations. We noe describe each of them in detail:
+
+- ``latin_hypercube_LC``. This latin-hypercube contains 1,000 simulations. All of them follows the evolution of :math:`512^3` dark matter particles in a periodic volume of :math:`(1000~h^{-1}{\rm Mpc})^3` down to :math:`z=0`. Each simulation has a different value of the initial random seed, that can be found in the ``ICs/2LPT.param`` file inside the simulation folder. All the simulations share the value of these cosmological parameters :math:`\Omega_{\rm m}=0.3175`, :math:`\Omega_{\rm b}=0.049`, :math:`h=0.6711`, :math:`n_s=0.9624`, :math:`\sigma_8=0.834`, :math:`M_\nu=0` eV, :math:`w_0`. The parameter that is varied is :math:`f_{\rm NL}` local that is varied within :math:`-300 \leq f_{\rm NL}^{\rm local} \leq +300`. The value of the :math:`f_{\rm NL}^{\rm local}` parameter for each simulation can be found in `here <https://github.com/franciscovillaescusa/Quijote-simulations/blob/master/latin_hypercube_LC/latin_hypercube_params.txt>`__. Note that we run these simulations generating 46 snapshots. Thus, the names of the snapshots and catalogs are different. In `this file <https://github.com/franciscovillaescusa/Quijote-simulations/blob/master/latin_hypercube_LC/times.txt>`__ you can find the value of the scale factor associated to each snapshot/catalog. For insteance, ``snapdir_045`` corresponds to :math:`a=1` or :math:`z=0`. 
+
+- ``latin_hypercube_EQ``. This latin-hypercube contains 1,000 simulations. All of them follows the evolution of :math:`512^3` dark matter particles in a periodic volume of :math:`(1000~h^{-1}{\rm Mpc})^3` down to :math:`z=0`. Each simulation has a different value of the initial random seed, that can be found in the ``ICs/2LPT.param`` file inside the simulation folder. All the simulations share the value of these cosmological parameters :math:`\Omega_{\rm b}=0.049`, :math:`M_\nu=0` eV, :math:`w=-1`. The value of the other cosmological parameters are varied in the range:
+
+.. math::
+   \Omega_{\rm m} \in [0.1 ; 0.5]\\
+   h \in [0.5 ; 0.9]\\
+   n_s \in [0.8 ; 1.2]\\
+   \sigma_8 \in [0.6 ; 1.0]\\
+   f_{\rm NL}^{\rm equilateral} \in [-600 ; 600]
+
+The value of the :math:`f_{\rm NL}^{\rm local}` parameter for each simulation can be found in `here <https://github.com/franciscovillaescusa/Quijote-simulations/blob/master/latin_hypercube_EQ/latin_hypercube_params.txt>`__. Note that we run these simulations generating 46 snapshots. Thus, the names of the snapshots and catalogs are different. In `this file <https://github.com/franciscovillaescusa/Quijote-simulations/blob/master/latin_hypercube_EQ/times.txt>`__ you can find the value of the scale factor associated to each snapshot/catalog. For insteance, ``snapdir_045`` corresponds to :math:`a=1` or :math:`z=0`. 
+
+

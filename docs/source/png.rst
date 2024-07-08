@@ -3,7 +3,12 @@
 Primordial non-Gaussianities
 ============================
 
-Quijote contains 4,000 N-body simulations with primordial non-Gaussianities: **Quijote-PNG**. All these simulations contain :math:`512^3` dark matter particles in a periodic volume of :math:`(1~h^{-1}{\rm Gpc})^3` and share the same cosmology as the fiducial model: :math:`\Omega_{\rm m}=0.3175`, :math:`\Omega_{\rm b}=0.049`, :math:`h=0.6711`, :math:`n_s=0.9624`, :math:`\sigma_8=0.834`, :math:`w=-1`, :math:`M_\nu=0.0` eV. These are standard N-body simulations run with initial conditions generated in a particular way.
+Quijote contains 6,000 N-body simulations with primordial non-Gaussianities: **Quijote-PNG**. These can be classified into two different categories depending on how their usage, as we describe now.
+
+Simulations for Fisher analysis
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+All these simulations contain :math:`512^3` dark matter particles in a periodic volume of :math:`(1~h^{-1}{\rm Gpc})^3` and share the same cosmology as the fiducial model: :math:`\Omega_{\rm m}=0.3175`, :math:`\Omega_{\rm b}=0.049`, :math:`h=0.6711`, :math:`n_s=0.9624`, :math:`\sigma_8=0.834`, :math:`w=-1`, :math:`M_\nu=0.0` eV. These are standard N-body simulations run with initial conditions generated in a particular way.
 
 The video below shows an example of two N-body simulations with Gaussian initial conditions (left) and local primordial non-Gaussianities initial conditions (right). As can be seen, differences are very small even for a value as large as :math:`f_{\rm NL}=200` as the one we use.
 
@@ -12,7 +17,7 @@ The video below shows an example of two N-body simulations with Gaussian initial
    <iframe width="560" height="315" src="https://www.youtube.com/embed/M1o50W8GXLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 	 
 
-The simulations in Quijote-PNG can be classified into four different sets: 1) local, 2) equilateral, 3) orthogonal CMB, and 4) orthogonal LSS (see :ref:`shapes`). Each set contains 1,000 simulations: 500 with :math:`f_{\rm NL}=+100` and 500 with :math:`f_{\rm NL}=-100`. Quijote-PNG is thus organized into eight different folders, depending on the non-Gaussianity shape and the value of :math:`f_{\rm NL}`:
+These simulations can be further classified into four different sets: 1) local, 2) equilateral, 3) orthogonal CMB, and 4) orthogonal LSS (see :ref:`shapes`). Each set contains 1,000 simulations: 500 with :math:`f_{\rm NL}=+100` and 500 with :math:`f_{\rm NL}=-100`. Quijote-PNG is thus organized into eight different folders, depending on the non-Gaussianity shape and the value of :math:`f_{\rm NL}`:
 
 - **LC_p**: contains data from 500 simulations with local type and :math:`f_{\rm NL}=+100`
 - **LC_m**: contains data from 500 simulations with local type and :math:`f_{\rm NL}=-100`
@@ -24,6 +29,16 @@ The simulations in Quijote-PNG can be classified into four different sets: 1) lo
 - **OR_LSS_m**: contains data from 500 simulations with orthogonal LSS type and :math:`f_{\rm NL}=-100`
   
 Each of the above folders contains 500 sub-folders, each of them hosting the result of a different simulation. For instance, the folder ``EQ_p/72/`` contains the results of the 72th simulation run with :math:`f_{\rm NL}=+100` for the equilateral shape. Depending on the location, these folder will contain the snapshots, halo catalogues, or other data products.
+
+Simulations for machine learning analysis
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+All these simulations contain :math:`512^3` dark matter particles in a periodic volume of :math:`(1~h^{-1}{\rm Gpc})^3`. Each of the simulations have a different value of the initial random seed and of the cosmological parameters. They can be classified into two different latin-hypercubes depending on what :math:`f_{\rm NL}` parameter is varied:
+
+- **latin_hypercube_LC** contains 1,000 simulations just varying :math:`f_{\rm NL}^{\rm local}`.
+- **latin_hypercube_EQ** contains 1,000 simulations varying :math:`\Omega_{\rm m}`, :math:`h`, :math:`n_s`, :math:`\sigma_8`, :math:`f_{\rm NL}^{\rm equilateral}`.
+
+We provide further details on these simulations in :ref:`LH`.
 
 
 .. _shapes:
@@ -88,12 +103,15 @@ For the details about the linear matter power spectrum used for these simulation
 Snapshots
 ~~~~~~~~~
 
-We keep snapshots at redshifts 0, 0.5, 1, 2, and 3. The snapshots are saved as HDF5 files, and they can be read in the standard way (see :ref:`snapshots` for details on this).
+All snapshots are saved as HDF5 files, and they can be read in the standard way (see :ref:`snapshots` for details on this). 
+
+- For the Fisher matrix simulations, we keep snapshots at redshifts 0, 0.5, 1, 2, and 3.
+- For the machine learning simulations we generated 46 snapshots and we saved those at redshifts 1, 0.73, 0.5, and 0 (see :ref:`LH` for details).
 
 Halo catalogues
 ~~~~~~~~~~~~~~~
 
-We store Friends-of-Friends (FoF) halo catalogues for each snapshot of each simulation in Quijote-PNG. We refer the user to :ref:`halo_catalogues` for details on how to read these files.
+We store Friends-of-Friends (FoF) and Rockstar halo catalogues for each snapshot of each simulation in Quijote-PNG. We refer the user to :ref:`halo_catalogues` for details on how to read these files. For the ``latin_hypercube_LC`` and ``latin_hypercube_EQ`` simulations we also stored the merger trees generated from consistent trees.
 
 Density fields
 ~~~~~~~~~~~~~~

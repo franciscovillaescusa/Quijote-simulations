@@ -17,6 +17,10 @@ The table below describes the data each cluster contains and provides the links 
 
    We are currently moving all data located in the Princeton cluster to New York. Besides, due to storage constrains we are compressing all snapshots. Thus, the data may be temporarily unavailable in the below links. Note that you need to install the latest version of Pylians, or use hdf5plugin to read the compressed snapshots. For more details see :ref:`snapshots`. Please `Reach out <mailto:villaescusa.francisco@gmail.com>`_ if you experience problems.
 
+.. important::
+
+   Binder is currently down due to unexpected usage. If you need access to it please reach out to villaescusa.francisco@gmail.com to circunvent this issue.
+   
 +-------------+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
 | Cluster     |  Content                                                        |  Access                                                                                                          |
 +=============+=================================================================+==================================================================================================================+

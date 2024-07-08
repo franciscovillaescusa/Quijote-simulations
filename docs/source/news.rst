@@ -1,6 +1,8 @@
 News
 ====
 
+**July 2024:** We have made publicly available two new sets of simulations: 1) a latin-hypercube containing 1,000 simulations and varying :math:`f_{\rm NL}` local, and 2) a latin-hypercube containing 1,000 simulations and varying :math:`\Omega_{\rm m}`, :math:`h`, :math:`n_s`, :math:`\sigma_8`, and :math:`f_{\rm NL}` equilateral. See :ref:`png` and :ref:`LH` for details.
+
 **July 2024:** The data from the collider simulations is publicly available. See :ref:`collider` for details.
 
 **January 2024:** Data from the Big Sobol Sequence (BSQ), a collection of 32,768 N-body simulations varying 5 cosmological parameters (:math:`\Omega_{\rm m}`, :math:`\Omega_{\rm b}`, :math:`h`, :math:`n_s`, :math:`\sigma_8`) is made publicly available. See :ref:`BSQ` for details.
