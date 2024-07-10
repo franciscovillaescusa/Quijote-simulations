@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Cosmological simulations of scale-dependent primordial non-Gaussianity**
+   | Marco Baldi, Emanuele Fondi, Dionysios Karagiannis, Lauro Moscardini, Andrea Ravenni, William R. Coulton, Gabriel Jung, Michele Liguori, Marco Marinucci, Licia Verde, Francisco Villaescusa-Navarro, Banjamin D. Wandelt
+   | `2407.06641 <https://arxiv.org/abs/2407.06641>`_
+
 #. | **Baryon Acoustic Oscillations analyses with Density-Split Statistics**
    | Tengpeng Xu, Yan-Chuan Cai, Yun Chen, Mark Neyrinck, Liang Gao, Qiao Wang
    | `2407.02210 <https://arxiv.org/abs/2407.02210>`_
