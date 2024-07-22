@@ -8,6 +8,10 @@ Publications
    | Samuel Goldstein, Oliver H. E. Philcox, J. Colin Hill, Lam Hui
    | `2407.08731 <https://arxiv.org/abs/2407.08731>`_
 
+#. | **Conservative Simulation-Based Inference with Bayesian Deep Learning**
+   | Maxence de la Brassinne Bonardeaux
+   | `Master thesis <https://matheo.uliege.be/bitstream/2268.2/20480/6/MasterThesisMdlBB.pdf>`_
+
 #. | **Cosmological simulations of scale-dependent primordial non-Gaussianity**
    | Marco Baldi, Emanuele Fondi, Dionysios Karagiannis, Lauro Moscardini, Andrea Ravenni, William R. Coulton, Gabriel Jung, Michele Liguori, Marco Marinucci, Licia Verde, Francisco Villaescusa-Navarro, Banjamin D. Wandelt
    | `2407.06641 <https://arxiv.org/abs/2407.06641>`_
