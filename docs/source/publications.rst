@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Massive-ish Particles from Small-ish Scales: Non-Perturbative Techniques for Cosmological Collider Physics from Large-Scale Structure Surveys**
+   | Samuel Goldstein, Oliver H. E. Philcox, J. Colin Hill, Lam Hui
+   | `2407.08731 <https://arxiv.org/abs/2407.08731>`_
+
 #. | **Cosmological simulations of scale-dependent primordial non-Gaussianity**
    | Marco Baldi, Emanuele Fondi, Dionysios Karagiannis, Lauro Moscardini, Andrea Ravenni, William R. Coulton, Gabriel Jung, Michele Liguori, Marco Marinucci, Licia Verde, Francisco Villaescusa-Navarro, Banjamin D. Wandelt
    | `2407.06641 <https://arxiv.org/abs/2407.06641>`_
