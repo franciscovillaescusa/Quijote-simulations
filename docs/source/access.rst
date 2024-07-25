@@ -19,7 +19,7 @@ The table below describes the data each cluster contains and provides the links 
 
 .. important::
 
-   Binder is currently down due to unexpected usage. If you need access to it please reach out to villaescusa.francisco@gmail.com to circunvent this issue.
+   Please, fill up `this form <https://forms.gle/63CE9p9XUdnPW9js9>`__ if you want to use the Quijote binder. Reach out to villaescusa.francisco@gmail.com if you encounter problems.
    
 +-------------+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
 | Cluster     |  Content                                                        |  Access                                                                                                          |
