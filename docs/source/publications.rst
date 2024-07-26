@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Extracting cosmological information at non-linear scales using machine learning**
+   | Surpio Dubey
+   | `Master Thesis <https://thesis.unipd.it/handle/20.500.12608/68240>`_
+
 #. | **Massive-ish Particles from Small-ish Scales: Non-Perturbative Techniques for Cosmological Collider Physics from Large-Scale Structure Surveys**
    | Samuel Goldstein, Oliver H. E. Philcox, J. Colin Hill, Lam Hui
    | `2407.08731 <https://arxiv.org/abs/2407.08731>`_
