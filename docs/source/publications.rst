@@ -4,6 +4,14 @@
 Publications
 ************
 
+#. | **Towards unveiling the large-scale nature of gravity with the wavelet scattering transform**
+   | Georgios Valogiannis, Francisco Villaescusa-Navarro, Marco Baldi
+   | `2407.18647 <https://arxiv.org/abs/2407.18647>`_
+
+#. | **https://www.teses.usp.br/teses/disponiveis/43/43134/tde-15072024-101341/publico/tesenatalisolermatubarodesanti.pdf**
+   | Natali de Santi
+   | `PhD thesis <https://www.teses.usp.br/teses/disponiveis/43/43134/tde-15072024-101341/publico/tesenatalisolermatubarodesanti.pdf>`__
+
 #. | **Extracting cosmological information at non-linear scales using machine learning**
    | Surpio Dubey
    | `Master Thesis <https://thesis.unipd.it/handle/20.500.12608/68240>`_
