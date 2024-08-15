@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Field-level Emulation of Cosmic Structure Formation with Cosmology and Redshift Dependence**
+   | Drew Jamieson, Yin Li, Francisco Villaescusa-Navarro, Shirley Ho, David N. Spergel
+   | `2408.07699 <https://arxiv.org/abs/2408.07699>`_
+
 #. | **Towards unveiling the large-scale nature of gravity with the wavelet scattering transform**
    | Georgios Valogiannis, Francisco Villaescusa-Navarro, Marco Baldi
    | `2407.18647 <https://arxiv.org/abs/2407.18647>`_
