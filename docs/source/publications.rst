@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **The streaming model for the three-point correlation function and its connection to standard perturbation theory**
+   | Anna Pugno, Alexander Eggemeier, Cristiano Porciani, Joseph Kuruvilla
+   | `2408.10307 <https://arxiv.org/abs/2408.10307>`_
+
 #. | **Field-level Emulation of Cosmic Structure Formation with Cosmology and Redshift Dependence**
    | Drew Jamieson, Yin Li, Francisco Villaescusa-Navarro, Shirley Ho, David N. Spergel
    | `2408.07699 <https://arxiv.org/abs/2408.07699>`_
