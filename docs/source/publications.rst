@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Capturing primordial non-Gaussian signatures in the late Universe by multi-scale extrema of the cosmic log-density field**
+   | Yun Wang, Ping He
+   | `2408.13876 <https://arxiv.org/abs/2408.13876>`_
+
 #. | **The streaming model for the three-point correlation function and its connection to standard perturbation theory**
    | Anna Pugno, Alexander Eggemeier, Cristiano Porciani, Joseph Kuruvilla
    | `2408.10307 <https://arxiv.org/abs/2408.10307>`_
