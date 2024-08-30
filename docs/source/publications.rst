@@ -4,6 +4,14 @@
 Publications
 ************
 
+#. | **Pair Counting without Binning -- A New Approach to Correlation Functions in Clustering Statistics**
+   | Shiyu Yue, Longlong Feng, Wenjie Ju, Jun Pan, Zhiqi Huang, Feng Fang, Zhuoyang Li, Yan-Chuan Cai, Weishan Zhu
+   | `2408.16398 <https://arxiv.org/abs/2408.16398>`_
+
+#. | **Low-Budget Simulation-Based Inference with Bayesian Neural Networks**
+   | Arnaud Delaunoy, Maxence de la Brassinne Bonardeaux, Siddharth Mishra-Sharma, Gilles Louppe
+   | `2408.15136 <https://arxiv.org/abs/2408.15136>`_
+
 #. | **Capturing primordial non-Gaussian signatures in the late Universe by multi-scale extrema of the cosmic log-density field**
    | Yun Wang, Ping He
    | `2408.13876 <https://arxiv.org/abs/2408.13876>`_
