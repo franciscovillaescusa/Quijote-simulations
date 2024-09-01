@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **A skewed perspective on the universe: advancements, challenges and prospects in the hunt for primordial non-Gaussianity**
+   | Thomas Floss
+   | `PhD thesis <https://pure.rug.nl/ws/portalfiles/portal/1084344891/Complete_thesis.pdf>`_
+
 #. | **Pair Counting without Binning -- A New Approach to Correlation Functions in Clustering Statistics**
    | Shiyu Yue, Longlong Feng, Wenjie Ju, Jun Pan, Zhiqi Huang, Feng Fang, Zhuoyang Li, Yan-Chuan Cai, Weishan Zhu
    | `2408.16398 <https://arxiv.org/abs/2408.16398>`_
