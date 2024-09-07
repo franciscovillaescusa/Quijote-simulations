@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Novel Techniques for the Calibration of Systematics in Next Generation Galaxy Surveys**
+   | Alan Bao-Huy Nguyen
+   | `Master thesis <https://uwspace.uwaterloo.ca/bitstreams/db98ba72-9d54-49b2-a28a-7ef5e8552538/download>`_
+
 #. | **A skewed perspective on the universe: advancements, challenges and prospects in the hunt for primordial non-Gaussianity**
    | Thomas Floss
    | `PhD thesis <https://pure.rug.nl/ws/portalfiles/portal/1084344891/Complete_thesis.pdf>`_
