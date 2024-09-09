@@ -4,6 +4,14 @@
 Publications
 ************
 
+#. | **Map-level baryonification: Efficient modelling of higher-order correlations in the weak lensing and thermal Sunyaev-Zeldovich fields**
+   | Dhayaa Anbajagane, Shivam Pandey, Chihway Chang
+   | `2409.03822 <https://arxiv.org/abs/2409.03822>`_
+
+#. |  **Void where statistically prohibited: constraining gravity with cosmic voids and addressing statistical noise within simulation based Fisher forecasts**
+   | Christopher Wilson
+   | `PhD thesis <https://www.proquest.com/docview/3100398944?pq-origsite=gscholar&fromopenview=true&sourcetype=Dissertations%20&%20Theses>`_
+
 #. | **Novel Techniques for the Calibration of Systematics in Next Generation Galaxy Surveys**
    | Alan Bao-Huy Nguyen
    | `Master thesis <https://uwspace.uwaterloo.ca/bitstreams/db98ba72-9d54-49b2-a28a-7ef5e8552538/download>`_
