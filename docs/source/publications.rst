@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **CHARM: Creating Halos with Auto-Regressive Multi-stage networks**
+   | Shivam Pandey, Chirag Modi, Benjamin D. Wandelt, Deaglan J. Bartlett, Adrian E. Bayer, Greg L. Bryan, Matthew Ho, Guilhem Lavaux, T. Lucas Makinen, Francisco Villaescusa-Navarro
+   | `2409.09124 <https://arxiv.org/abs/2409.09124>`_
+
 #. | **Map-level baryonification: Efficient modelling of higher-order correlations in the weak lensing and thermal Sunyaev-Zeldovich fields**
    | Dhayaa Anbajagane, Shivam Pandey, Chihway Chang
    | `2409.03822 <https://arxiv.org/abs/2409.03822>`_
