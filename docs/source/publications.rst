@@ -4,6 +4,14 @@
 Publications
 ************
 
+#. | **Teaching dark matter simulations to speak the halo language**
+   | Shivam Pandey, Francois Lanusse, Chirag Modi, Benjamin D. Wandelt
+   | `2409.11401 <https://arxiv.org/abs/2409.11401>`_
+
+#. | **Full-shape analysis with simulation-based priors: cosmological parameters and the structure growth anomaly**
+   | Mikhail M. Ivanov, Andrej Obuljen, Carolina Cuesta-Lazaro, Michael W. Toomey
+   | `2409.10609 <https://arxiv.org/abs/2409.10609>`_
+
 #. | **CHARM: Creating Halos with Auto-Regressive Multi-stage networks**
    | Shivam Pandey, Chirag Modi, Benjamin D. Wandelt, Deaglan J. Bartlett, Adrian E. Bayer, Greg L. Bryan, Matthew Ho, Guilhem Lavaux, T. Lucas Makinen, Francisco Villaescusa-Navarro
    | `2409.09124 <https://arxiv.org/abs/2409.09124>`_
