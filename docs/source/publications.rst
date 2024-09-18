@@ -20,7 +20,7 @@ Publications
    | Dhayaa Anbajagane, Shivam Pandey, Chihway Chang
    | `2409.03822 <https://arxiv.org/abs/2409.03822>`_
 
-#. |  **Void where statistically prohibited: constraining gravity with cosmic voids and addressing statistical noise within simulation based Fisher forecasts**
+#. | **Void where statistically prohibited: constraining gravity with cosmic voids and addressing statistical noise within simulation based Fisher forecasts**
    | Christopher Wilson
    | `PhD thesis <https://www.proquest.com/docview/3100398944?pq-origsite=gscholar&fromopenview=true&sourcetype=Dissertations%20&%20Theses>`_
 
