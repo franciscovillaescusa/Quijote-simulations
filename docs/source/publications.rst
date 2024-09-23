@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Constraining Primordial Non-Gaussianity with Density-Split Clustering**
+   | James Morawetz, Enrique Paillas, Will J. Percival
+   | `2409.13583 <https://arxiv.org/abs/2409.13583>`_
+
 #. | **Teaching dark matter simulations to speak the halo language**
    | Shivam Pandey, Francois Lanusse, Chirag Modi, Benjamin D. Wandelt
    | `2409.11401 <https://arxiv.org/abs/2409.11401>`_
