@@ -4,6 +4,18 @@
 Publications
 ************
 
+#. | **Impact of Redshift Space Distortion on Persistent Homology of cosmic matter density field**
+   | Fatemeh Abedi, Mohammad Hossein Jalali Kanafi, S.M.S. Movahed
+   | `2410.01751 <https://arxiv.org/abs/2410.01751>`_
+
+#. | **A Tale of Two Fields: Neural Network-Enhanced non-Gaussianity Search with Halos**
+   | Yurii Kvasiuk, Moritz Münchmeyer, Kendrick Smith
+   | `2410.01007 <https://arxiv.org/abs/2410.01007>`_
+
+#. | **Cosmology on point: modelling spectroscopic tracer one-point statistics**
+   | Beth McCarthy Gould, Lina Castiblanco, Cora Uhlemann, Oliver Friedrich
+   | `2409.18182 <https://arxiv.org/abs/2409.18182>`_
+
 #. | **Constraining Primordial Non-Gaussianity with Density-Split Clustering**
    | James Morawetz, Enrique Paillas, Will J. Percival
    | `2409.13583 <https://arxiv.org/abs/2409.13583>`_
