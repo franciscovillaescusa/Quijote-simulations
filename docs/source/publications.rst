@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Testing the robustness of the BAO determination in the presence of massive neutrinos**
+   | Adriana Nadal-Matosas, Héctor Gil-Marín, Licia Verde
+   | `2410.01897 <https://arxiv.org/abs/2410.01897>`_
+
 #. | **Impact of Redshift Space Distortion on Persistent Homology of cosmic matter density field**
    | Fatemeh Abedi, Mohammad Hossein Jalali Kanafi, S.M.S. Movahed
    | `2410.01751 <https://arxiv.org/abs/2410.01751>`_
