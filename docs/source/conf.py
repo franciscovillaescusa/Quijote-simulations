@@ -68,4 +68,6 @@ html_theme_options = {
     'display_version': False,
 }
 
-
+html_context = {
+    "analytics_id": "G-XRRM15GMS9",  # Replace with your actual ID
+}
