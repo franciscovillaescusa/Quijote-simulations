@@ -42,15 +42,15 @@ Publications
 
 #. | **Void where statistically prohibited: constraining gravity with cosmic voids and addressing statistical noise within simulation based Fisher forecasts**
    | Christopher Wilson
-   | `PhD thesis <https://www.proquest.com/docview/3100398944?pq-origsite=gscholar&fromopenview=true&sourcetype=Dissertations%20&%20Theses>`_
+   | `PhD thesis <https://www.proquest.com/docview/3100398944?pq-origsite=gscholar&fromopenview=true&sourcetype=Dissertations%20&%20Theses>`__
 
 #. | **Novel Techniques for the Calibration of Systematics in Next Generation Galaxy Surveys**
    | Alan Bao-Huy Nguyen
-   | `Master thesis <https://uwspace.uwaterloo.ca/bitstreams/db98ba72-9d54-49b2-a28a-7ef5e8552538/download>`_
+   | `Master thesis <https://uwspace.uwaterloo.ca/bitstreams/db98ba72-9d54-49b2-a28a-7ef5e8552538/download>`__
 
 #. | **A skewed perspective on the universe: advancements, challenges and prospects in the hunt for primordial non-Gaussianity**
    | Thomas Floss
-   | `PhD thesis <https://pure.rug.nl/ws/portalfiles/portal/1084344891/Complete_thesis.pdf>`_
+   | `PhD thesis <https://pure.rug.nl/ws/portalfiles/portal/1084344891/Complete_thesis.pdf>`__
 
 #. | **Pair Counting without Binning -- A New Approach to Correlation Functions in Clustering Statistics**
    | Shiyu Yue, Longlong Feng, Wenjie Ju, Jun Pan, Zhiqi Huang, Feng Fang, Zhuoyang Li, Yan-Chuan Cai, Weishan Zhu
@@ -82,7 +82,7 @@ Publications
 
 #. | **Extracting cosmological information at non-linear scales using machine learning**
    | Surpio Dubey
-   | `Master Thesis <https://thesis.unipd.it/handle/20.500.12608/68240>`_
+   | `Master Thesis <https://thesis.unipd.it/handle/20.500.12608/68240>`__
 
 #. | **Massive-ish Particles from Small-ish Scales: Non-Perturbative Techniques for Cosmological Collider Physics from Large-Scale Structure Surveys**
    | Samuel Goldstein, Oliver H. E. Philcox, J. Colin Hill, Lam Hui
@@ -174,7 +174,7 @@ Publications
 
 #. | **Cosmology at the Field Level with Probabilistic Machine Learning**
    | Adam Rouhiainen
-   | `PhD thesis <https://arxiv.org/abs/2402.07694>`_
+   | `PhD thesis <https://arxiv.org/abs/2402.07694>`__
 
 #. | **LtU-ILI: An All-in-One Framework for Implicit Inference in Astrophysics and Cosmology**
    | Matthew Ho, Deaglan J. Bartlett, Nicolas Chartier, Carolina Cuesta-Lazaro, Simon Ding, Axel Lapel, Pablo Lemos, Christopher C. Lovell, T. Lucas Makinen, Chirag Modi, Viraj Pandya, Shivam Pandey, Lucia A. Perez, Benjamin Wandelt, Greg L. Bryan
