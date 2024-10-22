@@ -68,9 +68,9 @@ html_theme_options = {
     'display_version': False,
 }
 
-html_context = {
-    "analytics_id": "G-XRRM15GMS9",  # Replace with your actual ID
-}
+#html_context = {
+#    "analytics_id": "G-XRRM15GMS9",  # Replace with your actual ID
+#}
 
 def setup(app):
     app.add_js_file("custom.js")
