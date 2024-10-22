@@ -24,19 +24,6 @@ We have run three simulations: 1) with the fiducial Quijote cosmology (shown on 
   
 Historically, Quijote was developed from the `HADES simulations <https://franciscovillaescusa.github.io/hades.html>`_. Nowadays, it contains the full HADES data.
 
-.. raw:: html
-
-   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-105709894-1', 'auto');
-  ga('send', 'pageview');
-
-  </script>
-
   
 .. toctree::
    :maxdepth: 2
@@ -95,6 +82,3 @@ Historically, Quijote was developed from the `HADES simulations <https://francis
    license
    faq
    help
-	     
-
-
