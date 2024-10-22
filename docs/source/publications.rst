@@ -4,6 +4,26 @@
 Publications
 ************
 
+#. | **Mean-Field Simulation-Based Inference for Cosmological Initial Conditions**
+   | Oleg Savchenko, Florian List, Guillermo Franco Abellán, Noemi Anau Montel, Christoph Weniger
+   | `2410.15808 <https://arxiv.org/abs/2410.15808>`_
+
+#. | **syren-new: Precise formulae for the linear and nonlinear matter power spectra with massive neutrinos and dynamical dark energy**
+   | Ce Sui, Deaglan J. Bartlett, Shivam Pandey, Harry Desmond, Pedro G. Ferreira, Benjamin D. Wandelt
+   | `2410.14623 <https://arxiv.org/abs/2410.14623>`_
+
+#. | **Simulation-based inference with scattering representations: scattering is all you need**
+   | Kiyam Lin, Benjamin Joachimi, Jason D. McEwen
+   | `2410.11883 <https://arxiv.org/abs/2410.11883>`_
+
+#. | **Psi-GAN: A power-spectrum-informed generative adversarial network for the emulation of large-scale structure maps across cosmologies and redshifts**
+   | Prabh Bhambra, Benjamin Joachimi, Ofer Lahav, Davide Piras
+   | `2410.07349 <https://arxiv.org/abs/2410.07349>`_
+
+#. | **LOO-PIT: A sensitive posterior test**
+   | Alan B. H. Nguyen, Marco Bonici, Glen McGee, Will J. Percival
+   | `2410.03507 <https://arxiv.org/abs/2410.03507>`_
+
 #. | **Testing the robustness of the BAO determination in the presence of massive neutrinos**
    | Adriana Nadal-Matosas, Héctor Gil-Marín, Licia Verde
    | `2410.01897 <https://arxiv.org/abs/2410.01897>`_
@@ -15,6 +35,10 @@ Publications
 #. | **A Tale of Two Fields: Neural Network-Enhanced non-Gaussianity Search with Halos**
    | Yurii Kvasiuk, Moritz Münchmeyer, Kendrick Smith
    | `2410.01007 <https://arxiv.org/abs/2410.01007>`_
+
+#. | **Constraining Cosmology with Simulation-based inference and Optical Galaxy Cluster Abundance**
+   | Moonzarin Reza, Yuanyuan Zhang, Camille Avestruz, Louis E. Strigari, Simone Shevchuk, Francisco Villaescusa-Navarro
+   | `2409.20507 <https://arxiv.org/abs/2409.20507>`_
 
 #. | **Cosmology on point: modelling spectroscopic tracer one-point statistics**
    | Beth McCarthy Gould, Lina Castiblanco, Cora Uhlemann, Oliver Friedrich
