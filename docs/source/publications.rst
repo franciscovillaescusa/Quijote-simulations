@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Local Primordial Non-Gaussian Bias at the Field Level**
+   | James M. Sullivan, Shi-Fan Chen
+   | `2410.18039 <https://arxiv.org/abs/2410.18039>`_
+
 #. | **Mean-Field Simulation-Based Inference for Cosmological Initial Conditions**
    | Oleg Savchenko, Florian List, Guillermo Franco Abellán, Noemi Anau Montel, Christoph Weniger
    | `2410.15808 <https://arxiv.org/abs/2410.15808>`_
