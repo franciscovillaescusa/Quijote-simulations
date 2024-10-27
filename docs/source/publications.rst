@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Modelling the covariance matrix for the power spectra before and after the BAO reconstruction**
+   | Ruiyang Zhao, Kazuya Koyama, Yuting Wang, Gong-Bo Zhao
+   | `2410.18524 <https://arxiv.org/abs/2410.18524>`_
+
 #. | **Local Primordial Non-Gaussian Bias at the Field Level**
    | James M. Sullivan, Shi-Fan Chen
    | `2410.18039 <https://arxiv.org/abs/2410.18039>`_
