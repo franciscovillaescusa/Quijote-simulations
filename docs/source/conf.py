@@ -36,6 +36,7 @@ extensions = [
     "nbsphinx",
     "sphinx_gallery.load_style",
     "sphinx_rtd_theme",
+    "sphinxcontrib.googleanalytics"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
