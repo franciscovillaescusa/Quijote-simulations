@@ -36,11 +36,14 @@ extensions = [
     "nbsphinx",
     "sphinx_gallery.load_style",
     "sphinx_rtd_theme",
-    "sphinxcontrib.googleanalytics"
+    "sphinxcontrib.googleanalytics",
+    "sphinx_sitemap"
 ]
 
 googleanalytics_id = 'G-XRRM15GMS9'
 googleanalytics_enabled = True
+
+html_baseurl = 'https://quijote-simulations.readthedocs.io/en/latest/'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -72,4 +75,4 @@ html_theme_options = {
     'display_version': False,
 }
 
-
+html_extra_path = ["robots.txt"]

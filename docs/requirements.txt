@@ -5,3 +5,4 @@ nbsphinx==0.8.9
 sphinx_gallery==0.8.2
 sphinx_rtd_theme
 sphinxcontrib-googleanalytics
+sphinx_sitemap
