@@ -4,6 +4,14 @@
 Publications
 ************
 
+#. | **The constraining power of the Marked Power Spectrum: an analytical study**
+   | Marco Marinucci, Gabriel Jung, Michele Liguori, Andrea Ravenni, Francesco Spezzati, Adam Andrews, Marco Baldi, William R. Coulton, Dionysios Karagiannis, Francisco Villaescusa-Navarro, Benjamin Wandlet
+   | `2411.14377 <https://arxiv.org/abs/2411.14377>`_
+
+#. | **Convolutional Vision Transformer for Cosmology Parameter Inference**
+   | Yash Gondhalekar, Kana Moriwaki
+   | `2411.14392 <https://arxiv.org/abs/2411.14392>`_
+
 #. | **A revisited Correction to the Halo Mass Function for local-type Primordial non-Gaussianity**
    | Luca Fiorino, Sofia Contarini, Federico Marulli, Ariel G. Sanchez, Marco Baldi, Andrea Fiorilli, Lauro Moscardini
    | `2410.21457 <https://arxiv.org/abs/2410.21457>`_
