@@ -16,6 +16,10 @@ Publications
    | Luca Fiorino, Sofia Contarini, Federico Marulli, Ariel G. Sanchez, Marco Baldi, Andrea Fiorilli, Lauro Moscardini
    | `2410.21457 <https://arxiv.org/abs/2410.21457>`_
 
+#. | **A Cosmic-Scale Benchmark for Symmetry-Preserving Data Processing**
+   | Julia Balla, Siddharth Mishra-Sharma, Carolina Cuesta-Lazaro, Tommi Jaakkola, Tess Smidt
+   | `2410.20516 <https://arxiv.org/abs/2410.20516>`_
+
 #. | **Modelling the covariance matrix for the power spectra before and after the BAO reconstruction**
    | Ruiyang Zhao, Kazuya Koyama, Yuting Wang, Gong-Bo Zhao
    | `2410.18524 <https://arxiv.org/abs/2410.18524>`_
