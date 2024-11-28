@@ -78,7 +78,11 @@ In this category we have 2,048 simulations. Each simulation has a different valu
 
 .. Note::
 
-   The actual value of these parameters for the different simulations can be found `here <https://github.com/franciscovillaescusa/Quijote-simulations/blob/master/modified_gravity/Cosmological_parameters.txt>`__. 
+   The actual value of these parameters for the different simulations can be found `here <https://github.com/franciscovillaescusa/Quijote-simulations/blob/master/modified_gravity/Cosmological_parameters.txt>`__.
+
+.. Important::
+
+   The above link will bring you to the file with the value of the parameters. We note that for :math:`\sigma_8` there are two values quoted: 1) s8(LCDM) which represents the :math:`\sigma_8` values of the GR underlying cosmology, and 2) s8(MG) which represents the :math:`\sigma_8` value of the full modified gravity model. We recommend using s8(MG) rather than s8(LCDM). However, the sobol sequence was created with a uniform prior in s8(GR). For that reason, we think the best option is to use the value of :math:`A_s` rather than :math:`\sigma_8` when working with these QuijoteMG simulations.
   
 
 Organization
