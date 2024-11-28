@@ -4,6 +4,18 @@
 Publications
 ************
 
+#. | **De-baryonifying halos via optimal transport**
+   | Leander Thiele
+   | `2411.18399 <https://arxiv.org/abs/2411.18399>`_
+
+#. | **Cosmic Structure Formation in the Non-linear Regime: Beyond Gaussian Statistics and Standard Cosmologies**
+   | Alex Gough
+   | `PhD thesis <https://arxiv.org/abs/2411.16500>`_
+
+#. | **Cosmological Analysis with Calibrated Neural Quantile Estimation and Approximate Simulators**
+   | He Jia
+   | `2411.14748 <https://arxiv.org/abs/2411.14748>`_
+
 #. | **The constraining power of the Marked Power Spectrum: an analytical study**
    | Marco Marinucci, Gabriel Jung, Michele Liguori, Andrea Ravenni, Francesco Spezzati, Adam Andrews, Marco Baldi, William R. Coulton, Dionysios Karagiannis, Francisco Villaescusa-Navarro, Benjamin Wandlet
    | `2411.14377 <https://arxiv.org/abs/2411.14377>`_
