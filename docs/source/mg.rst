@@ -72,7 +72,7 @@ In this category we have 2,048 simulations. Each simulation has a different valu
    0.03 & \leq \Omega_{\rm b} \leq & 0.07\\
    0.5 & \leq h \leq & 0.9\\
    0.8 & \leq n_s \leq & 1.2\\
-   0.6 & \leq \sigma_8 \leq & 1.0\\
+   0.6 & \leq \sigma_8 (GR) \leq & 1.0\\
    0.01 & \leq M_\nu[{\rm eV}] \leq & 1.0\\
    -3\times10^{-4} & \leq f_{R0} \leq & 0
 
