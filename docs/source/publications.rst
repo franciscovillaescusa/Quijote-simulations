@@ -4,6 +4,78 @@
 Publications
 ************
 
+#. |
+   |
+   | 
+
+#. | **How many simulations do we need for simulation-based inference in cosmology?**
+   | Anirban Bairagi, Benjamin Wandelt, Francisco Villaescusa-Navarro
+   | `2503.13755 <https://arxiv.org/abs/2503.13755>`_
+
+#. | **The Power of the Cosmic Web**
+   | James Sunseri, Adrian E. Bayer, Jia Liu
+   | `2503.11778 <https://arxiv.org/abs/2503.11778>`_
+
+#. | **Redshift-Space Distortions in Massive Neutrinos Cosmologies**
+   | Francesco Verdiani, Emilio Bellini, Chiara Moretti, Emiliano Sefusatti, Carmelita Carbone, Matteo Viel
+   | `2503.06655 <https://arxiv.org/abs/2503.06655>`_
+
+#. | **Neural Network Reconstruction of Non-Gaussian Initial Conditions from Dark Matter Halos**
+   | Jelte Bottema, Thomas Floss, P. Daniel Meerburg
+   | `2502.11846 <https://arxiv.org/abs/2502.11846>`_
+
+#. | **Cosmological information content of Betti curves and k-nearest neighbor distributions**
+   | Aaron Ouellette, Gilbert Holder
+   | `2502.09709 <https://arxiv.org/abs/2502.09709>`_
+
+#. | **Geometric Interpretations of the k-Nearest Neighbour Distributions**
+   | Kwanit Gangopadhyay, Arka Banerjee, Tom Abel
+   | `2502.07713 <https://arxiv.org/abs/2502.07713>`_
+
+#. | **Cosmological Inference with Cosmic Voids and Neural Network Emulators**
+   | Kai Lehman, Nico Schuster, Luisa Lucie-Smith, Nico Hamaus, Christopher T. Davies, Klaus Dolag
+   | `2502.05262 <https://arxiv.org/abs/2502.05262>`_
+
+#. | **Fast Sampling of Cosmological Initial Conditions with Gaussian Neural Posterior Estimation**
+   | Oleg Savchenko, Guillermo Franco Abellán, Florian List, Noemi Anau Montel, Christoph Weniger
+   | `2502.03139 <https://arxiv.org/abs/2502.03139>`_
+
+#. | **Cosmology with Persistent Homology: Parameter Inference via Machine Learning**
+   | Juan Calles, Jacky H. T. Yip, Gabriella Contardo, Jorge Noreña, Adam Rouhiainen, Gary Shiu
+   | `2412.15405 <https://arxiv.org/abs/2412.15405>`_
+
+#. | **One-point matter pdf’s beyond tophat filters**
+   | Alexander M. Kayssi
+   | `Master thesis <https://macsphere.mcmaster.ca/bitstream/11375/30971/2/Kayssi_Alex_202412_MSc.pdf>`__
+
+#. | **Probing massive neutrinos and modified gravity with redshift-space morphologies and anisotropies of large-scale structure**
+   | Wei Liu, Liang Wu, Francisco Villaescusa-Navarro, Marco Baldi, Georgios Valogiannis, Wenjuan Fang
+   | `2412.05662 <https://arxiv.org/abs/2412.05662>`_
+
+#. | **Testing f(R) Gravity from Cosmic Shear Measurements**
+   | Jiachen Bai, Jun-Qing Xia, Gong-Bo Zhao
+   | `2412.04807 <https://arxiv.org/abs/2412.04807>`_
+
+#. | **Inspecting signatures of parity violation with angular redshift fluctuations**
+   | Matteo Santini
+   | `Master Thesis <https://amslaurea.unibo.it/id/eprint/34113/1/Matteo_Santini_MasterThesis.pdf>`__
+
+#. | **The Millennium and Astrid galaxies in effective field theory: comparison with galaxy-halo connection models at the field level**
+   | Mikhail M. Ivanov, Carolina Cuesta-Lazaro, Andrej Obuljen, Michael W. Toomey, Yueying Ni, Sownak Bose, Boryana Hadzhiyska, César Hernández-Aguayo, Lars Hernquist, Rahul Kannan, Volker Springel
+   | `2412.0188 <https://arxiv.org/abs/2412.01888>`_
+
+#. | **Fast implementation of nonlinear perturbation theory statistics including galaxy bias and redshift-space distortion**
+   | Joseph Tomlinson
+   | `PhD thesis <https://etda.libraries.psu.edu/files/final_submissions/31497>`__
+
+#. | **Probing primordial non-Gaussianity by reconstructing the initial conditions**
+   | Xinyi Chen, Nikhil Padmanabhan, Daniel J. Eisenstein
+   | `2412.00968 <https://arxiv.org/abs/2412.00968>`_
+
+#. | **Towards Reliable Simulation-based Inference**
+   | Arnaud Delaunoy
+   | `PhD thesis <https://orbi.uliege.be/bitstream/2268/325940/1/these.pdf>`__
+
 #. | **De-baryonifying halos via optimal transport**
    | Leander Thiele
    | `2411.18399 <https://arxiv.org/abs/2411.18399>`_
