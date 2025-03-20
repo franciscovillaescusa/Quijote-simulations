@@ -4,10 +4,6 @@
 Publications
 ************
 
-#. |
-   |
-   | 
-
 #. | **How many simulations do we need for simulation-based inference in cosmology?**
    | Anirban Bairagi, Benjamin Wandelt, Francisco Villaescusa-Navarro
    | `2503.13755 <https://arxiv.org/abs/2503.13755>`_
