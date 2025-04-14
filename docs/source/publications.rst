@@ -4,6 +4,26 @@
 Publications
 ************
 
+#. | **The marked power spectrum of cosmological large scale structure**
+   | Luca Fusaro
+   | `Master thesis <https://thesis.unipd.it/bitstream/20.500.12608/84624/1/Fusaro_Luca.pdf.pdf>`__
+
+#. | **Correcting for interloper contamination in the power spectrum with neural networks**
+   | Marina S. Cagliari, Azadeh Moradinezhad Dizgah, Francisco Villaescusa-Navarro
+   | `2504.06919 <https://arxiv.org/abs/2504.06919>`_
+
+#. | **The AI Cosmologist I: An Agentic System for Automated Data Analysis**
+   | Adam Moss
+   | `2504.03424 <https://arxiv.org/abs/2504.03424>`_
+
+#. | **Initial Conditions from Galaxies: Machine-Learning Subgrid Correction to Standard Reconstruction**
+   | Liam Parker, Adrian E. Bayer, Uros Seljak
+   | `2504.01092 <https://arxiv.org/abs/2504.01092>`_
+
+#. | **Local Primordial non-Gaussian Bias from Time Evolution**
+   | James M. Sullivan, Uros Seljak
+   | `2503.21736 <https://arxiv.org/abs/2503.21736>`_
+
 #. | **How many simulations do we need for simulation-based inference in cosmology?**
    | Anirban Bairagi, Benjamin Wandelt, Francisco Villaescusa-Navarro
    | `2503.13755 <https://arxiv.org/abs/2503.13755>`_
