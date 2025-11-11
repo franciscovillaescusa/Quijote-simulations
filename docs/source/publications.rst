@@ -4,6 +4,118 @@
 Publications
 ************
 
+#. | **Quantifying Weighted Morphological Content of Large-Scale Structures via Simulation-Based Inference**
+   | M. H. Jalali Kanafi, S. M. S. Movahed
+   | `2511.03636 <https://arxiv.org/abs/2511.03636>`_
+
+#. | **MG-NECOLA: Fast Neural Emulators for Modified Gravity Cosmologies**
+   | J. Bayron Orjuela-Quintana, Mauricio Reyes, Elena Giusarma, Francisco Villaescusa-Navarro, Neerav Kaushal, Cesar A. Valenzuela-Toledo
+   | `2510.20086 <https://arxiv.org/abs/2510.20086>`_
+
+#. | **Transfer Learning Beyond the Standard Model**
+   | Veena Krishnaraj, Adrian E. Bayer, Christian Kragh Jespersen, Peter Melchior
+   | `2510.19168 <https://arxiv.org/abs/2510.19168>`_
+
+#. | **Hierarchical summaries for primordial non-Gaussianities**
+   | M.S. Cagliari, A. Bairagi, B. Wandelt
+   | `2510.12715 <https://arxiv.org/abs/2510.12715>`_
+
+#. | **Constraining cosmology with higher-order summary statistics of galaxies: a bispectrum & 3PCF study and application to DESI DR1**
+   | Farshad Kamalinejad
+   | `PhD thesis <https://www.proquest.com/openview/303368a68f0ad0b1650bd1a3c451df83/1?pq-origsite=gscholar&cbl=18750&diss=y>`_
+
+#. | **Reconstructing the local density field with combined convolutional and point cloud architecture**
+   | Baptiste Barthe-Gold, Nhat-Minh Nguyen, Leander Thiele
+   | `2510.08573 <https://arxiv.org/abs/2510.08573>`_
+
+#. | **Control variates from Eulerian and Lagrangian perturbation theory: Application to the bispectrum**
+   | Nickolas Kokron, Shi-Fan Chen
+   | `2510.07375 <https://arxiv.org/abs/2510.07375>`_
+
+#. | **Parameter sensitivity of cosmic pairwise velocities in the non-linear regime of structure formation**
+   | Jorge Enrique Garcia-Farieta, Hector J. Hortua
+   | `2509.15223 <https://arxiv.org/abs/2509.15223>`_
+
+#. | **Parity in Composite-Field Galaxy Correlators**
+   | Zucheng Gao, Azadeh Moradinezhad Dizgah, Zvonimir Vlah
+   | `2509.13207 <https://arxiv.org/abs/2509.13207>`_
+
+#. | **On the extraction of Alcock-Paczynski signal from voids: a novel approach via reconstruction**
+   | G. Degni, E. Sarpa, M. Aubert, E. Branchini, A. Pisani, H.M. Courtois
+   | `2509.08884 <https://arxiv.org/abs/2509.08884>`_
+
+#. | **PatchNet: A hierarchical approach for neural field-level inference from Quijote Simulations**
+   | Anirban Bairagi, Benjamin Wandelt
+   | `2509.03165 <https://arxiv.org/abs/2509.03165>`_
+
+#. | **The Impact of Spectroscopic Redshift Errors on Cosmological Measurements**
+   | Shengyu He, Jiaxi Yu, Antoine Rocher, Daniel Forero-Sanchez, Jean-Paul Kneib, Cheng Zhao, Etienne Burtin, Jiamin Hou
+   | `2508.21182 <https://arxiv.org/abs/2508.21182>`_
+
+#. | **Score Matching on Large Geometric Graphs for Cosmology Generation**
+   | Diana-Alexandra Onutu, Yue Zhao, Joaquin Vanschoren, Vlado Menkovski
+   | `2508.16990 <https://www.arxiv.org/abs/2508.16990>`_
+
+#. | **The Mass and Clustering of Dynamical Halos**
+   | Edgar M. Salazar
+   | `PhD Thesis <https://www.proquest.com/openview/3b068f7e77a42877eb17ab419ce70dae/1?pq-origsite=gscholar&cbl=18750&diss=y>`_
+
+#. | **Power Spectrum, Bispectrum, 2- and 3-Point Correlation Function, and Beyond**
+   | Zachary Slepian, Farshad Kamalinejad, Alessandro Greco
+   | `2508.06762 <https://arxiv.org/abs/2508.06762>`_
+
+#. | **From Theory to Forecast: Neutrino Mass Effects on Mode-Coupling Kernels and Their Observational Implications**
+   | Farshad Kamalinejad, Zachary Slepian
+   | `2508.06759 <https://arxiv.org/abs/2508.06759>`_
+
+#. | **𝙶𝙴𝙽𝙶𝙰𝚁𝚂: Accurate non-Gaussian initial conditions with arbitrary bispectrum for N-body simulations**
+   | Emanuele Fondi, Licia Verde, Marco Baldi, William Coulton, Francisco Villaescusa-Navarro, Benjamin Dan Wandelt
+   | `2508.01855 <https://arxiv.org/abs/2508.01855>`_
+
+#. | **Reanalyzing DESI DR1: 1. ΛCDM Constraints from the Power Spectrum and Bispectrum**
+   | Anton Chudaykin, Mikhail M. Ivanov, Oliver H. E. Philcox
+   | `2507.13433 <https://arxiv.org/abs/2507.13433>`_
+
+#. | **Dark Energy and Void Dynamics**
+   | Enrico Marchesini
+   | `Bachelar thesis <https://fse.studenttheses.ub.rug.nl/36304/1/ThesisMarchesini.pdf>`_
+
+#. | **From Redshift to Real Space: Combining Linear Theory With Neural Networks**
+   | Edoardo Maragliano, Punyakoti Ganeshaiah Veena, Giulia Degni, Enzo Franco Branchini
+   | `2507.11462 <https://arxiv.org/abs/2507.11462>`_
+
+#. | **Non-Gaussian Expansion of Minkowski Tensors in Redshift Space**
+   | Stephen Appleby, Christophe Pichon, Pravabati Chingangbam, Dmitri Pogosyan, Changbom Park
+   | `2507.10091 <https://arxiv.org/abs/2507.10091>`_
+
+#. | **CosmoBench: A Multiscale, Multiview, Multitask Cosmology Benchmark for Geometric Deep Learning**
+   | Ningyuan Huang, Richard Stiskalek, Jun-Young Lee, Adrian E. Bayer, Charles C. Margossian, Christian Kragh Jespersen, Lucia A. Perez, Lawrence K. Saul, Francisco Villaescusa-Navarro
+   | `2507.03707 <https://arxiv.org/abs/2507.03707>`_
+
+#. | **Harnessing the Power of Deep Learning for Astrophysical Discoveries**
+   | Yong Xu Zhang
+   | `PhD thesis <https://www.proquest.com/openview/c8fb1da56b942146b1f5730f991d2170/1?pq-origsite=gscholar&cbl=18750&diss=y>`_
+
+#. | **CSST Cosmological Emulator II: Generalized Accurate Halo Mass Function Emulation**
+   | Zhao Chen, Yu Yu
+   | `2506.09688 <https://arxiv.org/abs/2506.09688>`_
+
+#. | **Power Spectrum Emulators from Neural Networks and Tree-Based Methods**
+   | Andrei Lazanu
+   | `2506.07514 <https://arxiv.org/abs/2506.07514>`_
+
+#. | **Wonderings on Wiggly Bispectra: Non-linear Evolution and Reconstruction of Oscillations in the Squeezed Bispectrum**
+   | Samuel Goldstein, Oliver H. E. Philcox, Emanuele Fondi, William R. Coulton
+   | `2505.13443 <https://arxiv.org/abs/2505.13443>`_
+
+#. | **Modeling Galaxy Surveys with Hybrid SBI**
+   | Gemma Zhang, Chirag Modi, Oliver H. E. Philcox
+   | `2505.13591 <https://arxiv.org/abs/2505.13591>`_
+
+#. | **Turning dispersion into signal: density-split analyses of pairwise velocities**
+   | Aritra Kumar Gon, Yan-Chuan Cai
+   | `2505.00608 <https://arxiv.org/abs/2505.00608>`_
+
 #. | **The marked power spectrum of cosmological large scale structure**
    | Luca Fusaro
    | `Master thesis <https://thesis.unipd.it/bitstream/20.500.12608/84624/1/Fusaro_Luca.pdf.pdf>`__
