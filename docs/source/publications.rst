@@ -4,6 +4,10 @@
 Publications
 ************
 
+#. | **Slow neutrinos: non-linearity and momentum-space emulation**
+   | Amol Upadhye, Yin Li
+   | `2511.09945 <https://arxiv.org/abs/2511.09945>`_ 
+
 #. | **Quantifying Weighted Morphological Content of Large-Scale Structures via Simulation-Based Inference**
    | M. H. Jalali Kanafi, S. M. S. Movahed
    | `2511.03636 <https://arxiv.org/abs/2511.03636>`_
