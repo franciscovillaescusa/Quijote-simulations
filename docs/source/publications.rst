@@ -4,6 +4,14 @@
 Publications
 ************
 
+#. | **Equilateral non-Gaussian Bias at the Field Level**
+   | Divij Sharma, James M. Sullivan, Kazuyuki Akitsu, Mikhail M. Ivanov
+   | `2511.14677 <https://arxiv.org/abs/2511.14677>`_
+
+#. | **Learning Cosmology from Nearest Neighbour Statistics**
+   | Atrideb Chatterjee, Arka Banerjee, Francisco Villaescusa-Navarro, Tom Abel
+   | `2511.13393 <https://arxiv.org/abs/2511.13393>`_ 
+
 #. | **Slow neutrinos: non-linearity and momentum-space emulation**
    | Amol Upadhye, Yin Li
    | `2511.09945 <https://arxiv.org/abs/2511.09945>`_ 
