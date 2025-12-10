@@ -75,6 +75,7 @@ Historically, Quijote was developed from the `HADES simulations <https://francis
    df
    halo_statistics
    interlopers
+   3PCF
 
 .. toctree::
    :maxdepth: 2
