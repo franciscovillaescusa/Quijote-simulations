@@ -4,9 +4,49 @@
 Publications
 ************
 
+#. | **The era of precision cosmology with voids**
+   | Sofia Contarini, Giovanni Verza, Alice Pisani
+   | `2601.14362 <https://arxiv.org/abs/2601.14362>`_
+
+#. | **An efficient model of cosmology dependence in the covariance matrix of the matter power spectrum**
+   | Theodore Steele, Robert Smith, Roisin O'Connor
+   | `2601.13245 <https://arxiv.org/abs/2601.13245>`_
+
+#. | **Revisiting the Great Attractor: The Local Group's streamline trajectory, cosmic velocity and dynamical fate**
+   | Richard Stiskalek, Harry Desmond, Stuart McAlpine, Guilhem Lavaux, Jens Jasche, Michael J. Hudson
+   | `2601.08524 <https://arxiv.org/abs/2601.08524>`_
+
+#. | **OmniCosmos: Transferring Particle Physics Knowledge Across the Cosmos**
+   | Vinicius Mikuni, Ibrahim Elsharkawy, Benjamin Nachman
+   | `2512.24422 <https://arxiv.org/abs/2512.24422>`_
+
+#. | **The imprints of massive neutrinos on the 3-point correlation function of large-scale structures**
+   | Andrea Labate, Massimo Guidi, Michele Moresco, Alfonso Veropalumbo
+   | `2512.16992 <https://arxiv.org/abs/2512.16992>`_
+
+#. | **Local Nonlinear Transforms effectively Reveal Primordial Information in Large-Scale Structure**
+   | Yun Wang, Hao-Ran Yu, Yu Yu, Ping He
+   | `2512.12304 <https://arxiv.org/abs/2512.12304>`_
+
+#. | **Primordial non-Gaussianity -- Fast simulations and persistent summary statistics**
+   | Juan Calles, Gabriella Contardo, Jorge Noreña, Jacky H. T. Yip, Gary Shiu
+   | `2512.09852 <https://arxiv.org/abs/2512.09852>`_
+
+#. | **Optimal information extraction from cosmological summary statistics with neural networks**
+   | Nicola Zuccotti
+   | `Tesi di Laurea <https://thesis.unipd.it/bitstream/20.500.12608/100499/1/Zuccotti_Nicola.pdf>`_
+
+#. | **Counting voids and filaments: Betti Curves as a Powerful Probe for Cosmology**
+   | Jiayi Li, Cheng Zhao
+   | `2512.07236 <https://arxiv.org/abs/2512.07236>`_
+
 #. | **Equilateral non-Gaussian Bias at the Field Level**
    | Divij Sharma, James M. Sullivan, Kazuyuki Akitsu, Mikhail M. Ivanov
    | `2511.14677 <https://arxiv.org/abs/2511.14677>`_
+
+#. | **Disentangling Massive Neutrino Cosmologies with Higher-Order Clustering Statistics**
+   | Andrea Labate
+   | `Graduation thesis <https://amslaurea.unibo.it/id/eprint/36850/1/Labate_MT_final.pdf>`_
 
 #. | **Learning Cosmology from Nearest Neighbour Statistics**
    | Atrideb Chatterjee, Arka Banerjee, Francisco Villaescusa-Navarro, Tom Abel
@@ -14,7 +54,11 @@ Publications
 
 #. | **Slow neutrinos: non-linearity and momentum-space emulation**
    | Amol Upadhye, Yin Li
-   | `2511.09945 <https://arxiv.org/abs/2511.09945>`_ 
+   | `2511.09945 <https://arxiv.org/abs/2511.09945>`_
+
+#. | **Probing cosmic web structures with generative models**
+   | M. Noor, T. Bonnaire, A. Decelle and N. Aghanim
+   | `article <https://sf2a.eu/proceedings/2025/2025sf2a.conf.211N.pdf>`_
 
 #. | **Quantifying Weighted Morphological Content of Large-Scale Structures via Simulation-Based Inference**
    | M. H. Jalali Kanafi, S. M. S. Movahed
@@ -34,7 +78,7 @@ Publications
 
 #. | **Constraining cosmology with higher-order summary statistics of galaxies: a bispectrum & 3PCF study and application to DESI DR1**
    | Farshad Kamalinejad
-   | `PhD thesis <https://www.proquest.com/openview/303368a68f0ad0b1650bd1a3c451df83/1?pq-origsite=gscholar&cbl=18750&diss=y>`_
+   | `PhD thesis <https://www.proquest.com/openview/303368a68f0ad0b1650bd1a3c451df83/1?pq-origsite=gscholar&cbl=18750&diss=y>`__
 
 #. | **Reconstructing the local density field with combined convolutional and point cloud architecture**
    | Baptiste Barthe-Gold, Nhat-Minh Nguyen, Leander Thiele
@@ -70,7 +114,7 @@ Publications
 
 #. | **The Mass and Clustering of Dynamical Halos**
    | Edgar M. Salazar
-   | `PhD Thesis <https://www.proquest.com/openview/3b068f7e77a42877eb17ab419ce70dae/1?pq-origsite=gscholar&cbl=18750&diss=y>`_
+   | `PhD Thesis <https://www.proquest.com/openview/3b068f7e77a42877eb17ab419ce70dae/1?pq-origsite=gscholar&cbl=18750&diss=y>`__
 
 #. | **Power Spectrum, Bispectrum, 2- and 3-Point Correlation Function, and Beyond**
    | Zachary Slepian, Farshad Kamalinejad, Alessandro Greco
@@ -106,7 +150,7 @@ Publications
 
 #. | **Harnessing the Power of Deep Learning for Astrophysical Discoveries**
    | Yong Xu Zhang
-   | `PhD thesis <https://www.proquest.com/openview/c8fb1da56b942146b1f5730f991d2170/1?pq-origsite=gscholar&cbl=18750&diss=y>`_
+   | `PhD thesis <https://www.proquest.com/openview/c8fb1da56b942146b1f5730f991d2170/1?pq-origsite=gscholar&cbl=18750&diss=y>`__
 
 #. | **CSST Cosmological Emulator II: Generalized Accurate Halo Mass Function Emulation**
    | Zhao Chen, Yu Yu

@@ -8,14 +8,14 @@ This dataset was prepared for the analysis presented in `Cagliari et al. (2025) 
 - **"Inbox" interlopers**, which are highly correlated with the target sample (displacing halos within the same snapshot).
 - **"Outbox" interlopers**, which have low correlation with the target sample (displacing halos from a different snapshot).
 
-We generated contaminated catalogs with varying interloper fractions, using Friend-of-Friend catalogs with a :math:`512^3` resolution for :math:`1000` snapshots in the fiducial cosmology, as well as for the :math:`\Lambda`CDM Latin hypercube and the Big Sobol Sequence.
+We generated contaminated catalogs with varying interloper fractions, using Friend-of-Friend catalogs with a :math:`512^3` resolution for :math:`1000` snapshots in the fiducial cosmology, as well as for the :math:`\Lambda` CDM Latin hypercube and the Big Sobol Sequence.
 
 For each simulation, we provide all measured statistics used in the analysis, including the target power spectrum, as well as the observed power spectrum and bispectrum.
 
 The code used to contaminate the simulations and correct the summary statistics is available at the following `link <https://github.com/mcagliari/NoInterNet>`_.
 
 Contaminated Catalogues and Measured Statistics
-==============================================
+===============================================
 
 We contaminated the snapshots at :math:`z=1`. Therefore, we give the catalogs and the statistics corresponding to that redshift alone. The fractions are always produced in the range :math:`[0.01, 0.11]`.
 
@@ -41,14 +41,14 @@ The two directories (``inbox`` and ``outbox``) have the same internal structure.
 
 - **``fiducial``**: :math:`2000` contaminated FoF catalogs at :math:`z=1` (``groups_002``) produced from :math:`1000` FoF original Quijote catalogs and :math:`100` fractions extracted from a Latin hypercube and are stored in the file ``fiducial/fractions-2000.txt``.
 
-  +----------------+------------------+
+  +-----------------+---------------------+
   | Original number | Contaminated number |
-  +----------------+------------------+
-  | ``0-499``     | ``0-499``         |
-  | ``0-499``     | ``500-999``       |
-  | ``500-999``   | ``1000-1499``     |
-  | ``500-999``   | ``1500-1999``     |
-  +----------------+------------------+
+  +-----------------+---------------------+
+  | ``0-499``       | ``0-499``           |
+  | ``0-499``       | ``500-999``         |
+  | ``500-999``     | ``1000-1499``       |
+  | ``500-999``     | ``1500-1999``       |
+  +-----------------+---------------------+
 
 - **``latin_hypercube``**: :math:`10000` catalogs at :math:`z=1` (``groups_002``) produced from the :math:`2000` Quijote original Latin hypercube cosmologies and :math:`2000` fractions sampled from a Latin hypercube. Each cosmology has :math:`5` fraction realizations. The folders are ordered as in the original Quijote hypercube, and in each folder, there are :math:`5` directories (from ``0`` to ``4``) for the different fraction realizations. The fraction values for the cosmologies are stored in each cosmology folder in the file ``fractions.txt``.
 
@@ -87,7 +87,7 @@ Example to read the contaminated catalogs:
     print('Interloper fraction:', N_i / (N_t + N_i))
 
 Contaminated Statistics
-------------------------
+-----------------------
 
 The statistics that we provide are:
 

@@ -4,43 +4,24 @@
 Data access
 ***********
 
-Quijote contains over 1 petabyte of data. Given this large size, the data is currently distributed across two different clusters in New York (Rusty cluster) and San Diego (GordonS cluster). The data can be accessed in two different ways:
+Quijote contains over 1 petabyte of data. All the data is located in a cluster in New York called Rusty. The data can be accessed in two different ways:
 
 - **Globus**. A system designed to easily transfer large amounts of data in a very efficient manner.
-- **Binder**. A system that allows reading and manipulating the data online, without the need to download the data. 
+- **Binder**. A system that allows reading and manipulating the data online, without the need to download the data.
 
-
-The table below describes the data each cluster contains and provides the links to the associated globus and binder systems.
-
++-------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| `Link to Globus <https://app.globus.org/file-manager?origin_id=e0eae0aa-5bca-11ea-9683-0e56c063f437&origin_path=%2F>`__ | .. image:: https://mybinder.org/badge_logo.svg                        | 
+|                                                                                                                         |   :target: https://binder.flatironinstitute.org/~fvillaescusa/Quijote |
++-------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------+
 
 .. warning::
 
-   We are currently moving all data located in the Princeton cluster to New York. Besides, due to storage constrains we are compressing all snapshots. Thus, the data may be temporarily unavailable in the below links. Note that you need to install the latest version of Pylians, or use hdf5plugin to read the compressed snapshots. For more details see :ref:`snapshots`. Please `Reach out <mailto:villaescusa.francisco@gmail.com>`_ if you experience problems.
+   Due to storage constrains all snapshots are compressed. You need to install the latest version of Pylians, or use hdf5plugin to read the compressed snapshots. For more details see :ref:`snapshots`. Please `Reach out <mailto:villaescusa.francisco@gmail.com>`_ if you experience problems.
 
 .. important::
 
    Please, fill up `this form <https://forms.gle/63CE9p9XUdnPW9js9>`__ if you want to use the Quijote binder. Reach out to villaescusa.francisco@gmail.com if you encounter problems.
    
-+-------------+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
-| Cluster     |  Content                                                        |  Access                                                                                                          |
-+=============+=================================================================+==================================================================================================================+
-| San Diego   | - The snapshots 8,000 - 14,999 of the fiducial cosmology        | `globus <https://app.globus.org/file-manager?origin_id=f4863854-3819-11eb-b171-0ee0d5d9299f&origin_path=%2F>`__  |
-|             | - The snapshots of the standard & fixed LH latin hypercube      +------------------------------------------------------------------------------------------------------------------+
-|             | - All spherical overdensity void catalogues                     | .. image:: https://mybinder.org/badge_logo.svg                                                                   |
-|             | - All power spectra                                             |   :target: https://sdsc-binder.flatironinstitute.org/v2/user/fvillaescusa/Quijote                                |
-|             | - All bispectra                                                 |                                                                                                                  | 
-|             | - All correlation functions                                     |                                                                                                                  | 
-|             | - All pdfs                                                      |                                                                                                                  | 
-|             | - 235 Terabytes                                                 |                                                                                                                  |
-+-------------+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
-| New York    | - The snapshots of all other simulations                        | `globus <https://app.globus.org/file-manager?origin_id=e0eae0aa-5bca-11ea-9683-0e56c063f437&origin_path=%2F>`__  |
-|             | - All halo catalogs (FoF + Rockstar)                            +------------------------------------------------------------------------------------------------------------------+
-|             | - The 3D density fields                                         |                                                                                                                  |
-|             | - The HADES data (if available)                                 | .. image:: https://mybinder.org/badge_logo.svg                                                                   |
-|             | - The 3D density fields                                         |   :target: https://binder.flatironinstitute.org/~fvillaescusa/Quijote                                            |
-|             | - 700 Terabytes                                                 |                                                                                                                  |
-+-------------+-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
-
 
 Globus
 ------
