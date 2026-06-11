@@ -4,6 +4,123 @@
 Publications
 ************
 
+
+#. | **Interpretable Neural Marked Statistics for Cosmological Inference**
+   | Federico Semenzato, Benjamin D. Wandelt, Michele Liguori, Alvise Raccanelli
+   | `2606.11295 <https://arxiv.org/abs/2606.11295>`_
+
+#. | **Augmented Correlation Functions for Spectroscopic Galaxy Surveys**
+   | Davide Bianchi
+   | `2605.30305 <https://arxiv.org/abs/2605.30305>`_
+
+#. | **Velocityformer: Broken-Symmetry-Matched Equivariant Graph Transformers for Cosmological Velocity Reconstruction**
+   | Tilman Troster, David Mirkovic, Veronika Oehl, Arne Thomsen
+   | `2605.21483 <https://arxiv.org/abs/2605.21483>`_
+
+#. | **First detection of the moving lens effect with ACT and DESI LS**
+   | Selim C. Hotinli, Kendrick M. Smith, Simone Ferraro, Ali Beheshti, Arthur Kosowsky, Elena Pierpaoli, Emmanuel Schaan
+   | `2605.18938 <https://arxiv.org/abs/2605.18938>`_
+
+#. | **Separate Universe Super-Resolution Emulator**
+   | Dennis Fremstad, Julian Adamek, David F. Mota
+   | `2605.09004 <https://arxiv.org/abs/2605.09004>`_
+
+#. | **Efficient estimators for power spectrum and bispectrum multipole measurements**
+   | Yunchen Xie, Ruiyang Zhao, Gan Gu, Xiaoma Wang, Xiaoyong Mu, Yuting Wang, Gong-Bo Zhao, Florian Beutler, John A. Peacock
+   | `2605.04864 <https://arxiv.org/abs/2605.04864>`_
+
+#. | **Caps-analyzer: a tool for investigating the structure of the universe**
+   | Chris Wayman
+   | `Master thesis <https://hammer.purdue.edu/ndownloader/files/64310286>`_
+
+#. | **Coverage is not enough: Frequentist tests of simulation-based inference for primordial non-Gaussianity**
+   | Toka Alokda, Cristiano Porciani, Alexander Eggemeier
+   | `2605.00980 <https://arxiv.org/abs/2605.00980>`_
+
+#. | **The functional form of galaxy and halo luminosity and mass functions**
+   | Amelia Ford, Harry Desmond, Deaglan J Bartlett, Pedro G Ferreira
+   | `2604.23236 <https://arxiv.org/abs/2604.23236>`_
+
+#. | **MG-NECOLA: A Field-Level Emulator for f(R) Gravity and Massive Neutrino Cosmologies**
+   | J. Bayron Orjuela-Quintana, Mauricio Reyes, Elena Giusarma, Marco Baldi, Neerav Kaushal, César A. Valenzuela-Toledo
+   | `2604.19613 <https://arxiv.org/abs/2604.19613>`_
+
+#. | **Efficiently emulating distribution functions in gigaparsec volumes for varying cosmological parameters**
+   | Christopher C. Lovell, Max E. Lee, William J. Roper, Daniel Angles-Alcazar, Shy Genel, Shivam Pandey, Francisco Villaescusa-Navarro
+   | `2604.17981 <https://arxiv.org/abs/2604.17981>`_
+
+#. | **If at First You Don't Succeed, Trispectrum: I. Estimating the Matter Power Spectrum Covariance with Higher-Order Statistics**
+   | Samuel Goldstein, Kendrick M. Smith, Utkarsh Giri, Moritz Munchmeyer
+   | `2604.18581 <https://arxiv.org/abs/2604.18581>`_
+
+#. | **Signatures of Massive Neutrinos in the Cosmic Web via Persistent Homology**
+   | Hogyun Yu, Michael Michaux, Donghyun Kim, Changhee Song, Ingyu Yun, Donghyeon Lee, Yoonyoung Lee, Graziano Rossi
+   | `2604.16853 <https://arxiv.org/abs/2604.16853>`_
+
+#. | **The Cosmic Web and Its Filaments: Neutrino Mass from Topology and Persistent Homology**
+   | Graziano Rossi, Hogyun Yu, Michael Michaux
+   | `2604.09148 <https://arxiv.org/abs/2604.09148>`_
+
+#. | **New Machine Learning Algorithms to Study the Large-Scale Structure of the Universe**
+   | Claudia Crastolla
+   | `Master thesis <https://amslaurea.unibo.it/id/eprint/38912/1/TESI_CLAUDIA_CRASTOLLA.pdf>`_
+
+#. | **Lagrangian Bias as a Gaussian Random Field**
+   | Arka Banerjee
+   | `2604.00097 <https://arxiv.org/abs/2604.00097>`_
+
+#. | **Enhancing cosmological constraints with nonlinear tanh transformations of Hermite-Gaussian Derivative fields**
+   | Zhiwei Min, Ye Ma, Zhujun Jiang, Jiacheng Ding, Fenfen Yin, Le Zhang, Xiaodong Li
+   | `2603.22797 <https://arxiv.org/abs/2603.22797>`_
+
+#. | **Cosmology as an Optimisation Problem**
+   | T. Lucas Makinen
+   | `PhD thesis <https://inspirehep.net/files/ec9fa1d6de0d9ede57faba67e04a3777>`_
+
+#. | **Field-Level Inference of Primordial Non-Gaussianity with the Quijote Simulation Suite**
+   | Adam Andrews, Jens Jasche, Guilhem Lavaux, William Coulton, Francisco Villaescusa-Navarro, Marco Baldi, Drew Jamieson, Gabriel Jung, Dionysios Karagiannis, Florent Leclercq, Michele Liguori, Marco Marinucci, Benjamin Wandelt
+   | `2603.20855 <https://arxiv.org/abs/2603.20855>`_
+   
+#. | **Morphological Signatures of Gravitational Evolution, Redshift-Space Distortions, and Massive Neutrinos in Large-Scale Structure**
+   | Priya Goyal, Stephen Appleby, Pravabati Chingangbam, Changbom Park
+   | `2603.19734 <https://arxiv.org/abs/2603.19734>`_
+
+#. | **From language models to cosmic structures: A geometric perspective**
+   | Viswanathan, K.
+   | `PhD thesis <https://pure.uva.nl/ws/files/303686803/Thesis.pdf>`_
+
+#. | **Training-Free Generative Modeling via Kernelized Stochastic Interpolants**
+   | Florentin Coeurdoux, Etienne Lempereur, Nathanael Cuvelle-Magar, Thomas Eboli, Stéphane Mallat, Anastasia Borovykh, Eric Vanden-Eijnden
+   | `2602.20070 <https://arxiv.org/abs/2602.20070>`_
+
+#. | **MGD: Moment Guided Diffusion for Maximum Entropy Generation**
+   | Etienne Lempereur, Nathanaël Cuvelle--Magar, Florentin Coeurdoux, Stéphane Mallat, Eric Vanden-Eijnden
+   | `2602.17211 <https://arxiv.org/abs/2602.17211>`_
+
+#. | **MadEvolve: Evolutionary Optimization of Cosmological Algorithms with Large Language Models**
+   | Tianyi Li, Shihui Zang, Moritz Munchmeyer
+   | `2602.15951 <https://arxiv.org/abs/2602.15951>`_
+
+#. | **Bayesian Cosmic Void Finding with Graph Flows**
+   | Leander Thiele
+   | `2602.14630 <https://arxiv.org/abs/2602.14630>`_
+
+#. | **Cosmo3DFlow: Wavelet Flow Matching for Spatial-to-Spectral Compression in Reconstructing the Early Universe**
+   | Md. Khairul Islam, Zeyu Xia, Ryan Goudjil, Jialu Wang, Arya Farahi, Judy Fox
+   | `2602.10172 <https://arxiv.org/abs/2602.10172>`_
+
+#. | **ELUCID-DESI I: A Parallel MPI Implementation of the Initial Condition Solver for Large-Scale Reconstruction Simulations**
+   | Wensheng Hong, Xiaohu Yang, Junde Li, Huiyuan Wang, Zhao Chen, Hong-Ming Zhu, Qingyang Li, Yizhou Gu, Youcai Zhang, Feng Shi, Jiaxin Han, Yu Yu, Zhongxu Zhai
+   | `2602.06463 <https://arxiv.org/abs/2602.06463>`_
+
+#. | **Bayesian imaging inverse problem with scattering transform**
+   | Sebastien Pierre, Erwan Allys, Pablo Richard, Roman Soletskyi, Alexandros Tsouros
+   | `2602.05816 <https://arxiv.org/abs/2602.05816>`_
+
+#. | **Weak Lensing Low Multipoles**
+   | Albert Bonnefous, Roya Mohayaee
+   | `2602.04504 <https://arxiv.org/abs/2602.04504>`_
+
 #. | **The era of precision cosmology with voids**
    | Sofia Contarini, Giovanni Verza, Alice Pisani
    | `2601.14362 <https://arxiv.org/abs/2601.14362>`_
@@ -391,6 +508,10 @@ Publications
 #. | **Towards unveiling the large-scale nature of gravity with the wavelet scattering transform**
    | Georgios Valogiannis, Francisco Villaescusa-Navarro, Marco Baldi
    | `2407.18647 <https://arxiv.org/abs/2407.18647>`_
+
+#. | **Interpretable and physics-informed emulator for the linear matter power spectrum from machine learning**
+   | J. Bayron Orjuela-Quintana, Domenico Sapone, Savvas Nesseris
+   | `2407.16640 <https://arxiv.org/abs/2407.16640>`_
 
 #. | **https://www.teses.usp.br/teses/disponiveis/43/43134/tde-15072024-101341/publico/tesenatalisolermatubarodesanti.pdf**
    | Natali de Santi
