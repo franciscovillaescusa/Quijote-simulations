@@ -4,6 +4,17 @@
 Publications
 ************
 
+#. | **Climbing the N-point Ladder Part I: Information in the Higher-Order Configuration-Space Clustering of Dark Matter Halos**
+   | Sumi Kim, Cristiano G. Sabiu, Inkyu Park
+   | `2607.09116 <https://arxiv.org/abs/2607.09116>`_
+
+#. | **Fast Graph-based Higher-Order Clustering Statistics on the GPU**
+   | Cristiano G. Sabiu
+   | `2607.06604 <https://arxiv.org/abs/2607.06604>`_
+
+#. | **Large-scale structures of the Universe: physics, phenomenology, statistics**
+   | Cora Uhlemann 
+   | `2606.27927 <https://arxiv.org/abs/2606.27927>`_
 
 #. | **Interpretable Neural Marked Statistics for Cosmological Inference**
    | Federico Semenzato, Benjamin D. Wandelt, Michele Liguori, Alvise Raccanelli
