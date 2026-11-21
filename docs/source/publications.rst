@@ -4,6 +4,82 @@
 Publications
 ************
 
+#. | :math:`r` **-Largest Order Statistics for Galaxy Cluster Cosmology I: Reconstruction of the high-mass end of the Halo Mass Function**
+   | T. Gayoux, P-S. Corasaniti
+   | `2611.15398 <https://arxiv.org/abs/2611.15398>`_
+
+#. | **OASIS: A Fast Dynamical Halo Finding Algorithm**
+   | Bayli Hayes, Edgar M. Salazar, Eduardo Rozo, Benedikt Diemer, Calvin Osinga, John Hugon, Vadim Bernshteyn, Ze'ev Vladimir
+   | `2611.13542 <https://arxiv.org/abs/2611.13542>`_
+
+#. | **ROBIN-PIP: Robust Bayesian Field-Level Inference with Physics-Informed Priors**
+   | Ludvig Doeser, Simon Ding, Guilhem Lavaux, Jens Jasche
+   | `2610.00674 <https://arxiv.org/abs/2610.00674>`_
+
+#. | **AI-assisted super-resolution cosmological simulations V: Cosmology-aware super-resolution**
+   | Xiaowen Zhang, Patrick Lachance, Rupert A. C. Croft, Tiziana Di Matteo, Francisco Villaescusa-Navarro
+   | `2610.06710 <https://arxiv.org/abs/2610.06710>`_
+
+#. | **Forecasting cosmological constraints from the nonlinear halo density field with Zel'dovich-inspired transform**
+   | Yu Zhou, Yun Wang, Haozhe Zhang, Matteo Peron, Shiyu Deng, Yu Yu, Xin Zhang
+   | `2610.04486 <https://arxiv.org/abs/2610.04486>`_
+
+#. | **FlashSinkhorn 2: Block-Sparse Entropic Optimal Transport**
+   | Felix X.-F. Ye, Yu Chin Fabian Lim, Naigang Wang, Davis Wertheimer
+   | `2610.02395 <https://arxiv.org/abs/2610.02395>`_
+
+#. | **Modelling kNN-CDFs of biased tracers in redshift space using hybrid Lagrangian bias expansion**
+   | Eishica Chand, Arka Banerjee
+   | `2610.32837 <https://arxiv.org/abs/2610.32837>`_
+
+#. | **Testing the 4-Point Correlation Function as a Probe of Parity Violation with the Quijote-Odd Simulations**
+   | William Ortolá Leonard, Zachary Slepian, Alex Krolewski, Simon May
+   | `2610.18707 <https://arxiv.org/abs/2610.18707>`_
+
+#. | **Field-level modeling of halo and galaxy alignments**
+   | Nickolas Kokron, Mikhail M. Ivanov, James M. Sullivan
+   | `2610.36027 <https://arxiv.org/abs/2610.36027>`_
+
+#. | **Density-split analyses of the pairwise kinetic Sunyaev-Zeldovich effect**
+   | Finn A. Roper, Aritra K. Gon, Yan-Chuan Cai, John A. Peacock
+   | `2610.30267 <https://arxiv.org/abs/2610.30267>`_
+
+#. | **ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference**
+   | Kai Lehman, Jameson Dong, Carolina Cuesta-Lazaro, Niall Jeffrey, Benjamin D. Wandelt, Francisco Villaescusa-Navarro, Sven Krippendorf, Jochen Weller
+   | `2610.23825 <https://arxiv.org/abs/2610.23825>`_
+
+#. | **Two-dimensional weak lensing shear for cluster mass, concentration, ellipticity and miscentering estimation**
+   | Calum Murray, Martin Kilbinger, Constantin Payerne
+   | `2609.24948 <https://arxiv.org/abs/2609.24948>`_
+
+#. | **It's All About the Environment: Local** :math:`f_{\rm NL}` **from a Dark Matter Conditioned Multitracer Analysis**
+   | Julius Adolff, Uroš Seljak
+   | `2609.04313 <https://arxiv.org/abs/2609.04313>`_
+
+#. | **Non-linear Pairwise Velocities as a Cosmological Probe**
+   | Mariana Jaber, Antonela Taverna, Rasmus Strid, Wojciech A. Hellwing
+   | `2609.07976 <https://arxiv.org/abs/2609.07976>`_
+
+#. | **Void probability function in the Quijote simulations**
+   | Snehasish Bhattacharjee
+   | `2609.18221 <https://arxiv.org/abs/2609.18221>`_
+
+#. | **Analytic bispectrum covariance for galaxy survey cosmology**
+   | Utkarsh Giri, Henry S. Grasshorn Gebhardt, Olivier Dore
+   | `2609.05607 <https://arxiv.org/abs/2609.05607>`_
+
+#. | **Learning cosmic web environments with diffusion models**
+   | M. Noor, T. Bonnaire, N. Aghanim, A. Decelle
+   | `2609.09950 <https://arxiv.org/abs/2609.09950>`_
+
+#. | **SPINE: symbolic models to predict the evolution of the ΛCDM non-linear power spectrum**
+   | Manvi Chauhan, Daniel J. Farrow, Ariel G. Sánchez, Kevin A. Pimbblet, Marika Asgari, David M. Benoit
+   | `2608.26276 <https://arxiv.org/abs/2608.26276>`_
+
+#. | **Approximating the peculiar velocity distribution of dark matter halos with Tsallis statistics**
+   | Jun Pan, Ming Li
+   | `2608.26572 <https://arxiv.org/abs/2608.26572>`_
+
 #. | **Climbing the N-point Ladder Part I: Information in the Higher-Order Configuration-Space Clustering of Dark Matter Halos**
    | Sumi Kim, Cristiano G. Sabiu, Inkyu Park
    | `2607.09116 <https://arxiv.org/abs/2607.09116>`_
@@ -12,6 +88,22 @@ Publications
    | Cristiano G. Sabiu
    | `2607.06604 <https://arxiv.org/abs/2607.06604>`_
 
+#. | **Emulating Cosmic Structure Formation with a Lagrangian Neural Cellular Automaton**
+   | Cooper Jacobus, Beatriz Tucci, Oliver Philcox
+   | `2607.27320 <https://arxiv.org/abs/2607.27320>`_
+
+#. | **Hermes - Towards an Optimal High-Performance Algorithm for Cosmic Statistics of Large Data Sets**
+   | Long-long Feng, Tengpeng Xu, Tian-Cheng Luan, Jiawei Li, Xin Sun, Wenjie Ju, Zhuoyang Li, Shiyu Yue, Weishan Zhu, Yan-Chuan Cai
+   | `2607.23494 <https://arxiv.org/abs/2607.23494>`_
+
+#. | **Weighted Webs: Morphology-Informed Marked Fields**
+   | Mikel Martin Barandiaran, Jessica A. Cowell, David Alonso, Javier Carrón Duque, Juan García-Bellido
+   | `2607.26021 <https://arxiv.org/abs/2607.26021>`_
+
+#. | **Bispectrum BAO and the baryon-dark matter relative velocity**
+   | Adriana Nadal-Matosas, Héctor Gil-Marín, Licia Verde
+   | `2607.18384 <https://arxiv.org/abs/2607.18384>`_
+
 #. | **Large-scale structures of the Universe: physics, phenomenology, statistics**
    | Cora Uhlemann 
    | `2606.27927 <https://arxiv.org/abs/2606.27927>`_
@@ -19,6 +111,10 @@ Publications
 #. | **Interpretable Neural Marked Statistics for Cosmological Inference**
    | Federico Semenzato, Benjamin D. Wandelt, Michele Liguori, Alvise Raccanelli
    | `2606.11295 <https://arxiv.org/abs/2606.11295>`_
+
+#. | **Optimal transport reconstruction of biased tracers in primordial non-Gaussian fields**
+   | Farnik Nikakhtar, Ravi K. Sheth, Nikhil Padmanabhan, Bruno Lévy, Roya Mohayaee
+   | `2606.01529 <https://arxiv.org/abs/2606.01529>`_
 
 #. | **Augmented Correlation Functions for Spectroscopic Galaxy Surveys**
    | Davide Bianchi
@@ -79,6 +175,10 @@ Publications
 #. | **Lagrangian Bias as a Gaussian Random Field**
    | Arka Banerjee
    | `2604.00097 <https://arxiv.org/abs/2604.00097>`_
+
+#. | **Revealing the neutrino mass through persistent homology of the cosmic web**
+   | Jiaqi Wang, Willem Elbers, Carlos S. Frenk, Shaun Cole, Xiaohu Yang, Ian G. McCarthy, Rien van de Weygaert
+   | `2604.02300 <https://arxiv.org/abs/2604.02300>`_
 
 #. | **Enhancing cosmological constraints with nonlinear tanh transformations of Hermite-Gaussian Derivative fields**
    | Zhiwei Min, Ye Ma, Zhujun Jiang, Jiacheng Ding, Fenfen Yin, Le Zhang, Xiaodong Li
@@ -159,6 +259,14 @@ Publications
 #. | **Primordial non-Gaussianity -- Fast simulations and persistent summary statistics**
    | Juan Calles, Gabriella Contardo, Jorge Noreña, Jacky H. T. Yip, Gary Shiu
    | `2512.09852 <https://arxiv.org/abs/2512.09852>`_
+
+#. | **Detecting gravitational lensing by matter currents**
+   | C. Murray, R. Kou, J. G. Bartlett
+   | `2510.19798 <https://arxiv.org/abs/2510.19798>`_
+
+#. | **Simulation-Efficient Cosmological Inference with Multi-Fidelity SBI**
+   | Leander Thiele, Adrian E. Bayer, Naoya Takeishi
+   | `2507.00514 <https://arxiv.org/abs/2507.00514>`_
 
 #. | **Optimal information extraction from cosmological summary statistics with neural networks**
    | Nicola Zuccotti
@@ -304,6 +412,10 @@ Publications
    | Luca Fusaro
    | `Master thesis <https://thesis.unipd.it/bitstream/20.500.12608/84624/1/Fusaro_Luca.pdf.pdf>`__
 
+#. | **Cosmology with Topological Deep Learning**
+   | Jun-Young Lee, Francisco Villaescusa-Navarro
+   | `2505.23904 <https://arxiv.org/abs/2505.23904>`_
+
 #. | **Correcting for interloper contamination in the power spectrum with neural networks**
    | Marina S. Cagliari, Azadeh Moradinezhad Dizgah, Francisco Villaescusa-Navarro
    | `2504.06919 <https://arxiv.org/abs/2504.06919>`_
@@ -351,6 +463,10 @@ Publications
 #. | **Fast Sampling of Cosmological Initial Conditions with Gaussian Neural Posterior Estimation**
    | Oleg Savchenko, Guillermo Franco Abellán, Florian List, Noemi Anau Montel, Christoph Weniger
    | `2502.03139 <https://arxiv.org/abs/2502.03139>`_
+
+#. | **Learning the Universe:** :math:`3\ h^{-1}{\rm Gpc}` **Tests of a Field Level** :math:`N` **-body Simulation Emulator**
+   | Matthew T. Scoggins, Matthew Ho, Francisco Villaescusa-Navarro, Drew Jamieson, Ludvig Doeser, Greg L. Bryan
+   | `2502.13242 <https://arxiv.org/abs/2502.13242>`_
 
 #. | **Cosmology with Persistent Homology: Parameter Inference via Machine Learning**
    | Juan Calles, Jacky H. T. Yip, Gabriella Contardo, Jorge Noreña, Adam Rouhiainen, Gary Shiu
@@ -616,6 +732,10 @@ Publications
    | Gabriel Jung, Andrea Ravenni, Michele Liguori, Marco Baldi, William R. Coulton, Francisco Villaescusa-Navarro, Benjamin D. Wandelt
    | `2403.00490 <https://arxiv.org/abs/2403.00490>`_
 
+#. | **Relics from the Early Universe in Cosmic Voids**
+   | J. Sanghavi
+   | `ADS <https://ui.adsabs.harvard.edu/abs/2024aecc.conf...36S/abstract>`__
+
 #. | **syren-halofit: A fast, interpretable, high-precision formula for the ΛCDM nonlinear matter power spectrum**
    | Deaglan J. Bartlett, Benjamin D. Wandelt, Matteo Zennaro, Pedro G. Ferreira, Harry Desmond
    | `2402.17492 <https://arxiv.org/abs/2402.17492>`_
@@ -631,6 +751,10 @@ Publications
 #. | **SIMBIG: Cosmological Constraints from the Redshift-Space Galaxy Skew Spectra**
    | Jiamin Hou, Azadeh Moradinezhad Dizgah, ChangHoon Hahn, Michael Eickenberg, Shirley Ho, Pablo Lemos, Elena Massara, Chirag Modi, Liam Parker, Bruno Régaldo-Saint Blancard
    | `2401.15074 <https://arxiv.org/abs/2401.15074>`_
+
+#. | **Late Time Acceleration with Observational Constraints in Modified Theories of Gravity**
+   | Simran Arora
+   | `2401.00054 <https://arxiv.org/abs/2401.00054>`_
 
 #. | **Bayesian Inference of Initial Conditions from Non-Linear Cosmic Structures using Field-Level Emulators**
    | Ludvig Doeser, Drew Jamieson, Stephen Stopyra, Guilhem Lavaux, Florent Leclercq, Jens Jasche
