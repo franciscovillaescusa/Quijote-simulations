@@ -20,7 +20,7 @@ Quijote contains over 1 petabyte of data. All the data is located in a cluster i
 
 .. important::
 
-   Please, fill up `this form <https://forms.gle/63CE9p9XUdnPW9js9>`__ if you want to use the Quijote binder. Reach out to villaescusa.francisco@gmail.com if you encounter problems.
+   Please, fill up `this form <https://forms.gle/63CE9p9XUdnPW9js9>`__ if you want to use the Quijote binder. **You will be added to the list of binder users within 1 day of filling up the form.** If you still cannot access binder after that, please contact Francisco Villaescusa-Navarro at `villaescusa.francisco@gmail.com <mailto:villaescusa.francisco@gmail.com>`__.
    
 
 Globus
@@ -110,7 +110,11 @@ For more options and details see `Command Line Interface (CLI) <https://docs.glo
 Binder
 ------
 
-Binder is a system that allows users to read and manipulate data that is hosted at the Flatiron Institute through either a Jupyter notebook or a unix shell. The user can find some basic documentation `here <https://docs.simonsfoundation.org/index.php/Public:Binder>`__. The links to the binder for the New York and San Diego cluster can be found in the table above. Note that the data in the Princeton cluster cannot be accessed through binder. Our binder environments contains the following packages:
+Binder is a system that allows users to read and manipulate data that is hosted at the Flatiron Institute through either a Jupyter notebook or a unix shell. The user can find some basic documentation `here <https://docs.simonsfoundation.org/index.php/Public:Binder>`__. The links to the binder for the New York and San Diego cluster can be found in the table above. Note that the data in the Princeton cluster cannot be accessed through binder.
+
+To use binder, you first need to fill up `this form <https://forms.gle/63CE9p9XUdnPW9js9>`__. You will be added to the list of binder users within 1 day. If this does not happen, please contact Francisco Villaescusa-Navarro at `villaescusa.francisco@gmail.com <mailto:villaescusa.francisco@gmail.com>`__.
+
+Our binder environments contains the following packages:
 
 - nbgitpuller
 - sphinx-gallery
