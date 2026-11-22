@@ -4,6 +4,10 @@
 Publications
 ************
 
+.. tip::
+
+   Explore all these papers interactively in the :ref:`atlas`: a map of the Quijote literature organized by topic, with the citation and co-author networks, where you can find related work and open research directions.
+
 #. | :math:`r` **-Largest Order Statistics for Galaxy Cluster Cosmology I: Reconstruction of the high-mass end of the Halo Mass Function**
    | T. Gayoux, P-S. Corasaniti
    | `2611.15398 <https://arxiv.org/abs/2611.15398>`_

@@ -25,6 +25,29 @@ We have run three simulations: 1) with the fiducial Quijote cosmology (shown on 
 Historically, Quijote was developed from the `HADES simulations <https://franciscovillaescusa.github.io/hades.html>`_. Nowadays, it contains the full HADES data.
 
   
+Quijote Literature Atlas
+========================
+
+Hundreds of papers have been written using the Quijote simulations, covering topics from field-level machine learning and simulation-based inference to higher-order statistics, primordial non-Gaussianity, and massive neutrinos. To help navigate this body of work, we have built the **Quijote Literature Atlas**: an interactive map of all papers that use Quijote. With it you can explore how the papers relate to each other by topic, follow the citation and co-author networks, and identify connections between research lines as well as gaps that are still open.
+
+.. raw:: html
+
+   <div style="margin: 1.5em 0;">
+     <iframe src="https://franciscovillaescusa.github.io/literature-atlas/quijote/#topics"
+             title="Quijote Literature Atlas"
+             loading="lazy"
+             style="width: 100%; height: 800px; border: 1px solid #e1e4e5; border-radius: 6px;"
+             allowfullscreen></iframe>
+     <p style="text-align: center; margin-top: 0.8em;">
+       <a href="https://franciscovillaescusa.github.io/literature-atlas/quijote/#topics"
+          target="_blank" rel="noopener"
+          style="display: inline-block; padding: 0.5em 1.2em; background: #2980b9; color: #fff; border-radius: 4px; text-decoration: none; font-weight: bold;">
+         Open the atlas in full screen &#8599;
+       </a>
+     </p>
+   </div>
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Quijote
@@ -36,6 +59,7 @@ Historically, Quijote was developed from the `HADES simulations <https://francis
    organization
    tutorials
    publications
+   atlas
    team
    citation
    
